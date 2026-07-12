@@ -34,6 +34,11 @@
       "bytes": 358,
       "path": "governance/RELEASES.md",
       "sha256": "6cfa1173b26607206ffef3b5cfe6de4202867f0377656e7d9c0c3dc81e25625e"
+    },
+    {
+      "bytes": 352,
+      "path": "governance/package-contract.json",
+      "sha256": "327f5f783012d12ac8e0cba2837429cd7fe26380fd1bcbaa52a403ddbc429a49"
     }
   ],
   "files": {

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "canonicalRepository": "Bizarre-Industries/design-system",
+  "packages": ["@bizarre/tokens"],
+  "requiredModes": ["void", "paper", "void-hicontrast"],
+  "optionalModes": ["workshop", "bone"],
+  "downstream": {
+    "themes": {
+      "repository": "Bizarre-Industries/themes",
+      "policy": "pin-released-version"
+    }
+  }
+}
