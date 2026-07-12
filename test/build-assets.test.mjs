@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdir, mkdtemp, rm, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, readFile, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
@@ -10,7 +10,7 @@ const root = new URL('../', import.meta.url);
 
 test('builds the exact governed asset package in stable path order', async () => {
   const files = await buildExpectedAssets(root);
-  const source = JSON.parse(await (await import('node:fs/promises')).readFile(new URL('../brand/assets.json', import.meta.url)));
+  const source = JSON.parse(await readFile(new URL('../brand/assets.json', import.meta.url), 'utf8'));
   const payloadPaths = source.assets
     .map(({ path }) => `generated/${path.slice('packages/assets/'.length)}`)
     .sort();

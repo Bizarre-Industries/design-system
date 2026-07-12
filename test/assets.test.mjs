@@ -4,6 +4,7 @@ import { mkdtemp, mkdir, readFile, symlink, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import test from 'node:test';
+import { pathToFileURL } from 'node:url';
 
 import { validateAssets } from '../scripts/lib/assets.mjs';
 
@@ -33,7 +34,7 @@ async function fixture() {
       await entry('assets/font.woff2', 'font/woff2', { kind: 'font', family: 'Example', style: 'normal', weightRange: [100, 900], master: 'assets/font.ttf', license: 'assets/OFL.txt' }),
     ],
   };
-  return { root: new URL(`file://${directory}/`), directory, manifest };
+  return { root: pathToFileURL(`${directory}/`), directory, manifest };
 }
 
 test('validates governed assets and returns path-sorted rows', async () => {
@@ -41,6 +42,18 @@ test('validates governed assets and returns path-sorted rows', async () => {
   const rows = await validateAssets(root, { ...manifest, assets: manifest.assets.toReversed() });
   assert.deepEqual(rows.map(({ path }) => path), rows.map(({ path }) => path).toSorted());
   assert.deepEqual(Object.keys(rows[0]), ['path', 'sha256', 'mediaType']);
+});
+
+test('requires governance metadata on every font and master only on WOFF2 derivatives', async () => {
+  const { root, manifest } = await fixture();
+  for (const font of manifest.assets.filter(({ kind }) => kind === 'font')) {
+    for (const field of ['family', 'style', 'weightRange', 'license']) {
+      const malformed = structuredClone(manifest);
+      malformed.assets.find(({ path }) => path === font.path)[field] = undefined;
+      await assert.rejects(validateAssets(root, malformed), new RegExp(field));
+    }
+  }
+  assert.equal(manifest.assets.find(({ mediaType }) => mediaType === 'font/ttf').master, undefined);
 });
 
 test('requires complete, enumerated logo governance and exact SVG geometry', async () => {
@@ -153,7 +166,7 @@ for (const [field, badValue] of [
 test('rejects a font without a matching family OFL license', async () => {
   const { root, manifest } = await fixture();
   const font = manifest.assets.find(({ path }) => path.endsWith('.ttf'));
-  await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...font, license: undefined }] }), /OFL license/);
+  await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...font, license: undefined }] }), /license/);
 });
 
 for (const [name, contents, pattern] of [

@@ -29,6 +29,24 @@ test('defines identical semantic role paths across every mode', async () => {
   for (const theme of rest) assert.deepEqual(paths(theme), paths(first), `${theme} role parity`);
 });
 
+test('governs surface and content roles for every action state in every mode', async () => {
+  const model = await loadTokenModel(root);
+  const states = ['default', 'hover', 'active', 'disabled'];
+  for (const theme of model.modes.$extensions['industries.bizarre'].themeOrder) {
+    for (const state of states) {
+      assert.ok(model.modes.modes[theme].action[state].surface, `${theme}.${state}.surface`);
+      assert.ok(model.modes.modes[theme].action[state].content, `${theme}.${state}.content`);
+    }
+  }
+  const pairs = model.modes.$extensions['industries.bizarre'].contrastPairs;
+  for (const state of states) {
+    assert.ok(pairs.some(({ foreground, background, threshold }) =>
+      foreground === `action.${state}.content`
+      && background === `action.${state}.surface`
+      && threshold === 4.5), `missing action.${state} contrast pair`);
+  }
+});
+
 test('rejects a mode missing a semantic role', async (t) => {
   const directory = await mkdtemp(join(tmpdir(), 'token-model-'));
   t.after(() => rm(directory, { recursive: true, force: true }));

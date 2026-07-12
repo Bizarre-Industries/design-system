@@ -77,6 +77,11 @@ export async function validateAssets(rootUrl, manifest) {
         throw new Error(`invalid logo sourceProvenance for ${entry.path}: ${error.message}`);
       }
     }
+    if (entry.kind === 'font') {
+      for (const field of ['family', 'style', 'weightRange', 'license']) {
+        if (entry[field] === undefined) throw new Error(`font entry requires ${field}: ${entry.path}`);
+      }
+    }
   }
 
   for (const entry of manifest.assets) {

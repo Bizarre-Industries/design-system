@@ -127,7 +127,7 @@ The supplied layout vocabulary is canonical:
 
 Workshop Stamp is a physical application expression, not a third competing page-layout mode. Earlier terms such as Precision Signal and Editorial Monument are removed or mapped in migration documentation; they do not remain parallel public vocabularies.
 
-The rules in `BRAND.md` govern application: geometric construction, restrained radii and shadows, mono technical eyebrows, flat brand colors, and no centered body copy. Tokens that would appear to authorize forbidden brand treatments must either be removed or explicitly scoped to a valid component use.
+The rules in `BRAND.md` govern application: geometric construction, restrained radii and shadows, monospaced technical eyebrows, flat brand colors, and no centered body copy. Tokens that would appear to authorize forbidden brand treatments must either be removed or explicitly scoped to a valid component use.
 
 “The slogan stands alone” means it is never a formal logo/wordmark lockup, button label, product name, or email subject. It may share a larger editorial surface when spatial separation makes it an independent closing or ceremonial element.
 

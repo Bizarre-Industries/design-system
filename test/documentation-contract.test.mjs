@@ -34,10 +34,10 @@ test('brand book follows the governed identity and package contracts', async () 
     sloganOccurrences.map(() => identity.tagline),
     'every slogan occurrence must use exact casing and no trailing punctuation'
   );
-  assert.match(brand, /Bizarre Industries.*top-level movement\/foundation identity/i);
-  assert.match(brand, /Bizarre Labs.*commercial arm/i);
-  assert.match(brand, /Bizarre Foundation.*governing nonprofit/i);
-  assert.match(brand, /Helling.*product under Labs/i);
+  assert.match(brand, /Bizarre Industries.*?top-level movement\/foundation identity/is);
+  assert.match(brand, /Bizarre Labs.*?commercial arm/is);
+  assert.match(brand, /Bizarre Foundation.*?governing nonprofit/is);
+  assert.match(brand, /Helling.*?product under Labs/is);
   assert.match(brand, /Precision Panel/);
   assert.match(brand, /Display Field/);
   assert.match(brand, /never a formal logo\/wordmark lockup/i);

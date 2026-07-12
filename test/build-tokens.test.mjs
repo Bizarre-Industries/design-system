@@ -35,11 +35,14 @@ test('builds exact token package files', async () => {
   assert.match(css, /--bzr-font-size-base: 1rem;/);
   assert.match(css, /--bzr-motion-duration-fast: 150ms;/);
   assert.match(css, /--bzr-motion-easing-out: cubic-bezier\(0\.16, 1, 0\.3, 1\);/);
-  assert.match(css, /--bzr-font-family-body: "Hanken Grotesk", "Helvetica Neue", "system-ui", "sans-serif";/);
+  assert.match(css, /--bzr-font-family-body: "Hanken Grotesk", "Helvetica Neue", system-ui, sans-serif;/);
+  assert.match(css, /--bzr-font-family-stencil: "Big Shoulders Stencil", "Impact", sans-serif;/);
   assert.match(css, /--bzr-shadow-md: 0px 4px 12px 0px #0000001F;/);
   for (const theme of ['void', 'paper', 'void-hicontrast', 'workshop', 'bone']) {
     assert.match(css, new RegExp(`\\[data-bizarre-theme="${theme}"\\]`));
   }
+  const selectors = [...css.matchAll(/\[data-bizarre-theme="([^"]+)"\]/g)].map(([, theme]) => theme);
+  assert.deepEqual(selectors, ['void', 'paper', 'void-hicontrast', 'workshop', 'bone']);
   assert.match(css, /--bzr-surface-canvas: var\(--bzr-color-neutral-void\);/);
   assert.doesNotMatch(css, /\{[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+)+\}/);
   assert.doesNotMatch(css, /\[data-theme="light"\]/);

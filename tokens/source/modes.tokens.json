@@ -14,6 +14,10 @@
         { "foreground": "status.warning.content", "background": "status.warning.surface", "threshold": 4.5 },
         { "foreground": "status.danger.content", "background": "status.danger.surface", "threshold": 4.5 },
         { "foreground": "status.info.content", "background": "status.info.surface", "threshold": 4.5 }
+        ,{ "foreground": "action.default.content", "background": "action.default.surface", "threshold": 4.5 }
+        ,{ "foreground": "action.hover.content", "background": "action.hover.surface", "threshold": 4.5 }
+        ,{ "foreground": "action.active.content", "background": "action.active.surface", "threshold": 4.5 }
+        ,{ "foreground": "action.disabled.content", "background": "action.disabled.surface", "threshold": 4.5 }
       ]
     }
   },
@@ -37,10 +41,10 @@
         "accent": { "$value": "{color.accent.signal}" }
       },
       "action": {
-        "default": { "$value": "{color.accent.signal}" },
-        "hover": { "$value": "{color.accent.glow}" },
-        "active": { "$value": "{color.accent.ink}" },
-        "disabled": { "$value": "{color.neutral.iron}" }
+        "default": { "surface": { "$value": "{color.accent.signal}" }, "content": { "$value": "{color.neutral.void}" } },
+        "hover": { "surface": { "$value": "{color.accent.glow}" }, "content": { "$value": "{color.neutral.void}" } },
+        "active": { "surface": { "$value": "{color.accent.ink}" }, "content": { "$value": "{color.neutral.paper}" } },
+        "disabled": { "surface": { "$value": "{color.neutral.iron}" }, "content": { "$value": "{color.neutral.paper}" } }
       },
       "status": {
         "success": { "surface": { "$value": "{color.status.success}" }, "content": { "$value": "{color.neutral.void}" } },
@@ -68,10 +72,10 @@
         "accent": { "$value": "{color.accent.ink}" }
       },
       "action": {
-        "default": { "$value": "{color.accent.signal}" },
-        "hover": { "$value": "{color.accent.glow}" },
-        "active": { "$value": "{color.accent.ink}" },
-        "disabled": { "$value": "{color.neutral.ash300}" }
+        "default": { "surface": { "$value": "{color.accent.signal}" }, "content": { "$value": "{color.neutral.void}" } },
+        "hover": { "surface": { "$value": "{color.accent.glow}" }, "content": { "$value": "{color.neutral.void}" } },
+        "active": { "surface": { "$value": "{color.accent.ink}" }, "content": { "$value": "{color.neutral.paper}" } },
+        "disabled": { "surface": { "$value": "{color.neutral.ash300}" }, "content": { "$value": "{color.neutral.ash900}" } }
       },
       "status": {
         "success": { "surface": { "$value": "{color.status.success}" }, "content": { "$value": "{color.neutral.void}" } },
@@ -99,10 +103,10 @@
         "accent": { "$value": "{color.accent.signal}" }
       },
       "action": {
-        "default": { "$value": "{color.accent.signal}" },
-        "hover": { "$value": "{color.accent.glow}" },
-        "active": { "$value": "{color.accent.ink}" },
-        "disabled": { "$value": "{color.neutral.iron}" }
+        "default": { "surface": { "$value": "{color.accent.signal}" }, "content": { "$value": "{color.neutral.void}" } },
+        "hover": { "surface": { "$value": "{color.accent.glow}" }, "content": { "$value": "{color.neutral.void}" } },
+        "active": { "surface": { "$value": "{color.accent.ink}" }, "content": { "$value": "{color.neutral.paper}" } },
+        "disabled": { "surface": { "$value": "{color.neutral.iron}" }, "content": { "$value": "{color.neutral.paper}" } }
       },
       "status": {
         "success": { "surface": { "$value": "{color.status.success}" }, "content": { "$value": "{color.neutral.void}" } },
@@ -130,10 +134,10 @@
         "accent": { "$value": "{color.accent.signal}" }
       },
       "action": {
-        "default": { "$value": "{color.accent.signal}" },
-        "hover": { "$value": "{color.accent.glow}" },
-        "active": { "$value": "{color.accent.ink}" },
-        "disabled": { "$value": "{color.neutral.iron}" }
+        "default": { "surface": { "$value": "{color.accent.signal}" }, "content": { "$value": "{color.neutral.void}" } },
+        "hover": { "surface": { "$value": "{color.accent.glow}" }, "content": { "$value": "{color.neutral.void}" } },
+        "active": { "surface": { "$value": "{color.accent.ink}" }, "content": { "$value": "{color.neutral.paper}" } },
+        "disabled": { "surface": { "$value": "{color.neutral.iron}" }, "content": { "$value": "{color.neutral.paper}" } }
       },
       "status": {
         "success": { "surface": { "$value": "{color.status.success}" }, "content": { "$value": "{color.neutral.void}" } },
@@ -161,10 +165,10 @@
         "accent": { "$value": "{color.accent.ink}" }
       },
       "action": {
-        "default": { "$value": "{color.accent.signal}" },
-        "hover": { "$value": "{color.accent.glow}" },
-        "active": { "$value": "{color.accent.ink}" },
-        "disabled": { "$value": "{color.neutral.ash300}" }
+        "default": { "surface": { "$value": "{color.accent.signal}" }, "content": { "$value": "{color.neutral.void}" } },
+        "hover": { "surface": { "$value": "{color.accent.glow}" }, "content": { "$value": "{color.neutral.void}" } },
+        "active": { "surface": { "$value": "{color.accent.ink}" }, "content": { "$value": "{color.neutral.paper}" } },
+        "disabled": { "surface": { "$value": "{color.neutral.ash300}" }, "content": { "$value": "{color.neutral.ash900}" } }
       },
       "status": {
         "success": { "surface": { "$value": "{color.status.success}" }, "content": { "$value": "{color.neutral.void}" } },

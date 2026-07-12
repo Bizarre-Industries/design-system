@@ -1,4 +1,5 @@
 # BIZARRE INDUSTRIES
+
 ## Brand Book, v0.1 — April 2026
 
 ---
@@ -193,7 +194,7 @@ If you only have one font: **Hanken Grotesk** at multiple weights. Acceptable fo
 
 ### Type hierarchy (web / screen)
 
-```
+```text
 H1  (hero display)   Unbounded 900, clamp(3.75rem, 12vw, 12rem), -0.04em, lh 0.92
 H2                   Unbounded 700, 3.75rem, -0.02em, lh 1.15
 H3                   Big Shoulders Stencil 800, 2.75rem, 0, lh 1.15
@@ -237,7 +238,8 @@ Never mix the modes in a single surface. Sections within a longer document can a
 Every major heading block gets an eyebrow: a small uppercase monospace label above the heading. Format: `FILE / SECTION / DATE` or `VERSION / STATUS / OWNER` or similar. This is the single strongest layout signature for Bizarre, on sight. Use it liberally.
 
 Example:
-```
+
+```text
 CATALOG / 014 / APR 2026
 The workshop under the stars
 ```
@@ -248,7 +250,7 @@ The workshop under the stars
 2. No drop shadows beyond the tokens' minimal set. Flat is the default.
 3. No centered body text. Centering is reserved for display/manifesto type only.
 4. No gradients as backgrounds (see color rules).
-5. Borders and dividers use `--line-1` (1px) or `--line-3` (3px). Between those, pick 1 or 3, never 2.
+5. Borders and dividers use `--bzr-border-1` (1px) or `--bzr-border-3` (3px). Between those, pick 1 or 3, never 2.
 
 ---
 
@@ -301,7 +303,7 @@ Full template to be produced as a separate artifact.
 
 ANSI palette mapping (for iTerm2, kitty, WezTerm, Windows Terminal, etc.):
 
-```
+```text
 Foreground:   #F9F8F2   (paper)
 Background:   #0E0E0E   (void)
 Cursor:       #C6FF24   (lime)
@@ -322,7 +324,7 @@ Bright ANSI: same palette, lifted ~15% luminance
 
 Shell prompt:
 
-```
+```text
 bzr ✦ ~/project (branch) ✦
 ```
 

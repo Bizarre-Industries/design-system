@@ -1,9 +1,9 @@
 {
   "evidence": [
     {
-      "bytes": 19870,
+      "bytes": 19900,
       "path": "BRAND.md",
-      "sha256": "96b4110a8c210bcb62f65cac6943bf3d9907bd1b4fa6fa910492b95f01cc43b9"
+      "sha256": "3fa1b70a13a4884752ee56e3886a7459915c8b3bd8fb58fabc004160f18f9947"
     },
     {
       "bytes": 1075,
@@ -23,7 +23,7 @@
     {
       "bytes": 10423,
       "path": "brand/assets.json",
-      "sha256": "0115d42253163ba7c64552d615805ce86fe1b917f9aacc5d5f4d312bca004c77"
+      "sha256": "8a5ed705263dca4c33ccf0c4d2888153c7a3ffaffc419ae01ed6d8c60cb35d40"
     },
     {
       "bytes": 654,
@@ -71,17 +71,17 @@
       "sha256": "e4adc17fbe0714f78c7614c53138f67ad8a031aca0ffa4698044d87d45d2622e"
     },
     {
-      "bytes": 2194,
+      "bytes": 2785,
       "path": "schemas/assets.schema.json",
-      "sha256": "12eb04a853e536da09711b6724563145949ebcb65ee4fcdb933a0be78c2aef06"
+      "sha256": "632077d52153a37829981a1cbe61653dc926d4d9be7035914cb3e4f187b1e2dc"
     }
   ],
   "files": {
     "generated/tokens.css": {
-      "sha256": "edd3bc0c2bc01627c2e5d4c19b6b79895b22c51864a53005abb9879fe01d34e8"
+      "sha256": "9f25b4036e8b901d111faa3ed75fd9633ba6dcf23da2f5ead093e241558c4e9b"
     },
     "generated/tokens.json": {
-      "sha256": "8c62656ab5a9fd7275e1dc91514833caf837d10749d9843106430ce5a1177234"
+      "sha256": "b9f7da65e4d47d60af8923d3905690cd1dda5fe41722b9f508ff03535ff3cf65"
     }
   },
   "package": "@bizarre/tokens",

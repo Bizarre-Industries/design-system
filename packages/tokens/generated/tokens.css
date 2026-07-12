@@ -26,10 +26,10 @@
   --bzr-color-status-info: #5B9FFF;
   --bzr-color-status-success: #3FB950;
   --bzr-color-status-warning: #E8A33D;
-  --bzr-font-family-body: "Hanken Grotesk", "Helvetica Neue", "system-ui", "sans-serif";
-  --bzr-font-family-display: "Unbounded", "Arial Black", "system-ui", "sans-serif";
-  --bzr-font-family-mono: "JetBrains Mono", "Menlo", "Courier New", "monospace";
-  --bzr-font-family-stencil: "Big Shoulders Stencil Display", "Impact", "sans-serif";
+  --bzr-font-family-body: "Hanken Grotesk", "Helvetica Neue", system-ui, sans-serif;
+  --bzr-font-family-display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --bzr-font-family-mono: "JetBrains Mono", "Menlo", "Courier New", monospace;
+  --bzr-font-family-stencil: "Big Shoulders Stencil", "Impact", sans-serif;
   --bzr-font-lineHeight-body: 1.55;
   --bzr-font-lineHeight-loose: 1.75;
   --bzr-font-lineHeight-snug: 1.15;
@@ -97,10 +97,14 @@
 }
 
 [data-bizarre-theme="void"] {
-  --bzr-action-active: var(--bzr-color-accent-ink);
-  --bzr-action-default: var(--bzr-color-accent-signal);
-  --bzr-action-disabled: var(--bzr-color-neutral-iron);
-  --bzr-action-hover: var(--bzr-color-accent-glow);
+  --bzr-action-active-content: var(--bzr-color-neutral-paper);
+  --bzr-action-active-surface: var(--bzr-color-accent-ink);
+  --bzr-action-default-content: var(--bzr-color-neutral-void);
+  --bzr-action-default-surface: var(--bzr-color-accent-signal);
+  --bzr-action-disabled-content: var(--bzr-color-neutral-paper);
+  --bzr-action-disabled-surface: var(--bzr-color-neutral-iron);
+  --bzr-action-hover-content: var(--bzr-color-neutral-void);
+  --bzr-action-hover-surface: var(--bzr-color-accent-glow);
   --bzr-border-accent: var(--bzr-color-accent-signal);
   --bzr-border-default: var(--bzr-color-neutral-ash300);
   --bzr-border-strong: var(--bzr-color-neutral-ash100);
@@ -122,10 +126,14 @@
 }
 
 [data-bizarre-theme="paper"] {
-  --bzr-action-active: var(--bzr-color-accent-ink);
-  --bzr-action-default: var(--bzr-color-accent-signal);
-  --bzr-action-disabled: var(--bzr-color-neutral-ash300);
-  --bzr-action-hover: var(--bzr-color-accent-glow);
+  --bzr-action-active-content: var(--bzr-color-neutral-paper);
+  --bzr-action-active-surface: var(--bzr-color-accent-ink);
+  --bzr-action-default-content: var(--bzr-color-neutral-void);
+  --bzr-action-default-surface: var(--bzr-color-accent-signal);
+  --bzr-action-disabled-content: var(--bzr-color-neutral-ash900);
+  --bzr-action-disabled-surface: var(--bzr-color-neutral-ash300);
+  --bzr-action-hover-content: var(--bzr-color-neutral-void);
+  --bzr-action-hover-surface: var(--bzr-color-accent-glow);
   --bzr-border-accent: var(--bzr-color-accent-ink);
   --bzr-border-default: var(--bzr-color-neutral-ash500);
   --bzr-border-strong: var(--bzr-color-neutral-ash700);
@@ -147,10 +155,14 @@
 }
 
 [data-bizarre-theme="void-hicontrast"] {
-  --bzr-action-active: var(--bzr-color-accent-ink);
-  --bzr-action-default: var(--bzr-color-accent-signal);
-  --bzr-action-disabled: var(--bzr-color-neutral-iron);
-  --bzr-action-hover: var(--bzr-color-accent-glow);
+  --bzr-action-active-content: var(--bzr-color-neutral-paper);
+  --bzr-action-active-surface: var(--bzr-color-accent-ink);
+  --bzr-action-default-content: var(--bzr-color-neutral-void);
+  --bzr-action-default-surface: var(--bzr-color-accent-signal);
+  --bzr-action-disabled-content: var(--bzr-color-neutral-paper);
+  --bzr-action-disabled-surface: var(--bzr-color-neutral-iron);
+  --bzr-action-hover-content: var(--bzr-color-neutral-void);
+  --bzr-action-hover-surface: var(--bzr-color-accent-glow);
   --bzr-border-accent: var(--bzr-color-accent-signal);
   --bzr-border-default: var(--bzr-color-neutral-ash300);
   --bzr-border-strong: var(--bzr-color-neutral-paper);
@@ -172,10 +184,14 @@
 }
 
 [data-bizarre-theme="workshop"] {
-  --bzr-action-active: var(--bzr-color-accent-ink);
-  --bzr-action-default: var(--bzr-color-accent-signal);
-  --bzr-action-disabled: var(--bzr-color-neutral-iron);
-  --bzr-action-hover: var(--bzr-color-accent-glow);
+  --bzr-action-active-content: var(--bzr-color-neutral-paper);
+  --bzr-action-active-surface: var(--bzr-color-accent-ink);
+  --bzr-action-default-content: var(--bzr-color-neutral-void);
+  --bzr-action-default-surface: var(--bzr-color-accent-signal);
+  --bzr-action-disabled-content: var(--bzr-color-neutral-paper);
+  --bzr-action-disabled-surface: var(--bzr-color-neutral-iron);
+  --bzr-action-hover-content: var(--bzr-color-neutral-void);
+  --bzr-action-hover-surface: var(--bzr-color-accent-glow);
   --bzr-border-accent: var(--bzr-color-accent-signal);
   --bzr-border-default: var(--bzr-color-neutral-ash300);
   --bzr-border-strong: var(--bzr-color-neutral-workshopText);
@@ -197,10 +213,14 @@
 }
 
 [data-bizarre-theme="bone"] {
-  --bzr-action-active: var(--bzr-color-accent-ink);
-  --bzr-action-default: var(--bzr-color-accent-signal);
-  --bzr-action-disabled: var(--bzr-color-neutral-ash300);
-  --bzr-action-hover: var(--bzr-color-accent-glow);
+  --bzr-action-active-content: var(--bzr-color-neutral-paper);
+  --bzr-action-active-surface: var(--bzr-color-accent-ink);
+  --bzr-action-default-content: var(--bzr-color-neutral-void);
+  --bzr-action-default-surface: var(--bzr-color-accent-signal);
+  --bzr-action-disabled-content: var(--bzr-color-neutral-ash900);
+  --bzr-action-disabled-surface: var(--bzr-color-neutral-ash300);
+  --bzr-action-hover-content: var(--bzr-color-neutral-void);
+  --bzr-action-hover-surface: var(--bzr-color-accent-glow);
   --bzr-border-accent: var(--bzr-color-accent-ink);
   --bzr-border-default: var(--bzr-color-neutral-ash500);
   --bzr-border-strong: var(--bzr-color-neutral-ash700);

@@ -32,10 +32,24 @@
           "license": { "type": "string" },
           "master": { "type": "string" }
         },
-        "allOf": [{
-          "if": { "properties": { "kind": { "const": "logo" } }, "required": ["kind"] },
-          "then": { "required": ["variant", "approvalState", "viewBox", "sourceProvenance", "relationship", "allowedColorRoles"] }
-        }]
+        "allOf": [
+          {
+            "if": { "properties": { "kind": { "const": "logo" } }, "required": ["kind"] },
+            "then": { "required": ["variant", "approvalState", "viewBox", "sourceProvenance", "relationship", "allowedColorRoles"] }
+          },
+          {
+            "if": { "properties": { "kind": { "const": "font" } }, "required": ["kind"] },
+            "then": { "required": ["family", "style", "weightRange", "license"] }
+          },
+          {
+            "if": { "properties": { "mediaType": { "const": "font/woff2" } }, "required": ["mediaType"] },
+            "then": { "required": ["master"] }
+          },
+          {
+            "if": { "properties": { "mediaType": { "const": "font/ttf" } }, "required": ["mediaType"] },
+            "then": { "not": { "required": ["master"] } }
+          }
+        ]
       }
     }
   }

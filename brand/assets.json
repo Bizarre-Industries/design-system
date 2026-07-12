@@ -255,7 +255,7 @@
     },
     {
       "path": "packages/assets/logo/mark-inverse.svg",
-      "sha256": "d3798c26e0f38ba0d2906de86a6ec88fd97bf10221a3b81517277f237f110127",
+      "sha256": "c70e9cd2e026695da3c4343d30e8cbfcd4910724bf5203129cee1fbccece0c9b",
       "approved": true,
       "mediaType": "image/svg+xml",
       "kind": "logo",
@@ -269,7 +269,7 @@
     },
     {
       "path": "packages/assets/logo/mark-primary.svg",
-      "sha256": "e164ce8d083995169f23a107dae08b0d95d8fe3cfaf969437161cd8604fa37dd",
+      "sha256": "86e722eaa369055fd1851ca2a6c3193602387ea6f8ccb7609890516b3c08d86c",
       "approved": true,
       "mediaType": "image/svg+xml",
       "kind": "logo",

@@ -8,6 +8,10 @@ import { flattenTokens, loadTokenModel, resolveTokenAliases } from './lib/token-
 const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
 
 const ALIAS = /^\{([A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+)*)\}$/;
+const GENERIC_FONT_FAMILIES = new Set([
+  'serif', 'sans-serif', 'monospace', 'cursive', 'fantasy', 'system-ui',
+  'ui-serif', 'ui-sans-serif', 'ui-monospace', 'ui-rounded', 'math', 'emoji', 'fangsong'
+]);
 
 function quantity(value, path) {
   if (!value || typeof value !== 'object' || !Number.isFinite(value.value) || typeof value.unit !== 'string' || !/^[A-Za-z%]+$/.test(value.unit)) {
@@ -40,7 +44,9 @@ function cssValue(row) {
       return `cubic-bezier(${value.join(', ')})`;
     case 'fontFamily':
       if (!Array.isArray(value) || value.length === 0 || value.some((family) => typeof family !== 'string')) break;
-      return value.map((family) => `"${family.replaceAll('\\', '\\\\').replaceAll('"', '\\"')}"`).join(', ');
+      return value.map((family) => GENERIC_FONT_FAMILIES.has(family.toLowerCase())
+        ? family.toLowerCase()
+        : `"${family.replaceAll('\\', '\\\\').replaceAll('"', '\\"')}"`).join(', ');
     case 'shadow':
       return (Array.isArray(value) ? value : [value]).map((layer) => shadowLayer(layer, path)).join(', ');
     case 'fontWeight':

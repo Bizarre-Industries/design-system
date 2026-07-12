@@ -15,7 +15,7 @@ Canonical inputs and derived outputs are documented in `brand/README.md`, `found
 
 ## Local verification evidence
 
-`npm ci`, `npm run verify`, an explicit `npm run build` followed by `npm run check:generated`, both workspace package dry-runs, and `git diff --check` completed successfully. Verification passed 95 of 95 tests. The exact manifest hashes and package measurements are recorded in `docs/foundation-audit.md`.
+`npm ci`, `npm run verify`, an explicit `npm run build` followed by `npm run check:generated`, both workspace package dry-runs, and `git diff --check` completed successfully. Verification passed 101 of 101 tests. The exact manifest hashes and package measurements are recorded in `docs/foundation-audit.md`.
 
 ## Scope boundary
 

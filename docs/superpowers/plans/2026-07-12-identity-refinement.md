@@ -37,7 +37,7 @@
 - `scripts/lib/assets.mjs`: asset validation and hashing.
 - `scripts/build-tokens.mjs`: deterministic token outputs.
 - `scripts/build-assets.mjs`: deterministic asset manifest/package output.
-- `examples/identity-proof/index.html`: offline derived proof sheet.
+- `examples/identity-proof/index.html`: offline-derived proof sheet.
 - `test/*.test.mjs`: behavioral, accessibility, integrity, determinism, and documentation contracts.
 
 ### Task 1: Normalize the permanent identity contract

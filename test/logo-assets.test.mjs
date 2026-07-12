@@ -40,6 +40,9 @@ test('published marks are square mark-only SVGs', async () => {
     const mark = await inspect(url);
     assert.equal(mark.hasTextLockup, false, `${name} contains lockup text`);
     assert.equal(mark.viewBox, expectedViewBox, `${name} has the wrong crop`);
+    const text = await readFile(url, 'utf8');
+    assert.equal((text.match(/<svg\b/g) ?? []).length, 1, `${name} must not inset the mark in a nested SVG viewport`);
+    assert.doesNotMatch(text, /<svg\b[^>]*\b(?:x|y|width|height)=/i, `${name} must use the shared root crop without a scaled child viewport`);
   }
 });
 
@@ -60,11 +63,11 @@ test('published variants use the governed colors', async () => {
   const primary = await colorAssignments(assetPaths.primary);
   const inverse = await colorAssignments(assetPaths.inverse);
 
-  assert.deepEqual(primary.rectFills, ['#C6FF24', '#C6FF24']);
+  assert.deepEqual(primary.rectFills, ['#C6FF24']);
   assert.ok(primary.pathFills.length > 0);
   assert.ok(primary.pathFills.every((fill) => fill === '#545454'));
 
-  assert.deepEqual(inverse.rectFills, ['#0E0E0E', '#C6FF24']);
+  assert.deepEqual(inverse.rectFills, ['#C6FF24']);
   assert.ok(inverse.pathFills.length > 0);
   assert.ok(inverse.pathFills.every((fill) => fill === '#0E0E0E'));
 });

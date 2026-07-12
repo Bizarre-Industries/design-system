@@ -10,7 +10,7 @@
     "family": {
       "$type": "fontFamily",
       "display": { "$value": ["Unbounded", "Arial Black", "system-ui", "sans-serif"] },
-      "stencil": { "$value": ["Big Shoulders Stencil Display", "Impact", "sans-serif"] },
+      "stencil": { "$value": ["Big Shoulders Stencil", "Impact", "sans-serif"] },
       "body": { "$value": ["Hanken Grotesk", "Helvetica Neue", "system-ui", "sans-serif"] },
       "mono": { "$value": ["JetBrains Mono", "Menlo", "Courier New", "monospace"] }
     },
