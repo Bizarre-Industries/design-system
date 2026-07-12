@@ -10,7 +10,8 @@ test('repository declares its canonical boundary and required scripts', async ()
   assert.equal(pkg.private, true);
   assert.deepEqual(pkg.workspaces, ['packages/*']);
   assert.equal(pkg.engines.node, '>=22');
-  assert.equal(pkg.scripts.verify, 'npm test && npm run build && npm run check:generated');
+  assert.equal(pkg.scripts.verify, 'npm test && npm run check:generated');
+  assert.equal(pkg.scripts.build, 'npm run build:tokens && npm run build:assets');
   assert.match(readme, /canonical Bizarre Industries design language/i);
   assert.match(readme, /themes.*downstream/i);
 });

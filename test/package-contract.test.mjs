@@ -15,8 +15,11 @@ test('package contract identifies the canonical package and downstream boundary'
 
 test('workspace exposes both governed packages and the exact asset publish boundary', async () => {
   const workspace = await readJson('package.json');
+  const lock = await readJson('package-lock.json');
   const assets = await readJson('packages/assets/package.json');
   assert.deepEqual(workspace.workspaces, ['packages/*']);
+  assert.equal(lock.packages['packages/assets'].name, '@bizarre/assets');
+  assert.equal(lock.packages['node_modules/@bizarre/assets'].resolved, 'packages/assets');
   assert.deepEqual(assets.files, ['generated']);
   assert.deepEqual(assets.exports, {
     './manifest.json': './generated/manifest.json',

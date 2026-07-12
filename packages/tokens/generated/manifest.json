@@ -1,11 +1,6 @@
 {
   "evidence": [
     {
-      "bytes": 19700,
-      "path": "BRAND.md",
-      "sha256": "f83361f6ba5589b501bd77e966088f70dbe29ef516a22a56812ccff0f43cf0bb"
-    },
-    {
       "bytes": 1075,
       "path": "LICENSE",
       "sha256": "a85558a23a3030ef254032be8c8012c78278018b52bc0ae3e20ee6c6ff0ac899"

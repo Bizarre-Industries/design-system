@@ -22,7 +22,7 @@ test('builds the exact governed asset package in stable path order', async () =>
   assert.equal(manifest.schemaVersion, 1);
   assert.equal(manifest.package, '@bizarre/assets');
   assert.deepEqual(Object.keys(manifest.files), payloadPaths);
-  assert.ok(manifest.evidence.some(({ path }) => path === 'BRAND.md'));
+  assert.ok(!manifest.evidence.some(({ path }) => path === 'BRAND.md'), 'Task 8 owns finalized BRAND.md evidence');
   assert.ok(manifest.evidence.some(({ path }) => path === 'schemas/assets.schema.json'));
   for (const license of source.assets.filter(({ kind }) => kind === 'license')) {
     assert.ok(manifest.evidence.some(({ path }) => path === license.path));

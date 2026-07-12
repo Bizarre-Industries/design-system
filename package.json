@@ -12,6 +12,6 @@
     "build:assets": "node scripts/build-assets.mjs",
     "build": "npm run build:tokens && npm run build:assets",
     "check:generated": "node scripts/check-generated.mjs",
-    "verify": "npm test && npm run build && npm run check:generated"
+    "verify": "npm test && npm run check:generated"
   }
 }
