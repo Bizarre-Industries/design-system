@@ -141,6 +141,19 @@ test('rejects a font without a matching family OFL license', async () => {
   await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...font, license: undefined }] }), /OFL license/);
 });
 
+for (const [name, contents, pattern] of [
+  ['CRLF line endings', 'SIL OPEN FONT LICENSE Version 1.1\r\n', /CRLF line endings/],
+  ['trailing whitespace', 'SIL OPEN FONT LICENSE Version 1.1 \n', /trailing whitespace/],
+]) {
+  test(`rejects governed text assets with ${name}`, async () => {
+    const { root, directory, manifest } = await fixture();
+    const license = manifest.assets.find(({ kind }) => kind === 'license');
+    await writeFile(join(directory, license.path), contents);
+    license.sha256 = hash(await readFile(join(directory, license.path)));
+    await assert.rejects(validateAssets(root, manifest), pattern);
+  });
+}
+
 test('repository asset manifest validates and matches its schema', async () => {
   const root = new URL('../', import.meta.url);
   const manifest = JSON.parse(await readFile(new URL('../brand/assets.json', import.meta.url)));

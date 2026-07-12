@@ -66,3 +66,16 @@ Command: `npm test`
 
 - Exit code: `0`
 - Summary: `tests 74`, `pass 74`, `fail 0`, duration `501.615875 ms`
+
+## Whitespace review remediation
+
+Normalized the four governed OFL copies from CRLF to LF and removed trailing horizontal whitespace without changing license wording. Updated the corresponding SHA-256 values in both `brand/assets.json` and `packages/assets/manifest.json`.
+
+Added validator regressions for governed `text/*` assets. Before implementation, `node --test test/assets.test.mjs` exited `1`: both new cases reported `Missing expected rejection.` After validation and asset normalization, the focused suite passed `18/18` and the full suite passed `76/76`.
+
+Verification before commit:
+
+- `git diff --ignore-all-space --exit-code HEAD -- packages/assets/fonts/licenses/*/OFL.txt`: exit `0`, confirming wording-equivalent whitespace-only changes.
+- `node --test test/assets.test.mjs`: exit `0`; `18` passed, `0` failed.
+- `npm test`: exit `0`; `76` passed, `0` failed.
+- `git diff --check aecbbf7`: exit `0`.

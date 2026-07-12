@@ -17,7 +17,7 @@
     },
     {
       "path": "packages/assets/fonts/licenses/BigShouldersStencil/OFL.txt",
-      "sha256": "9ce6294be745093338c51e62d7efaddbf32b90ac9a7ffde8a12ce92e0413fe25",
+      "sha256": "3a914b9c36b191af65068ea1ef9d99c7c6e90c838f53c12508463a4ea9330f19",
       "approved": true,
       "mediaType": "text/plain",
       "kind": "license",
@@ -33,7 +33,7 @@
     },
     {
       "path": "packages/assets/fonts/licenses/HankenGrotesk/OFL.txt",
-      "sha256": "57e4e762c7094672a32f6be765ef87c178a508448a3ae0e5f6914af0e4d8fb50",
+      "sha256": "56c54eb6be2d6c11ce6d24e53146189c6922bdf02cd80f0e1cc2f5a087ab52be",
       "approved": true,
       "mediaType": "text/plain",
       "kind": "license",
@@ -49,7 +49,7 @@
     },
     {
       "path": "packages/assets/fonts/licenses/JetBrainsMono/OFL.txt",
-      "sha256": "4d9694c4844a13ea377458c3f98c90d2bf83d3c214612dcae2b7808406520708",
+      "sha256": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90",
       "approved": true,
       "mediaType": "text/plain",
       "kind": "license",
@@ -65,7 +65,7 @@
     },
     {
       "path": "packages/assets/fonts/licenses/Unbounded/OFL.txt",
-      "sha256": "8f34e6e20f569b9ca4cd645e30726cf373c0c937f5cab5bd437eae7da23adda6",
+      "sha256": "e4adc17fbe0714f78c7614c53138f67ad8a031aca0ffa4698044d87d45d2622e",
       "approved": true,
       "mediaType": "text/plain",
       "kind": "license",

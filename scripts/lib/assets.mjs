@@ -94,6 +94,11 @@ export async function validateAssets(rootUrl, manifest) {
     const target = safePath(root, entry.path);
     await assertRegularFileWithoutSymlinks(root, entry.path);
     const bytes = await readFile(target);
+    if (entry.mediaType.startsWith('text/')) {
+      const text = bytes.toString('utf8');
+      if (text.includes('\r')) throw new Error(`governed text asset has CRLF line endings: ${entry.path}`);
+      if (/[\t ]+$/m.test(text)) throw new Error(`governed text asset has trailing whitespace: ${entry.path}`);
+    }
     const actual = createHash('sha256').update(bytes).digest('hex');
     if (actual !== entry.sha256) throw new Error(`sha256 mismatch for ${entry.path}`);
     return { path: entry.path, sha256: actual, mediaType: entry.mediaType };
