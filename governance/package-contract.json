@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "canonicalRepository": "Bizarre-Industries/design-system",
-  "packages": ["@bizarre/tokens"],
+  "packages": ["@bizarre/assets", "@bizarre/tokens"],
   "requiredModes": ["void", "paper", "void-hicontrast"],
   "optionalModes": ["workshop", "bone"],
   "downstream": {

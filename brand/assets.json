@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "assets": [
+    {
+      "path": "packages/assets/README.md",
+      "sha256": "ea29d251a5268a126ef8c67a9644f5ad60049ee3f11017be10a68f6d25e24dd3",
+      "approved": true,
+      "mediaType": "text/markdown",
+      "kind": "documentation"
+    },
+    {
+      "path": "packages/assets/fonts/bizarre-fonts.css",
+      "sha256": "353945cd89e75623f363813df46877cf04b39f3bbbc7968e2221780ff2321fbf",
+      "approved": true,
+      "mediaType": "text/css",
+      "kind": "stylesheet"
+    },
+    {
+      "path": "packages/assets/fonts/licenses/BigShouldersStencil/OFL.txt",
+      "sha256": "3a914b9c36b191af65068ea1ef9d99c7c6e90c838f53c12508463a4ea9330f19",
+      "approved": true,
+      "mediaType": "text/plain",
+      "kind": "license",
+      "family": "Big Shoulders Stencil"
+    },
+    {
+      "path": "packages/assets/fonts/licenses/BigShouldersStencil/README.txt",
+      "sha256": "5b508b23093757eb278bb3a69e138e60fa1778969112abe7bee55276e4decb84",
+      "approved": true,
+      "mediaType": "text/plain",
+      "kind": "documentation",
+      "family": "Big Shoulders Stencil"
+    },
+    {
+      "path": "packages/assets/fonts/licenses/HankenGrotesk/OFL.txt",
+      "sha256": "56c54eb6be2d6c11ce6d24e53146189c6922bdf02cd80f0e1cc2f5a087ab52be",
+      "approved": true,
+      "mediaType": "text/plain",
+      "kind": "license",
+      "family": "Hanken Grotesk"
+    },
+    {
+      "path": "packages/assets/fonts/licenses/HankenGrotesk/README.txt",
+      "sha256": "32f2493d44406b716e0656990ae824fe4c8942fbe0987d850f9294c5d245397e",
+      "approved": true,
+      "mediaType": "text/plain",
+      "kind": "documentation",
+      "family": "Hanken Grotesk"
+    },
+    {
+      "path": "packages/assets/fonts/licenses/JetBrainsMono/OFL.txt",
+      "sha256": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90",
+      "approved": true,
+      "mediaType": "text/plain",
+      "kind": "license",
+      "family": "JetBrains Mono"
+    },
+    {
+      "path": "packages/assets/fonts/licenses/JetBrainsMono/README.txt",
+      "sha256": "3650f233d562cc4837e601ec0ea1253daec5010db99d43dafd8c9dca607316f7",
+      "approved": true,
+      "mediaType": "text/plain",
+      "kind": "documentation",
+      "family": "JetBrains Mono"
+    },
+    {
+      "path": "packages/assets/fonts/licenses/Unbounded/OFL.txt",
+      "sha256": "e4adc17fbe0714f78c7614c53138f67ad8a031aca0ffa4698044d87d45d2622e",
+      "approved": true,
+      "mediaType": "text/plain",
+      "kind": "license",
+      "family": "Unbounded"
+    },
+    {
+      "path": "packages/assets/fonts/licenses/Unbounded/README.txt",
+      "sha256": "a4ba11f9e7bbdf78b2a6203b8c3a46dfd05f8372d77926b976d393f2e8f2ff99",
+      "approved": true,
+      "mediaType": "text/plain",
+      "kind": "documentation",
+      "family": "Unbounded"
+    },
+    {
+      "path": "packages/assets/fonts/source/BigShouldersStencil-VariableFont_opsz,wght.ttf",
+      "sha256": "ba6ca4e4efbdbe06644912126254069f8d01e750e7ea7ed45c02dec7045e3632",
+      "approved": true,
+      "mediaType": "font/ttf",
+      "kind": "font",
+      "family": "Big Shoulders Stencil",
+      "style": "normal",
+      "weightRange": [
+        100,
+        900
+      ],
+      "license": "packages/assets/fonts/licenses/BigShouldersStencil/OFL.txt"
+    },
+    {
+      "path": "packages/assets/fonts/source/HankenGrotesk-Italic-VariableFont_wght.ttf",
+      "sha256": "49000473ba71b9408c19b6302a3b9707b2f7e235e15c9eb3c9df2a7fcfe98a57",
+      "approved": true,
+      "mediaType": "font/ttf",
+      "kind": "font",
+      "family": "Hanken Grotesk",
+      "style": "italic",
+      "weightRange": [
+        300,
+        900
+      ],
+      "license": "packages/assets/fonts/licenses/HankenGrotesk/OFL.txt"
+    },
+    {
+      "path": "packages/assets/fonts/source/HankenGrotesk-VariableFont_wght.ttf",
+      "sha256": "c4828929151ec9a455122afa06c31eb65e80ad8622f1d5510ecba8e195c57d38",
+      "approved": true,
+      "mediaType": "font/ttf",
+      "kind": "font",
+      "family": "Hanken Grotesk",
+      "style": "normal",
+      "weightRange": [
+        300,
+        900
+      ],
+      "license": "packages/assets/fonts/licenses/HankenGrotesk/OFL.txt"
+    },
+    {
+      "path": "packages/assets/fonts/source/JetBrainsMono-Italic-VariableFont_wght.ttf",
+      "sha256": "2d8ac6a590c2df8f63ae44807c40cac63bc481d197c4cb91d48f1a0f587fb32e",
+      "approved": true,
+      "mediaType": "font/ttf",
+      "kind": "font",
+      "family": "JetBrains Mono",
+      "style": "italic",
+      "weightRange": [
+        100,
+        800
+      ],
+      "license": "packages/assets/fonts/licenses/JetBrainsMono/OFL.txt"
+    },
+    {
+      "path": "packages/assets/fonts/source/JetBrainsMono-VariableFont_wght.ttf",
+      "sha256": "192a3158a926768d1fa520164f0fb0f40a6ad085435aa854e43eb14cb40d1aab",
+      "approved": true,
+      "mediaType": "font/ttf",
+      "kind": "font",
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weightRange": [
+        100,
+        800
+      ],
+      "license": "packages/assets/fonts/licenses/JetBrainsMono/OFL.txt"
+    },
+    {
+      "path": "packages/assets/fonts/source/Unbounded-VariableFont_wght.ttf",
+      "sha256": "c920c00876215ab1f902482a2fbb1eb307fe2cd5e7380ea307f7e4de1e064f72",
+      "approved": true,
+      "mediaType": "font/ttf",
+      "kind": "font",
+      "family": "Unbounded",
+      "style": "normal",
+      "weightRange": [
+        200,
+        900
+      ],
+      "license": "packages/assets/fonts/licenses/Unbounded/OFL.txt"
+    },
+    {
+      "path": "packages/assets/fonts/web/BigShouldersStencil-VariableFont_opsz,wght.woff2",
+      "sha256": "bc91da2852ffb3b7feee5de63943955ceb14aaae56296700ed3631725d952493",
+      "approved": true,
+      "mediaType": "font/woff2",
+      "kind": "font",
+      "family": "Big Shoulders Stencil",
+      "style": "normal",
+      "weightRange": [
+        100,
+        900
+      ],
+      "license": "packages/assets/fonts/licenses/BigShouldersStencil/OFL.txt",
+      "master": "packages/assets/fonts/source/BigShouldersStencil-VariableFont_opsz,wght.ttf"
+    },
+    {
+      "path": "packages/assets/fonts/web/HankenGrotesk-Italic-VariableFont_wght.woff2",
+      "sha256": "ef1f2f93ca1d058fbcd882e60a70115e8b87e9fc71ffa744c6b1bdc8881e547f",
+      "approved": true,
+      "mediaType": "font/woff2",
+      "kind": "font",
+      "family": "Hanken Grotesk",
+      "style": "italic",
+      "weightRange": [
+        300,
+        900
+      ],
+      "license": "packages/assets/fonts/licenses/HankenGrotesk/OFL.txt",
+      "master": "packages/assets/fonts/source/HankenGrotesk-Italic-VariableFont_wght.ttf"
+    },
+    {
+      "path": "packages/assets/fonts/web/HankenGrotesk-VariableFont_wght.woff2",
+      "sha256": "dd72079854cb0dd6b3fe1de5f89024cd2210fab29f761d80b72d84ed1c6cdde1",
+      "approved": true,
+      "mediaType": "font/woff2",
+      "kind": "font",
+      "family": "Hanken Grotesk",
+      "style": "normal",
+      "weightRange": [
+        300,
+        900
+      ],
+      "license": "packages/assets/fonts/licenses/HankenGrotesk/OFL.txt",
+      "master": "packages/assets/fonts/source/HankenGrotesk-VariableFont_wght.ttf"
+    },
+    {
+      "path": "packages/assets/fonts/web/JetBrainsMono-Italic-VariableFont_wght.woff2",
+      "sha256": "4715e503f808a7c9362ddd92956e30d76861929bf47061968ee985f9899a2afd",
+      "approved": true,
+      "mediaType": "font/woff2",
+      "kind": "font",
+      "family": "JetBrains Mono",
+      "style": "italic",
+      "weightRange": [
+        100,
+        800
+      ],
+      "license": "packages/assets/fonts/licenses/JetBrainsMono/OFL.txt",
+      "master": "packages/assets/fonts/source/JetBrainsMono-Italic-VariableFont_wght.ttf"
+    },
+    {
+      "path": "packages/assets/fonts/web/JetBrainsMono-VariableFont_wght.woff2",
+      "sha256": "dea05c900f787a8d7866e6f50a3b37523e506724fef41cff0064af80e506568b",
+      "approved": true,
+      "mediaType": "font/woff2",
+      "kind": "font",
+      "family": "JetBrains Mono",
+      "style": "normal",
+      "weightRange": [
+        100,
+        800
+      ],
+      "license": "packages/assets/fonts/licenses/JetBrainsMono/OFL.txt",
+      "master": "packages/assets/fonts/source/JetBrainsMono-VariableFont_wght.ttf"
+    },
+    {
+      "path": "packages/assets/fonts/web/Unbounded-VariableFont_wght.woff2",
+      "sha256": "f8afc8c126d03acb8b789fe8b51c1129236444944a0e34febeae1a4b6dd2f1a4",
+      "approved": true,
+      "mediaType": "font/woff2",
+      "kind": "font",
+      "family": "Unbounded",
+      "style": "normal",
+      "weightRange": [
+        200,
+        900
+      ],
+      "license": "packages/assets/fonts/licenses/Unbounded/OFL.txt",
+      "master": "packages/assets/fonts/source/Unbounded-VariableFont_wght.ttf"
+    },
+    {
+      "path": "packages/assets/logo/mark-inverse.svg",
+      "sha256": "c70e9cd2e026695da3c4343d30e8cbfcd4910724bf5203129cee1fbccece0c9b",
+      "approved": true,
+      "mediaType": "image/svg+xml",
+      "kind": "logo",
+      "variant": "inverse",
+      "approvalState": "approved",
+      "viewBox": "261.29998779296875 253.89999389648438 506.89996337890625 506.8000183105469",
+      "sourceProvenance": "logo/source/original-lockup.svg",
+      "provenanceNote": "Derived-color treatment; geometry is unchanged from the original lockup source.",
+      "relationship": "master",
+      "allowedColorRoles": ["void", "signal"]
+    },
+    {
+      "path": "packages/assets/logo/mark-primary.svg",
+      "sha256": "86e722eaa369055fd1851ca2a6c3193602387ea6f8ccb7609890516b3c08d86c",
+      "approved": true,
+      "mediaType": "image/svg+xml",
+      "kind": "logo",
+      "variant": "primary",
+      "approvalState": "approved",
+      "viewBox": "261.29998779296875 253.89999389648438 506.89996337890625 506.8000183105469",
+      "sourceProvenance": "logo/source/original-lockup.svg",
+      "relationship": "master",
+      "allowedColorRoles": ["signal", "ash700"]
+    },
+    {
+      "path": "packages/assets/logo/mark-transparent.svg",
+      "sha256": "d24de77093b85cfa067211f4003fff9df538e0b1a735a5c3d51a8a18f97cf37e",
+      "approved": true,
+      "mediaType": "image/svg+xml",
+      "kind": "logo",
+      "variant": "transparent",
+      "approvalState": "approved",
+      "viewBox": "261.29998779296875 253.89999389648438 506.89996337890625 506.8000183105469",
+      "sourceProvenance": "logo/source/transparent-lockup.svg",
+      "relationship": "master",
+      "allowedColorRoles": ["ash700"]
+    }
+  ]
+}

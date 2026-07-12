@@ -1,6 +1,7 @@
 .worktrees/
 node_modules/
 .DS_Store
+**/.DS_Store
 .superpowers/
 *.log
 *.tmp

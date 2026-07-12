@@ -1,34 +1,181 @@
 {
   "$extensions": {
     "industries.bizarre": {
-      "themeOrder": ["void", "paper", "void-hicontrast", "workshop", "bone"]
+      "themeOrder": ["void", "paper", "void-hicontrast", "workshop", "bone"],
+      "contrastPairs": [
+        { "foreground": "content.primary", "background": "surface.canvas", "threshold": 4.5 },
+        { "foreground": "content.secondary", "background": "surface.canvas", "threshold": 4.5 },
+        { "foreground": "content.muted", "background": "surface.canvas", "threshold": 4.5 },
+        { "foreground": "content.accent", "background": "surface.canvas", "threshold": 4.5 },
+        { "foreground": "border.default", "background": "surface.canvas", "threshold": 3 },
+        { "foreground": "border.strong", "background": "surface.canvas", "threshold": 3 },
+        { "foreground": "border.accent", "background": "surface.canvas", "threshold": 3 },
+        { "foreground": "status.success.content", "background": "status.success.surface", "threshold": 4.5 },
+        { "foreground": "status.warning.content", "background": "status.warning.surface", "threshold": 4.5 },
+        { "foreground": "status.danger.content", "background": "status.danger.surface", "threshold": 4.5 },
+        { "foreground": "status.info.content", "background": "status.info.surface", "threshold": 4.5 }
+        ,{ "foreground": "action.default.content", "background": "action.default.surface", "threshold": 4.5 }
+        ,{ "foreground": "action.hover.content", "background": "action.hover.surface", "threshold": 4.5 }
+        ,{ "foreground": "action.active.content", "background": "action.active.surface", "threshold": 4.5 }
+        ,{ "foreground": "action.disabled.content", "background": "action.disabled.surface", "threshold": 4.5 }
+      ]
     }
   },
   "modes": {
     "void": {
       "$type": "color",
-      "surface": { "canvas": { "$value": { "colorSpace": "srgb", "components": [0.0549019608, 0.0549019608, 0.0549019608], "alpha": 1, "hex": "#0E0E0E" } } },
-      "text": { "primary": { "$value": { "colorSpace": "srgb", "components": [0.8941176471, 0.8941176471, 0.8941176471], "alpha": 1, "hex": "#E4E4E4" } } }
+      "surface": {
+        "canvas": { "$value": "{color.neutral.void}" },
+        "elevated": { "$value": "{color.neutral.midnight}" },
+        "card": { "$value": "{color.neutral.smoke}" }
+      },
+      "content": {
+        "primary": { "$value": "{color.neutral.ash100}" },
+        "secondary": { "$value": "{color.neutral.ash300}" },
+        "muted": { "$value": "{color.neutral.ash300}" },
+        "accent": { "$value": "{color.accent.signal}" }
+      },
+      "border": {
+        "default": { "$value": "{color.neutral.ash300}" },
+        "strong": { "$value": "{color.neutral.ash100}" },
+        "accent": { "$value": "{color.accent.signal}" }
+      },
+      "action": {
+        "default": { "surface": { "$value": "{color.accent.signal}" }, "content": { "$value": "{color.neutral.void}" } },
+        "hover": { "surface": { "$value": "{color.accent.glow}" }, "content": { "$value": "{color.neutral.void}" } },
+        "active": { "surface": { "$value": "{color.accent.ink}" }, "content": { "$value": "{color.neutral.paper}" } },
+        "disabled": { "surface": { "$value": "{color.neutral.iron}" }, "content": { "$value": "{color.neutral.paper}" } }
+      },
+      "status": {
+        "success": { "surface": { "$value": "{color.status.success}" }, "content": { "$value": "{color.neutral.void}" } },
+        "warning": { "surface": { "$value": "{color.status.warning}" }, "content": { "$value": "{color.neutral.void}" } },
+        "danger": { "surface": { "$value": "{color.status.danger}" }, "content": { "$value": "{color.neutral.void}" } },
+        "info": { "surface": { "$value": "{color.status.info}" }, "content": { "$value": "{color.neutral.void}" } }
+      }
     },
     "paper": {
       "$type": "color",
-      "surface": { "canvas": { "$value": { "colorSpace": "srgb", "components": [0.9764705882, 0.9725490196, 0.9490196078], "alpha": 1, "hex": "#F9F8F2" } } },
-      "text": { "primary": { "$value": { "colorSpace": "srgb", "components": [0.1215686275, 0.1215686275, 0.1215686275], "alpha": 1, "hex": "#1F1F1F" } } }
+      "surface": {
+        "canvas": { "$value": "{color.neutral.paper}" },
+        "elevated": { "$value": "{color.neutral.snow}" },
+        "card": { "$value": "{color.neutral.bone}" }
+      },
+      "content": {
+        "primary": { "$value": "{color.neutral.ash900}" },
+        "secondary": { "$value": "{color.neutral.ash700}" },
+        "muted": { "$value": "{color.neutral.ash700}" },
+        "accent": { "$value": "{color.accent.ink}" }
+      },
+      "border": {
+        "default": { "$value": "{color.neutral.ash500}" },
+        "strong": { "$value": "{color.neutral.ash700}" },
+        "accent": { "$value": "{color.accent.ink}" }
+      },
+      "action": {
+        "default": { "surface": { "$value": "{color.accent.signal}" }, "content": { "$value": "{color.neutral.void}" } },
+        "hover": { "surface": { "$value": "{color.accent.glow}" }, "content": { "$value": "{color.neutral.void}" } },
+        "active": { "surface": { "$value": "{color.accent.ink}" }, "content": { "$value": "{color.neutral.paper}" } },
+        "disabled": { "surface": { "$value": "{color.neutral.ash300}" }, "content": { "$value": "{color.neutral.ash900}" } }
+      },
+      "status": {
+        "success": { "surface": { "$value": "{color.status.success}" }, "content": { "$value": "{color.neutral.void}" } },
+        "warning": { "surface": { "$value": "{color.status.warning}" }, "content": { "$value": "{color.neutral.void}" } },
+        "danger": { "surface": { "$value": "{color.status.danger}" }, "content": { "$value": "{color.neutral.void}" } },
+        "info": { "surface": { "$value": "{color.status.info}" }, "content": { "$value": "{color.neutral.void}" } }
+      }
     },
     "void-hicontrast": {
       "$type": "color",
-      "surface": { "canvas": { "$value": { "colorSpace": "srgb", "components": [0, 0, 0], "alpha": 1, "hex": "#000000" } } },
-      "text": { "primary": { "$value": { "colorSpace": "srgb", "components": [0.9764705882, 0.9725490196, 0.9490196078], "alpha": 1, "hex": "#F9F8F2" } } }
+      "surface": {
+        "canvas": { "$value": "{color.neutral.black}" },
+        "elevated": { "$value": "{color.neutral.void}" },
+        "card": { "$value": "{color.neutral.midnight}" }
+      },
+      "content": {
+        "primary": { "$value": "{color.neutral.paper}" },
+        "secondary": { "$value": "{color.neutral.ash100}" },
+        "muted": { "$value": "{color.neutral.ash300}" },
+        "accent": { "$value": "{color.accent.signal}" }
+      },
+      "border": {
+        "default": { "$value": "{color.neutral.ash300}" },
+        "strong": { "$value": "{color.neutral.paper}" },
+        "accent": { "$value": "{color.accent.signal}" }
+      },
+      "action": {
+        "default": { "surface": { "$value": "{color.accent.signal}" }, "content": { "$value": "{color.neutral.void}" } },
+        "hover": { "surface": { "$value": "{color.accent.glow}" }, "content": { "$value": "{color.neutral.void}" } },
+        "active": { "surface": { "$value": "{color.accent.ink}" }, "content": { "$value": "{color.neutral.paper}" } },
+        "disabled": { "surface": { "$value": "{color.neutral.iron}" }, "content": { "$value": "{color.neutral.paper}" } }
+      },
+      "status": {
+        "success": { "surface": { "$value": "{color.status.success}" }, "content": { "$value": "{color.neutral.void}" } },
+        "warning": { "surface": { "$value": "{color.status.warning}" }, "content": { "$value": "{color.neutral.void}" } },
+        "danger": { "surface": { "$value": "{color.status.danger}" }, "content": { "$value": "{color.neutral.void}" } },
+        "info": { "surface": { "$value": "{color.status.info}" }, "content": { "$value": "{color.neutral.void}" } }
+      }
     },
     "workshop": {
       "$type": "color",
-      "surface": { "canvas": { "$value": { "colorSpace": "srgb", "components": [0.1019607843, 0.0941176471, 0.0823529412], "alpha": 1, "hex": "#1A1815" } } },
-      "text": { "primary": { "$value": { "colorSpace": "srgb", "components": [0.8941176471, 0.8862745098, 0.8549019608], "alpha": 1, "hex": "#E4E2DA" } } }
+      "surface": {
+        "canvas": { "$value": "{color.neutral.workshop}" },
+        "elevated": { "$value": "{color.neutral.midnight}" },
+        "card": { "$value": "{color.neutral.smoke}" }
+      },
+      "content": {
+        "primary": { "$value": "{color.neutral.workshopText}" },
+        "secondary": { "$value": "{color.neutral.ash300}" },
+        "muted": { "$value": "{color.neutral.ash300}" },
+        "accent": { "$value": "{color.accent.signal}" }
+      },
+      "border": {
+        "default": { "$value": "{color.neutral.ash300}" },
+        "strong": { "$value": "{color.neutral.workshopText}" },
+        "accent": { "$value": "{color.accent.signal}" }
+      },
+      "action": {
+        "default": { "surface": { "$value": "{color.accent.signal}" }, "content": { "$value": "{color.neutral.void}" } },
+        "hover": { "surface": { "$value": "{color.accent.glow}" }, "content": { "$value": "{color.neutral.void}" } },
+        "active": { "surface": { "$value": "{color.accent.ink}" }, "content": { "$value": "{color.neutral.paper}" } },
+        "disabled": { "surface": { "$value": "{color.neutral.iron}" }, "content": { "$value": "{color.neutral.paper}" } }
+      },
+      "status": {
+        "success": { "surface": { "$value": "{color.status.success}" }, "content": { "$value": "{color.neutral.void}" } },
+        "warning": { "surface": { "$value": "{color.status.warning}" }, "content": { "$value": "{color.neutral.void}" } },
+        "danger": { "surface": { "$value": "{color.status.danger}" }, "content": { "$value": "{color.neutral.void}" } },
+        "info": { "surface": { "$value": "{color.status.info}" }, "content": { "$value": "{color.neutral.void}" } }
+      }
     },
     "bone": {
       "$type": "color",
-      "surface": { "canvas": { "$value": { "colorSpace": "srgb", "components": [0.9607843137, 0.9490196078, 0.9176470588], "alpha": 1, "hex": "#F5F2EA" } } },
-      "text": { "primary": { "$value": { "colorSpace": "srgb", "components": [0.168627451, 0.168627451, 0.168627451], "alpha": 1, "hex": "#2B2B2B" } } }
+      "surface": {
+        "canvas": { "$value": "{color.neutral.bone}" },
+        "elevated": { "$value": "{color.neutral.paper}" },
+        "card": { "$value": "{color.neutral.snow}" }
+      },
+      "content": {
+        "primary": { "$value": "{color.neutral.smoke}" },
+        "secondary": { "$value": "{color.neutral.ash700}" },
+        "muted": { "$value": "{color.neutral.ash700}" },
+        "accent": { "$value": "{color.neutral.ash900}" }
+      },
+      "border": {
+        "default": { "$value": "{color.neutral.ash500}" },
+        "strong": { "$value": "{color.neutral.ash700}" },
+        "accent": { "$value": "{color.accent.ink}" }
+      },
+      "action": {
+        "default": { "surface": { "$value": "{color.accent.signal}" }, "content": { "$value": "{color.neutral.void}" } },
+        "hover": { "surface": { "$value": "{color.accent.glow}" }, "content": { "$value": "{color.neutral.void}" } },
+        "active": { "surface": { "$value": "{color.accent.ink}" }, "content": { "$value": "{color.neutral.paper}" } },
+        "disabled": { "surface": { "$value": "{color.neutral.ash300}" }, "content": { "$value": "{color.neutral.ash900}" } }
+      },
+      "status": {
+        "success": { "surface": { "$value": "{color.status.success}" }, "content": { "$value": "{color.neutral.void}" } },
+        "warning": { "surface": { "$value": "{color.status.warning}" }, "content": { "$value": "{color.neutral.void}" } },
+        "danger": { "surface": { "$value": "{color.status.danger}" }, "content": { "$value": "{color.neutral.void}" } },
+        "info": { "surface": { "$value": "{color.status.info}" }, "content": { "$value": "{color.neutral.void}" } }
+      }
     }
   }
 }

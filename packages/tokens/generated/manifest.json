@@ -1,29 +1,39 @@
 {
   "evidence": [
     {
+      "bytes": 19900,
+      "path": "BRAND.md",
+      "sha256": "3fa1b70a13a4884752ee56e3886a7459915c8b3bd8fb58fabc004160f18f9947"
+    },
+    {
       "bytes": 1075,
       "path": "LICENSE",
       "sha256": "a85558a23a3030ef254032be8c8012c78278018b52bc0ae3e20ee6c6ff0ac899"
     },
     {
-      "bytes": 720,
+      "bytes": 785,
       "path": "README.md",
-      "sha256": "2f45caa20105c078a69dfc2464b9ce2d32a033a95dec8fde919187908c083de1"
+      "sha256": "a6bd6e6e6d0b406ffe32d1cfe6a4ab34a88b18296051d833d79ede244725a756"
     },
     {
-      "bytes": 299,
+      "bytes": 1149,
       "path": "brand/README.md",
-      "sha256": "8bc92a519fd6dd3e7f28128c498e1859d8546966fd73607800a111c1b99bae3a"
+      "sha256": "e03edd188e4729001b9a350c5933f327dcaccaeb24567b3811e75dd5382fe49e"
     },
     {
-      "bytes": 368,
+      "bytes": 10423,
+      "path": "brand/assets.json",
+      "sha256": "8a5ed705263dca4c33ccf0c4d2888153c7a3ffaffc419ae01ed6d8c60cb35d40"
+    },
+    {
+      "bytes": 654,
       "path": "brand/identity.json",
-      "sha256": "1924a7149b1614aaf8d4cc86dfa3c76c834309bc4f91ab2ff0245f2bf930d35b"
+      "sha256": "f6d3447f792c70ae510cedf320f1485ace250e6b831096f74730a2c5022113fc"
     },
     {
-      "bytes": 249,
+      "bytes": 880,
       "path": "foundations/README.md",
-      "sha256": "6a658eeb4044e364e1aca542c4fc98ceb340d89c2874c82d2e4bc5dc4a1dbf38"
+      "sha256": "408fae9e6025e8e77926252f14c1a1b63351e0cba7bc67926656b7693e591057"
     },
     {
       "bytes": 390,
@@ -36,17 +46,42 @@
       "sha256": "6cfa1173b26607206ffef3b5cfe6de4202867f0377656e7d9c0c3dc81e25625e"
     },
     {
-      "bytes": 352,
+      "bytes": 371,
       "path": "governance/package-contract.json",
-      "sha256": "327f5f783012d12ac8e0cba2837429cd7fe26380fd1bcbaa52a403ddbc429a49"
+      "sha256": "69365833980b10593a44de106c6bab04f4f803da7d910646579f452f7d1f4f6b"
+    },
+    {
+      "bytes": 4396,
+      "path": "packages/assets/fonts/licenses/BigShouldersStencil/OFL.txt",
+      "sha256": "3a914b9c36b191af65068ea1ef9d99c7c6e90c838f53c12508463a4ea9330f19"
+    },
+    {
+      "bytes": 4401,
+      "path": "packages/assets/fonts/licenses/HankenGrotesk/OFL.txt",
+      "sha256": "56c54eb6be2d6c11ce6d24e53146189c6922bdf02cd80f0e1cc2f5a087ab52be"
+    },
+    {
+      "bytes": 4398,
+      "path": "packages/assets/fonts/licenses/JetBrainsMono/OFL.txt",
+      "sha256": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90"
+    },
+    {
+      "bytes": 4391,
+      "path": "packages/assets/fonts/licenses/Unbounded/OFL.txt",
+      "sha256": "e4adc17fbe0714f78c7614c53138f67ad8a031aca0ffa4698044d87d45d2622e"
+    },
+    {
+      "bytes": 2785,
+      "path": "schemas/assets.schema.json",
+      "sha256": "632077d52153a37829981a1cbe61653dc926d4d9be7035914cb3e4f187b1e2dc"
     }
   ],
   "files": {
     "generated/tokens.css": {
-      "sha256": "2dae43a33895d91f6a6155d92b10f01d210b0a5420beabbb45506a860e1d1f5b"
+      "sha256": "9f25b4036e8b901d111faa3ed75fd9633ba6dcf23da2f5ead093e241558c4e9b"
     },
     "generated/tokens.json": {
-      "sha256": "728a4ef562fcce114595a667b1235874b82dcaf1632c57094d88e8e5bc4311a4"
+      "sha256": "b9f7da65e4d47d60af8923d3905690cd1dda5fe41722b9f508ff03535ff3cf65"
     }
   },
   "package": "@bizarre/tokens",

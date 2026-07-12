@@ -43,6 +43,18 @@ test('reports every expected file missing when generated directory is absent', a
   });
 });
 
+test('reports no drift for byte-identical deterministic outputs', async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), 'bizarre-generated-stable-'));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const packageUrl = new URL(`file://${directory}/`);
+  await mkdir(new URL('generated/', packageUrl));
+  await writeFile(new URL('generated/tokens.css', packageUrl), ':root {\n  --bzr-space-1: 0.25rem;\n}\n');
+
+  assert.deepEqual(await compareGenerated(packageUrl, new Map([
+    ['generated/tokens.css', Buffer.from(':root {\n  --bzr-space-1: 0.25rem;\n}\n')]
+  ])), { missing: [], modified: [], obsolete: [] });
+});
+
 test('rejects symlink leaves and ancestors in the generated tree', async (t) => {
   const directory = await mkdtemp(join(tmpdir(), 'bizarre-generated-symlink-'));
   t.after(() => rm(directory, { recursive: true, force: true }));

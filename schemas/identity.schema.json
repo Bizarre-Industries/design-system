@@ -3,11 +3,11 @@
   "$id": "https://bizarre.industries/schemas/identity.schema.json",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "companyName", "tagline", "accent", "expressions", "themeOrder"],
+  "required": ["schemaVersion", "companyName", "tagline", "accent", "mark", "typography", "layoutModes", "organization", "themeOrder"],
   "properties": {
-    "schemaVersion": { "const": 1 },
+    "schemaVersion": { "const": 2 },
     "companyName": { "const": "Bizarre Industries" },
-    "tagline": { "const": "CATCH THE STARS." },
+    "tagline": { "const": "CATCH THE STARS" },
     "accent": {
       "type": "object",
       "additionalProperties": false,
@@ -17,14 +17,37 @@
         "value": { "const": "#C6FF24" }
       }
     },
-    "expressions": {
+    "mark": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["core", "editorial", "physical"],
+      "required": ["name"],
       "properties": {
-        "core": { "const": "Precision Signal" },
-        "editorial": { "const": "Editorial Monument" },
-        "physical": { "const": "Workshop Stamp" }
+        "name": { "const": "Gravity Well" }
+      }
+    },
+    "typography": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["display", "stencil", "body", "mono"],
+      "properties": {
+        "display": { "const": "Unbounded" },
+        "stencil": { "const": "Big Shoulders Stencil" },
+        "body": { "const": "Hanken Grotesk" },
+        "mono": { "const": "JetBrains Mono" }
+      }
+    },
+    "layoutModes": {
+      "const": ["Precision Panel", "Display Field"]
+    },
+    "organization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["parent", "commercialArm", "foundation", "products"],
+      "properties": {
+        "parent": { "const": "Bizarre Industries" },
+        "commercialArm": { "const": "Bizarre Labs" },
+        "foundation": { "const": "Bizarre Foundation" },
+        "products": { "const": ["Helling"] }
       }
     },
     "themeOrder": {

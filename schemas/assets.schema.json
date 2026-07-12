@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bizarre.industries/schemas/assets.schema.json",
+  "title": "Bizarre governed asset manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "assets"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256", "mediaType", "kind", "approved"],
+        "properties": {
+          "path": { "type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "mediaType": { "enum": ["image/svg+xml", "font/ttf", "font/woff2", "text/css", "text/plain", "text/markdown", "application/json"] },
+          "kind": { "enum": ["logo", "font", "license", "documentation", "stylesheet", "manifest"] },
+          "approved": { "const": true },
+          "variant": { "enum": ["primary", "inverse", "transparent"] },
+          "approvalState": { "enum": ["approved"] },
+          "viewBox": { "type": "string", "pattern": "^-?(?:\\d+\\.?\\d*|\\.\\d+)(?:\\s+-?(?:\\d+\\.?\\d*|\\.\\d+)){3}$" },
+          "sourceProvenance": { "type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+" },
+          "provenanceNote": { "type": "string", "minLength": 1 },
+          "relationship": { "enum": ["master"] },
+          "allowedColorRoles": { "type": "array", "items": { "enum": ["signal", "void", "ash700"] }, "minItems": 1, "uniqueItems": true },
+          "family": { "type": "string" },
+          "style": { "enum": ["normal", "italic"] },
+          "weightRange": { "type": "array", "prefixItems": [{ "type": "integer" }, { "type": "integer" }], "minItems": 2, "maxItems": 2 },
+          "license": { "type": "string" },
+          "master": { "type": "string" }
+        },
+        "allOf": [
+          {
+            "if": { "properties": { "kind": { "const": "logo" } }, "required": ["kind"] },
+            "then": { "required": ["variant", "approvalState", "viewBox", "sourceProvenance", "relationship", "allowedColorRoles"] }
+          },
+          {
+            "if": { "properties": { "kind": { "const": "font" } }, "required": ["kind"] },
+            "then": { "required": ["family", "style", "weightRange", "license"] }
+          },
+          {
+            "if": { "properties": { "mediaType": { "const": "font/woff2" } }, "required": ["mediaType"] },
+            "then": { "required": ["master"] }
+          },
+          {
+            "if": { "properties": { "mediaType": { "const": "font/ttf" } }, "required": ["mediaType"] },
+            "then": { "not": { "required": ["master"] } }
+          }
+        ]
+      }
+    }
+  }
+}

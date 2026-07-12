@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import { mkdtemp, mkdir, symlink, writeFile } from 'node:fs/promises';
+import { mkdtemp, mkdir, readFile, symlink, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { pathToFileURL } from 'node:url';
 import { join } from 'node:path';
@@ -83,3 +83,18 @@ test('resolves allowlist entries beneath a root URL without a trailing slash', a
   const rows = await collectEvidence(pathToFileURL(root), ['evidence.txt']);
   assert.equal(rows[0].bytes, Buffer.byteLength('inside\n'));
 });
+
+test('repository evidence declares asset provenance inputs', async () => {
+  const allowlist = await readJson('governance/evidence-allowlist.json');
+  const assets = await readJson('brand/assets.json');
+  assert.ok(allowlist.paths.includes('BRAND.md'), 'finalized brand guidance must be governed evidence');
+  assert.ok(allowlist.paths.includes('brand/assets.json'));
+  assert.ok(allowlist.paths.includes('schemas/assets.schema.json'));
+  for (const { path } of assets.assets.filter(({ kind }) => kind === 'license')) {
+    assert.ok(allowlist.paths.includes(path), `missing license evidence: ${path}`);
+  }
+});
+
+async function readJson(path) {
+  return JSON.parse(await readFile(new URL(`../${path}`, import.meta.url), 'utf8'));
+}
