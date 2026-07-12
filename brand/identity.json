@@ -1,15 +1,26 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "companyName": "Bizarre Industries",
-  "tagline": "CATCH THE STARS.",
+  "tagline": "CATCH THE STARS",
   "accent": {
     "name": "Signal Lime",
     "value": "#C6FF24"
   },
-  "expressions": {
-    "core": "Precision Signal",
-    "editorial": "Editorial Monument",
-    "physical": "Workshop Stamp"
+  "mark": {
+    "name": "Gravity Well"
+  },
+  "typography": {
+    "display": "Unbounded",
+    "stencil": "Big Shoulders Stencil",
+    "body": "Hanken Grotesk",
+    "mono": "JetBrains Mono"
+  },
+  "layoutModes": ["Precision Panel", "Display Field"],
+  "organization": {
+    "parent": "Bizarre Industries",
+    "commercialArm": "Bizarre Labs",
+    "foundation": "Bizarre Foundation",
+    "products": ["Helling"]
   },
   "themeOrder": ["void", "paper", "void-hicontrast", "workshop", "bone"]
 }

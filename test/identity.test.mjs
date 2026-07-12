@@ -20,13 +20,20 @@ function validateFixedSchema(schema, value, path = '$') {
 
 test('identity preserves permanent Bizarre Industries decisions', async () => {
   const identity = await readJson('brand/identity.json');
-  assert.equal(identity.schemaVersion, 1);
+  assert.equal(identity.schemaVersion, 2);
   assert.equal(identity.companyName, 'Bizarre Industries');
-  assert.equal(identity.tagline, 'CATCH THE STARS.');
+  assert.equal(identity.tagline, 'CATCH THE STARS');
   assert.deepEqual(identity.accent, { name: 'Signal Lime', value: '#C6FF24' });
-  assert.equal(identity.expressions.core, 'Precision Signal');
-  assert.equal(identity.expressions.editorial, 'Editorial Monument');
-  assert.equal(identity.expressions.physical, 'Workshop Stamp');
+  assert.equal(identity.mark.name, 'Gravity Well');
+  assert.deepEqual(identity.layoutModes, ['Precision Panel', 'Display Field']);
+  assert.deepEqual(identity.typography, {
+    display: 'Unbounded', stencil: 'Big Shoulders Stencil',
+    body: 'Hanken Grotesk', mono: 'JetBrains Mono'
+  });
+  assert.deepEqual(identity.organization, {
+    parent: 'Bizarre Industries', commercialArm: 'Bizarre Labs',
+    foundation: 'Bizarre Foundation', products: ['Helling']
+  });
   assert.deepEqual(identity.themeOrder, ['void', 'paper', 'void-hicontrast', 'workshop', 'bone']);
 });
 
@@ -36,6 +43,6 @@ test('identity schema accepts only the canonical identity shape and values', asy
   assert.doesNotThrow(() => validateFixedSchema(schema, identity));
   assert.throws(() => validateFixedSchema(schema, { ...identity, unexpected: true }), /not allowed/);
   assert.throws(() => validateFixedSchema(schema, { ...identity, accent: { ...identity.accent, unexpected: true } }), /not allowed/);
-  assert.throws(() => validateFixedSchema(schema, { ...identity, expressions: { ...identity.expressions, unexpected: true } }), /not allowed/);
+  assert.throws(() => validateFixedSchema(schema, { ...identity, mark: { ...identity.mark, unexpected: true } }), /not allowed/);
   assert.throws(() => validateFixedSchema(schema, { ...identity, tagline: 'Almost canonical' }), /canonical value/);
 });

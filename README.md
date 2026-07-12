@@ -2,9 +2,9 @@
 
 Canonical Bizarre Industries design language for software, hardware, graphics, and media.
 
-Signal Lime is the only brand accent. CATCH THE STARS. is the permanent tagline.
+Signal Lime is the only brand accent. CATCH THE STARS is the permanent tagline.
 
-This repository publishes the official identity, tokens, assets, framework overlays, and conformance contracts. The `Bizarre-Industries/themes` repository is a downstream third-party theme consumer and must pin a released package from this repository.
+This repository publishes the official identity, tokens, assets, framework overlays, and conformance contracts. `brand/identity.json` is the permanent machine-readable contract. The `Bizarre-Industries/themes` repository is a downstream third-party theme consumer and must pin a released package from this repository.
 
 ## Commands
 
