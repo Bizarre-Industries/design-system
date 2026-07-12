@@ -22,6 +22,7 @@ Review range: `a266b5c..934008b`
 - Token package: `npm pack --dry-run --workspace @bizarre/tokens` produced a 5-file, 42.8 kB unpacked package.
 - Asset package: `npm pack --dry-run --workspace @bizarre/assets` produced a 28-file, 2.5 MB unpacked package.
 - Branch whitespace: `git diff --check a266b5c` exited 0.
+- Clean archive: a fresh `git archive HEAD` extraction passed `npm ci`, 99/99 tests, generated-drift verification with no diagnostics, explicit build/check, both package dry-runs, and `git diff --check a266b5c..HEAD`.
 
 ## Visual verification
 
