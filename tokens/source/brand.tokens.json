@@ -1,0 +1,16 @@
+{
+  "brand": {
+    "accent": {
+      "signal": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [0.7764705882, 1, 0.1411764706],
+          "alpha": 1,
+          "hex": "#C6FF24"
+        },
+        "$description": "The sole Bizarre Industries brand accent."
+      }
+    }
+  }
+}
