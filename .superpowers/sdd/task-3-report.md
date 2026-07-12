@@ -36,3 +36,33 @@ Every WOFF2 entry records its exact TTF master and SHA-256 digest in the manifes
 - `npm test`: 64/64 passed at the pre-report verification point.
 - `npm pack --dry-run --workspace @bizarre/assets`: 27 files; no static TTFs, root PNGs, source lockups, `BRAND.md`, `proof-sheet.html`, or `tokens/tokens.css`.
 - `git diff --check`: clean.
+
+## Important review finding remediation
+
+Strengthened font lineage validation so `master` is accepted only on `font/woff2` entries. Every WOFF2 must point directly to a governed `font/ttf` entry with no master of its own. Self-references, cycles, WOFF2-to-WOFF2 links, and family, style, weight-range, or license drift between derivative and master are rejected.
+
+### Exact RED evidence
+
+Command: `node --test test/assets.test.mjs`
+
+- Exit code: `1`
+- Summary: `tests 16`, `pass 7`, `fail 9`
+- `rejects master on a non-WOFF2 entry`: `Missing expected rejection.`
+- `rejects a WOFF2 entry without a master`: `Missing expected rejection.`
+- `rejects a self-referencing WOFF2 master`: `Missing expected rejection.`
+- `rejects cyclic font master references`: `Missing expected rejection.`
+- `rejects a WOFF2-to-WOFF2 master link`: `Missing expected rejection.`
+- Derivative `family` and `license` mismatches reached the pre-existing OFL check instead of the required master-parity error.
+- Derivative `style` and `weightRange` mismatches reported `Missing expected rejection.`
+
+### Exact GREEN evidence
+
+Command: `node --test test/assets.test.mjs`
+
+- Exit code: `0`
+- Summary: `tests 16`, `pass 16`, `fail 0`, duration `72.439125 ms`
+
+Command: `npm test`
+
+- Exit code: `0`
+- Summary: `tests 74`, `pass 74`, `fail 0`, duration `501.615875 ms`

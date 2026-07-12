@@ -54,7 +54,34 @@ export async function validateAssets(rootUrl, manifest) {
     const expected = mediaTypes.get(extname(entry.path).toLowerCase());
     if (!expected || entry.mediaType !== expected) throw new Error(`wrong media type for ${entry.path}`);
     if (entry.master && !entries.has(entry.master)) throw new Error(`derivative master is absent: ${entry.master}`);
-    if (entry.master && entries.get(entry.master)?.kind !== 'font') throw new Error(`invalid derivative master: ${entry.master}`);
+  }
+
+  for (const entry of manifest.assets) {
+    const visited = new Set([entry.path]);
+    let current = entry;
+    while (current.master) {
+      if (visited.has(current.master)) throw new Error(`cyclic master reference: ${entry.path}`);
+      visited.add(current.master);
+      current = entries.get(current.master);
+    }
+  }
+
+  for (const entry of manifest.assets) {
+    if (entry.master !== undefined && entry.mediaType !== 'font/woff2') {
+      throw new Error(`master is only allowed on font/woff2 entries: ${entry.path}`);
+    }
+    if (entry.mediaType === 'font/woff2') {
+      const master = entries.get(entry.master);
+      if (!master || master.kind !== 'font' || master.mediaType !== 'font/ttf' || master.master !== undefined) {
+        throw new Error(`font/woff2 entry must reference a governed font/ttf source: ${entry.path}`);
+      }
+      for (const field of ['family', 'style', 'weightRange', 'license']) {
+        const matches = field === 'weightRange'
+          ? JSON.stringify(entry[field]) === JSON.stringify(master[field])
+          : entry[field] === master[field];
+        if (!matches) throw new Error(`${field} must match master for ${entry.path}`);
+      }
+    }
     if (entry.kind === 'font') {
       const license = entries.get(entry.license);
       if (!license || license.kind !== 'license' || license.family !== entry.family || !/OFL\.txt$/i.test(license.path)) {

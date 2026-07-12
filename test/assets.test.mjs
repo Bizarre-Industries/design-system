@@ -76,6 +76,65 @@ test('rejects derivatives without masters and unapproved publishable entries', a
   await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...manifest.assets[0], approved: false }] }), /unapproved/);
 });
 
+test('rejects master on a non-WOFF2 entry', async () => {
+  const { root, manifest } = await fixture();
+  const malformed = structuredClone(manifest);
+  malformed.assets[0].master = 'assets/font.ttf';
+  await assert.rejects(validateAssets(root, malformed), /master is only allowed on font\/woff2 entries/);
+});
+
+test('rejects a WOFF2 entry without a master', async () => {
+  const { root, manifest } = await fixture();
+  const malformed = structuredClone(manifest);
+  delete malformed.assets.find(({ mediaType }) => mediaType === 'font/woff2').master;
+  await assert.rejects(validateAssets(root, malformed), /font\/woff2 entry must reference a governed font\/ttf source/);
+});
+
+test('rejects a self-referencing WOFF2 master', async () => {
+  const { root, manifest } = await fixture();
+  const malformed = structuredClone(manifest);
+  const derivative = malformed.assets.find(({ mediaType }) => mediaType === 'font/woff2');
+  derivative.master = derivative.path;
+  await assert.rejects(validateAssets(root, malformed), /must not reference itself|cyclic master/);
+});
+
+test('rejects cyclic font master references', async () => {
+  const { root, manifest } = await fixture();
+  const malformed = structuredClone(manifest);
+  const source = malformed.assets.find(({ mediaType }) => mediaType === 'font/ttf');
+  const derivative = malformed.assets.find(({ mediaType }) => mediaType === 'font/woff2');
+  source.master = derivative.path;
+  await assert.rejects(validateAssets(root, malformed), /master is only allowed on font\/woff2 entries|cyclic master/);
+});
+
+test('rejects a WOFF2-to-WOFF2 master link', async () => {
+  const { root, directory, manifest } = await fixture();
+  await writeFile(join(directory, 'assets', 'other.woff2'), Buffer.from('other woff2'));
+  const malformed = structuredClone(manifest);
+  const sha256 = hash(await readFile(join(directory, 'assets', 'other.woff2')));
+  malformed.assets.push({
+    ...malformed.assets.find(({ mediaType }) => mediaType === 'font/woff2'),
+    path: 'assets/other.woff2',
+    sha256,
+    master: 'assets/font.woff2',
+  });
+  await assert.rejects(validateAssets(root, malformed), /font\/woff2 entry must reference a governed font\/ttf source/);
+});
+
+for (const [field, badValue] of [
+  ['family', 'Other Family'],
+  ['style', 'italic'],
+  ['weightRange', [200, 800]],
+  ['license', 'assets/other-OFL.txt'],
+]) {
+  test(`rejects a derivative whose ${field} does not match its master`, async () => {
+    const { root, manifest } = await fixture();
+    const malformed = structuredClone(manifest);
+    malformed.assets.find(({ mediaType }) => mediaType === 'font/woff2')[field] = badValue;
+    await assert.rejects(validateAssets(root, malformed), new RegExp(`${field} must match master`));
+  });
+}
+
 test('rejects a font without a matching family OFL license', async () => {
   const { root, manifest } = await fixture();
   const font = manifest.assets.find(({ path }) => path.endsWith('.ttf'));
