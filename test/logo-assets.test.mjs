@@ -19,6 +19,22 @@ async function inspect(url) {
   return inspectMarkSvg(await readFile(url, 'utf8'));
 }
 
+function fillOf(tag) {
+  return tag.match(/\bfill=["'](#[0-9a-f]{6})["']/i)?.[1].toUpperCase()
+    ?? tag.match(/\bfill\s*:\s*(#[0-9a-f]{6})/i)?.[1].toUpperCase()
+    ?? null;
+}
+
+async function colorAssignments(url) {
+  const text = await readFile(url, 'utf8');
+  const rectFills = [...text.matchAll(/<rect\b[^>]*>/gi)].map(([tag]) => fillOf(tag));
+  const pathFills = [...text.matchAll(/<path\b[^>]*>/gi)]
+    .map(([tag]) => fillOf(tag))
+    .filter((fill) => fill !== null);
+
+  return { text, rectFills, pathFills };
+}
+
 test('published marks are square mark-only SVGs', async () => {
   for (const [name, url] of Object.entries(assetPaths)) {
     const mark = await inspect(url);
@@ -41,11 +57,22 @@ test('published variants preserve identical gravity-well paths', async () => {
 });
 
 test('published variants use the governed colors', async () => {
-  const primary = await inspect(assetPaths.primary);
-  const inverse = await inspect(assetPaths.inverse);
+  const primary = await colorAssignments(assetPaths.primary);
+  const inverse = await colorAssignments(assetPaths.inverse);
 
-  assert.ok(primary.fills.includes('#545454'));
-  assert.ok(primary.fills.includes('#C6FF24'));
-  assert.ok(inverse.fills.includes('#0E0E0E'));
-  assert.ok(inverse.fills.includes('#C6FF24'));
+  assert.deepEqual(primary.rectFills, ['#C6FF24', '#C6FF24']);
+  assert.ok(primary.pathFills.length > 0);
+  assert.ok(primary.pathFills.every((fill) => fill === '#545454'));
+
+  assert.deepEqual(inverse.rectFills, ['#0E0E0E', '#C6FF24']);
+  assert.ok(inverse.pathFills.length > 0);
+  assert.ok(inverse.pathFills.every((fill) => fill === '#0E0E0E'));
+});
+
+test('published SVGs contain real newlines rather than escaped newline text', async () => {
+  for (const [name, url] of Object.entries(assetPaths)) {
+    const { text } = await colorAssignments(url);
+    assert.equal(text.includes('\\n'), false, `${name} contains literal \\n text`);
+    assert.match(text, /\n/);
+  }
 });
