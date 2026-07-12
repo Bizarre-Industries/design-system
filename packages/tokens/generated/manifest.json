@@ -1,0 +1,54 @@
+{
+  "evidence": [
+    {
+      "bytes": 1075,
+      "path": "LICENSE",
+      "sha256": "a85558a23a3030ef254032be8c8012c78278018b52bc0ae3e20ee6c6ff0ac899"
+    },
+    {
+      "bytes": 720,
+      "path": "README.md",
+      "sha256": "2f45caa20105c078a69dfc2464b9ce2d32a033a95dec8fde919187908c083de1"
+    },
+    {
+      "bytes": 299,
+      "path": "brand/README.md",
+      "sha256": "8bc92a519fd6dd3e7f28128c498e1859d8546966fd73607800a111c1b99bae3a"
+    },
+    {
+      "bytes": 368,
+      "path": "brand/identity.json",
+      "sha256": "1924a7149b1614aaf8d4cc86dfa3c76c834309bc4f91ab2ff0245f2bf930d35b"
+    },
+    {
+      "bytes": 249,
+      "path": "foundations/README.md",
+      "sha256": "6a658eeb4044e364e1aca542c4fc98ceb340d89c2874c82d2e4bc5dc4a1dbf38"
+    },
+    {
+      "bytes": 390,
+      "path": "governance/CONTRIBUTING.md",
+      "sha256": "38ae1aaf801f03a9a31f89cd629b32667c5d2e04b3e805cf5446918bbe99ef21"
+    },
+    {
+      "bytes": 358,
+      "path": "governance/RELEASES.md",
+      "sha256": "6cfa1173b26607206ffef3b5cfe6de4202867f0377656e7d9c0c3dc81e25625e"
+    },
+    {
+      "bytes": 352,
+      "path": "governance/package-contract.json",
+      "sha256": "327f5f783012d12ac8e0cba2837429cd7fe26380fd1bcbaa52a403ddbc429a49"
+    }
+  ],
+  "files": {
+    "generated/tokens.css": {
+      "sha256": "2dae43a33895d91f6a6155d92b10f01d210b0a5420beabbb45506a860e1d1f5b"
+    },
+    "generated/tokens.json": {
+      "sha256": "728a4ef562fcce114595a667b1235874b82dcaf1632c57094d88e8e5bc4311a4"
+    }
+  },
+  "package": "@bizarre/tokens",
+  "schemaVersion": 1
+}

@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bizarre.industries/schemas/identity.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "companyName", "tagline", "accent", "expressions", "themeOrder"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "companyName": { "const": "Bizarre Industries" },
+    "tagline": { "const": "CATCH THE STARS." },
+    "accent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "value"],
+      "properties": {
+        "name": { "const": "Signal Lime" },
+        "value": { "const": "#C6FF24" }
+      }
+    },
+    "expressions": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["core", "editorial", "physical"],
+      "properties": {
+        "core": { "const": "Precision Signal" },
+        "editorial": { "const": "Editorial Monument" },
+        "physical": { "const": "Workshop Stamp" }
+      }
+    },
+    "themeOrder": {
+      "const": ["void", "paper", "void-hicontrast", "workshop", "bone"]
+    }
+  }
+}

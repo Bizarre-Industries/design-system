@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "companyName": "Bizarre Industries",
+  "tagline": "CATCH THE STARS.",
+  "accent": {
+    "name": "Signal Lime",
+    "value": "#C6FF24"
+  },
+  "expressions": {
+    "core": "Precision Signal",
+    "editorial": "Editorial Monument",
+    "physical": "Workshop Stamp"
+  },
+  "themeOrder": ["void", "paper", "void-hicontrast", "workshop", "bone"]
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "paths": [
+    "LICENSE",
+    "README.md",
+    "brand/README.md",
+    "brand/identity.json",
+    "foundations/README.md",
+    "governance/CONTRIBUTING.md",
+    "governance/RELEASES.md",
+    "governance/package-contract.json"
+  ]
+}

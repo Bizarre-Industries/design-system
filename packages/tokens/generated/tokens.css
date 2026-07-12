@@ -1,0 +1,28 @@
+:root {
+  --bzr-brand-accent-signal: #C6FF24;
+}
+
+[data-bizarre-theme="void"] {
+  --bzr-surface-canvas: #0E0E0E;
+  --bzr-text-primary: #E4E4E4;
+}
+
+[data-bizarre-theme="paper"] {
+  --bzr-surface-canvas: #F9F8F2;
+  --bzr-text-primary: #1F1F1F;
+}
+
+[data-bizarre-theme="void-hicontrast"] {
+  --bzr-surface-canvas: #000000;
+  --bzr-text-primary: #F9F8F2;
+}
+
+[data-bizarre-theme="workshop"] {
+  --bzr-surface-canvas: #1A1815;
+  --bzr-text-primary: #E4E2DA;
+}
+
+[data-bizarre-theme="bone"] {
+  --bzr-surface-canvas: #F5F2EA;
+  --bzr-text-primary: #2B2B2B;
+}
