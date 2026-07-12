@@ -14,8 +14,12 @@ test('offline proof consumes canonical generated styles and approved marks', asy
   assert.doesNotMatch(html, /tokens\/tokens\.css/);
   assert.doesNotMatch(html, /--bzr-[\w-]+\s*:/, 'proof must not redefine governed tokens');
   assert.match(html, /MARK · INVERSE/);
+  assert.match(html, /MARK · PRIMARY/);
   assert.match(html, /@bizarre\/tokens/);
   assert.match(html, /@bizarre\/assets/);
+  assert.doesNotMatch(html, /overflow:\s*hidden/, 'mobile fit must not be achieved by masking overflow');
+  assert.match(html, /figcaption\s*\{[^}]*flex-wrap:\s*wrap/s);
+  assert.match(html, /\.panel h2\s*\{[^}]*overflow-wrap:\s*break-word/s);
 });
 
 test('every local proof resource resolves from its package-relative URL', async () => {

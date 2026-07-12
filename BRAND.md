@@ -23,7 +23,7 @@ Everything below is the longer explanation.
 
 Bizarre is a flag for people already doing the work. A house for the ones already wired. Not a company, not a club, not a lifestyle brand. Bizarre Industries is the top-level movement/foundation identity; Bizarre Labs is its commercial arm; Bizarre Foundation is its governing nonprofit; Helling is a first-class product under Labs.
 
-The thesis in one line: *agency is native, curiosity is the reason, catch the stars.*
+The thesis in one line: *agency is native, curiosity is the reason: **CATCH THE STARS***
 
 The thesis in one paragraph: human beings were born with the instinct to make, fix, chase, and build. The world spends eighteen years trying to talk us out of it. Bizarre is for the people who didn't listen. The ones who are still up welding, coding, racing, writing, soldering, prototyping, and shipping the dumb thing because the dumb thing wants to exist. We don't make the work. We name the people who already do.
 

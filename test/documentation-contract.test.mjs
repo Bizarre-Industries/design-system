@@ -26,7 +26,13 @@ test('brand book follows the governed identity and package contracts', async () 
   const identity = JSON.parse(await readFile(new URL('../brand/identity.json', import.meta.url), 'utf8'));
 
   assert.equal(identity.tagline, 'CATCH THE STARS');
-  assert.doesNotMatch(brand, /CATCH THE STARS[.!?]/);
+  const sloganOccurrences = [...brand.matchAll(/catch the stars[.!?]?/gi)].map(([occurrence]) => occurrence);
+  assert.ok(sloganOccurrences.length > 0, 'brand book must name the governed slogan');
+  assert.deepEqual(
+    sloganOccurrences,
+    sloganOccurrences.map(() => identity.tagline),
+    'every slogan occurrence must use exact casing and no trailing punctuation'
+  );
   assert.match(brand, /Bizarre Industries.*top-level movement\/foundation identity/i);
   assert.match(brand, /Bizarre Labs.*commercial arm/i);
   assert.match(brand, /Bizarre Foundation.*governing nonprofit/i);
