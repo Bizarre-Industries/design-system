@@ -1,7 +1,7 @@
 # Bizarre Industries Identity Refinement Design
 
-**Date:** 2026-07-12  
-**Status:** Approved for planning  
+**Date:** 2026-07-12
+**Status:** Approved for planning
 **Scope:** Normalize the supplied identity, logo, fonts, token draft, and proof sheet into the canonical design-system repository.
 
 ## 1. Authority and intent

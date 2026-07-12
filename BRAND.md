@@ -93,7 +93,7 @@ Rare, earned, never gratuitous. The thesis ("do things because you can, cleaned-
 
 The primary mark is a square frame containing a concentric spiral with an off-center dark sphere near the center. The spiral reads as a gravity well or portal; the sphere reads as the thing being caught. This is not decorative. The mark IS the slogan, rendered as geometry: something being pulled toward something else, at the edge of possibility, about to be caught.
 
-The mark is direction-agnostic (works left-to-right, right-to-left, upside down) and can be rotated in 90° increments without losing meaning.
+The mark is direction-agnostic for left-to-right and right-to-left layouts, but its supplied orientation is fixed. Do not rotate it.
 
 ### Variants
 
@@ -101,9 +101,7 @@ Approved logo paths and checksums are recorded in `packages/assets/generated/man
 
 - **Primary (lime ground, void figure):** default, full color. Used anywhere the ground can be Signal Lime.
 - **Inverse (void ground, lime figure):** for dark surfaces and dark-mode UI.
-- **Mono lime:** single-color lime on any dark surface where the full mark would be too busy.
-- **Mono void:** single-color void on any light surface where the full mark would be too busy.
-- **Mono snow:** single-color white on photography, video, or colored grounds (e.g., a race livery).
+Monochrome and simplified variants are deferred and unavailable until their SVG assets and usage rules are formally approved. Do not reconstruct or substitute them.
 
 ### Clearspace
 
@@ -112,30 +110,20 @@ Minimum clearspace around the mark on all sides equals the width of one ring (th
 ### Minimum sizes
 
 - Full mark: 48px digital, 15mm print.
-- Simplified mark: 16px digital, 5mm print.
-- Do not scale the full mark below 48px under any circumstance. Use the simplified variant.
+- The full mark is not approved below 48px digital or 15mm print. A simplified small-size mark is deferred and unavailable until formally approved.
 
 ### What the mark does not do
 
-- Does not wear colors other than lime, void, mono.
+- Uses only the color-role combinations declared by its approved asset entry.
 - Does not get a gradient.
-- Does not rotate continuously (it is not a loading spinner).
+- Does not rotate.
 - Does not have a drop shadow, glow, or bevel.
 - Does not get cropped, flipped inside the frame, or reframed.
 - Does not appear in a circle, hexagon, or rounded-square container. The frame is part of the mark.
 
 ### Wordmark
 
-"BIZARRE" is the short wordmark. "BIZARRE INDUSTRIES" is the full wordmark. "BIZARRE LABS" and "BIZARRE FOUNDATION" are the sub-brand wordmarks.
-
-Wordmark type: Big Shoulders Stencil Display, all caps, weight 800. Letterspacing: default (`--ls-body`, 0). Line-height tight.
-
-Wordmark is a separate artifact from the mark. They lock up in only two approved configurations:
-
-1. **Horizontal lockup:** mark on left, wordmark on right, aligned to cap-height of the wordmark. Space between = 1X (one ring unit of the mark).
-2. **Vertical lockup:** mark above, wordmark below, centered. Space between = 1X.
-
-Any other configuration is not a lockup, it is a layout, which is fine but is not the official mark.
+Big Shoulders Stencil Display, all caps at weight 800, is the future typographic direction for wordmark exploration. Formal wordmark and lockup assets, names, spacing, and configurations are deferred and unavailable; none are approved for use. Until those assets are governed, keep ordinary typography spatially separate from the approved mark and do not present the combination as a wordmark or lockup.
 
 ### Slogan
 
@@ -191,7 +179,7 @@ Going above 10% lime per surface cheapens it. The scarcity is what makes it land
 | Family | Role | Weights used | Why |
 |---|---|---|---|
 | **Unbounded** | Display, ceremony, the slogan | 400, 700, 900 | Geometric, slightly cosmic silhouette. Reads as "the reach." Wordmark alternative for display contexts. |
-| **Big Shoulders Stencil Display** | Industrial, wordmark, livery, panels | 700, 800, 900 | Industrial stencil DNA. Reads as "the workshop." The wordmark font. |
+| **Big Shoulders Stencil Display** | Industrial headings, livery, panels; future wordmark exploration | 700, 800, 900 | Industrial stencil DNA. Reads as "the workshop." Formal wordmark use is deferred. |
 | **Hanken Grotesk** | Body, UI, reading | 300, 400, 500, 700 | Precise modern grotesque, highly readable at small sizes, neutral enough to carry long text. |
 | **JetBrains Mono** | Code, technical, dev artifacts, eyebrow labels | 400, 500, 700 | For code, terminals, technical documentation, and the uppercase eyebrow labels that sit above headings. |
 
@@ -199,7 +187,7 @@ All four are governed local assets in `@bizarre/assets`; web surfaces load the g
 
 ### Minimum viable subset
 
-If you only have two fonts: **Big Shoulders Stencil Display** (headings, display, wordmark) + **Hanken Grotesk** (everything else). This covers roughly 90% of surfaces.
+If you only have two fonts: **Big Shoulders Stencil Display** (headings and display) + **Hanken Grotesk** (everything else). This covers roughly 90% of surfaces.
 
 If you only have one font: **Hanken Grotesk** at multiple weights. Acceptable for internal documents and emergency fallback.
 
@@ -222,7 +210,7 @@ Code                 JetBrains Mono 400, 0.9em, 0, lh 1.5
 
 1. **Never mix Unbounded and Big Shoulders Stencil in the same heading.** They fight. Pick one per block.
 2. **The slogan is always Unbounded.** No exceptions.
-3. **The wordmark is always Big Shoulders Stencil.** No exceptions.
+3. **Future wordmark exploration starts with Big Shoulders Stencil.** This is guidance for the deferred design process, not approval of a wordmark asset.
 4. **Eyebrows always monospace, always uppercase, always wide-tracked.** This is the signature "eyebrow" detail and it reads as Bizarre on sight.
 5. **Body text is never justified.** Always left-aligned (or right-aligned for RTL).
 
@@ -306,7 +294,7 @@ Full template to be produced as a separate artifact.
 ### Stickers and patches
 
 - 2" circle sticker: primary mark, full color, die-cut to the square frame with 3mm bleed.
-- 3" woven patch: simplified mark in lime stitching on void twill backing. Merrowed edge in lime.
+- 3" woven patch: production treatment deferred until a simplified mark is approved; do not substitute the full mark at an unapproved size.
 - 8.5"x11" poster: Mode B layout, manifesto or single-line slogan, Signal Lime ground or Void ground.
 
 ### Terminal theme
@@ -349,11 +337,11 @@ Use `✦` (U+2726 black four-pointed star) as the prompt separator. Star, becaus
 - **BIZARRE INDUSTRIES** is the top-level movement / foundation entity.
 - **BIZARRE LABS** is the commercial arm.
 - **BIZARRE FOUNDATION** is the governing nonprofit entity (Dutch stichting).
-- **HELLING** is a first-class product under Labs, with its own mark (TBD) and subordinate wordmark relationship to BIZARRE.
+- **HELLING** is a first-class product under Labs; its mark and any subordinate wordmark relationship are deferred and unapproved.
 
 ### Visual rule
 
-Sub-brand wordmarks use the same Big Shoulders Stencil treatment as the parent wordmark, at 60-70% of the parent size when paired, or at full size when standalone. Sub-brand wordmarks use the parent mark (the spiral) unchanged. Sub-brands do not get their own marks unless they are first-class products (HELLING gets its own mark because it is a product, not a sub-unit).
+Sub-brand wordmarks, pairings, proportions, and product marks are deferred and unapproved. Big Shoulders Stencil is future typographic guidance only; do not combine sub-brand typography with the approved mark as a formal asset.
 
 ### Naming rule
 
@@ -388,15 +376,15 @@ Bizarre's founder thinks in Arabic and English. The Middle East is a plausible a
 
 ### What works already
 
-- The mark is direction-neutral. It works LTR, RTL, and rotated.
+- The mark works in LTR and RTL layouts without rotation.
 - Signal Lime and Void Gray carry across cultures without specific connotations that block the brand.
 - CATCH THE STARS translates well: **امسك النجوم** carries the same "catch the plural stars" meaning without cultural tax.
 
 ### What needs work
 
-- The wordmark (Big Shoulders Stencil) has no Arabic equivalent in that family. A paired Arabic display type needs to be chosen. Candidates worth evaluating: **29LT Zarid Sans**, **Naskh-TTS**, **Rubik Arabic** (for compatibility with existing web stack), or a custom stencil-adjacent Arabic face. Decide with an Arabic type specialist, not a guess.
+- The future wordmark direction (Big Shoulders Stencil) has no approved Arabic equivalent. A paired Arabic display type needs to be chosen. Candidates worth evaluating: **29LT Zarid Sans**, **Naskh-TTS**, **Rubik Arabic** (for compatibility with existing web stack), or a custom stencil-adjacent Arabic face. Decide with an Arabic type specialist, not a guess.
 - The manifesto needs translation, not transliteration. The voice has to land, not just the words.
-- The slogan lockup in Arabic is right-to-left, which is fine. It stands alone anyway, so the directionality doesn't affect lockups.
+- The standalone Arabic slogan treatment is right-to-left; it is not a lockup.
 
 ### Rule
 
@@ -408,13 +396,13 @@ Do not ship Arabic brand surfaces before the type pairing is resolved. Interim A
 
 The following artifacts extend this book and should be produced in sequence:
 
-1. **Logo SVG set** — primary, inverse, mono variants, simplified small-size, wordmark, monogram, lockups. All as clean SVG, not raster.
+1. **Deferred logo SVG set** — mono variants, simplified small-size, wordmark, monogram, and lockups require design and formal approval before use. All future approved assets must be clean SVG, not raster.
 2. **Poster templates** — Mode A and Mode B reference layouts as figma/illustrator files.
 3. **README template** — markdown file with embedded SVG mark.
 4. **Terminal theme files** — iTerm2 `.itermcolors`, kitty `.conf`, vim colorscheme, WezTerm lua.
 5. **Sticker / patch production spec** — die lines, color matching, vendor notes.
 6. **Web starter** — minimal landing page + tokens hooked into a real CSS/HTML scaffold, deployable to bizarre.industries.
-7. **Arabic pairing decision** — type pairing chosen, manifesto translated, slogan lockup approved.
+7. **Arabic pairing decision** — type pairing chosen, manifesto translated, standalone slogan treatment approved.
 
 ---
 

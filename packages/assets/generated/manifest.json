@@ -1,9 +1,9 @@
 {
   "evidence": [
     {
-      "bytes": 20094,
+      "bytes": 19687,
       "path": "BRAND.md",
-      "sha256": "23c7663cb7ecefe2b5fc0afdb2c108ae5b6a64e0ce65b27d8572c02c6e8bca63"
+      "sha256": "0c4348adb87594b0f21effb97a6eacf6e8158fcd7d17af3f82fc4bda04a6fb26"
     },
     {
       "bytes": 1075,
@@ -21,9 +21,9 @@
       "sha256": "e03edd188e4729001b9a350c5933f327dcaccaeb24567b3811e75dd5382fe49e"
     },
     {
-      "bytes": 9500,
+      "bytes": 10423,
       "path": "brand/assets.json",
-      "sha256": "440a7005fcd0b8f0c3aba2ec0de27c511e46c6fda4faf3d9c4896620e576df69"
+      "sha256": "0115d42253163ba7c64552d615805ce86fe1b917f9aacc5d5f4d312bca004c77"
     },
     {
       "bytes": 654,
@@ -71,9 +71,9 @@
       "sha256": "e4adc17fbe0714f78c7614c53138f67ad8a031aca0ffa4698044d87d45d2622e"
     },
     {
-      "bytes": 1407,
+      "bytes": 2194,
       "path": "schemas/assets.schema.json",
-      "sha256": "b3658627dbc1d2446c2c057a8ddd317cc3067a63532ef760ec35ade5c2c3cc99"
+      "sha256": "12eb04a853e536da09711b6724563145949ebcb65ee4fcdb933a0be78c2aef06"
     }
   ],
   "files": {

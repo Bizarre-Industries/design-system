@@ -259,7 +259,13 @@
       "approved": true,
       "mediaType": "image/svg+xml",
       "kind": "logo",
-      "role": "inverse"
+      "variant": "inverse",
+      "approvalState": "approved",
+      "viewBox": "261.29998779296875 253.89999389648438 506.89996337890625 506.8000183105469",
+      "sourceProvenance": "logo/source/original-lockup.svg",
+      "provenanceNote": "Derived-color treatment; geometry is unchanged from the original lockup source.",
+      "relationship": "master",
+      "allowedColorRoles": ["void", "signal"]
     },
     {
       "path": "packages/assets/logo/mark-primary.svg",
@@ -267,7 +273,12 @@
       "approved": true,
       "mediaType": "image/svg+xml",
       "kind": "logo",
-      "role": "primary"
+      "variant": "primary",
+      "approvalState": "approved",
+      "viewBox": "261.29998779296875 253.89999389648438 506.89996337890625 506.8000183105469",
+      "sourceProvenance": "logo/source/original-lockup.svg",
+      "relationship": "master",
+      "allowedColorRoles": ["signal", "ash700"]
     },
     {
       "path": "packages/assets/logo/mark-transparent.svg",
@@ -275,7 +286,12 @@
       "approved": true,
       "mediaType": "image/svg+xml",
       "kind": "logo",
-      "role": "transparent"
+      "variant": "transparent",
+      "approvalState": "approved",
+      "viewBox": "261.29998779296875 253.89999389648438 506.89996337890625 506.8000183105469",
+      "sourceProvenance": "logo/source/transparent-lockup.svg",
+      "relationship": "master",
+      "allowedColorRoles": ["ash700"]
     }
   ]
 }

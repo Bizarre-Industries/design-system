@@ -72,7 +72,7 @@ assert.deepEqual(identity.organization, {
 
 - [ ] **Step 2: Run the focused test and verify RED**
 
-Run: `node --test test/identity.test.mjs`  
+Run: `node --test test/identity.test.mjs`
 Expected: FAIL because the old tagline contains a period and the new fields are absent.
 
 - [ ] **Step 3: Update the identity and fixed-value schema**
@@ -85,7 +85,7 @@ Change README identity copy to `CATCH THE STARS` and state that `brand/identity.
 
 - [ ] **Step 5: Verify GREEN and commit**
 
-Run: `node --test test/identity.test.mjs && git diff --check`  
+Run: `node --test test/identity.test.mjs && git diff --check`
 Expected: PASS and no whitespace errors.
 
 ```bash
@@ -130,7 +130,7 @@ Also compare the ordered `d` attributes from the gravity-well group against both
 
 - [ ] **Step 3: Run the focused test and verify RED**
 
-Run: `node --test test/logo-assets.test.mjs`  
+Run: `node --test test/logo-assets.test.mjs`
 Expected: FAIL because mark-only masters and the SVG inspector do not exist.
 
 - [ ] **Step 4: Implement the SVG inspector**
@@ -153,7 +153,7 @@ Expected: all three render as the supplied gravity-well mark without wordmark te
 
 - [ ] **Step 7: Verify GREEN and commit**
 
-Run: `node --test test/logo-assets.test.mjs && git diff --check`  
+Run: `node --test test/logo-assets.test.mjs && git diff --check`
 Expected: PASS.
 
 ```bash
@@ -195,7 +195,7 @@ await assert.rejects(validateAssets(root, missingLicense), /OFL license/);
 
 - [ ] **Step 2: Run the focused test and verify RED**
 
-Run: `node --test test/assets.test.mjs`  
+Run: `node --test test/assets.test.mjs`
 Expected: FAIL because the manifest and validator are absent.
 
 - [ ] **Step 3: Implement safe asset validation**
@@ -243,7 +243,7 @@ Record source/master relationships, hashes, media types, approval, logo roles, f
 
 - [ ] **Step 8: Verify GREEN and commit**
 
-Run: `node --test test/assets.test.mjs && npm pack --dry-run --workspace @bizarre/assets && git diff --check`  
+Run: `node --test test/assets.test.mjs && npm pack --dry-run --workspace @bizarre/assets && git diff --check`
 Expected: tests pass and package inventory contains no static font instances or source lockups.
 
 ```bash
@@ -279,7 +279,7 @@ assert.throws(() => resolveTokenAliases(missingRows), /missing token.*color\.neu
 
 - [ ] **Step 2: Run the focused test and verify RED**
 
-Run: `node --test test/token-model.test.mjs`  
+Run: `node --test test/token-model.test.mjs`
 Expected: FAIL because loading is hard-coded to two documents and aliases are unsupported.
 
 - [ ] **Step 3: Implement manifest loading and alias resolution**
@@ -296,7 +296,7 @@ Delete `tokens/tokens.css` only after every accepted value is represented by a c
 
 - [ ] **Step 6: Verify GREEN and commit**
 
-Run: `node --test test/token-model.test.mjs && git diff --check`  
+Run: `node --test test/token-model.test.mjs && git diff --check`
 Expected: PASS.
 
 ```bash
@@ -328,7 +328,7 @@ assert.throws(() => validateContrastPairs(failingModel), /semantic\.paper.*1\.11
 
 - [ ] **Step 2: Run the focused test and verify RED**
 
-Run: `node --test test/contrast.test.mjs`  
+Run: `node --test test/contrast.test.mjs`
 Expected: FAIL because contrast utilities are absent.
 
 - [ ] **Step 3: Implement WCAG contrast math**
@@ -345,7 +345,7 @@ Require identical role-path sets across modes. Error messages must identify the 
 
 - [ ] **Step 6: Verify GREEN and commit**
 
-Run: `node --test test/contrast.test.mjs test/token-model.test.mjs && git diff --check`  
+Run: `node --test test/contrast.test.mjs test/token-model.test.mjs && git diff --check`
 Expected: PASS with every pair above threshold.
 
 ```bash
@@ -371,7 +371,7 @@ Assert support for aliases and DTCG values, the `--bzr-*` namespace, all five ca
 
 - [ ] **Step 2: Run the focused test and verify RED**
 
-Run: `node --test test/build-tokens.test.mjs`  
+Run: `node --test test/build-tokens.test.mjs`
 Expected: FAIL because the builder supports only colors, strings, and numbers.
 
 - [ ] **Step 3: Extend deterministic CSS serialization**
@@ -380,12 +380,12 @@ Serialize dimensions/durations with units, cubic Bézier arrays as `cubic-bezier
 
 - [ ] **Step 4: Regenerate and verify drift checks**
 
-Run: `npm run build && npm run check:generated`  
+Run: `npm run build && npm run check:generated`
 Expected: generated CSS/JSON/manifest are updated and the drift checker passes.
 
 - [ ] **Step 5: Verify GREEN and commit**
 
-Run: `node --test test/build-tokens.test.mjs test/check-generated.test.mjs && git diff --check`  
+Run: `node --test test/build-tokens.test.mjs test/check-generated.test.mjs && git diff --check`
 Expected: PASS.
 
 ```bash
@@ -415,7 +415,7 @@ Require both workspace packages, exact asset package inventory, manifest evidenc
 
 - [ ] **Step 2: Run focused tests and verify RED**
 
-Run: `node --test test/build-assets.test.mjs test/package-contract.test.mjs test/evidence.test.mjs`  
+Run: `node --test test/build-assets.test.mjs test/package-contract.test.mjs test/evidence.test.mjs`
 Expected: FAIL because `@bizarre/assets` is not governed or built.
 
 - [ ] **Step 3: Implement deterministic asset publication**
@@ -428,7 +428,7 @@ Add `build:tokens`, `build:assets`, and a combined `build`; include both generat
 
 - [ ] **Step 5: Verify GREEN and commit**
 
-Run: `npm test && npm run build && npm run check:generated && npm pack --dry-run --workspace @bizarre/assets`  
+Run: `npm test && npm run build && npm run check:generated && npm pack --dry-run --workspace @bizarre/assets`
 Expected: PASS with exact allowlisted package contents.
 
 ```bash
@@ -455,7 +455,7 @@ Assert exact slogan consistency; no “two sources of truth”; no `tokens/token
 
 - [ ] **Step 2: Run focused tests and verify RED**
 
-Run: `node --test test/documentation-contract.test.mjs test/proof-sheet.test.mjs`  
+Run: `node --test test/documentation-contract.test.mjs test/proof-sheet.test.mjs`
 Expected: FAIL on punctuation, remote fonts, broken mark path, duplicate values, and legacy authority claims.
 
 - [ ] **Step 3: Normalize the brand book**
@@ -472,7 +472,7 @@ Open the proof locally and capture desktop and mobile screenshots. Verify fonts 
 
 - [ ] **Step 6: Verify GREEN and commit**
 
-Run: `node --test test/documentation-contract.test.mjs test/proof-sheet.test.mjs && git diff --check`  
+Run: `node --test test/documentation-contract.test.mjs test/proof-sheet.test.mjs && git diff --check`
 Expected: PASS.
 
 ```bash

@@ -12,7 +12,8 @@ const hash = (bytes) => createHash('sha256').update(bytes).digest('hex');
 async function fixture() {
   const directory = await mkdtemp(join(tmpdir(), 'bizarre-assets-'));
   await mkdir(join(directory, 'assets'), { recursive: true });
-  await writeFile(join(directory, 'assets', 'mark.svg'), '<svg xmlns="http://www.w3.org/2000/svg"/>');
+  await writeFile(join(directory, 'assets', 'mark.svg'), '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"/>');
+  await writeFile(join(directory, 'assets', 'source.svg'), '<svg xmlns="http://www.w3.org/2000/svg"/>');
   await writeFile(join(directory, 'assets', 'font.ttf'), Buffer.from('font'));
   await writeFile(join(directory, 'assets', 'font.woff2'), Buffer.from('woff2'));
   await writeFile(join(directory, 'assets', 'OFL.txt'), 'SIL OPEN FONT LICENSE Version 1.1');
@@ -26,7 +27,7 @@ async function fixture() {
   const manifest = {
     schemaVersion: 1,
     assets: [
-      await entry('assets/mark.svg', 'image/svg+xml', { kind: 'logo', role: 'primary' }),
+      await entry('assets/mark.svg', 'image/svg+xml', { kind: 'logo', variant: 'primary', approvalState: 'approved', viewBox: '0 0 24 24', sourceProvenance: 'assets/source.svg', relationship: 'master', allowedColorRoles: ['signal', 'ash700'] }),
       await entry('assets/OFL.txt', 'text/plain', { kind: 'license', family: 'Example' }),
       await entry('assets/font.ttf', 'font/ttf', { kind: 'font', family: 'Example', style: 'normal', weightRange: [100, 900], license: 'assets/OFL.txt' }),
       await entry('assets/font.woff2', 'font/woff2', { kind: 'font', family: 'Example', style: 'normal', weightRange: [100, 900], master: 'assets/font.ttf', license: 'assets/OFL.txt' }),
@@ -40,6 +41,20 @@ test('validates governed assets and returns path-sorted rows', async () => {
   const rows = await validateAssets(root, { ...manifest, assets: manifest.assets.toReversed() });
   assert.deepEqual(rows.map(({ path }) => path), rows.map(({ path }) => path).toSorted());
   assert.deepEqual(Object.keys(rows[0]), ['path', 'sha256', 'mediaType']);
+});
+
+test('requires complete, enumerated logo governance and exact SVG geometry', async () => {
+  const { root, manifest } = await fixture();
+  const logo = manifest.assets[0];
+  for (const field of ['variant', 'approvalState', 'viewBox', 'sourceProvenance', 'relationship', 'allowedColorRoles']) {
+    await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...logo, [field]: undefined }] }), new RegExp(field));
+  }
+  await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...logo, variant: 'experimental' }] }), /variant/);
+  await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...logo, approvalState: 'draft' }] }), /approvalState/);
+  await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...logo, relationship: 'derivative' }] }), /relationship/);
+  await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...logo, allowedColorRoles: ['rainbow'] }] }), /allowedColorRoles/);
+  await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...logo, viewBox: '0 0 25 25' }] }), /viewBox/);
+  await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...logo, sourceProvenance: '../source.svg' }] }), /sourceProvenance/);
 });
 
 test('rejects missing paths and symlinks', async () => {

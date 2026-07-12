@@ -195,6 +195,15 @@ test('resolves aliases while retaining their declared token path and alias', () 
   assert.deepEqual(rows[1], { path: 'color.text', type: 'color', value: '{color.base}', resolvedValue: '#000' });
 });
 
+test('resolves multi-hop semantic aliases before contrast validation', () => {
+  const rows = resolveTokenAliases([
+    { path: 'color.base', type: 'color', value: '#000000' },
+    { path: 'semantic.ink', type: 'color', value: '{color.base}' },
+    { path: 'modes.void.content.primary', type: 'color', value: '{semantic.ink}' },
+  ]);
+  assert.equal(rows.at(-1).resolvedValue, '#000000');
+});
+
 test('rejects missing aliases, alias cycles, and alias type mismatches with paths', () => {
   assert.throws(
     () => resolveTokenAliases([{ path: 'text.primary', type: 'color', value: '{color.neutral.void}' }]),

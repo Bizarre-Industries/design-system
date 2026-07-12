@@ -12,6 +12,11 @@ const mediaTypes = new Map([
   ['.md', 'text/markdown'],
   ['.txt', 'text/plain'],
 ]);
+const logoVariants = new Set(['primary', 'inverse', 'transparent']);
+const approvalStates = new Set(['approved']);
+const logoRelationships = new Set(['master']);
+const colorRoles = new Set(['signal', 'void', 'ash700']);
+const viewBoxPattern = /^-?(?:\d+\.?\d*|\.\d+)(?:\s+-?(?:\d+\.?\d*|\.\d+)){3}$/;
 
 function safePath(root, path) {
   if (typeof path !== 'string' || path.length === 0 || path.startsWith('/') || path.includes('\\')) {
@@ -54,6 +59,24 @@ export async function validateAssets(rootUrl, manifest) {
     const expected = mediaTypes.get(extname(entry.path).toLowerCase());
     if (!expected || entry.mediaType !== expected) throw new Error(`wrong media type for ${entry.path}`);
     if (entry.master && !entries.has(entry.master)) throw new Error(`derivative master is absent: ${entry.master}`);
+    if (entry.kind === 'logo') {
+      for (const field of ['variant', 'approvalState', 'viewBox', 'sourceProvenance', 'relationship', 'allowedColorRoles']) {
+        if (entry[field] === undefined) throw new Error(`logo entry requires ${field}: ${entry.path}`);
+      }
+      if (!logoVariants.has(entry.variant)) throw new Error(`invalid logo variant: ${entry.path}`);
+      if (!approvalStates.has(entry.approvalState)) throw new Error(`invalid logo approvalState: ${entry.path}`);
+      if (!logoRelationships.has(entry.relationship)) throw new Error(`invalid logo relationship: ${entry.path}`);
+      if (!viewBoxPattern.test(entry.viewBox)) throw new Error(`invalid logo viewBox: ${entry.path}`);
+      if (!Array.isArray(entry.allowedColorRoles) || entry.allowedColorRoles.length === 0 || entry.allowedColorRoles.some((role) => !colorRoles.has(role))) {
+        throw new Error(`invalid logo allowedColorRoles: ${entry.path}`);
+      }
+      try {
+        safePath(root, entry.sourceProvenance);
+        await assertRegularFileWithoutSymlinks(root, entry.sourceProvenance);
+      } catch (error) {
+        throw new Error(`invalid logo sourceProvenance for ${entry.path}: ${error.message}`);
+      }
+    }
   }
 
   for (const entry of manifest.assets) {
@@ -94,6 +117,11 @@ export async function validateAssets(rootUrl, manifest) {
     const target = safePath(root, entry.path);
     await assertRegularFileWithoutSymlinks(root, entry.path);
     const bytes = await readFile(target);
+    if (entry.kind === 'logo') {
+      const svg = bytes.toString('utf8');
+      const actualViewBox = svg.match(/<svg\b[^>]*\bviewBox=["']([^"']+)["']/i)?.[1];
+      if (actualViewBox !== entry.viewBox) throw new Error(`logo viewBox mismatch for ${entry.path}`);
+    }
     if (entry.mediaType.startsWith('text/')) {
       const text = bytes.toString('utf8');
       if (text.includes('\r')) throw new Error(`governed text asset has CRLF line endings: ${entry.path}`);
