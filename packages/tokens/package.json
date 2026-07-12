@@ -1,0 +1,12 @@
+{
+  "name": "@bizarre/tokens",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "files": ["generated", "README.md"],
+  "exports": {
+    "./tokens.json": "./generated/tokens.json",
+    "./tokens.css": "./generated/tokens.css",
+    "./manifest.json": "./generated/manifest.json"
+  }
+}
