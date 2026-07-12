@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "type": "module",
   "license": "MIT",
-  "files": ["logo", "fonts", "README.md", "manifest.json"],
+  "files": ["generated"],
   "exports": {
-    "./manifest.json": "./manifest.json",
-    "./fonts.css": "./fonts/bizarre-fonts.css",
-    "./fonts/*": "./fonts/*",
-    "./logo/*": "./logo/*"
+    "./manifest.json": "./generated/manifest.json",
+    "./fonts.css": "./generated/fonts/bizarre-fonts.css",
+    "./fonts/*": "./generated/fonts/*",
+    "./logo/*": "./generated/logo/*"
   }
 }

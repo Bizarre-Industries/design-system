@@ -1,0 +1,158 @@
+{
+  "evidence": [
+    {
+      "bytes": 19700,
+      "path": "BRAND.md",
+      "sha256": "f83361f6ba5589b501bd77e966088f70dbe29ef516a22a56812ccff0f43cf0bb"
+    },
+    {
+      "bytes": 1075,
+      "path": "LICENSE",
+      "sha256": "a85558a23a3030ef254032be8c8012c78278018b52bc0ae3e20ee6c6ff0ac899"
+    },
+    {
+      "bytes": 785,
+      "path": "README.md",
+      "sha256": "a6bd6e6e6d0b406ffe32d1cfe6a4ab34a88b18296051d833d79ede244725a756"
+    },
+    {
+      "bytes": 299,
+      "path": "brand/README.md",
+      "sha256": "8bc92a519fd6dd3e7f28128c498e1859d8546966fd73607800a111c1b99bae3a"
+    },
+    {
+      "bytes": 9500,
+      "path": "brand/assets.json",
+      "sha256": "440a7005fcd0b8f0c3aba2ec0de27c511e46c6fda4faf3d9c4896620e576df69"
+    },
+    {
+      "bytes": 654,
+      "path": "brand/identity.json",
+      "sha256": "f6d3447f792c70ae510cedf320f1485ace250e6b831096f74730a2c5022113fc"
+    },
+    {
+      "bytes": 249,
+      "path": "foundations/README.md",
+      "sha256": "6a658eeb4044e364e1aca542c4fc98ceb340d89c2874c82d2e4bc5dc4a1dbf38"
+    },
+    {
+      "bytes": 390,
+      "path": "governance/CONTRIBUTING.md",
+      "sha256": "38ae1aaf801f03a9a31f89cd629b32667c5d2e04b3e805cf5446918bbe99ef21"
+    },
+    {
+      "bytes": 358,
+      "path": "governance/RELEASES.md",
+      "sha256": "6cfa1173b26607206ffef3b5cfe6de4202867f0377656e7d9c0c3dc81e25625e"
+    },
+    {
+      "bytes": 371,
+      "path": "governance/package-contract.json",
+      "sha256": "69365833980b10593a44de106c6bab04f4f803da7d910646579f452f7d1f4f6b"
+    },
+    {
+      "bytes": 4396,
+      "path": "packages/assets/fonts/licenses/BigShouldersStencil/OFL.txt",
+      "sha256": "3a914b9c36b191af65068ea1ef9d99c7c6e90c838f53c12508463a4ea9330f19"
+    },
+    {
+      "bytes": 4401,
+      "path": "packages/assets/fonts/licenses/HankenGrotesk/OFL.txt",
+      "sha256": "56c54eb6be2d6c11ce6d24e53146189c6922bdf02cd80f0e1cc2f5a087ab52be"
+    },
+    {
+      "bytes": 4398,
+      "path": "packages/assets/fonts/licenses/JetBrainsMono/OFL.txt",
+      "sha256": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90"
+    },
+    {
+      "bytes": 4391,
+      "path": "packages/assets/fonts/licenses/Unbounded/OFL.txt",
+      "sha256": "e4adc17fbe0714f78c7614c53138f67ad8a031aca0ffa4698044d87d45d2622e"
+    },
+    {
+      "bytes": 1407,
+      "path": "schemas/assets.schema.json",
+      "sha256": "b3658627dbc1d2446c2c057a8ddd317cc3067a63532ef760ec35ade5c2c3cc99"
+    }
+  ],
+  "files": {
+    "generated/README.md": {
+      "sha256": "ea29d251a5268a126ef8c67a9644f5ad60049ee3f11017be10a68f6d25e24dd3"
+    },
+    "generated/fonts/bizarre-fonts.css": {
+      "sha256": "353945cd89e75623f363813df46877cf04b39f3bbbc7968e2221780ff2321fbf"
+    },
+    "generated/fonts/licenses/BigShouldersStencil/OFL.txt": {
+      "sha256": "3a914b9c36b191af65068ea1ef9d99c7c6e90c838f53c12508463a4ea9330f19"
+    },
+    "generated/fonts/licenses/BigShouldersStencil/README.txt": {
+      "sha256": "5b508b23093757eb278bb3a69e138e60fa1778969112abe7bee55276e4decb84"
+    },
+    "generated/fonts/licenses/HankenGrotesk/OFL.txt": {
+      "sha256": "56c54eb6be2d6c11ce6d24e53146189c6922bdf02cd80f0e1cc2f5a087ab52be"
+    },
+    "generated/fonts/licenses/HankenGrotesk/README.txt": {
+      "sha256": "32f2493d44406b716e0656990ae824fe4c8942fbe0987d850f9294c5d245397e"
+    },
+    "generated/fonts/licenses/JetBrainsMono/OFL.txt": {
+      "sha256": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90"
+    },
+    "generated/fonts/licenses/JetBrainsMono/README.txt": {
+      "sha256": "3650f233d562cc4837e601ec0ea1253daec5010db99d43dafd8c9dca607316f7"
+    },
+    "generated/fonts/licenses/Unbounded/OFL.txt": {
+      "sha256": "e4adc17fbe0714f78c7614c53138f67ad8a031aca0ffa4698044d87d45d2622e"
+    },
+    "generated/fonts/licenses/Unbounded/README.txt": {
+      "sha256": "a4ba11f9e7bbdf78b2a6203b8c3a46dfd05f8372d77926b976d393f2e8f2ff99"
+    },
+    "generated/fonts/source/BigShouldersStencil-VariableFont_opsz,wght.ttf": {
+      "sha256": "ba6ca4e4efbdbe06644912126254069f8d01e750e7ea7ed45c02dec7045e3632"
+    },
+    "generated/fonts/source/HankenGrotesk-Italic-VariableFont_wght.ttf": {
+      "sha256": "49000473ba71b9408c19b6302a3b9707b2f7e235e15c9eb3c9df2a7fcfe98a57"
+    },
+    "generated/fonts/source/HankenGrotesk-VariableFont_wght.ttf": {
+      "sha256": "c4828929151ec9a455122afa06c31eb65e80ad8622f1d5510ecba8e195c57d38"
+    },
+    "generated/fonts/source/JetBrainsMono-Italic-VariableFont_wght.ttf": {
+      "sha256": "2d8ac6a590c2df8f63ae44807c40cac63bc481d197c4cb91d48f1a0f587fb32e"
+    },
+    "generated/fonts/source/JetBrainsMono-VariableFont_wght.ttf": {
+      "sha256": "192a3158a926768d1fa520164f0fb0f40a6ad085435aa854e43eb14cb40d1aab"
+    },
+    "generated/fonts/source/Unbounded-VariableFont_wght.ttf": {
+      "sha256": "c920c00876215ab1f902482a2fbb1eb307fe2cd5e7380ea307f7e4de1e064f72"
+    },
+    "generated/fonts/web/BigShouldersStencil-VariableFont_opsz,wght.woff2": {
+      "sha256": "bc91da2852ffb3b7feee5de63943955ceb14aaae56296700ed3631725d952493"
+    },
+    "generated/fonts/web/HankenGrotesk-Italic-VariableFont_wght.woff2": {
+      "sha256": "ef1f2f93ca1d058fbcd882e60a70115e8b87e9fc71ffa744c6b1bdc8881e547f"
+    },
+    "generated/fonts/web/HankenGrotesk-VariableFont_wght.woff2": {
+      "sha256": "dd72079854cb0dd6b3fe1de5f89024cd2210fab29f761d80b72d84ed1c6cdde1"
+    },
+    "generated/fonts/web/JetBrainsMono-Italic-VariableFont_wght.woff2": {
+      "sha256": "4715e503f808a7c9362ddd92956e30d76861929bf47061968ee985f9899a2afd"
+    },
+    "generated/fonts/web/JetBrainsMono-VariableFont_wght.woff2": {
+      "sha256": "dea05c900f787a8d7866e6f50a3b37523e506724fef41cff0064af80e506568b"
+    },
+    "generated/fonts/web/Unbounded-VariableFont_wght.woff2": {
+      "sha256": "f8afc8c126d03acb8b789fe8b51c1129236444944a0e34febeae1a4b6dd2f1a4"
+    },
+    "generated/logo/mark-inverse.svg": {
+      "sha256": "d3798c26e0f38ba0d2906de86a6ec88fd97bf10221a3b81517277f237f110127"
+    },
+    "generated/logo/mark-primary.svg": {
+      "sha256": "e164ce8d083995169f23a107dae08b0d95d8fe3cfaf969437161cd8604fa37dd"
+    },
+    "generated/logo/mark-transparent.svg": {
+      "sha256": "d24de77093b85cfa067211f4003fff9df538e0b1a735a5c3d51a8a18f97cf37e"
+    }
+  },
+  "package": "@bizarre/assets",
+  "schemaVersion": 1
+}

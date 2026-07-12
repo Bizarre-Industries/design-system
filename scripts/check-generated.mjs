@@ -1,6 +1,7 @@
 import { lstat, readFile, readdir } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { buildExpected } from './build-tokens.mjs';
+import { buildExpectedAssets } from './build-assets.mjs';
 
 const comparePaths = (left, right) => left < right ? -1 : left > right ? 1 : 0;
 
@@ -54,14 +55,19 @@ export async function compareGenerated(packageUrl, expected) {
 }
 
 export async function checkGenerated(rootUrl) {
-  return compareGenerated(new URL('packages/tokens/', rootUrl), await buildExpected(rootUrl));
+  return {
+    tokens: await compareGenerated(new URL('packages/tokens/', rootUrl), await buildExpected(rootUrl)),
+    assets: await compareGenerated(new URL('packages/assets/', rootUrl), await buildExpectedAssets(rootUrl))
+  };
 }
 
 const isDirect = process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href;
 if (isDirect) {
-  const drift = await checkGenerated(new URL('../', import.meta.url));
-  for (const category of ['missing', 'modified', 'obsolete']) {
-    for (const path of drift[category]) console.error(`${category}: ${path}`);
+  const packages = await checkGenerated(new URL('../', import.meta.url));
+  for (const [name, drift] of Object.entries(packages)) {
+    for (const category of ['missing', 'modified', 'obsolete']) {
+      for (const path of drift[category]) console.error(`${name}: ${category}: ${path}`);
+    }
   }
-  if (Object.values(drift).some((paths) => paths.length > 0)) process.exitCode = 1;
+  if (Object.values(packages).some((drift) => Object.values(drift).some((paths) => paths.length > 0))) process.exitCode = 1;
 }

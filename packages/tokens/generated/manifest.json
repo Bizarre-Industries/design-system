@@ -1,6 +1,11 @@
 {
   "evidence": [
     {
+      "bytes": 19700,
+      "path": "BRAND.md",
+      "sha256": "f83361f6ba5589b501bd77e966088f70dbe29ef516a22a56812ccff0f43cf0bb"
+    },
+    {
       "bytes": 1075,
       "path": "LICENSE",
       "sha256": "a85558a23a3030ef254032be8c8012c78278018b52bc0ae3e20ee6c6ff0ac899"
@@ -14,6 +19,11 @@
       "bytes": 299,
       "path": "brand/README.md",
       "sha256": "8bc92a519fd6dd3e7f28128c498e1859d8546966fd73607800a111c1b99bae3a"
+    },
+    {
+      "bytes": 9500,
+      "path": "brand/assets.json",
+      "sha256": "440a7005fcd0b8f0c3aba2ec0de27c511e46c6fda4faf3d9c4896620e576df69"
     },
     {
       "bytes": 654,
@@ -36,9 +46,34 @@
       "sha256": "6cfa1173b26607206ffef3b5cfe6de4202867f0377656e7d9c0c3dc81e25625e"
     },
     {
-      "bytes": 352,
+      "bytes": 371,
       "path": "governance/package-contract.json",
-      "sha256": "327f5f783012d12ac8e0cba2837429cd7fe26380fd1bcbaa52a403ddbc429a49"
+      "sha256": "69365833980b10593a44de106c6bab04f4f803da7d910646579f452f7d1f4f6b"
+    },
+    {
+      "bytes": 4396,
+      "path": "packages/assets/fonts/licenses/BigShouldersStencil/OFL.txt",
+      "sha256": "3a914b9c36b191af65068ea1ef9d99c7c6e90c838f53c12508463a4ea9330f19"
+    },
+    {
+      "bytes": 4401,
+      "path": "packages/assets/fonts/licenses/HankenGrotesk/OFL.txt",
+      "sha256": "56c54eb6be2d6c11ce6d24e53146189c6922bdf02cd80f0e1cc2f5a087ab52be"
+    },
+    {
+      "bytes": 4398,
+      "path": "packages/assets/fonts/licenses/JetBrainsMono/OFL.txt",
+      "sha256": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90"
+    },
+    {
+      "bytes": 4391,
+      "path": "packages/assets/fonts/licenses/Unbounded/OFL.txt",
+      "sha256": "e4adc17fbe0714f78c7614c53138f67ad8a031aca0ffa4698044d87d45d2622e"
+    },
+    {
+      "bytes": 1407,
+      "path": "schemas/assets.schema.json",
+      "sha256": "b3658627dbc1d2446c2c057a8ddd317cc3067a63532ef760ec35ade5c2c3cc99"
     }
   ],
   "files": {

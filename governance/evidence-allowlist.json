@@ -1,13 +1,20 @@
 {
   "schemaVersion": 1,
   "paths": [
+    "BRAND.md",
     "LICENSE",
     "README.md",
     "brand/README.md",
+    "brand/assets.json",
     "brand/identity.json",
     "foundations/README.md",
     "governance/CONTRIBUTING.md",
     "governance/RELEASES.md",
-    "governance/package-contract.json"
+    "governance/package-contract.json",
+    "packages/assets/fonts/licenses/BigShouldersStencil/OFL.txt",
+    "packages/assets/fonts/licenses/HankenGrotesk/OFL.txt",
+    "packages/assets/fonts/licenses/JetBrainsMono/OFL.txt",
+    "packages/assets/fonts/licenses/Unbounded/OFL.txt",
+    "schemas/assets.schema.json"
   ]
 }
