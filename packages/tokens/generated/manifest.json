@@ -6,9 +6,9 @@
       "sha256": "a85558a23a3030ef254032be8c8012c78278018b52bc0ae3e20ee6c6ff0ac899"
     },
     {
-      "bytes": 720,
+      "bytes": 785,
       "path": "README.md",
-      "sha256": "2f45caa20105c078a69dfc2464b9ce2d32a033a95dec8fde919187908c083de1"
+      "sha256": "a6bd6e6e6d0b406ffe32d1cfe6a4ab34a88b18296051d833d79ede244725a756"
     },
     {
       "bytes": 299,
@@ -16,9 +16,9 @@
       "sha256": "8bc92a519fd6dd3e7f28128c498e1859d8546966fd73607800a111c1b99bae3a"
     },
     {
-      "bytes": 368,
+      "bytes": 654,
       "path": "brand/identity.json",
-      "sha256": "1924a7149b1614aaf8d4cc86dfa3c76c834309bc4f91ab2ff0245f2bf930d35b"
+      "sha256": "f6d3447f792c70ae510cedf320f1485ace250e6b831096f74730a2c5022113fc"
     },
     {
       "bytes": 249,
@@ -43,10 +43,10 @@
   ],
   "files": {
     "generated/tokens.css": {
-      "sha256": "2dae43a33895d91f6a6155d92b10f01d210b0a5420beabbb45506a860e1d1f5b"
+      "sha256": "edd3bc0c2bc01627c2e5d4c19b6b79895b22c51864a53005abb9879fe01d34e8"
     },
     "generated/tokens.json": {
-      "sha256": "728a4ef562fcce114595a667b1235874b82dcaf1632c57094d88e8e5bc4311a4"
+      "sha256": "8c62656ab5a9fd7275e1dc91514833caf837d10749d9843106430ce5a1177234"
     }
   },
   "package": "@bizarre/tokens",
