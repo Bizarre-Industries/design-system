@@ -22,6 +22,31 @@ test('defines the five canonical modes and required theme order', async () => {
   assert.deepEqual(Object.keys(model.modes.modes).sort(), ['bone', 'paper', 'void', 'void-hicontrast', 'workshop'].sort());
 });
 
+test('defines identical semantic role paths across every mode', async () => {
+  const model = await loadTokenModel(root);
+  const paths = (theme) => flattenTokens({ theme: model.modes.modes[theme] }).map(({ path }) => path);
+  const [first, ...rest] = model.modes.$extensions['industries.bizarre'].themeOrder;
+  for (const theme of rest) assert.deepEqual(paths(theme), paths(first), `${theme} role parity`);
+});
+
+test('rejects a mode missing a semantic role', async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), 'token-model-'));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const source = join(directory, 'tokens', 'source');
+  await mkdir(source, { recursive: true });
+  await writeFile(join(source, 'manifest.json'), JSON.stringify(['modes.tokens.json']));
+  await writeFile(join(source, 'modes.tokens.json'), JSON.stringify({
+    $extensions: { 'industries.bizarre': { themeOrder: ['complete', 'incomplete'], contrastPairs: [] } },
+    modes: {
+      complete: { $type: 'color', surface: { canvas: { $value: '#000000' } } },
+      incomplete: { $type: 'color', surface: {}
+      }
+    }
+  }));
+
+  await assert.rejects(loadTokenModel(pathToFileURL(`${directory}/`)), /incomplete.*missing semantic role.*surface\.canvas/);
+});
+
 test('flattens typed tokens in stable path order', async () => {
   const rows = flattenTokens(await loadTokenModel(root));
   assert.ok(rows.length >= 11);

@@ -1,4 +1,5 @@
 import { readFile } from 'node:fs/promises';
+import { validateContrastPairs } from './contrast.mjs';
 
 const isObject = (value) => value !== null && typeof value === 'object' && !Array.isArray(value);
 
@@ -100,6 +101,46 @@ export function resolveTokenAliases(rows) {
   });
 }
 
+function validateSemanticModes(model, resolvedRows) {
+  const modes = model.modes?.modes;
+  if (!isObject(modes)) return;
+  const metadata = model.modes?.$extensions?.['industries.bizarre'];
+  const order = metadata?.themeOrder;
+  if (!Array.isArray(order) || order.length === 0) throw new TypeError('Semantic modes require a non-empty themeOrder');
+  if (new Set(order).size !== order.length || order.some((theme) => !Object.hasOwn(modes, theme)) || order.length !== Object.keys(modes).length) {
+    throw new TypeError('themeOrder must list every semantic mode exactly once');
+  }
+
+  const rolePaths = new Map(order.map((theme) => [
+    theme,
+    resolvedRows
+      .filter(({ path }) => path.startsWith(`modes.${theme}.`))
+      .map(({ path }) => path.slice(`modes.${theme}.`.length))
+  ]));
+  const baseline = rolePaths.get(order[0]);
+  for (const theme of order.slice(1)) {
+    const roles = new Set(rolePaths.get(theme));
+    for (const role of baseline) {
+      if (!roles.has(role)) throw new TypeError(`Semantic mode ${theme} is missing semantic role ${role}`);
+    }
+    const expected = new Set(baseline);
+    for (const role of roles) {
+      if (!expected.has(role)) throw new TypeError(`Semantic mode ${order[0]} is missing semantic role ${role}`);
+    }
+  }
+
+  if (!Array.isArray(metadata?.contrastPairs)) throw new TypeError('Semantic modes require contrastPairs metadata');
+  const rows = new Map(resolvedRows.map((row) => [row.path, row]));
+  validateContrastPairs({
+    rows,
+    pairs: order.flatMap((theme) => metadata.contrastPairs.map((pair) => ({
+      ...pair,
+      foreground: `modes.${theme}.${pair.foreground}`,
+      background: `modes.${theme}.${pair.background}`
+    })))
+  });
+}
+
 export async function loadTokenModel(rootUrl) {
   const sourceUrl = new URL('tokens/source/', rootUrl);
   const manifest = JSON.parse(await readFile(new URL('manifest.json', sourceUrl), 'utf8'));
@@ -121,6 +162,7 @@ export async function loadTokenModel(rootUrl) {
     if (Object.hasOwn(model, name)) throw new TypeError(`duplicate token document name: ${name}`);
     model[name] = JSON.parse(await readFile(new URL(path, sourceUrl), 'utf8'));
   }
-  resolveTokenAliases(flattenTokens(model));
+  const resolvedRows = resolveTokenAliases(flattenTokens(model));
+  validateSemanticModes(model, resolvedRows);
   return model;
 }
