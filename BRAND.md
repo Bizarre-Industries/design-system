@@ -11,7 +11,7 @@ It is not a marketing plan, a corporate style guide, or a deck. It is a livery. 
 
 Three things you never break, everything else is interpretation:
 
-1. The mark appears in Signal Lime and Void Gray, or monochrome. Never other colors.
+1. The mark uses only the approved primary, inverse, and transparent treatments, with Signal Lime, Void, and Void Gray only in the color-role combinations defined by their approved assets. Monochrome variants remain deferred and unavailable.
 2. The slogan is exactly **CATCH THE STARS** with no trailing punctuation. Its standalone rule is defined below.
 3. The voice is second-person, promotion-focused, never anti-establishment.
 

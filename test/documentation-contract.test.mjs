@@ -24,6 +24,7 @@ test('foundation audit reports limits and next milestone order', async () => {
 test('brand book follows the governed identity and package contracts', async () => {
   const brand = await readFile(new URL('../BRAND.md', import.meta.url), 'utf8');
   const identity = JSON.parse(await readFile(new URL('../brand/identity.json', import.meta.url), 'utf8'));
+  const assets = JSON.parse(await readFile(new URL('../brand/assets.json', import.meta.url), 'utf8'));
 
   assert.equal(identity.tagline, 'CATCH THE STARS');
   const sloganOccurrences = [...brand.matchAll(/catch the stars[.!?]?/gi)].map(([occurrence]) => occurrence);
@@ -43,6 +44,33 @@ test('brand book follows the governed identity and package contracts', async () 
   assert.match(brand, /independent closing or ceremonial element/i);
   assert.match(brand, /packages\/tokens\/generated\/tokens\.css/);
   assert.match(brand, /packages\/assets\/generated\/manifest\.json/);
+  const approvedLogoVariants = assets.assets
+    .filter(({ kind, approved, approvalState }) => kind === 'logo' && approved && approvalState === 'approved')
+    .map(({ variant }) => variant)
+    .sort();
+  assert.deepEqual(approvedLogoVariants, ['inverse', 'primary', 'transparent']);
+
+  const foundationalRules = brand.match(/Three things you never break[\s\S]+?Everything below is the longer explanation\./)?.[0] ?? '';
+  assert.match(foundationalRules, /approved primary, inverse, and transparent treatments/i);
+  assert.match(foundationalRules, /Signal Lime, Void, and Void Gray/);
+
+  if (!approvedLogoVariants.some((variant) => /mono/i.test(variant))) {
+    assert.doesNotMatch(
+      foundationalRules,
+      /(?:mark|variant|treatment)[^.\n]*(?:appears?|uses?|approved|available)[^.\n]*monochrome/i,
+      'foundational rules must not authorize monochrome without an approved monochrome asset'
+    );
+    const variantGuidance = brand.match(/### Variants[\s\S]+?(?=\n### )/)?.[0] ?? '';
+    const currentVariantProse = variantGuidance
+      .split('\n')
+      .filter((line) => !/(?:deferred|unavailable|do not)/i.test(line))
+      .join('\n');
+    assert.doesNotMatch(
+      currentVariantProse,
+      /monochrome/i,
+      'current variant guidance must not authorize monochrome without an approved monochrome asset'
+    );
+  }
   assert.doesNotMatch(brand, /(?:single|two) sources? of truth/i);
   assert.doesNotMatch(brand, /tokens\/tokens\.css|See `tokens\.css`/);
   assert.doesNotMatch(brand, /ten rings|10 rings/i);
