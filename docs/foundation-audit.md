@@ -22,7 +22,7 @@ The complete matrix was run on 2026-07-12:
 - `npm pack --dry-run --workspace @bizarre/assets`: exit 0; exactly 28 files, 1,567,757 packed bytes, 2,473,681 unpacked bytes, SHA-1 `a64ebd12436d9b8617257802c771c41e72c9f1c4`.
 - `git diff --check`: exit 0.
 
-The token package contains only `README.md`, `package.json`, and the generated CSS, JSON, and manifest. The asset package contains only its README, package metadata, generated manifest, three generated marks, the generated font stylesheet, six variable TTF masters, six WOFF2 derivatives, and eight family license/readme files. Source lockups, PNG references, loose root fonts, transient state, and migration CSS do not leak into either package.
+The token package contains only `README.md`, `package.json`, and the generated CSS, JSON, and manifest. The asset package contains only `README.md`, `generated/README.md`, `package.json`, the generated manifest, three generated marks, the generated font stylesheet, six variable TTF masters, six WOFF2 derivatives, and eight family license/readme files. Those entries account for the exact 28-file inventory. Source lockups, PNG references, loose root fonts, transient state, and migration CSS do not leak into either package.
 
 ## Visual verification
 
