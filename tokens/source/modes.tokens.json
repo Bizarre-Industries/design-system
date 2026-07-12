@@ -7,28 +7,28 @@
   "modes": {
     "void": {
       "$type": "color",
-      "surface": { "canvas": { "$value": { "colorSpace": "srgb", "components": [0.0549019608, 0.0549019608, 0.0549019608], "alpha": 1, "hex": "#0E0E0E" } } },
-      "text": { "primary": { "$value": { "colorSpace": "srgb", "components": [0.8941176471, 0.8941176471, 0.8941176471], "alpha": 1, "hex": "#E4E4E4" } } }
+      "surface": { "canvas": { "$value": "{color.neutral.void}" } },
+      "text": { "primary": { "$value": "{color.neutral.ash100}" } }
     },
     "paper": {
       "$type": "color",
-      "surface": { "canvas": { "$value": { "colorSpace": "srgb", "components": [0.9764705882, 0.9725490196, 0.9490196078], "alpha": 1, "hex": "#F9F8F2" } } },
-      "text": { "primary": { "$value": { "colorSpace": "srgb", "components": [0.1215686275, 0.1215686275, 0.1215686275], "alpha": 1, "hex": "#1F1F1F" } } }
+      "surface": { "canvas": { "$value": "{color.neutral.paper}" } },
+      "text": { "primary": { "$value": "{color.neutral.ash900}" } }
     },
     "void-hicontrast": {
       "$type": "color",
-      "surface": { "canvas": { "$value": { "colorSpace": "srgb", "components": [0, 0, 0], "alpha": 1, "hex": "#000000" } } },
-      "text": { "primary": { "$value": { "colorSpace": "srgb", "components": [0.9764705882, 0.9725490196, 0.9490196078], "alpha": 1, "hex": "#F9F8F2" } } }
+      "surface": { "canvas": { "$value": "{color.neutral.black}" } },
+      "text": { "primary": { "$value": "{color.neutral.paper}" } }
     },
     "workshop": {
       "$type": "color",
-      "surface": { "canvas": { "$value": { "colorSpace": "srgb", "components": [0.1019607843, 0.0941176471, 0.0823529412], "alpha": 1, "hex": "#1A1815" } } },
-      "text": { "primary": { "$value": { "colorSpace": "srgb", "components": [0.8941176471, 0.8862745098, 0.8549019608], "alpha": 1, "hex": "#E4E2DA" } } }
+      "surface": { "canvas": { "$value": "{color.neutral.workshop}" } },
+      "text": { "primary": { "$value": "{color.neutral.workshopText}" } }
     },
     "bone": {
       "$type": "color",
-      "surface": { "canvas": { "$value": { "colorSpace": "srgb", "components": [0.9607843137, 0.9490196078, 0.9176470588], "alpha": 1, "hex": "#F5F2EA" } } },
-      "text": { "primary": { "$value": { "colorSpace": "srgb", "components": [0.168627451, 0.168627451, 0.168627451], "alpha": 1, "hex": "#2B2B2B" } } }
+      "surface": { "canvas": { "$value": "{color.neutral.bone}" } },
+      "text": { "primary": { "$value": "{color.neutral.smoke}" } }
     }
   }
 }

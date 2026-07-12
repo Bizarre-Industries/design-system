@@ -1,0 +1,28 @@
+{
+  "space": {
+    "$type": "dimension",
+    "1": { "$value": { "value": 4, "unit": "px" } }, "2": { "$value": { "value": 8, "unit": "px" } },
+    "3": { "$value": { "value": 12, "unit": "px" } }, "4": { "$value": { "value": 16, "unit": "px" } },
+    "5": { "$value": { "value": 20, "unit": "px" } }, "6": { "$value": { "value": 24, "unit": "px" } },
+    "8": { "$value": { "value": 32, "unit": "px" } }, "10": { "$value": { "value": 40, "unit": "px" } },
+    "12": { "$value": { "value": 48, "unit": "px" } }, "16": { "$value": { "value": 64, "unit": "px" } },
+    "20": { "$value": { "value": 80, "unit": "px" } }, "24": { "$value": { "value": 96, "unit": "px" } },
+    "32": { "$value": { "value": 128, "unit": "px" } }, "40": { "$value": { "value": 160, "unit": "px" } },
+    "48": { "$value": { "value": 192, "unit": "px" } }
+  },
+  "radius": {
+    "$type": "dimension",
+    "none": { "$value": { "value": 0, "unit": "px" } }, "sm": { "$value": { "value": 2, "unit": "px" } },
+    "md": { "$value": { "value": 4, "unit": "px" } }, "pill": { "$value": { "value": 999, "unit": "px" } }
+  },
+  "border": {
+    "$type": "dimension",
+    "1": { "$value": { "value": 1, "unit": "px" } }, "2": { "$value": { "value": 2, "unit": "px" } },
+    "3": { "$value": { "value": 3, "unit": "px" } }, "4": { "$value": { "value": 4, "unit": "px" } }
+  },
+  "layer": {
+    "$type": "number",
+    "base": { "$value": 1 }, "raised": { "$value": 10 }, "sticky": { "$value": 100 },
+    "overlay": { "$value": 1000 }, "modal": { "$value": 2000 }, "toast": { "$value": 3000 }
+  }
+}

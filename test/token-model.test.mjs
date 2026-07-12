@@ -4,19 +4,15 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import test from 'node:test';
 import { pathToFileURL } from 'node:url';
-import { loadTokenModel, flattenTokens } from '../scripts/lib/token-model.mjs';
+import { loadTokenModel, flattenTokens, resolveTokenAliases } from '../scripts/lib/token-model.mjs';
 
 const root = new URL('../', import.meta.url);
 
 test('loads Signal Lime as the sole brand accent', async () => {
   const model = await loadTokenModel(root);
   assert.equal(model.brand.brand.accent.signal.$type, 'color');
-  assert.deepEqual(model.brand.brand.accent.signal.$value, {
-    colorSpace: 'srgb',
-    components: [0.7764705882, 1, 0.1411764706],
-    alpha: 1,
-    hex: '#C6FF24'
-  });
+  assert.equal(model.brand.brand.accent.signal.$value, '{color.accent.signal}');
+  assert.equal(model.palette.color.accent.signal.$value.hex, '#C6FF24');
   assert.deepEqual(Object.keys(model.brand.brand.accent), ['signal']);
 });
 
@@ -30,7 +26,9 @@ test('flattens typed tokens in stable path order', async () => {
   const rows = flattenTokens(await loadTokenModel(root));
   assert.ok(rows.length >= 11);
   assert.deepEqual(rows.map(({ path }) => path), rows.map(({ path }) => path).sort());
-  assert.ok(rows.every(({ type }) => type === 'color'));
+  assert.ok(new Set(rows.map(({ type }) => type)).isSupersetOf(new Set([
+    'color', 'fontFamily', 'fontWeight', 'dimension', 'number', 'duration', 'cubicBezier', 'shadow'
+  ])));
 });
 
 test('inherits the nearest group type', () => {
@@ -112,8 +110,83 @@ test('loadTokenModel validates source documents', async (t) => {
   const directory = await mkdtemp(join(tmpdir(), 'token-model-'));
   t.after(() => rm(directory, { recursive: true, force: true }));
   await mkdir(join(directory, 'tokens', 'source'), { recursive: true });
+  await writeFile(join(directory, 'tokens', 'source', 'manifest.json'), JSON.stringify(['brand.tokens.json', 'modes.tokens.json']));
   await writeFile(join(directory, 'tokens', 'source', 'brand.tokens.json'), JSON.stringify({ brand: { accent: { signal: { $value: '#fff' } } } }));
   await writeFile(join(directory, 'tokens', 'source', 'modes.tokens.json'), JSON.stringify({ modes: {} }));
 
   await assert.rejects(loadTokenModel(pathToFileURL(`${directory}/`)), /Untyped token at brand\.accent\.signal/);
+});
+
+test('loads only declared token documents in manifest order', async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), 'token-model-'));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const source = join(directory, 'tokens', 'source');
+  await mkdir(source, { recursive: true });
+  await writeFile(join(source, 'manifest.json'), JSON.stringify(['second.tokens.json', 'first.tokens.json']));
+  await writeFile(join(source, 'first.tokens.json'), JSON.stringify({ first: { $type: 'number', $value: 1 } }));
+  await writeFile(join(source, 'second.tokens.json'), JSON.stringify({ second: { $type: 'number', $value: 2 } }));
+  await writeFile(join(source, 'ignored.tokens.json'), JSON.stringify({ ignored: { $type: 'number', $value: 3 } }));
+
+  const model = await loadTokenModel(pathToFileURL(`${directory}/`));
+  assert.deepEqual(Object.keys(model), ['second', 'first']);
+  assert.equal(model.ignored, undefined);
+});
+
+test('rejects malformed, duplicate, and unsafe manifest entries', async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), 'token-model-'));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const source = join(directory, 'tokens', 'source');
+  await mkdir(source, { recursive: true });
+  const rootUrl = pathToFileURL(`${directory}/`);
+  for (const [manifest, pattern] of [
+    [[], /non-empty array/],
+    [['one.tokens.json', 'one.tokens.json'], /duplicate source.*one\.tokens\.json/],
+    [['../one.tokens.json'], /safe relative JSON path/],
+    [['nested/one.tokens.json'], /safe relative JSON path/],
+    [['one.txt'], /safe relative JSON path/]
+  ]) {
+    await writeFile(join(source, 'manifest.json'), JSON.stringify(manifest));
+    await assert.rejects(loadTokenModel(rootUrl), pattern);
+  }
+});
+
+test('rejects duplicate paths introduced by ordered source merging', async (t) => {
+  const directory = await mkdtemp(join(tmpdir(), 'token-model-'));
+  t.after(() => rm(directory, { recursive: true, force: true }));
+  const source = join(directory, 'tokens', 'source');
+  await mkdir(source, { recursive: true });
+  await writeFile(join(source, 'manifest.json'), JSON.stringify(['one.tokens.json', 'two.tokens.json']));
+  const document = JSON.stringify({ shared: { $type: 'number', $value: 1 } });
+  await writeFile(join(source, 'one.tokens.json'), document);
+  await writeFile(join(source, 'two.tokens.json'), document);
+  await assert.rejects(loadTokenModel(pathToFileURL(`${directory}/`)), /Duplicate token path: shared/);
+});
+
+test('resolves aliases while retaining their declared token path and alias', () => {
+  const rows = resolveTokenAliases([
+    { path: 'color.base', type: 'color', value: '#000' },
+    { path: 'color.text', type: 'color', value: '{color.base}' }
+  ]);
+  assert.deepEqual(rows[1], { path: 'color.text', type: 'color', value: '{color.base}', resolvedValue: '#000' });
+});
+
+test('rejects missing aliases, alias cycles, and alias type mismatches with paths', () => {
+  assert.throws(
+    () => resolveTokenAliases([{ path: 'text.primary', type: 'color', value: '{color.neutral.void}' }]),
+    /missing token.*color\.neutral\.void.*text\.primary/
+  );
+  assert.throws(
+    () => resolveTokenAliases([
+      { path: 'a', type: 'color', value: '{b}' },
+      { path: 'b', type: 'color', value: '{a}' }
+    ]),
+    /alias cycle: a -> b -> a/
+  );
+  assert.throws(
+    () => resolveTokenAliases([
+      { path: 'space.base', type: 'dimension', value: { value: 4, unit: 'px' } },
+      { path: 'layer.bad', type: 'number', value: '{space.base}' }
+    ]),
+    /type mismatch.*layer\.bad.*number.*space\.base.*dimension/
+  );
 });
