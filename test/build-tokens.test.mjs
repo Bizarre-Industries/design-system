@@ -48,6 +48,7 @@ test('builds exact token package files', async () => {
   const manifest = JSON.parse(files.get('generated/manifest.json'));
   assert.equal(manifest.schemaVersion, 1);
   assert.equal(manifest.package, '@bizarre/tokens');
+  assert.ok(manifest.evidence.some(({ path }) => path === 'BRAND.md'), 'finalized brand guidance must be governed evidence');
   assert.ok(manifest.evidence.every(({ path }) => !path.startsWith('.superpowers/')));
 });
 

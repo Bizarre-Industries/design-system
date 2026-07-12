@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "paths": [
+    "BRAND.md",
     "LICENSE",
     "README.md",
     "brand/README.md",

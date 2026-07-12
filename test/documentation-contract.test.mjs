@@ -20,3 +20,25 @@ test('foundation audit reports limits and next milestone order', async () => {
     'Cross-platform certification and public v1 release.'
   ].map((title, index) => ({ number: index + 1, title })));
 });
+
+test('brand book follows the governed identity and package contracts', async () => {
+  const brand = await readFile(new URL('../BRAND.md', import.meta.url), 'utf8');
+  const identity = JSON.parse(await readFile(new URL('../brand/identity.json', import.meta.url), 'utf8'));
+
+  assert.equal(identity.tagline, 'CATCH THE STARS');
+  assert.doesNotMatch(brand, /CATCH THE STARS[.!?]/);
+  assert.match(brand, /Bizarre Industries.*top-level movement\/foundation identity/i);
+  assert.match(brand, /Bizarre Labs.*commercial arm/i);
+  assert.match(brand, /Bizarre Foundation.*governing nonprofit/i);
+  assert.match(brand, /Helling.*product under Labs/i);
+  assert.match(brand, /Precision Panel/);
+  assert.match(brand, /Display Field/);
+  assert.match(brand, /never a formal logo\/wordmark lockup/i);
+  assert.match(brand, /independent closing or ceremonial element/i);
+  assert.match(brand, /packages\/tokens\/generated\/tokens\.css/);
+  assert.match(brand, /packages\/assets\/generated\/manifest\.json/);
+  assert.doesNotMatch(brand, /(?:single|two) sources? of truth/i);
+  assert.doesNotMatch(brand, /tokens\/tokens\.css|See `tokens\.css`/);
+  assert.doesNotMatch(brand, /ten rings|10 rings/i);
+  assert.doesNotMatch(brand, /hosted on Google Fonts/i);
+});

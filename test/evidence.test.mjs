@@ -87,7 +87,7 @@ test('resolves allowlist entries beneath a root URL without a trailing slash', a
 test('repository evidence declares asset provenance inputs', async () => {
   const allowlist = await readJson('governance/evidence-allowlist.json');
   const assets = await readJson('brand/assets.json');
-  assert.ok(!allowlist.paths.includes('BRAND.md'), 'Task 8 owns finalized BRAND.md evidence');
+  assert.ok(allowlist.paths.includes('BRAND.md'), 'finalized brand guidance must be governed evidence');
   assert.ok(allowlist.paths.includes('brand/assets.json'));
   assert.ok(allowlist.paths.includes('schemas/assets.schema.json'));
   for (const { path } of assets.assets.filter(({ kind }) => kind === 'license')) {
