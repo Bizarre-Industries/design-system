@@ -1,0 +1,13 @@
+{
+  "name": "@bizarre/assets",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "files": ["logo", "fonts", "README.md", "manifest.json"],
+  "exports": {
+    "./manifest.json": "./manifest.json",
+    "./fonts.css": "./fonts/bizarre-fonts.css",
+    "./fonts/*": "./fonts/*",
+    "./logo/*": "./logo/*"
+  }
+}

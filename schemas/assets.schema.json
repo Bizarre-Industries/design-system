@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bizarre.industries/schemas/assets.schema.json",
+  "title": "Bizarre governed asset manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "assets"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "assets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256", "mediaType", "kind", "approved"],
+        "properties": {
+          "path": { "type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+" },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "mediaType": { "enum": ["image/svg+xml", "font/ttf", "font/woff2", "text/css", "text/plain", "text/markdown", "application/json"] },
+          "kind": { "enum": ["logo", "font", "license", "documentation", "stylesheet", "manifest"] },
+          "approved": { "const": true },
+          "role": { "enum": ["primary", "inverse", "transparent"] },
+          "family": { "type": "string" },
+          "style": { "enum": ["normal", "italic"] },
+          "weightRange": { "type": "array", "prefixItems": [{ "type": "integer" }, { "type": "integer" }], "minItems": 2, "maxItems": 2 },
+          "license": { "type": "string" },
+          "master": { "type": "string" }
+        }
+      }
+    }
+  }
+}
