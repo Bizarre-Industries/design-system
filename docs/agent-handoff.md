@@ -4,14 +4,16 @@
 
 | Field | Value |
 | --- | --- |
-| Last verified | 2026-07-17T00:51:39+04:00 |
+| Last verified | 2026-07-17T01:03:49+04:00 |
 | Handoff status | Repository release candidate verified; product-design completion remains blocked by explicit external evidence |
 | Repository | `Bizarre-Industries/design-system` |
 | Release branch | `codex/astronomical-atlas-system` |
 | Base before closeout | `origin/main` at `005d324b470128c54f540a92fd2cd17a71a959b6` |
-| Snapshot commit | The signed commit containing this handoff; confirm with `git rev-parse HEAD` |
-| Pull request | Recorded here after PR creation; confirm current state in GitHub |
-| Worktrees before closeout | One worktree, the repository root |
+| Implementation commit | `361029a77b77edb99f44dd39b2e1184663856759` |
+| Handoff commit | The signed commit containing this final metadata update; confirm with `git rev-parse HEAD` |
+| Pull request | [#3, Establish Astronomical Atlas design system](https://github.com/Bizarre-Industries/design-system/pull/3) |
+| Merge record | PR #3 is the merge transaction. If this handoff is read from `main`, that PR has merged; otherwise confirm its live state at the link. |
+| Worktrees at final pre-merge audit | One worktree, the repository root; no unstaged or untracked commit candidates |
 | Active plan | `docs/superpowers/plans/2026-07-15-astronomical-atlas-system.md` |
 | Product completion | Not complete |
 | Repository machine gates | Green |
