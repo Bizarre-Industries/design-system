@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bizarre.industries/schemas/provenance-policy.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "classifications", "synthetic", "observed", "exports", "release"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "classifications": { "const": ["observed", "synthetic", "licensed", "commissioned", "generated", "original"] },
+    "synthetic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requireModel", "requireParameterHash", "allowSeedOnlyWhenConsumed"],
+      "properties": {
+        "requireModel": { "const": true },
+        "requireParameterHash": { "const": true },
+        "allowSeedOnlyWhenConsumed": { "const": true }
+      }
+    },
+    "observed": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requireCatalogueOrDataset", "requireCoordinates", "requireEpoch", "requireUnits"],
+      "properties": {
+        "requireCatalogueOrDataset": { "const": true },
+        "requireCoordinates": { "const": true },
+        "requireEpoch": { "const": true },
+        "requireUnits": { "const": true }
+      }
+    },
+    "exports": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["requiredMetadata"],
+      "properties": {
+        "requiredMetadata": {
+          "const": ["sourceType", "sourceIdentifier", "orientation", "apertureVersion", "trajectoryState", "representation", "productionProfile"]
+        }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["statuses", "passRequiresEvidence"],
+      "properties": {
+        "statuses": { "const": ["PASS", "FAIL", "NOT VERIFIED"] },
+        "passRequiresEvidence": { "const": true }
+      }
+    }
+  }
+}

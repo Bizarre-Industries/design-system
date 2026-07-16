@@ -19,4 +19,4 @@ Canonical inputs and derived outputs are documented in `brand/README.md`, `found
 
 ## Scope boundary
 
-The simplified sub-48 px mark, mono variants, formal lockups, Arabic work, a custom Helling identity, platform implementations, downstream migration, and certification remain deferred. This record does not authorize those artifacts or claim their completion.
+The simplified sub-48 px mark, mono variants, formal lockups, Arabic work, platform-native integration, downstream migration, and certification remain deferred. This record does not authorize those artifacts or claim their completion.

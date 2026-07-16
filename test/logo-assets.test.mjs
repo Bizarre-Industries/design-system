@@ -62,14 +62,22 @@ test('published variants preserve identical gravity-well paths', async () => {
 test('published variants use the governed colors', async () => {
   const primary = await colorAssignments(assetPaths.primary);
   const inverse = await colorAssignments(assetPaths.inverse);
+  const transparent = await colorAssignments(assetPaths.transparent);
 
   assert.deepEqual(primary.rectFills, ['#C6FF24']);
   assert.ok(primary.pathFills.length > 0);
-  assert.ok(primary.pathFills.every((fill) => fill === '#545454'));
+  assert.ok(primary.pathFills.every((fill) => fill === '#0E0E0E'));
 
-  assert.deepEqual(inverse.rectFills, ['#C6FF24']);
+  assert.deepEqual(inverse.rectFills, ['#0E0E0E']);
   assert.ok(inverse.pathFills.length > 0);
-  assert.ok(inverse.pathFills.every((fill) => fill === '#0E0E0E'));
+  assert.ok(inverse.pathFills.every((fill) => fill === '#C6FF24'));
+
+  assert.deepEqual(transparent.rectFills, []);
+  assert.ok(transparent.pathFills.length > 0);
+  assert.ok(transparent.pathFills.every((fill) => fill === '#0E0E0E'));
+  for (const variant of [primary, inverse, transparent]) {
+    assert.equal(new Set(variant.pathFills).size, 1, 'Gravity Well figure must be monochrome');
+  }
 });
 
 test('published SVGs contain real newlines rather than escaped newline text', async () => {

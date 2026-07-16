@@ -6,48 +6,151 @@
   "additionalProperties": false,
   "required": ["schemaVersion", "assets"],
   "properties": {
-    "schemaVersion": { "const": 1 },
+    "schemaVersion": { "const": 2 },
     "assets": {
       "type": "array",
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["path", "sha256", "mediaType", "kind", "approved"],
+        "required": [
+          "path",
+          "sha256",
+          "mediaType",
+          "kind",
+          "approved",
+          "approvalState",
+          "relationship",
+          "sourceProvenance",
+          "allowedUses"
+        ],
         "properties": {
           "path": { "type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+" },
           "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
           "mediaType": { "enum": ["image/svg+xml", "font/ttf", "font/woff2", "text/css", "text/plain", "text/markdown", "application/json"] },
-          "kind": { "enum": ["logo", "font", "license", "documentation", "stylesheet", "manifest"] },
+          "kind": { "enum": ["logo", "font", "license", "documentation", "stylesheet", "manifest", "atlas", "aperture", "texture", "mockup", "evidence"] },
           "approved": { "const": true },
-          "variant": { "enum": ["primary", "inverse", "transparent"] },
           "approvalState": { "enum": ["approved"] },
-          "viewBox": { "type": "string", "pattern": "^-?(?:\\d+\\.?\\d*|\\.\\d+)(?:\\s+-?(?:\\d+\\.?\\d*|\\.\\d+)){3}$" },
+          "relationship": { "enum": ["master", "derivative"] },
           "sourceProvenance": { "type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+" },
           "provenanceNote": { "type": "string", "minLength": 1 },
-          "relationship": { "enum": ["master"] },
+          "allowedUses": {
+            "type": "array",
+            "items": {
+              "enum": [
+                "data-visualization",
+                "documentation",
+                "editorial",
+                "evidence",
+                "font-embedding",
+                "font-source-distribution",
+                "identity-mark",
+                "interface",
+                "mockup",
+                "motion"
+              ]
+            },
+            "minItems": 1,
+            "uniqueItems": true
+          },
+          "master": { "type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+" },
+          "variant": { "enum": ["primary", "inverse", "transparent"] },
+          "viewBox": { "type": "string", "pattern": "^-?(?:\\d+\\.?\\d*|\\.\\d+)(?:\\s+-?(?:\\d+\\.?\\d*|\\.\\d+)){3}$" },
           "allowedColorRoles": { "type": "array", "items": { "enum": ["signal", "void", "ash700"] }, "minItems": 1, "uniqueItems": true },
-          "family": { "type": "string" },
+          "family": { "type": "string", "minLength": 1 },
           "style": { "enum": ["normal", "italic"] },
           "weightRange": { "type": "array", "prefixItems": [{ "type": "integer" }, { "type": "integer" }], "minItems": 2, "maxItems": 2 },
-          "license": { "type": "string" },
-          "master": { "type": "string" }
+          "license": { "type": "string", "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+" },
+          "generator": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["name", "version", "configurationHash"],
+            "properties": {
+              "name": { "type": "string", "minLength": 1 },
+              "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+              "configurationHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["sourceType", "sourceIdentifier", "model", "apertureVersion", "aperturePathSha256"],
+            "properties": {
+              "sourceType": { "const": "synthetic" },
+              "sourceIdentifier": { "type": "string", "minLength": 1 },
+              "model": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": ["name", "version"],
+                "properties": {
+                  "name": { "type": "string", "minLength": 1 },
+                  "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" }
+                }
+              },
+              "apertureVersion": { "type": "string", "minLength": 1 },
+              "aperturePathSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+            }
+          }
         },
         "allOf": [
           {
             "if": { "properties": { "kind": { "const": "logo" } }, "required": ["kind"] },
-            "then": { "required": ["variant", "approvalState", "viewBox", "sourceProvenance", "relationship", "allowedColorRoles"] }
+            "then": {
+              "required": ["variant", "viewBox", "allowedColorRoles"],
+              "properties": { "relationship": { "const": "master" } },
+              "not": { "required": ["master"] }
+            }
           },
           {
             "if": { "properties": { "kind": { "const": "font" } }, "required": ["kind"] },
             "then": { "required": ["family", "style", "weightRange", "license"] }
           },
           {
+            "if": { "properties": { "relationship": { "const": "derivative" } }, "required": ["relationship"] },
+            "then": {
+              "required": ["master"],
+              "properties": { "kind": { "enum": ["font", "atlas", "texture", "mockup", "evidence"] } }
+            }
+          },
+          {
+            "if": { "properties": { "relationship": { "const": "master" } }, "required": ["relationship"] },
+            "then": { "not": { "required": ["master"] } }
+          },
+          {
             "if": { "properties": { "mediaType": { "const": "font/woff2" } }, "required": ["mediaType"] },
-            "then": { "required": ["master"] }
+            "then": {
+              "required": ["master"],
+              "properties": { "relationship": { "const": "derivative" } }
+            }
           },
           {
             "if": { "properties": { "mediaType": { "const": "font/ttf" } }, "required": ["mediaType"] },
-            "then": { "not": { "required": ["master"] } }
+            "then": {
+              "properties": { "relationship": { "const": "master" } },
+              "not": { "required": ["master"] }
+            }
+          },
+          {
+            "if": { "properties": { "kind": { "enum": ["atlas", "aperture", "texture"] } }, "required": ["kind"] },
+            "then": { "required": ["viewBox", "generator", "provenance"] }
+          },
+          {
+            "if": { "properties": { "kind": { "const": "mockup" } }, "required": ["kind"] },
+            "then": {
+              "required": ["viewBox", "provenanceNote"],
+              "properties": {
+                "allowedUses": { "contains": { "const": "mockup" } },
+                "sourceProvenance": {
+                  "not": { "pattern": "(?:^|/)(?:proposal|mockups?)(?:/|$)" }
+                }
+              }
+            }
+          },
+          {
+            "if": { "properties": { "kind": { "const": "evidence" } }, "required": ["kind"] },
+            "then": {
+              "required": ["provenanceNote"],
+              "properties": { "allowedUses": { "contains": { "const": "evidence" } } }
+            }
           }
         ]
       }

@@ -1,0 +1,82 @@
+[data-bzr-component="signal-action"],
+[data-bzr-component="calibration-label"],
+[data-bzr-component="status-indicator"] {
+  transition-duration: var(--bzr-motion-duration-fast);
+  transition-property: color, background-color, border-color, opacity, transform;
+  transition-timing-function: var(--bzr-motion-easing-out);
+}
+
+[data-bzr-capture][data-state="capturing"] [data-bzr-capture-phase] {
+  animation-duration: calc(
+    var(--bzr-capture-duration-ceremonial) *
+    (var(--bzr-capture-phase-approach-end) - var(--bzr-capture-phase-approach-start))
+  );
+  animation-fill-mode: both;
+  animation-name: bzr-capture-phase;
+  animation-timing-function: var(--bzr-motion-easing-out);
+}
+
+[data-bzr-capture][data-state="capturing"] [data-bzr-capture-phase="approach"] {
+  animation-delay: calc(var(--bzr-capture-duration-ceremonial) * var(--bzr-capture-phase-approach-start));
+  animation-duration: calc(var(--bzr-capture-duration-ceremonial) * (var(--bzr-capture-phase-approach-end) - var(--bzr-capture-phase-approach-start)));
+}
+
+[data-bzr-capture][data-state="capturing"] [data-bzr-capture-phase="compress"] {
+  animation-delay: calc(var(--bzr-capture-duration-ceremonial) * var(--bzr-capture-phase-compress-start));
+  animation-duration: calc(var(--bzr-capture-duration-ceremonial) * (var(--bzr-capture-phase-compress-end) - var(--bzr-capture-phase-compress-start)));
+}
+
+[data-bzr-capture][data-state="capturing"] [data-bzr-capture-phase="eclipse"] {
+  animation-delay: calc(var(--bzr-capture-duration-ceremonial) * var(--bzr-capture-phase-eclipse-start));
+  animation-duration: calc(var(--bzr-capture-duration-ceremonial) * (var(--bzr-capture-phase-eclipse-end) - var(--bzr-capture-phase-eclipse-start)));
+}
+
+[data-bzr-capture][data-state="capturing"] [data-bzr-capture-phase="lock"] {
+  animation-delay: calc(var(--bzr-capture-duration-ceremonial) * var(--bzr-capture-phase-lock-start));
+  animation-duration: calc(var(--bzr-capture-duration-ceremonial) * (var(--bzr-capture-phase-lock-end) - var(--bzr-capture-phase-lock-start)));
+}
+
+[data-bzr-capture][data-state="capturing"] [data-bzr-capture-phase="release"] {
+  animation-delay: calc(var(--bzr-capture-duration-ceremonial) * var(--bzr-capture-phase-release-start));
+  animation-duration: calc(var(--bzr-capture-duration-ceremonial) * (var(--bzr-capture-phase-release-end) - var(--bzr-capture-phase-release-start)));
+}
+
+[data-bzr-capture][data-state="captured"] [data-bzr-capture-phase] {
+  border-block-start-color: var(--bzr-border-accent);
+  color: var(--bzr-content-accent);
+  opacity: 1;
+  transform: none;
+}
+
+@keyframes bzr-capture-phase {
+  from {
+    border-block-start-color: var(--bzr-border-default);
+    color: var(--bzr-content-muted);
+    opacity: 0;
+    transform: translateY(var(--bzr-space-2));
+  }
+
+  to {
+    border-block-start-color: var(--bzr-border-accent);
+    color: var(--bzr-content-accent);
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-bzr-capture] [data-bzr-capture-phase],
+  [data-bzr-component="signal-action"][aria-busy="true"],
+  [data-bzr-component="status-indicator"][data-state="active"] {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  [data-bzr-capture][data-state="capturing"] [data-bzr-capture-phase],
+  [data-bzr-capture][data-state="captured"] [data-bzr-capture-phase] {
+    border-block-start-color: var(--bzr-border-accent);
+    color: var(--bzr-content-accent);
+    opacity: 1;
+    transform: none;
+  }
+}

@@ -1,0 +1,27 @@
+[data-bzr-ui] {
+  text-align: start;
+}
+
+[data-bzr-ui] :dir(rtl) {
+  letter-spacing: normal;
+}
+
+[data-bzr-component="bilingual-data-panel"] :dir(rtl) {
+  font-family: var(--bzr-font-family-arabic-ui);
+  text-align: start;
+}
+
+[data-bzr-component="calibration-label"] :dir(rtl) {
+  margin-inline-start: auto;
+}
+
+[data-bzr-coordinate-space="physical"] {
+  direction: ltr;
+  text-align: start;
+  unicode-bidi: isolate;
+}
+
+[data-bzr-component="physical-label"] :dir(rtl) [data-bzr-coordinate-space="physical"] {
+  border-inline-start: var(--bzr-border-3) solid var(--bzr-border-accent);
+  padding-inline-start: var(--bzr-space-2);
+}

@@ -6,6 +6,16 @@
       "ink": { "$value": { "colorSpace": "srgb", "components": [0.368627451, 0.4784313725, 0], "alpha": 1, "hex": "#5E7A00" } },
       "glow": { "$value": { "colorSpace": "srgb", "components": [0.9098039216, 1, 0.5411764706], "alpha": 1, "hex": "#E8FF8A" } }
     },
+    "spectrum": {
+      "deep-indigo": { "$value": { "colorSpace": "srgb", "components": [0.1254901961, 0.1529411765, 0.3019607843], "alpha": 1, "hex": "#20274D" } },
+      "electric-blue": { "$value": { "colorSpace": "srgb", "components": [0.1921568627, 0.337254902, 0.6509803922], "alpha": 1, "hex": "#3156A6" } },
+      "ion-cyan": { "$value": { "colorSpace": "srgb", "components": [0.2901960784, 0.6470588235, 0.6862745098], "alpha": 1, "hex": "#4AA5AF" } },
+      "oxidized-teal": { "$value": { "colorSpace": "srgb", "components": [0.3607843137, 0.5333333333, 0.4862745098], "alpha": 1, "hex": "#5C887C" } },
+      "solar-gold": { "$value": { "colorSpace": "srgb", "components": [0.8352941176, 0.6392156863, 0.2784313725], "alpha": 1, "hex": "#D5A347" } },
+      "amber": { "$value": { "colorSpace": "srgb", "components": [0.7882352941, 0.4235294118, 0.2431372549], "alpha": 1, "hex": "#C96C3E" } },
+      "crimson": { "$value": { "colorSpace": "srgb", "components": [0.7137254902, 0.2980392157, 0.3882352941], "alpha": 1, "hex": "#B64C63" } },
+      "violet-shadow": { "$value": { "colorSpace": "srgb", "components": [0.4078431373, 0.3098039216, 0.5137254902], "alpha": 1, "hex": "#684F83" } }
+    },
     "neutral": {
       "black": { "$value": { "colorSpace": "srgb", "components": [0, 0, 0], "alpha": 1, "hex": "#000000" } },
       "void": { "$value": { "colorSpace": "srgb", "components": [0.0549019608, 0.0549019608, 0.0549019608], "alpha": 1, "hex": "#0E0E0E" } },
@@ -21,7 +31,11 @@
       "paper": { "$value": { "colorSpace": "srgb", "components": [0.9764705882, 0.9725490196, 0.9490196078], "alpha": 1, "hex": "#F9F8F2" } },
       "bone": { "$value": { "colorSpace": "srgb", "components": [0.9607843137, 0.9490196078, 0.9176470588], "alpha": 1, "hex": "#F5F2EA" } },
       "workshop": { "$value": { "colorSpace": "srgb", "components": [0.1019607843, 0.0941176471, 0.0823529412], "alpha": 1, "hex": "#1A1815" } },
-      "workshopText": { "$value": { "colorSpace": "srgb", "components": [0.8941176471, 0.8862745098, 0.8549019608], "alpha": 1, "hex": "#E4E2DA" } }
+      "workshop-text": { "$value": { "colorSpace": "srgb", "components": [0.8941176471, 0.8862745098, 0.8549019608], "alpha": 1, "hex": "#E4E2DA" } },
+      "workshop-elevated": { "$value": { "colorSpace": "srgb", "components": [0.137254902, 0.1294117647, 0.1098039216], "alpha": 1, "hex": "#23211C" } },
+      "workshop-card": { "$value": { "colorSpace": "srgb", "components": [0.1764705882, 0.1647058824, 0.137254902], "alpha": 1, "hex": "#2D2A23" } },
+      "workshop-secondary": { "$value": { "colorSpace": "srgb", "components": [0.7098039216, 0.6901960784, 0.6431372549], "alpha": 1, "hex": "#B5B0A4" } },
+      "workshop-muted": { "$value": { "colorSpace": "srgb", "components": [0.6431372549, 0.6196078431, 0.5647058824], "alpha": 1, "hex": "#A49E90" } }
     },
     "status": {
       "success": { "$value": { "colorSpace": "srgb", "components": [0.2470588235, 0.7254901961, 0.3137254902], "alpha": 1, "hex": "#3FB950" } },

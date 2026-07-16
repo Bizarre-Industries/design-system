@@ -16,6 +16,21 @@ function addToken(token, path, inheritedType, rows, paths) {
     type = token.$type;
   }
   if (!type) throw new TypeError(`Untyped token at ${path}`);
+  if (type === 'dimension' && typeof token.$value !== 'string') {
+    const value = token.$value;
+    if (!isObject(value) || !Number.isFinite(value.value) || !['px', 'rem'].includes(value.unit)) {
+      throw new TypeError(`Invalid DTCG dimension at ${path}; expected a finite px or rem value`);
+    }
+  }
+  if (type === 'duration' && typeof token.$value !== 'string') {
+    const value = token.$value;
+    if (!isObject(value) || !Number.isFinite(value.value) || !['ms', 's'].includes(value.unit)) {
+      throw new TypeError(`Invalid DTCG duration at ${path}; expected a finite ms or s value`);
+    }
+  }
+  if (type === 'number' && typeof token.$value !== 'string' && !Number.isFinite(token.$value)) {
+    throw new TypeError(`Invalid DTCG number at ${path}`);
+  }
   if (paths.has(path)) throw new TypeError(`Duplicate token path: ${path}`);
   paths.add(path);
   rows.push({ path, type, value: token.$value });

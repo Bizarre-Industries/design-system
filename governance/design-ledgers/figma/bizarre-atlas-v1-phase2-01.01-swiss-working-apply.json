@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "receiptVersion": "1.0.0-phase2-01.01",
+  "title": "Bizarre Industries Figma Phase 2 01.01 Swiss-Working Apply Receipt",
+  "capturedAt": "2026-07-16T14:47:40Z",
+  "figmaFileKey": "hGgrP9G0tEam8mpk5u3rHg",
+  "applicationMethod": "Official Figma MCP use_figma and upload_assets",
+  "approvalRef": "owner-approve-and-proceed/2026-07-16",
+  "promotionApprovalRef": null,
+  "status": "APPLIED_QA_CAPTURED_NOT_VERIFIED",
+  "subject": {
+    "subjectId": "01.01",
+    "subjectName": "Design Philosophy / Swiss-Working",
+    "pageId": "47:7",
+    "pageName": "01.01 · Design Philosophy / Swiss-Working",
+    "sourceRecipeId": "01.01/visual/v1",
+    "appliedRecipeId": "01.01/visual/r1",
+    "contentFingerprint": "7855a3190737cf7241e0c2c84d8cbc969f98e586208f065b8d89eed7712100bc",
+    "authorityStatus": "canonical",
+    "verificationStatus": "NOT VERIFIED",
+    "publicationStatus": "publishable under governance after verification",
+    "promotionStatus": "BLOCKED",
+    "usesProvisionalInputs": false,
+    "usesRejectedInputs": false
+  },
+  "sourceArtifacts": [
+    {
+      "path": "production/figma/phase2/build-01.01-swiss-working-r1.js",
+      "sha256": "185bb893ee6c9c993a157ef120e6c0d7827c38dd14a4e8691e47b7f9dc0c38b2"
+    },
+    {
+      "path": "production/affinity/bizarre-masterbrand-content-spec-v1.json",
+      "sha256": "196deedb902f3e833e2f68827350740e72a3e51c1783af8a73c081a7c1764834",
+      "canonicalSha256": "953e77c2232b89ef459156da0a9a6b6198994df9097c920f93b9da2282b10e77"
+    },
+    {
+      "path": "production/affinity/bizarre-masterbrand-subjects-v1.json",
+      "sha256": "c01485191832c624c02a25984b79ae796d676b4f9d3e8bbf4358fd524e73509b",
+      "canonicalSha256": "4c4500ea3c2f12cbfb100f129bd39e711ba1c6f5915242280808af42010448b1"
+    },
+    {
+      "path": "production/affinity/build-bizarre-masterbrand-library-v1-staged.js",
+      "sha256": "43b1fe872cac570832e2d0ea941cee710c3a3c2ab416bcc59cd2acdb1593f651"
+    },
+    {
+      "path": "outputs/imagegen/phase2-brand-core/01.01/swiss-working-instrument-target-v1.png",
+      "sha256": "96eaf8958c31adf92e215705c7a71b8a2523f728620880bc8d7cb58f92d55bdb",
+      "classification": "CONCEPT REFERENCE - NONPUBLISHABLE",
+      "dimensions": { "width": 1628, "height": 966 }
+    },
+    {
+      "path": "audit/affinity/references/01.01-swiss-working-r3-editorial-fit.png",
+      "sha256": "f8762baf7d3f824a92485c3a1f6560655d0383fda36120c64aa0cb89d097bf06",
+      "classification": "QA_CAPTURE_ONLY_NOT_VERIFICATION_PASS",
+      "dimensions": { "width": 1440, "height": 3500 }
+    }
+  ],
+  "mutationPolicy": {
+    "previousRootPreserved": true,
+    "previousRootRenamedHiddenLocked": true,
+    "canonicalVariablesStylesAndPagesPreserved": true,
+    "draftCleanupPolicy": "remove prior DRAFT / 01.01 / frames",
+    "removedDraftNodeIds": null,
+    "removalCountStatus": "NOT_CAPTURED_BY_BUILD_RETURN",
+    "destructiveReplacement": false
+  },
+  "execution": {
+    "visualRevision": "figma-01.01-swiss-working-r1-affinity-r3",
+    "affinityRevision": "brand-core-swiss-working-artifact-first-r3-editorial-fit",
+    "buildMcpRequestId": null,
+    "buildMcpRequestIdStatus": "NOT_RECOVERABLE_FROM_BUILD_RETURN",
+    "provenanceFrameLockMcpRequestId": "cdee7e85-310d-4d14-9871-4657b0c5ca17",
+    "provenanceRectangleCreateMcpRequestId": "548c0a12-473d-49b0-bcc7-3f78287a764b",
+    "provenanceUploadMcpRequestId": "1ce343b0-39aa-4e21-b655-8038dfbef2a8",
+    "provenanceLockVerificationMcpRequestId": "62605c9e-ad1b-4e68-8b4c-00f5f1dea5ad",
+    "finalReadbackMcpRequestId": "00074579-e0f8-4e6f-bdd3-a8aa858a299e",
+    "uploadedImageHash": "8eb0c75b273e6d514a457b03565eba0bcfebefec",
+    "errors": []
+  },
+  "liveImplementation": {
+    "activeRoot": {
+      "nodeId": "167:2",
+      "name": "01 / FIGMA NATIVE - EDITABLE MASTER / 01.01 SWISS-WORKING / r1",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 3500,
+      "visible": true,
+      "locked": false,
+      "clipsContent": true,
+      "descendantCount": 396,
+      "nodeTypeCounts": {
+        "FRAME": 13,
+        "RECTANGLE": 98,
+        "TEXT": 87,
+        "ELLIPSE": 130,
+        "VECTOR": 64,
+        "GROUP": 4
+      }
+    },
+    "archive": {
+      "nodeId": "83:72",
+      "name": "99 / ARCHIVE / PRE-PHASE2 / 01.01",
+      "width": 1440,
+      "height": 4120,
+      "visible": false,
+      "locked": true
+    },
+    "heroNodeId": "167:9",
+    "sourceContourCloneNodeId": "167:28",
+    "displayContourCloneNodeId": "167:290",
+    "hiddenReferenceFrameNodeId": "167:3",
+    "hiddenReferenceRasterNodeId": "175:2",
+    "sourceContourNodeId": "101:466",
+    "sourceContourNodeName": "Contours / DARK CHASSIS / Exact editable atlasContoursDark",
+    "pageTopLevelFrameCount": 2,
+    "pagePluginData": {
+      "phase2.01.01.activeRoot": "167:2",
+      "phase2.01.01.revision": "figma-01.01-swiss-working-r1-affinity-r3"
+    },
+    "rootPluginData": {
+      "subjectId": "01.01",
+      "recipeId": "01.01/visual/r1",
+      "authority": "canonical",
+      "verification": "NOT VERIFIED",
+      "publication": "publishable under governance",
+      "affinitySource": "affinity-artifact://Bizarre-Industries-Masterbrand-Library.afdesign#01.01",
+      "affinityRevision": "brand-core-swiss-working-artifact-first-r3-editorial-fit",
+      "imagegenTarget": "outputs/imagegen/phase2-brand-core/01.01/swiss-working-instrument-target-v1.png",
+      "imagegenSha256": "96eaf8958c31adf92e215705c7a71b8a2523f728620880bc8d7cb58f92d55bdb",
+      "sourceContourNode": "101:466",
+      "logoPolicy": "No logo instance on this page hero. Any future mark remains exact and monochrome."
+    }
+  },
+  "nativeReuse": {
+    "sourceNodeId": "101:466",
+    "sourceCloneNodeIds": ["167:28", "167:290"],
+    "sourcePolicy": "Exact governed vector clones. Literal contour fills and strokes are documented binding exceptions, not redraws.",
+    "logoInstanceCount": 0,
+    "mixedLogoColorRisk": false
+  },
+  "tokenStyleAndLayoutAudit": {
+    "explicitModeCollectionId": "VariableCollectionId:52:10",
+    "explicitModeId": "52:9",
+    "explicitModeName": "paper",
+    "textNodeCount": 87,
+    "textNodesWithStyleId": 0,
+    "textNodesWithoutStyleId": 87,
+    "frameCountIncludingRoot": 14,
+    "autoLayoutFrameCount": 0,
+    "componentLikeNodeCount": 0,
+    "solidFillCount": 324,
+    "variableBoundSolidFillCount": 318,
+    "solidStrokeCount": 65,
+    "variableBoundSolidStrokeCount": 5,
+    "unboundFillException": "Six exact source-clone vector fills.",
+    "unboundStrokeException": "Sixty exact source-contour clone strokes.",
+    "classification": "native editable documentation artboard, not yet a reusable component-library page"
+  },
+  "qaEvidence": {
+    "before": {
+      "path": "audit/figma/phase2/01.01-before.png",
+      "sha256": "ef0967e77ddff3b0bc7c30fb0548081dc2b11af1f771914eb5d8a29dc09a2ae4",
+      "dimensions": { "width": 1280, "height": 760 }
+    },
+    "currentFigmaCapture": {
+      "path": "audit/figma/phase2/01.01-swiss-working-r1-full-fit.png",
+      "sha256": "b131ce44349aa2d3c7ebfe440bff48acb8d7bef3a7bc70760ec0f271b3ac1576",
+      "dimensions": { "width": 906, "height": 2200 },
+      "naturalRootDimensions": { "width": 1440, "height": 3500 },
+      "classification": "QA_CAPTURE_ONLY_NOT_VERIFICATION_PASS"
+    },
+    "affinityCapture": {
+      "path": "audit/affinity/references/01.01-swiss-working-r3-editorial-fit.png",
+      "sha256": "f8762baf7d3f824a92485c3a1f6560655d0383fda36120c64aa0cb89d097bf06",
+      "dimensions": { "width": 1440, "height": 3500 },
+      "figmaHiddenNodeId": "175:2",
+      "figmaImageHash": "8eb0c75b273e6d514a457b03565eba0bcfebefec",
+      "classification": "QA_PROVENANCE_NONPUBLISHABLE"
+    },
+    "rejectedEvidence": {
+      "path": "audit/figma/phase2/01.01-swiss-working-r1-full.png",
+      "sha256": "f2def83f6222131680c7fda43e2a43db6dbbba21573c3c5ac8fac7d7a6bc2a19",
+      "dimensions": { "width": 906, "height": 2200 },
+      "reason": "Visual corruption with a large black occlusion. Never use as proof."
+    },
+    "sameInputComparisonStatus": "VIEWED_IN_COMBINED_COMPARISON_INPUT_NOT_PERSISTED",
+    "visualVerificationStatus": "NOT VERIFIED"
+  },
+  "validation": {
+    "applyErrors": [],
+    "promotionGate": "BLOCKED",
+    "receiptTestCommand": "node --test test/figma-phase2-01-01-swiss-working-apply.test.mjs",
+    "repositoryVerificationCommand": "npm run verify"
+  },
+  "openFindings": [
+    "All 87 live text nodes are detached from local text-style IDs.",
+    "All 14 frames use manual layout; Auto Layout coverage is zero.",
+    "The page contains no component, component-set, or instance nodes.",
+    "This page is native and editable but is not yet a reusable Figma library implementation.",
+    "Visual QA captures do not constitute promotion evidence; verification remains NOT VERIFIED.",
+    "A persistent side-by-side comparison artifact has not yet been saved."
+  ],
+  "recoveryEvidence": [
+    {
+      "debugUuid": "dc35e4c4-742c-4c86-9466-6e9f2fdcf962",
+      "issue": "Private plugin-data API was used in the first attempt.",
+      "readback": "The transaction rolled back without a partial active root.",
+      "fix": "Use shared plugin data in namespace bizarre_design_system."
+    }
+  ]
+}

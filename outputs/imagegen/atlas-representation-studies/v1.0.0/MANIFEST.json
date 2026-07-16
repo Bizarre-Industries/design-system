@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "runId": "atlas-representation-studies/v1.0.0",
+  "createdAt": "2026-07-15T12:18:15Z",
+  "generator": {
+    "method": "native-imagegen-via-creative-production-codex-exec",
+    "runner": "creative-production/runtime/codex_exec_image_batch.py",
+    "jobsSha256": "69ec04632c299532d45bcfc0407b0e344216fde0f08ef0141b8205bc94637850"
+  },
+  "classification": "generated-concept-reference",
+  "authority": false,
+  "publishable": false,
+  "approvalStatus": "PROVISIONAL",
+  "allowedUses": [
+    "visual-direction-review",
+    "locked-affinity-reference-layer",
+    "high-fidelity-affinity-reconstruction-target",
+    "noncanonical-figma-reference-page"
+  ],
+  "prohibitedUses": [
+    "canonical-vector-master",
+    "production-proof",
+    "release-evidence",
+    "publishable-package-export",
+    "logo-or-aperture-geometry-authority"
+  ],
+  "authoritySources": [
+    {
+      "path": "extensions/astronomical-atlas/DESIGN.md",
+      "sha256": "e6aa6f391d12f568c6845fa8269178acd38bc969650ceed202e894c3de4aee93"
+    },
+    {
+      "path": "packages/atlas/generated/atlas-contours-dark.svg",
+      "sha256": "c44a9302b517723c7eb1ca4cd9798ff70c752f5791ded96cce3f994b2943063a"
+    },
+    {
+      "path": "packages/atlas/generated/calibrated-aperture.svg",
+      "sha256": "706bca471bbcf2e2f8542ca99f14b718a525551e0d12cab2a0d85be1b56c468f",
+      "status": "PROVISIONAL v1"
+    }
+  ],
+  "references": [
+    {
+      "path": "references/owner-signal-infrastructure-preview.png",
+      "role": "owner-approved visual grammar",
+      "sha256": "9f968b4f21eea302cb3bf659489ea5efe836457f92827e5a5ef5083d1e945376"
+    },
+    {
+      "path": "references/imagegen-master-direction.png",
+      "role": "approved fidelity and material direction",
+      "sha256": "5ea6483e32e83b92b9ab1c8fc6cef5aa979fab99487001d52d782af0c9765f51"
+    },
+    {
+      "path": "references/imagegen-product-family.png",
+      "role": "approved physical-credibility reference",
+      "sha256": "54f161836643f260c770f34d2a213a01e8de62e83daabc680c6026aa5a15aa10"
+    },
+    {
+      "path": "references/atlas-contours-dark.png",
+      "role": "raster view of governed field geometry",
+      "sha256": "e4f0acb038db114f7e3029ecbf99964513f827cd682f37cf5672771c945fba9b"
+    },
+    {
+      "path": "references/calibrated-aperture-provisional-v1.png",
+      "role": "raster view of exact provisional aperture",
+      "sha256": "168183d83f537e09c12cc08b5e90813fd2db97774e8b355acb57d09f3b140989"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "atlas-shaded-contour-provisional-v1",
+      "subjectId": "07.05",
+      "path": "generated/atlas-shaded-contour-provisional-v1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "4911355430c4eada2c73d826d84a8ba7e2cdfd0ccb778c600eef7c8618b4fb20"
+    },
+    {
+      "id": "atlas-field-grain-provisional-v1",
+      "subjectId": "07.08",
+      "path": "generated/atlas-field-grain-provisional-v1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "30a3738f93b54eb2eb96dace4a20aeb77c8ea46240bada457d8ffb789a8af585"
+    },
+    {
+      "id": "atlas-material-response-provisional-v1",
+      "subjectId": "07.09",
+      "path": "generated/atlas-material-response-provisional-v1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "99f3335e1e190c6f959ac8c47af43cae4a4f3a4d62797081cfc2728ed9943ea8"
+    },
+    {
+      "id": "atlas-one-color-provisional-v1",
+      "subjectId": "07.10",
+      "path": "generated/atlas-one-color-provisional-v1.png",
+      "width": 1672,
+      "height": 941,
+      "sha256": "0aa356eeacbea945cbf410e07160f8114a340f58af0e1438eb4f2d3ae8c4cf7e"
+    }
+  ],
+  "qualityNotes": [
+    "ImageGen topology and aperture rendering are visual targets only; exact Affinity reconstruction must use the governed SVG sources.",
+    "Every output is a single isolated visual study, not a contact sheet or documentation page.",
+    "All four studies require owner review before any canonical renderer work begins."
+  ]
+}

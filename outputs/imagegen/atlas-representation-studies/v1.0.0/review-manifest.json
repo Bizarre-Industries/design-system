@@ -1,0 +1,42 @@
+[
+  {
+    "id": "atlas-shaded-contour-provisional-v1",
+    "index": 1,
+    "subjectId": "07.05",
+    "title": "Shaded Contour",
+    "label": "07.05 Shaded Contour — PROVISIONAL",
+    "src": "generated/atlas-shaded-contour-provisional-v1.png",
+    "href": "generated/atlas-shaded-contour-provisional-v1.png",
+    "caption": "Reference-only target for governed scalar shading and contour density. Exact field and aperture geometry must come from canonical SVG sources."
+  },
+  {
+    "id": "atlas-field-grain-provisional-v1",
+    "index": 2,
+    "subjectId": "07.08",
+    "title": "Field Grain",
+    "label": "07.08 Field Grain — PROVISIONAL",
+    "src": "generated/atlas-field-grain-provisional-v1.png",
+    "href": "generated/atlas-field-grain-provisional-v1.png",
+    "caption": "Reference-only target for field-responsive microstructure. Exact topology, aperture, and singular Signal trajectory remain governed."
+  },
+  {
+    "id": "atlas-material-response-provisional-v1",
+    "index": 3,
+    "subjectId": "07.09",
+    "title": "Material Response",
+    "label": "07.09 Material Response — PROVISIONAL",
+    "src": "generated/atlas-material-response-provisional-v1.png",
+    "href": "generated/atlas-material-response-provisional-v1.png",
+    "caption": "Reference-only target for machining, coating, relief, and raking-light behavior. It is not a publishable production base."
+  },
+  {
+    "id": "atlas-one-color-provisional-v1",
+    "index": 4,
+    "subjectId": "07.10",
+    "title": "One-Color Translation",
+    "label": "07.10 One-Color Translation — PROVISIONAL",
+    "src": "generated/atlas-one-color-provisional-v1.png",
+    "href": "generated/atlas-one-color-provisional-v1.png",
+    "caption": "Reference-only target for one-ink production logic with a single Signal Lime exception. Canonical geometry remains source-controlled."
+  }
+]

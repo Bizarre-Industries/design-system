@@ -3,7 +3,12 @@ import { lstat, readFile, readdir } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { canonicalJson } from './lib/canonical-json.mjs';
 import { collectEvidence } from './lib/evidence.mjs';
-import { validateAssets } from './lib/assets.mjs';
+import {
+  assertAssetManifestSeparation,
+  assetPackagePath,
+  validateAssets,
+  validateProvisionalAssets,
+} from './lib/assets.mjs';
 
 const SOURCE_PREFIX = 'packages/assets/';
 const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
@@ -25,7 +30,12 @@ async function listSourceFiles(directoryUrl, prefix = SOURCE_PREFIX) {
 }
 
 export async function buildExpectedAssets(rootUrl) {
-  const sourceManifest = JSON.parse(await readFile(new URL('brand/assets.json', rootUrl), 'utf8'));
+  const [sourceManifest, provisionalManifest] = await Promise.all([
+    readFile(new URL('brand/assets.json', rootUrl), 'utf8').then(JSON.parse),
+    readFile(new URL('brand/provisional-assets.json', rootUrl), 'utf8').then(JSON.parse),
+  ]);
+  assertAssetManifestSeparation(sourceManifest, provisionalManifest);
+  await validateProvisionalAssets(rootUrl, provisionalManifest);
   const rows = await validateAssets(rootUrl, sourceManifest);
   const declared = new Set(rows.map(({ path }) => path));
   for (const path of await listSourceFiles(new URL(SOURCE_PREFIX, rootUrl))) {
@@ -38,12 +48,35 @@ export async function buildExpectedAssets(rootUrl) {
   if (!Array.isArray(allowlist.paths)) throw new TypeError('evidence allowlist must contain paths');
 
   const payload = new Map();
+  const sourceByOutput = new Map();
   for (const row of rows) {
-    const outputPath = `generated/${row.path.slice(SOURCE_PREFIX.length)}`;
+    const outputPath = `generated/${assetPackagePath(row.path)}`;
+    if (sourceByOutput.has(outputPath)) {
+      throw new Error(`asset package path collision: ${sourceByOutput.get(outputPath)} and ${row.path} both map to ${outputPath}`);
+    }
+    sourceByOutput.set(outputPath, row.path);
     payload.set(outputPath, await readFile(new URL(row.path, rootUrl)));
   }
+  const sourceEntries = new Map(sourceManifest.assets.map((entry) => [entry.path, entry]));
   const files = Object.fromEntries([...payload].sort(([left], [right]) => comparePaths(left, right))
-    .map(([path, bytes]) => [path, { sha256: sha256(bytes) }]));
+    .map(([path, bytes]) => {
+      const sourcePath = sourceByOutput.get(path);
+      const source = sourceEntries.get(sourcePath);
+      const {
+        path: ignoredPath,
+        sha256: ignoredSha256,
+        master,
+        license,
+        ...governance
+      } = source;
+      return [path, {
+        ...governance,
+        ...(license ? { license: `generated/${assetPackagePath(license)}` } : {}),
+        ...(master ? { master: `generated/${assetPackagePath(master)}` } : {}),
+        sha256: sha256(bytes),
+        sourcePath,
+      }];
+    }));
   payload.set('generated/manifest.json', Buffer.from(canonicalJson({
     schemaVersion: 1,
     package: '@bizarre/assets',

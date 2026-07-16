@@ -1,0 +1,2051 @@
+{
+  "schemaVersion": 1,
+  "planVersion": "1.0.0",
+  "planId": "bizarre-native-figma-exemplars-04.01-06.01",
+  "title": "Bizarre Industries native Figma exemplar build plan — 04.01 Field Gradient and 06.01 Continuous Lens Aperture v2",
+  "canonicalSha256": "7fbb95d0ad5cd0f93b3cedd8d40f81b07f3562240b5e5d4a60f03e461104bb2f",
+  "scope": {
+    "subjectIds": [
+      "04.01",
+      "06.01"
+    ],
+    "permanentPageCount": 2,
+    "mutationStatus": "NOT_APPLIED_BY_THIS_ARTIFACT",
+    "outOfScope": [
+      "all other permanent pages",
+      "legacy page mutation",
+      "component creation",
+      "variable creation or replacement",
+      "Figma Make prototype mutation",
+      "Affinity mutation",
+      "publication or promotion"
+    ]
+  },
+  "figma": {
+    "fileKey": "hGgrP9G0tEam8mpk5u3rHg",
+    "editorType": "figma",
+    "executionSurface": "official Figma MCP only",
+    "computerUse": "forbidden unless the official MCP is proven unable to perform a required operation",
+    "mutationPolicy": "This ledger is read-only planning evidence. A later build must use one sequential use_figma call per page section, switch page at most once per call, load every exact font before text mutation, resolve variables by collection plus name, and return every created or mutated node ID.",
+    "idempotency": {
+      "existingTargetFramesMustBeUpdatedInPlace": true,
+      "doNotDeleteLockedReferences": true,
+      "doNotRenamePages": true,
+      "doNotDetachSdsInstances": true,
+      "sharedPluginDataNamespace": "bizarre",
+      "requiredKeys": [
+        "subjectId",
+        "planId",
+        "planVersion",
+        "logicalKey"
+      ]
+    },
+    "buildOrder": [
+      "verify page, target-frame, locked-reference, and canonical collection IDs",
+      "resolve the exact local fonts and text-style inventory",
+      "set the explicit Modes collection mode on the existing target frame",
+      "create the eleven layer frames in the declared back-to-front order",
+      "build the shared header, footer, and page ground",
+      "build the page-specific specimen with native Figma geometry",
+      "build the twelve anatomy panels from the exact compact copy",
+      "lock the internal reference layer and remove every placeholder state",
+      "validate hierarchy, variable bindings, fonts, and geometry",
+      "capture same-viewport screenshots and compare them beside the locked Affinity reference"
+    ]
+  },
+  "sources": [
+    {
+      "sourceId": "content-spec",
+      "path": "production/affinity/bizarre-masterbrand-content-spec-v1.json",
+      "fileSha256": "196deedb902f3e833e2f68827350740e72a3e51c1783af8a73c081a7c1764834",
+      "manifestCanonicalSha256": "4c4500ea3c2f12cbfb100f129bd39e711ba1c6f5915242280808af42010448b1",
+      "role": "Meaning, exhaustive section order, visual recipe, source lineage, invariants, and governance status."
+    },
+    {
+      "sourceId": "affinity-staged-builder",
+      "path": "production/affinity/build-bizarre-masterbrand-library-v1-staged.js",
+      "fileSha256": "d1d21956b35151d9012d3731721ebe477c4dd7a0a4ea9063e57aaba50f7521d9",
+      "buildRevision": "affinity-masterbrand-v1.0.0-r14-continuous-lens-qa",
+      "role": "Exact rendered dimensions, positions, compact panel copy, layer names, native-gradient stops, and smooth-ellipse construction formulas."
+    },
+    {
+      "sourceId": "affinity-subject-manifest",
+      "path": "production/affinity/bizarre-masterbrand-subjects-v1.json",
+      "fileSha256": "c01485191832c624c02a25984b79ae796d676b4f9d3e8bbf4358fd524e73509b",
+      "manifestCanonicalSha256": "4c4500ea3c2f12cbfb100f129bd39e711ba1c6f5915242280808af42010448b1",
+      "role": "Permanent page names, artboard dimensions, anatomy order, and eleven-layer contract."
+    },
+    {
+      "sourceId": "canonical-figma-variables",
+      "path": "governance/design-ledgers/figma/bizarre-atlas-v1-canonical-variable-import.json",
+      "fileSha256": "3b19a6b2b33d55bedb65929083ecd1f4aa1bd4ef7f18992b581598b0494c2d93",
+      "canonicalSha256": "388fb68ff9a60ef5d73721589f3dad068ec244376b461b3cf4039c59d4437799",
+      "planVersion": "1.2.0",
+      "role": "Canonical collection, variable, alias, Figma font-family mapping, scope, and code-syntax contract."
+    },
+    {
+      "sourceId": "gradient-recipes",
+      "path": "governance/gradient-recipes.json",
+      "fileSha256": "4495b5eb09e88f9bbd15ac0ca0a55445ea54ca67523c1e971790b0eb5e01a58d",
+      "canonicalSha256": "a40390cc04a20c8c99a8b19671993103fcf612d075810594f0f6391238bd1d72",
+      "role": "Exact 04.01 field-gradient and optical-coating stop values and angles."
+    },
+    {
+      "sourceId": "figma-page-map",
+      "path": "governance/design-ledgers/figma/bizarre-page-map-v1.json",
+      "fileSha256": "0d9f62289a9f91f1b21a12817fda748c048faac905782dd601cd4b9d845316a3",
+      "role": "Permanent Figma page IDs and names."
+    },
+    {
+      "sourceId": "figma-working-snapshot",
+      "path": "governance/design-ledgers/figma/bizarre-atlas-v1.json",
+      "fileSha256": "33c51def0f40c9c306b9546754a9386a0c69052c29a23c29f9088251df46f8c6",
+      "role": "Observed local text-style names, exact registered family/style pairs, and existing SDS inventory."
+    },
+    {
+      "sourceId": "figma-font-family-mapping",
+      "path": "governance/design-ledgers/figma/bizarre-font-family-mapping-v1.json",
+      "fileSha256": "fdddf00b00d211731b42f4e318988a05fff0c8e00b79e8d0aae9c79412083925",
+      "role": "Governed translation from web font stacks to names registered in the live Figma font catalog."
+    }
+  ],
+  "lockedReferences": {
+    "04.01": {
+      "pageId": "47:23",
+      "nodeId": "60:2",
+      "name": "00 / REFERENCE — AFFINITY R14 — LOCKED",
+      "nodeRole": "locked full-height Affinity reference",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 4300
+      },
+      "locked": true,
+      "sourcePath": "audit/affinity/references/field-gradient-continuous-lens-r14.png",
+      "sourceSha256": "a796d0362987e6070584d14ea83a272cb88597c3ea90d70d716e89e40aacef66",
+      "figmaImageHash": "abfd73029605bb51019ebeb2e7c93c14cb65d0a1"
+    },
+    "06.01": {
+      "pageId": "47:38",
+      "nodeId": "60:4",
+      "name": "00 / REFERENCE — AFFINITY R14 — LOCKED",
+      "nodeRole": "locked full-height Affinity reference",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": 4100
+      },
+      "locked": true,
+      "sourcePath": "audit/affinity/references/continuous-lens-v2-affinity-r14.png",
+      "sourceSha256": "a1f5a1e694c2c0c88c3fe1387adf6fd5352a70df6ef10120666c290b64e7e05b",
+      "figmaImageHash": "771fa6059e4d7ca510930d4db347a853ab873571"
+    },
+    "06.01-same-input-qa": {
+      "pageId": "47:38",
+      "nodeId": "60:6",
+      "name": "02 / SAME-INPUT QA — REFERENCE VS AFFINITY — LOCKED",
+      "nodeRole": "locked owner-reference versus Affinity same-input comparison",
+      "rect": {
+        "x": 0,
+        "y": 4300,
+        "width": 1296,
+        "height": 254
+      },
+      "locked": true,
+      "sourcePath": "outputs/qa/continuous-lens-reference-vs-affinity-r14.png",
+      "sourceSha256": "bf888e22fccf58cf8429739401475ef1dff676e7591a38ab7b04d5e814fe9dd0",
+      "figmaImageHash": "42705e8749b1812ae1e73b241663449906b4bb18"
+    },
+    "owner-continuous-lens-concept": {
+      "pageId": "47:38",
+      "layerNodeId": "67:12",
+      "nodeId": "67:20",
+      "name": "CONCEPT REFERENCE — NONPUBLISHABLE / LEFT CONTINUOUS LENS / IMAGE TARGET",
+      "nodeRole": "embedded concept reference inside the locked 06.01 internal Reference layer",
+      "sourcePath": "production/affinity/aperture-pattern-study-v2/continuous-lens-main-panel-v2.png",
+      "sourceSha256": "b5ed51bee2aa791141304bc445612fcd7d90b56863d4f68fed5f11235c83612f",
+      "parentStudyPath": "production/affinity/aperture-pattern-study-v2/continuous-lens-v2.png",
+      "parentStudySha256": "62511ef6bfa1f0288e06dc591160606198a47c090a96392fdf76eba01f3420fd",
+      "figmaImageHash": "3740a582de2e6eca4b73b352d0c7cc58eca07dc1",
+      "classification": "CONCEPT REFERENCE — NONPUBLISHABLE",
+      "allowedUse": "Locked same-viewport visual-direction reference only; never trace, sample into a master, or publish."
+    }
+  },
+  "liveImplementationEvidence": {
+    "observationStatus": "EXISTING_NATIVE_TARGETS_OBSERVED_READ_ONLY",
+    "artifactMutationStatus": "This plan did not create, change, lock, publish, or promote any Figma node.",
+    "manifestCanonicalSha256": "4c4500ea3c2f12cbfb100f129bd39e711ba1c6f5915242280808af42010448b1",
+    "currentQaRevisionBySubject": {
+      "04.01": "r3",
+      "06.01": "r4"
+    },
+    "officialFigmaMcpReceipts": [
+      {
+        "role": "04.01 native build",
+        "mcpRequestId": "e1149e55-4c6c-4e9b-a16a-f72046a1e8f3"
+      },
+      {
+        "role": "04.01 gradient-transform correction",
+        "mcpRequestId": "9d5fbf4f-2c21-4370-8b61-138d25657578"
+      },
+      {
+        "role": "06.01 native build",
+        "mcpRequestId": "1f1dae15-3644-4832-8f2d-0347f06e3dae"
+      },
+      {
+        "role": "concept-reference asset upload request",
+        "mcpRequestId": "506fcf77-fe00-4950-9db9-dcbf9d6b9a7a"
+      },
+      {
+        "role": "06.01 reference-layer lock",
+        "mcpRequestId": "da19ac0b-7ded-4b3e-b34b-84059325f0bd"
+      },
+      {
+        "role": "06.01 exact panel-fill restoration",
+        "mcpRequestId": "0feb1e06-e33d-4f67-8011-5c8b1a1f073a"
+      },
+      {
+        "role": "04.01 exact panel-fill restoration",
+        "mcpRequestId": "52f69891-f06c-45bc-b62e-708282598f93"
+      },
+      {
+        "role": "04.01 r3 whole-target screenshot",
+        "mcpRequestId": "8bc293c4-8d4e-46fb-abb5-68cf55a54a0f"
+      },
+      {
+        "role": "06.01 optical-ring transform correction",
+        "mcpRequestId": "f6635679-2eda-49d3-a0a8-0022cf55cb1b"
+      },
+      {
+        "role": "06.01 r3 isolated optical-ring screenshot",
+        "mcpRequestId": "86b2dd3d-7c4c-4609-9ea3-4c6302e0998e"
+      },
+      {
+        "role": "06.01 r4 whole-target screenshot",
+        "mcpRequestId": "30b4df60-5d35-450f-b1a0-28f9581c79c8"
+      },
+      {
+        "role": "strict live stop-ship validation",
+        "mcpRequestId": "134d0710-9fc8-48bc-bdce-3c86134f6cc5"
+      }
+    ],
+    "stopShipValidation": {
+      "mcpRequestId": "134d0710-9fc8-48bc-bdce-3c86134f6cc5",
+      "result": "PASS",
+      "pages": {
+        "04.01": {
+          "targetNodeId": "60:3",
+          "layerCount": 11,
+          "mode": {
+            "name": "void",
+            "modeId": "52:8"
+          },
+          "contours": {
+            "count": 67,
+            "nodeType": "ELLIPSE"
+          },
+          "panels": {
+            "count": 12,
+            "fillLiteral": "#181817"
+          },
+          "gradientStopCount": 7
+        },
+        "06.01": {
+          "targetNodeId": "60:5",
+          "layerCount": 11,
+          "mode": {
+            "name": "paper",
+            "modeId": "52:9"
+          },
+          "contours": {
+            "count": 53,
+            "nodeType": "ELLIPSE"
+          },
+          "panels": {
+            "count": 12,
+            "fillLiteral": "#EBE9E0"
+          },
+          "gradientStopCount": 8,
+          "gradientTransformRef": "pages/06.01/externalMaterialStudy/outerRim/gradientTransform/matrix"
+        }
+      },
+      "lockedReferences": [
+        {
+          "layerNodeId": "65:12",
+          "locked": true
+        },
+        {
+          "layerNodeId": "67:12",
+          "locked": true
+        }
+      ],
+      "embeddedConceptReference": {
+        "nodeId": "67:20",
+        "parentLayerNodeId": "67:12",
+        "locked": true,
+        "figmaImageHash": "3740a582de2e6eca4b73b352d0c7cc58eca07dc1"
+      }
+    },
+    "wholeTargetRenders": {
+      "04.01": {
+        "revision": "r3",
+        "targetNodeId": "60:3",
+        "screenshotMcpRequestId": "8bc293c4-8d4e-46fb-abb5-68cf55a54a0f",
+        "path": "outputs/figma/qa/04.01-native-editable-r3.png",
+        "sha256": "7f6f3076df588baf978fb18462762e81d6167dfa2449d7456fb9dfcae0d6c9c2",
+        "rect": {
+          "width": 1440,
+          "height": 4300
+        }
+      },
+      "06.01": {
+        "revision": "r4",
+        "targetNodeId": "60:5",
+        "screenshotMcpRequestId": "30b4df60-5d35-450f-b1a0-28f9581c79c8",
+        "path": "outputs/figma/qa/06.01-native-editable-r4.png",
+        "sha256": "223cb5ffff25b8c5f68860ecc9b12ea034105b8c45703438967c4cafdd1fa531",
+        "rect": {
+          "width": 1440,
+          "height": 4100
+        }
+      }
+    },
+    "isolatedNodeRenders": {
+      "06.01-optical-ring": {
+        "revision": "r3",
+        "nodeId": "67:115",
+        "screenshotMcpRequestId": "86b2dd3d-7c4c-4609-9ea3-4c6302e0998e",
+        "path": "outputs/figma/qa/06.01-optical-ring-transform-r3.png",
+        "sha256": "b94714cff6ea936ff346963069919f0c926e9e8439eac2c50e4afce6ab35e1be",
+        "rect": {
+          "width": 492,
+          "height": 303
+        }
+      }
+    },
+    "qaComparisons": {
+      "04.01": {
+        "revision": "r3",
+        "path": "outputs/figma/qa/04.01-affinity-vs-figma-r3.png",
+        "sha256": "53757273119bc3ee325667b7fe49d4718e547629de66960f9fc655fe5fc1ec86",
+        "rect": {
+          "width": 1440,
+          "height": 2150
+        },
+        "comparesNodeIds": [
+          "60:2",
+          "60:3"
+        ],
+        "status": "QA evidence captured; not a publication receipt."
+      },
+      "06.01": {
+        "revision": "r4",
+        "path": "outputs/figma/qa/06.01-affinity-vs-figma-r4.png",
+        "sha256": "48a9eb3c3627257d4bdd1be7acbe1718d928f8395f71fb93273c5282b98b95ee",
+        "rect": {
+          "width": 2880,
+          "height": 4100
+        },
+        "comparesNodeIds": [
+          "60:4",
+          "60:5"
+        ],
+        "status": "QA evidence captured; subject remains governed-provisional and nonpublishable."
+      }
+    }
+  },
+  "canonicalVariables": {
+    "resolveBy": "collection name plus exact variable name; fail on zero or multiple matches",
+    "collectionIds": {
+      "Palette": "VariableCollectionId:52:2",
+      "Brand": "VariableCollectionId:52:3",
+      "Typography": "VariableCollectionId:52:4",
+      "Geometry": "VariableCollectionId:52:5",
+      "Atlas": "VariableCollectionId:52:7",
+      "Material": "VariableCollectionId:52:8",
+      "Modes": "VariableCollectionId:52:10"
+    },
+    "modeIds": {
+      "void": "52:8",
+      "paper": "52:9"
+    },
+    "bindingRoles": {
+      "pageCanvas": "Modes/surface/canvas",
+      "primaryContent": "Modes/content/primary",
+      "secondaryContent": "Modes/content/secondary",
+      "accentContent": "Modes/content/accent",
+      "defaultBorder": "Modes/border/default",
+      "signal": "Brand/brand/accent/signal",
+      "signalInk": "Palette/color/accent/ink",
+      "void": "Palette/color/neutral/void",
+      "paper": "Palette/color/neutral/paper",
+      "ash300": "Palette/color/neutral/ash300",
+      "ash700": "Palette/color/neutral/ash700",
+      "iron": "Palette/color/neutral/iron",
+      "displayFamily": "Typography/font/family/display",
+      "bodyFamily": "Typography/font/family/body",
+      "monoFamily": "Typography/font/family/mono",
+      "weightRegular": "Typography/font/weight/regular",
+      "weightMedium": "Typography/font/weight/medium",
+      "weightBold": "Typography/font/weight/bold",
+      "weightBlack": "Typography/font/weight/black",
+      "space80": "Geometry/space/20",
+      "space40": "Geometry/space/10",
+      "border1": "Geometry/border/1",
+      "border3": "Geometry/border/3",
+      "compression": "Atlas/atlas/compression-exponent",
+      "tangentContinuity": "Atlas/aperture/tangent-continuity"
+    },
+    "bindingExceptions": [
+      {
+        "property": "gradient stop colors",
+        "reason": "Figma does not expose a stable per-gradient-stop color-variable binding in the governed import contract.",
+        "requiredHandling": "Use the exact governed literals and store each Palette token reference in shared plugin data; never substitute visually similar stops."
+      },
+      {
+        "property": "04.01 and 06.01 page-title sizes",
+        "reason": "The Affinity source uses 72 px and 56 px; neither value exists in the canonical Typography size scale.",
+        "requiredHandling": "Use the exact source sizes as explicit page-local values and do not round to 60 px or 80 px."
+      },
+      {
+        "property": "17 px panel heading and body size",
+        "reason": "The exact Affinity source value is not a canonical Typography size token.",
+        "requiredHandling": "Keep 17 px explicitly for reference fidelity; bind the exact family and weight variables."
+      },
+      {
+        "property": "panel fills",
+        "reason": "The Affinity source uses #181817 and #EBE9E0, which have no exact canonical semantic variable value.",
+        "requiredHandling": "Keep those exact literals with source annotations; do not silently replace them with a near token during exemplar reconstruction."
+      },
+      {
+        "property": "-14 degree lens orientation",
+        "reason": "The approved Atlas orientation family does not include -14 degrees; -14 degrees is the exact r14 visual reconstruction value.",
+        "requiredHandling": "Treat -14 degrees as governed-provisional page geometry, never as a canonical Atlas orientation token."
+      }
+    ]
+  },
+  "typography": {
+    "fontLoadRule": "Load every exact family/style pair before creating or mutating any text node.",
+    "registeredFamilies": [
+      "Unbounded",
+      "Hanken Grotesk",
+      "JetBrains Mono",
+      "Noto Sans Arabic",
+      "Big Shoulders Stencil Display",
+      "Big Shoulders Stencil Text"
+    ],
+    "existingLocalStyleCandidates": [
+      {
+        "name": "Display/H2",
+        "family": "Unbounded",
+        "style": "Bold",
+        "sizePx": 60,
+        "decision": "Do not apply to these page titles: family weight and size differ from the exact Affinity source."
+      },
+      {
+        "name": "Label/Eyebrow",
+        "family": "JetBrains Mono",
+        "style": "Medium",
+        "sizePx": 14,
+        "decision": "Reference only: the source system rail is Bold with 0.12 em tracking."
+      },
+      {
+        "name": "Body/Lead",
+        "family": "Hanken Grotesk",
+        "style": "Regular",
+        "sizePx": 18,
+        "decision": "Reference only: the compact Affinity panel copy is exactly 17 px."
+      },
+      {
+        "name": "Technical/Label",
+        "family": "JetBrains Mono",
+        "style": "Medium",
+        "sizePx": 12,
+        "decision": "Apply only where the source is exactly 12 px Medium with compatible tracking; otherwise use the explicit role below."
+      }
+    ],
+    "roles": {
+      "systemRail": {
+        "family": "JetBrains Mono",
+        "style": "Bold",
+        "fontSizePx": 14,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": 0.12,
+        "bindings": [
+          "Typography/font/family/mono",
+          "Typography/font/weight/bold",
+          "Typography/font/size/sm"
+        ]
+      },
+      "statusRail14": {
+        "family": "JetBrains Mono",
+        "style": "Medium",
+        "fontSizePx": 14,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": 0.08,
+        "bindings": [
+          "Typography/font/family/mono",
+          "Typography/font/weight/medium",
+          "Typography/font/size/sm"
+        ]
+      },
+      "statusRail12": {
+        "family": "JetBrains Mono",
+        "style": "Medium",
+        "fontSizePx": 12,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": 0.08,
+        "bindings": [
+          "Typography/font/family/mono",
+          "Typography/font/weight/medium",
+          "Typography/font/size/xs"
+        ]
+      },
+      "pageTitle72": {
+        "family": "Unbounded",
+        "style": "Black",
+        "fontSizePx": 72,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": -0.025,
+        "bindings": [
+          "Typography/font/family/display",
+          "Typography/font/weight/black"
+        ]
+      },
+      "pageTitle56": {
+        "family": "Unbounded",
+        "style": "Black",
+        "fontSizePx": 56,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": -0.025,
+        "bindings": [
+          "Typography/font/family/display",
+          "Typography/font/weight/black"
+        ]
+      },
+      "categoryRail": {
+        "family": "JetBrains Mono",
+        "style": "Medium",
+        "fontSizePx": 16,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": 0.04,
+        "bindings": [
+          "Typography/font/family/mono",
+          "Typography/font/weight/medium",
+          "Typography/font/size/base"
+        ]
+      },
+      "sectionNumber": {
+        "family": "JetBrains Mono",
+        "style": "Bold",
+        "fontSizePx": 13,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": 0,
+        "bindings": [
+          "Typography/font/family/mono",
+          "Typography/font/weight/bold"
+        ]
+      },
+      "sectionHeading": {
+        "family": "Hanken Grotesk",
+        "style": "Bold",
+        "fontSizePx": 17,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": 0.02,
+        "bindings": [
+          "Typography/font/family/body",
+          "Typography/font/weight/bold"
+        ]
+      },
+      "sectionBody": {
+        "family": "Hanken Grotesk",
+        "style": "Regular",
+        "fontSizePx": 17,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": 0,
+        "bindings": [
+          "Typography/font/family/body",
+          "Typography/font/weight/regular"
+        ]
+      },
+      "footerTagline": {
+        "family": "JetBrains Mono",
+        "style": "Bold",
+        "fontSizePx": 12,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": 0.1,
+        "bindings": [
+          "Typography/font/family/mono",
+          "Typography/font/weight/bold",
+          "Typography/font/size/xs"
+        ]
+      },
+      "footerManifest": {
+        "family": "JetBrains Mono",
+        "style": "Medium",
+        "fontSizePx": 12,
+        "lineHeight": "AUTO",
+        "letterSpacingEm": 0,
+        "bindings": [
+          "Typography/font/family/mono",
+          "Typography/font/weight/medium",
+          "Typography/font/size/xs"
+        ]
+      }
+    }
+  },
+  "smoothLensGeometry": {
+    "status": "OWNER-APPROVED VISUAL DIRECTION / NUMERICAL GEOMETRY PROVISIONAL",
+    "figmaPrimitive": "ELLIPSE",
+    "reason": "Use a native Figma EllipseNode for every lens and contour in these exemplars. It guarantees smooth joins and avoids the sharp polygonal artifacts rejected by the owner.",
+    "required": [
+      "closed smooth oval",
+      "tangent continuity at every point",
+      "broad orbital compression",
+      "one fixed -14 degree screen-coordinate orientation for the r14 exemplar",
+      "external bevel or material response remains outside the opening",
+      "all contour strokes have round caps and round joins",
+      "aperture/tangent-continuity resolves true"
+    ],
+    "forbidden": [
+      "polygon",
+      "star",
+      "rectangle or boolean notch",
+      "line segment in the silhouette",
+      "corner",
+      "sharp edge",
+      "outline chamfer",
+      "clipped wedge",
+      "key cut",
+      "notch",
+      "straight segment",
+      "miter join",
+      "mirroring",
+      "changing the silhouette between applications"
+    ],
+    "optionalCubicFallback": {
+      "allowedOnlyIfEllipseNodeCannotMatchTheApprovedReference": true,
+      "segmentCount": 4,
+      "commandTypes": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "Z"
+      ],
+      "kappa": 0.5522847498307936,
+      "lineSegmentsAllowed": false,
+      "joinContinuity": "C1 minimum; matched collinear handles at every join"
+    }
+  },
+  "sharedFrameContract": {
+    "x": 1600,
+    "y": 0,
+    "clipContent": true,
+    "cornerRadius": 0,
+    "layerOrderBackToFront": [
+      "40 / Color, Gradient, Pattern, or Material",
+      "50 / Variants, States, and Optical Sizes",
+      "60 / Usage and Applications",
+      "70 / Accessibility, Bilingual, RTL, and Motion",
+      "80 / Production and Export",
+      "90 / Correct Use and Misuse",
+      "99 / Provenance, Status, Evidence, and Navigation",
+      "10 / Construction",
+      "20 / Canonical Assets",
+      "30 / Live Type and Metadata",
+      "00 / Reference"
+    ],
+    "layerFrameRules": {
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 1440,
+        "height": "MATCH_TARGET"
+      },
+      "fills": [],
+      "clipContent": false,
+      "lockedAfterBuild": false,
+      "referenceLayerLockedAfterBuild": true
+    },
+    "header": {
+      "signalRail": {
+        "type": "RECTANGLE",
+        "name": "Signal rail / Active datum",
+        "layer": "10 / Construction",
+        "rect": {
+          "x": 80,
+          "y": 0,
+          "width": 1280,
+          "height": 6
+        },
+        "fillBinding": "Brand/brand/accent/signal"
+      },
+      "systemRail": {
+        "type": "TEXT",
+        "name": "Metadata / System rail",
+        "layer": "30 / Live Type and Metadata",
+        "x": 80,
+        "y": 37,
+        "sourceAffinityAnchorY": 48,
+        "typographyRole": "systemRail"
+      },
+      "title": {
+        "type": "TEXT",
+        "name": "Title / Subject",
+        "layer": "30 / Live Type and Metadata",
+        "x": 80,
+        "yBySubject": {
+          "04.01": 60,
+          "06.01": 66
+        },
+        "sourceAffinityAnchorY": 118
+      },
+      "categoryRail": {
+        "type": "TEXT",
+        "name": "Metadata / Category and page rule",
+        "layer": "30 / Live Type and Metadata",
+        "x": 82,
+        "y": 316,
+        "sourceAffinityAnchorY": 330,
+        "typographyRole": "categoryRail"
+      }
+    },
+    "footer": {
+      "datum": {
+        "type": "RECTANGLE",
+        "name": "Footer datum",
+        "layer": "10 / Construction",
+        "x": 80,
+        "width": 1280,
+        "height": 1,
+        "yExpression": "height - 90",
+        "fillBinding": "Modes/border/default"
+      },
+      "tagline": {
+        "type": "TEXT",
+        "name": "Footer / Permanent tagline",
+        "layer": "99 / Provenance, Status, Evidence, and Navigation",
+        "text": "CATCH THE STARS  /  MAKE THE DISTANT TANGIBLE",
+        "x": 80,
+        "yExpression": "height - 64",
+        "sourceAffinityAnchorYExpression": "height - 58",
+        "resolvedYBySubject": {
+          "04.01": 4236,
+          "06.01": 4036
+        },
+        "nodeIdBySubject": {
+          "04.01": "65:175",
+          "06.01": "67:180"
+        },
+        "typographyRole": "footerTagline",
+        "fillBinding": "Modes/content/accent"
+      },
+      "manifest": {
+        "type": "TEXT",
+        "name": "Footer / Manifest version",
+        "layer": "99 / Provenance, Status, Evidence, and Navigation",
+        "text": "1.0.0  /  4c4500ea3c2f",
+        "x": 1080,
+        "yExpression": "height - 64",
+        "sourceAffinityAnchorYExpression": "height - 58",
+        "resolvedYBySubject": {
+          "04.01": 4236,
+          "06.01": 4036
+        },
+        "nodeIdBySubject": {
+          "04.01": "65:176",
+          "06.01": "67:181"
+        },
+        "typographyRole": "footerManifest",
+        "fillBinding": "Modes/content/secondary"
+      }
+    },
+    "anatomyPanelTemplate": {
+      "type": "FRAME",
+      "width": 620,
+      "columns": 2,
+      "columnX": [
+        80,
+        740
+      ],
+      "columnGap": 40,
+      "rowGap": 30,
+      "layoutMode": "VERTICAL",
+      "layoutSizingHorizontal": "FIXED",
+      "layoutSizingVertical": "FIXED",
+      "contentPadding": {
+        "top": 28,
+        "right": 30,
+        "bottom": 30,
+        "left": 30
+      },
+      "headerRow": {
+        "layoutMode": "HORIZONTAL",
+        "itemSpacing": 30,
+        "numberWidth": 20,
+        "headingWidth": 482
+      },
+      "bodyTop": 100,
+      "bodyWidth": 560,
+      "indexRail": {
+        "type": "RECTANGLE",
+        "width": 8,
+        "height": "MATCH_PANEL",
+        "layoutPositioning": "ABSOLUTE",
+        "x": 0,
+        "y": 0
+      },
+      "firstPanelRailBinding": "Brand/brand/accent/signal",
+      "otherPanelRailBinding": "Modes/border/default",
+      "panelFillPolicy": "Use the exact renderer literal declared on the page because no canonical variable has the exact value.",
+      "textAutoResize": "HEIGHT",
+      "sectionLayerRouting": {
+        "Construction and source": "10 / Construction",
+        "Exact tokens, assets, styles, or material recipe": "20 / Canonical Assets",
+        "Variants, modes, states, and optical sizes": "50 / Variants, States, and Optical Sizes",
+        "Usage": "60 / Usage and Applications",
+        "Accessibility, bilingual behavior, and RTL": "70 / Accessibility, Bilingual, RTL, and Motion",
+        "Motion and interaction": "70 / Accessibility, Bilingual, RTL, and Motion",
+        "Production and export": "80 / Production and Export",
+        "Correct examples": "90 / Correct Use and Misuse",
+        "Misuse": "90 / Correct Use and Misuse",
+        "Provenance, hashes, status, and evidence": "99 / Provenance, Status, Evidence, and Navigation",
+        "Parent and sibling links plus canonical source paths": "99 / Provenance, Status, Evidence, and Navigation",
+        "Definition": "30 / Live Type and Metadata"
+      }
+    }
+  },
+  "pages": [
+    {
+      "subjectId": "04.01",
+      "page": {
+        "nodeId": "47:23",
+        "name": "04.01 · Field Gradient"
+      },
+      "targetFrame": {
+        "nodeId": "60:3",
+        "name": "01 / FIGMA NATIVE — EDITABLE MASTER",
+        "rect": {
+          "x": 1600,
+          "y": 0,
+          "width": 1440,
+          "height": 4300
+        },
+        "explicitModesCollectionMode": "void",
+        "placeholder": false,
+        "publicationStatus": "publishable only after verification and only if rejected source geometry is absent from the export",
+        "verificationStatus": "QA_CAPTURED_R3 / NOT_PUBLISHED"
+      },
+      "headerContent": {
+        "systemRail": {
+          "nodeId": "65:14",
+          "text": "BZR / 04 / DETAIL",
+          "x": 80,
+          "y": 37,
+          "typographyRole": "systemRail",
+          "fillBinding": "Modes/content/primary"
+        },
+        "statusRail": {
+          "nodeId": "65:15",
+          "text": "GOVERNED  /  04.01",
+          "x": 1010,
+          "y": 37,
+          "typographyRole": "statusRail14",
+          "fillBinding": "Modes/content/secondary"
+        },
+        "title": {
+          "nodeId": "65:16",
+          "text": "FIELD GRADIENT",
+          "x": 80,
+          "y": 60,
+          "typographyRole": "pageTitle72",
+          "fillBinding": "Palette/color/neutral/paper"
+        },
+        "categoryRail": {
+          "nodeId": "65:17",
+          "text": "04 / GRADIENTS  ·  CONTENT-DRIVEN / 1440PX / 144DPI",
+          "x": 82,
+          "y": 316,
+          "typographyRole": "categoryRail",
+          "fillBinding": "Modes/content/secondary"
+        }
+      },
+      "specimen": {
+        "nodeId": "65:18",
+        "name": "Field gradient / Continuous Lens exemplar / Native editable specimen",
+        "bounds": {
+          "x": 80,
+          "y": 430,
+          "width": 1280,
+          "height": 640
+        },
+        "lineCount": 67,
+        "scale": 1.6,
+        "center": {
+          "x": 873.6,
+          "y": 756.4
+        },
+        "aperture": {
+          "nodeId": "65:89",
+          "rx": 140.8,
+          "ry": 81.8604651163,
+          "rotationDeg": -14,
+          "primitive": "ELLIPSE",
+          "name": "Field gradient / Continuous Lens aperture / Four smooth cubic segments / No corners",
+          "fillBinding": "Palette/color/neutral/void",
+          "stroke": {
+            "type": "SOLID",
+            "color": "#F9F8F2",
+            "opacity": 0.8392156863,
+            "weight": 1.44
+          }
+        },
+        "fieldWash": {
+          "nodeId": "65:19",
+          "name": "Field gradient / Native elliptical field wash",
+          "type": "GRADIENT_RADIAL",
+          "ellipseBounds": {
+            "x": 310.4,
+            "y": 455.6,
+            "width": 1049.6,
+            "height": 588.8
+          },
+          "stops": [
+            {
+              "positionPercent": 0,
+              "color": "#20274D",
+              "opacity": 0.1568627451
+            },
+            {
+              "positionPercent": 38,
+              "color": "#4AA5AF",
+              "opacity": 0.1176470588
+            },
+            {
+              "positionPercent": 68,
+              "color": "#D5A347",
+              "opacity": 0.1098039216
+            },
+            {
+              "positionPercent": 100,
+              "color": "#B64C63",
+              "opacity": 0.0470588235
+            }
+          ]
+        },
+        "contourGenerator": {
+          "parentNodeId": "65:18",
+          "parentName": "Field gradient / Continuous Lens exemplar / Native editable specimen",
+          "firstNodeId": "65:21",
+          "lastNodeId": "65:87",
+          "nodeType": "ELLIPSE",
+          "clipRect": {
+            "x": 80,
+            "y": 430,
+            "width": 1280,
+            "height": 640
+          },
+          "indexRange": [
+            0,
+            66
+          ],
+          "normalizedExpression": "i / 66",
+          "growthExpression": "pow(normalized, 1.13)",
+          "rxExpression": "156.8 + growth * 985.6",
+          "ryExpression": "93.0604651163 + growth * 371.2",
+          "cxExpression": "873.6 - growth * 134.4",
+          "cyExpression": "756.4 + sin(growth * PI) * 7.68",
+          "rotationDegExpression": "-14 - growth * 4",
+          "majorWhen": "i % 6 === 0",
+          "majorStrokeWidth": 2.4,
+          "minorStrokeWidth": 0.928,
+          "strokePaint": "exact seven-stop field gradient",
+          "strokeCap": "ROUND",
+          "strokeJoin": "ROUND",
+          "nameExpression": "Field gradient / Tangent-continuous contour {i+1 padded 2} / {Major|Minor}"
+        },
+        "registrationRim": {
+          "nodeId": "65:88",
+          "primitive": "ELLIPSE",
+          "center": {
+            "x": 873.6,
+            "y": 756.4
+          },
+          "rx": 144.8,
+          "ry": 85.8604651163,
+          "rotationDeg": -14,
+          "fillBinding": "Palette/color/neutral/void",
+          "strokePaint": "exact seven-stop field gradient",
+          "strokeWidth": 3.84,
+          "name": "Field gradient / Continuous Lens spectral registration rim"
+        },
+        "trajectory": {
+          "nodeId": "65:20",
+          "type": "VECTOR",
+          "name": "Field gradient / Single smooth active trajectory / Flat Signal",
+          "commands": [
+            {
+              "command": "M",
+              "point": [
+                68,
+                980.4
+              ]
+            },
+            {
+              "command": "C",
+              "control1": [
+                515.2,
+                993.2
+              ],
+              "control2": [
+                796.8,
+                922.8
+              ],
+              "point": [
+                958.08,
+                821.888372093
+              ]
+            }
+          ],
+          "closed": false,
+          "strokeBinding": "Brand/brand/accent/signal",
+          "strokeWidth": 10.4,
+          "strokeCap": "ROUND",
+          "strokeJoin": "ROUND",
+          "datum": {
+            "nodeId": "65:90",
+            "name": "Field gradient / Active trajectory datum",
+            "type": "ELLIPSE",
+            "diameter": 22.4,
+            "center": [
+              958.08,
+              821.888372093
+            ],
+            "fillBinding": "Brand/brand/accent/signal"
+          }
+        },
+        "functionalSequence": {
+          "text": "BEND\n↓\nABSENCE\n↓\nSIGNAL",
+          "x": 118.4,
+          "y": 487.6,
+          "family": "JetBrains Mono",
+          "style": "Bold",
+          "fontSizePx": 16,
+          "letterSpacingEm": 0.08,
+          "fillBinding": "Palette/color/neutral/paper"
+        },
+        "legend": {
+          "rect": {
+            "x": 1171.2,
+            "y": 679.6,
+            "width": 166.4,
+            "height": 227.2
+          },
+          "title": "NORMALIZED FIELD",
+          "entries": [
+            "+02",
+            "+01",
+            "00",
+            "-01",
+            "-02"
+          ]
+        },
+        "constructionCaption": {
+          "text": "CONTINUOUS LENS  /  EXACT FIELD STOPS  /  NATIVE EDITABLE CURVES",
+          "x": 118.4,
+          "y": 1015.6,
+          "family": "JetBrains Mono",
+          "style": "Medium",
+          "fontSizePx": 12.8,
+          "letterSpacingEm": 0.05,
+          "fillBinding": "Palette/color/neutral/ash300"
+        }
+      },
+      "fieldGradient": {
+        "name": "Field gradient / Exact seven-stop source ramp / 90 degrees",
+        "type": "GRADIENT_LINEAR",
+        "angleDeg": 90,
+        "normalizedEndpoints": {
+          "start": {
+            "x": 0.5,
+            "y": 0
+          },
+          "end": {
+            "x": 0.5,
+            "y": 1
+          }
+        },
+        "valueStatus": "EXACT SOURCE VALUE",
+        "interpolationColorSpace": null,
+        "interpolationColorSpaceStatus": "NOT VERIFIED",
+        "stops": [
+          {
+            "positionPercent": 0,
+            "color": "#20274D",
+            "tokenRef": "Palette/color/spectrum/deep-indigo"
+          },
+          {
+            "positionPercent": 17,
+            "color": "#3156A6",
+            "tokenRef": "Palette/color/spectrum/electric-blue"
+          },
+          {
+            "positionPercent": 34,
+            "color": "#4AA5AF",
+            "tokenRef": "Palette/color/spectrum/ion-cyan"
+          },
+          {
+            "positionPercent": 49,
+            "color": "#5C887C",
+            "tokenRef": "Palette/color/spectrum/oxidized-teal"
+          },
+          {
+            "positionPercent": 66,
+            "color": "#D5A347",
+            "tokenRef": "Palette/color/spectrum/solar-gold"
+          },
+          {
+            "positionPercent": 82,
+            "color": "#C96C3E",
+            "tokenRef": "Palette/color/spectrum/amber"
+          },
+          {
+            "positionPercent": 100,
+            "color": "#B64C63",
+            "tokenRef": "Palette/color/spectrum/crimson"
+          }
+        ],
+        "sourceRampRect": {
+          "x": 80,
+          "y": 1100,
+          "width": 1280,
+          "height": 78
+        },
+        "stopLabelRule": {
+          "xExpression": "80 + positionFraction * 1190",
+          "y": 1190,
+          "textExpression": "{positionPercent}%\\n{hex}",
+          "family": "JetBrains Mono",
+          "style": "Bold",
+          "fontSizePx": 10,
+          "letterSpacingEm": 0.02,
+          "fillBinding": "Palette/color/neutral/paper"
+        },
+        "statusText": {
+          "nodeId": "65:113",
+          "text": "NATIVE AFFINITY GRADIENT  /  GOVERNED RECIPE  /  OWNER-SELECTED CONTINUOUS LENS DIRECTION  /  FLAT SIGNAL CHANNEL",
+          "x": 82,
+          "y": 1288,
+          "family": "JetBrains Mono",
+          "style": "Bold",
+          "fontSizePx": 13,
+          "letterSpacingEm": 0.04,
+          "fillBinding": "Brand/brand/accent/signal"
+        }
+      },
+      "anatomy": {
+        "startY": 1490,
+        "panelHeight": 415,
+        "panelFill": "#181817",
+        "rowY": [
+          1490,
+          1935,
+          2380,
+          2825,
+          3270,
+          3715
+        ],
+        "sections": [
+          {
+            "index": "01",
+            "name": "Definition",
+            "content": "Field Gradient maps the governed seven-stop spectrum to measured gravitational depth. It is a data-shaped field treatment, not a decorative rainbow."
+          },
+          {
+            "index": "02",
+            "name": "Construction and source",
+            "content": "SOURCE RAMP  90 degrees\nMAPPING  native tangent-continuous field contours\nAPERTURE  owner-selected Continuous Lens direction\nTRAJECTORY  one separate flat #C6FF24 path\nAFFINITY  native gradient and editable cubic curves"
+          },
+          {
+            "index": "03",
+            "name": "Exact tokens, assets, styles, or material recipe",
+            "content": "00  #20274D  @ 0%\n01  #3156A6  @ 17%\n02  #4AA5AF  @ 34%\n03  #5C887C  @ 49%\n04  #D5A347  @ 66%\n05  #C96C3E  @ 82%\n06  #B64C63  @ 100%\nANGLE  90 DEG"
+          },
+          {
+            "index": "04",
+            "name": "Variants, modes, states, and optical sizes",
+            "content": "SOURCE STRIP  verification only\nFIELD STROKE  approved mapped use\nMASKED DEPTH  allowed when topology is unchanged\nVIOLET STOP  excluded from this recipe\nSIGNAL LIME  never graded"
+          },
+          {
+            "index": "05",
+            "name": "Usage",
+            "content": "Use for spatial depth, field magnitude, or calibrated reveal. The mapped bend must survive at distance. Keep the treatment subordinate to the active Signal Lime trajectory."
+          },
+          {
+            "index": "06",
+            "name": "Accessibility, bilingual behavior, and RTL",
+            "content": "Do not rely on hue alone. Preserve contour spacing, line hierarchy, labels, and high-contrast trajectory. Supply a one-color translation and avoid low-luminance text over the field."
+          },
+          {
+            "index": "07",
+            "name": "Motion and interaction",
+            "content": "Stops remain fixed to the governed field. Motion may reveal or traverse data, but may not rotate the palette, cycle hues, or detach the gradient from topology. Reduced motion shows the final mapped state."
+          },
+          {
+            "index": "08",
+            "name": "Production and export",
+            "content": "Keep the seven stops and transform native. Record profile conversion, output gamut, banding test, screen/print translation, and one-color fallback. Never bake the master as a bitmap."
+          },
+          {
+            "index": "09",
+            "name": "Correct examples",
+            "content": "Correct: restrained seven-stop field mapped to exact contours with one independent flat Lime trajectory and an inspectable source ramp."
+          },
+          {
+            "index": "10",
+            "name": "Misuse",
+            "content": "Reject full-page rainbow fills, generic aurora, Violet added without governance, Lime gradients, unrelated blobs, white gaps, banding, or gradients detached from field geometry."
+          },
+          {
+            "index": "11",
+            "name": "Provenance, hashes, status, and evidence",
+            "content": "GOVERNED\nSOURCE  docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md\nHASH  825d7e8456ed0338…"
+          },
+          {
+            "index": "12",
+            "name": "Parent and sibling links plus canonical source paths",
+            "content": "PARENT  04.00 / Gradients\nSIBLINGS  independently addressable by stable subject ID"
+          }
+        ]
+      },
+      "nodeHierarchy": [
+        {
+          "nodeId": "65:2",
+          "name": "40 / Color, Gradient, Pattern, or Material",
+          "children": [
+            "Ground / Approved page mode",
+            "Field gradient / Continuous Lens exemplar / Deep Void field ground",
+            "Field gradient / Native elliptical field wash",
+            "Field gradient / Exact seven-stop source ramp / 90 degrees",
+            "section panel grounds routed to this layer only when the section contract names this layer"
+          ]
+        },
+        {
+          "nodeId": "65:3",
+          "name": "50 / Variants, States, and Optical Sizes",
+          "children": [
+            "Section 04 / Variants, modes, states, and optical sizes"
+          ]
+        },
+        {
+          "nodeId": "65:4",
+          "name": "60 / Usage and Applications",
+          "children": [
+            "Section 05 / Usage"
+          ]
+        },
+        {
+          "nodeId": "65:5",
+          "name": "70 / Accessibility, Bilingual, RTL, and Motion",
+          "children": [
+            "Section 06 / Accessibility, bilingual behavior, and RTL",
+            "Section 07 / Motion and interaction"
+          ]
+        },
+        {
+          "nodeId": "65:6",
+          "name": "80 / Production and Export",
+          "children": [
+            "Section 08 / Production and export"
+          ]
+        },
+        {
+          "nodeId": "65:7",
+          "name": "90 / Correct Use and Misuse",
+          "children": [
+            "Section 09 / Correct examples",
+            "Section 10 / Misuse"
+          ]
+        },
+        {
+          "nodeId": "65:8",
+          "name": "99 / Provenance, Status, Evidence, and Navigation",
+          "children": [
+            "Gradient status / Continuous Lens exemplar",
+            "Section 11 / Provenance, hashes, status, and evidence",
+            "Section 12 / Parent and sibling links plus canonical source paths",
+            "Footer / Permanent tagline",
+            "Footer / Manifest version"
+          ]
+        },
+        {
+          "nodeId": "65:9",
+          "name": "10 / Construction",
+          "children": [
+            "Signal rail / Active datum",
+            "Field gradient / Continuous Lens exemplar / Native editable specimen",
+            "Section 02 / Construction and source",
+            "Footer datum"
+          ]
+        },
+        {
+          "nodeId": "65:10",
+          "name": "20 / Canonical Assets",
+          "children": [
+            "Field gradient / Tangent-continuous contour 01 through 67 / Major or Minor",
+            "Field gradient / Continuous Lens spectral registration rim",
+            "Field gradient / Continuous Lens aperture / Four smooth cubic segments / No corners",
+            "Field gradient / Single smooth active trajectory / Flat Signal",
+            "Field gradient / Active trajectory datum",
+            "Field gradient / field legend swatches",
+            "Section 03 / Exact tokens, assets, styles, or material recipe"
+          ]
+        },
+        {
+          "nodeId": "65:11",
+          "name": "30 / Live Type and Metadata",
+          "children": [
+            "Metadata / System rail",
+            "Metadata / Status rail",
+            "Title / Subject",
+            "Metadata / Category and page rule",
+            "Field gradient / Functional sequence",
+            "Field gradient / normalized field legend",
+            "Field gradient / Construction caption",
+            "Field gradient / seven stop labels",
+            "Section 01 / Definition"
+          ]
+        },
+        {
+          "nodeId": "65:12",
+          "name": "00 / Reference",
+          "locked": true,
+          "visible": false,
+          "children": [
+            "Reference link / locked source node 60:2 / sha256 a796d0362987e6070584d14ea83a272cb88597c3ea90d70d716e89e40aacef66"
+          ]
+        }
+      ]
+    },
+    {
+      "subjectId": "06.01",
+      "page": {
+        "nodeId": "47:38",
+        "name": "06.01 · Continuous Lens Aperture v2"
+      },
+      "targetFrame": {
+        "nodeId": "60:5",
+        "name": "01 / FIGMA NATIVE — EDITABLE MASTER",
+        "rect": {
+          "x": 1600,
+          "y": 0,
+          "width": 1440,
+          "height": 4100
+        },
+        "explicitModesCollectionMode": "paper",
+        "placeholder": false,
+        "publicationStatus": "nonpublishable",
+        "verificationStatus": "QA_CAPTURED_R4 / NONPUBLISHABLE",
+        "authorityStatus": "governed-provisional"
+      },
+      "headerContent": {
+        "systemRail": {
+          "nodeId": "67:14",
+          "text": "BZR / 06 / PROVISIONAL DETAIL",
+          "x": 80,
+          "y": 37,
+          "typographyRole": "systemRail",
+          "fillBinding": "Modes/content/primary"
+        },
+        "statusRail": {
+          "nodeId": "67:15",
+          "text": "DIRECTION APPROVED / GEOMETRY PROVISIONAL  /  06.01",
+          "x": 900,
+          "y": 37,
+          "typographyRole": "statusRail12",
+          "fillBinding": "Modes/content/secondary"
+        },
+        "title": {
+          "nodeId": "67:16",
+          "text": "CONTINUOUS LENS APERTURE V2",
+          "x": 80,
+          "y": 66,
+          "typographyRole": "pageTitle56",
+          "fillBinding": "Palette/color/neutral/void"
+        },
+        "categoryRail": {
+          "nodeId": "67:17",
+          "text": "06 / GEOMETRY AND LAYOUT  ·  CONTENT-DRIVEN / 1440PX / 144DPI",
+          "x": 82,
+          "y": 316,
+          "typographyRole": "categoryRail",
+          "fillBinding": "Modes/content/secondary"
+        },
+        "nonpublishableFlag": {
+          "nodeId": "67:18",
+          "rect": {
+            "x": 1090,
+            "y": 268,
+            "width": 270,
+            "height": 44
+          },
+          "text": "NONPUBLISHABLE",
+          "textNodeId": "67:19",
+          "textX": 1110,
+          "textY": 277,
+          "fillBinding": "Brand/brand/accent/signal",
+          "textFillBinding": "Palette/color/neutral/void"
+        }
+      },
+      "conceptReference": {
+        "layer": "00 / Reference",
+        "layerNodeId": "67:12",
+        "nodeId": "67:20",
+        "nodeType": "ROUNDED_RECTANGLE",
+        "frameName": "CONCEPT REFERENCE — NONPUBLISHABLE / LEFT CONTINUOUS LENS / IMAGE TARGET",
+        "rect": {
+          "x": 80,
+          "y": 430,
+          "width": 600,
+          "height": 254
+        },
+        "assetPath": "production/affinity/aperture-pattern-study-v2/continuous-lens-main-panel-v2.png",
+        "assetSha256": "b5ed51bee2aa791141304bc445612fcd7d90b56863d4f68fed5f11235c83612f",
+        "figmaImageHash": "3740a582de2e6eca4b73b352d0c7cc58eca07dc1",
+        "scaleMode": "FIT",
+        "locked": true,
+        "classificationBand": {
+          "nodeId": "67:21",
+          "name": "Reference classification / Continuous Lens",
+          "x": 80,
+          "y": 430,
+          "width": 600,
+          "height": 38,
+          "fillBinding": "Brand/brand/accent/signal",
+          "text": "CONCEPT REFERENCE — NONPUBLISHABLE  /  LEFT CONTINUOUS LENS / 62511EF6",
+          "textNodeId": "67:22",
+          "textNodeName": "Reference classification label / Continuous Lens",
+          "textX": 96,
+          "textY": 442,
+          "family": "JetBrains Mono",
+          "style": "Bold",
+          "fontSizePx": 12,
+          "letterSpacingEm": 0.04,
+          "textFillBinding": "Palette/color/neutral/void"
+        }
+      },
+      "nativeReconstruction": {
+        "nodeId": "67:23",
+        "name": "Continuous Lens / Native Figma reconstruction / Field specimen",
+        "bounds": {
+          "x": 720,
+          "y": 430,
+          "width": 640,
+          "height": 254
+        },
+        "lineCount": 53,
+        "scale": 0.72,
+        "center": {
+          "x": 1116.8,
+          "y": 559.54
+        },
+        "aperture": {
+          "nodeId": "67:80",
+          "rx": 70.4,
+          "ry": 40.9302325581,
+          "rotationDeg": -14,
+          "primitive": "ELLIPSE",
+          "name": "Continuous Lens / Aperture / Four smooth cubic segments / No corners",
+          "fillBinding": "Palette/color/neutral/void",
+          "stroke": {
+            "type": "SOLID",
+            "color": "#F9F8F2",
+            "opacity": 0.8392156863,
+            "weight": 0.648
+          }
+        },
+        "fieldWash": {
+          "nodeId": "67:24",
+          "name": "Continuous Lens / Native elliptical field wash",
+          "type": "GRADIENT_RADIAL",
+          "ellipseBounds": {
+            "x": 835.2,
+            "y": 440.16,
+            "width": 524.8,
+            "height": 233.68
+          },
+          "stopsRef": "04.01 specimen fieldWash"
+        },
+        "contourGenerator": {
+          "parentNodeId": "67:23",
+          "parentName": "Continuous Lens / Native Figma reconstruction / Field specimen",
+          "firstNodeId": "67:26",
+          "lastNodeId": "67:78",
+          "nodeType": "ELLIPSE",
+          "clipRect": {
+            "x": 720,
+            "y": 430,
+            "width": 640,
+            "height": 254
+          },
+          "indexRange": [
+            0,
+            52
+          ],
+          "normalizedExpression": "i / 52",
+          "growthExpression": "pow(normalized, 1.13)",
+          "rxExpression": "77.6 + growth * 492.8",
+          "ryExpression": "45.9702325581 + growth * 147.32",
+          "cxExpression": "1116.8 - growth * 67.2",
+          "cyExpression": "559.54 + sin(growth * PI) * 3.048",
+          "rotationDegExpression": "-14 - growth * 4",
+          "majorWhen": "i % 6 === 0",
+          "majorStrokeWidth": 1.08,
+          "minorStrokeWidth": 0.4176,
+          "strokePaint": "exact seven-stop field gradient",
+          "strokeCap": "ROUND",
+          "strokeJoin": "ROUND",
+          "nameExpression": "Continuous Lens / Tangent-continuous contour {i+1 padded 2} / {Major|Minor}"
+        },
+        "registrationRim": {
+          "nodeId": "67:79",
+          "primitive": "ELLIPSE",
+          "center": {
+            "x": 1116.8,
+            "y": 559.54
+          },
+          "rx": 72.2,
+          "ry": 42.7302325581,
+          "rotationDeg": -14,
+          "fillBinding": "Palette/color/neutral/void",
+          "strokePaint": "exact seven-stop field gradient",
+          "strokeWidth": 1.728,
+          "name": "Continuous Lens / Spectral registration rim"
+        },
+        "trajectory": {
+          "nodeId": "67:25",
+          "type": "VECTOR",
+          "name": "Continuous Lens / Single smooth active trajectory / Flat Signal",
+          "commands": [
+            {
+              "command": "M",
+              "point": [
+                708,
+                648.44
+              ]
+            },
+            {
+              "command": "C",
+              "control1": [
+                937.6,
+                653.52
+              ],
+              "control2": [
+                1078.4,
+                625.58
+              ],
+              "point": [
+                1159.04,
+                592.2841860465
+              ]
+            }
+          ],
+          "closed": false,
+          "strokeBinding": "Brand/brand/accent/signal",
+          "strokeWidth": 4.68,
+          "strokeCap": "ROUND",
+          "strokeJoin": "ROUND",
+          "datum": {
+            "nodeId": "67:81",
+            "name": "Continuous Lens / Active trajectory datum",
+            "type": "ELLIPSE",
+            "diameter": 10.08,
+            "center": [
+              1159.04,
+              592.2841860465
+            ],
+            "fillBinding": "Brand/brand/accent/signal"
+          }
+        },
+        "functionalSequence": {
+          "text": "BEND\n↓\nABSENCE\n↓\nSIGNAL",
+          "x": 737.28,
+          "y": 455.92,
+          "family": "JetBrains Mono",
+          "style": "Bold",
+          "fontSizePx": 7.2,
+          "letterSpacingEm": 0.08,
+          "fillBinding": "Palette/color/neutral/paper"
+        },
+        "constructionCaption": {
+          "text": "CONTINUOUS LENS  /  EXACT FIELD STOPS  /  NATIVE EDITABLE CURVES",
+          "x": 737.28,
+          "y": 659.52,
+          "family": "JetBrains Mono",
+          "style": "Medium",
+          "fontSizePx": 5.76,
+          "letterSpacingEm": 0.05,
+          "fillBinding": "Palette/color/neutral/ash300"
+        }
+      },
+      "tangentConstruction": {
+        "ground": {
+          "name": "Continuous Lens / Tangent construction ground",
+          "rect": {
+            "x": 80,
+            "y": 880,
+            "width": 600,
+            "height": 560
+          },
+          "fillBinding": "Palette/color/neutral/paper"
+        },
+        "axes": [
+          {
+            "name": "Continuous Lens / Horizontal construction axis",
+            "rect": {
+              "x": 120,
+              "y": 1158,
+              "width": 520,
+              "height": 1
+            },
+            "fillBinding": "Palette/color/neutral/ash300"
+          },
+          {
+            "name": "Continuous Lens / Vertical construction axis",
+            "rect": {
+              "x": 380,
+              "y": 925,
+              "width": 1,
+              "height": 466
+            },
+            "fillBinding": "Palette/color/neutral/ash300"
+          }
+        ],
+        "lens": {
+          "nodeId": "67:99",
+          "name": "Continuous Lens / Native four-segment cubic silhouette / Tangent continuous",
+          "primitive": "ELLIPSE",
+          "center": {
+            "x": 380,
+            "y": 1160
+          },
+          "rx": 214,
+          "ry": 106,
+          "rotationDeg": -14,
+          "fillBinding": "Palette/color/neutral/void",
+          "strokeBinding": "Palette/color/accent/ink",
+          "strokeWidth": 3,
+          "tangentJoinMarkers": {
+            "nodeIds": [
+              "67:100",
+              "67:101",
+              "67:102",
+              "67:103"
+            ],
+            "count": 4,
+            "primitive": "ELLIPSE",
+            "diameter": 10,
+            "fillBinding": "Brand/brand/accent/signal",
+            "anglesDeg": [
+              0,
+              90,
+              180,
+              270
+            ]
+          }
+        },
+        "statement": {
+          "text": "FOUR CUBIC SEGMENTS\nTANGENT-CONTINUOUS JOINS\nNO CORNER / CHAMFER / WEDGE / NOTCH\n-14 DEG / SCREEN COORDINATES",
+          "x": 118,
+          "y": 944,
+          "family": "JetBrains Mono",
+          "style": "Bold",
+          "fontSizePx": 13,
+          "letterSpacingEm": 0.04,
+          "fillBinding": "Palette/color/neutral/void"
+        },
+        "approvalBoundary": {
+          "text": "OWNER-APPROVED VISUAL DIRECTION\nNUMERICAL CONSTRUCTION REMAINS PROVISIONAL",
+          "x": 118,
+          "y": 1338,
+          "family": "JetBrains Mono",
+          "style": "Bold",
+          "fontSizePx": 11,
+          "letterSpacingEm": 0.04,
+          "fillBinding": "Palette/color/accent/ink"
+        }
+      },
+      "externalMaterialStudy": {
+        "ground": {
+          "name": "Continuous Lens / Material depth study ground",
+          "rect": {
+            "x": 720,
+            "y": 880,
+            "width": 640,
+            "height": 560
+          },
+          "fill": "#181817"
+        },
+        "gradient": {
+          "name": "Continuous Lens / External optical coating rim / Exact governed recipe",
+          "type": "GRADIENT_LINEAR",
+          "angleDeg": 100,
+          "valueStatus": "EXACT SOURCE VALUE",
+          "interpolationColorSpace": null,
+          "interpolationColorSpaceStatus": "NOT VERIFIED",
+          "stops": [
+            {
+              "positionPercent": 0,
+              "color": "#34383B"
+            },
+            {
+              "positionPercent": 14,
+              "color": "#F5F7F4"
+            },
+            {
+              "positionPercent": 29,
+              "color": "#67B7C2"
+            },
+            {
+              "positionPercent": 46,
+              "color": "#765A9B"
+            },
+            {
+              "positionPercent": 62,
+              "color": "#D7AE59"
+            },
+            {
+              "positionPercent": 79,
+              "color": "#B85769"
+            },
+            {
+              "positionPercent": 90,
+              "color": "#F6F2E8"
+            },
+            {
+              "positionPercent": 100,
+              "color": "#4B4E50"
+            }
+          ]
+        },
+        "stopSwatches": {
+          "xExpression": "752 + i * 72",
+          "y": 1012,
+          "width": 64,
+          "height": 18
+        },
+        "outerRim": {
+          "nodeId": "67:115",
+          "name": "Continuous Lens / External optical coating rim / Exact governed recipe",
+          "primitive": "ELLIPSE",
+          "center": {
+            "x": 1040,
+            "y": 1150
+          },
+          "rx": 250,
+          "ry": 142,
+          "rotationDeg": -14,
+          "fill": "exact 100 degree optical-coating gradient",
+          "gradientTransform": {
+            "matrix": [
+              [
+                -0.31776300072669983,
+                0.4053857922554016,
+                -0.14602310955524445
+              ],
+              [
+                -0.7137073874473572,
+                -0.18048939108848572,
+                0.9574077129364014
+              ]
+            ],
+            "angleDeg": 100,
+            "pageSpaceStart": {
+              "x": 720,
+              "y": 1160
+            },
+            "pageSpaceDirectionExpression": "640 * (cos(100 degrees), sin(100 degrees))",
+            "directionFormula": "d=640*(cos100,sin100)",
+            "parameterFormula": "t=dot(P-S,d)/|d|^2",
+            "coordinateBridge": {
+              "nodeGeometrySource": "node.relativeTransform",
+              "nodeLocalWidth": 500,
+              "nodeLocalHeight": 284,
+              "rule": "Map the page-space start and direction through the inverse node relativeTransform, normalize local x by 500 and local y by 284, then construct the Figma paint gradientTransform."
+            },
+            "mutationMcpRequestId": "f6635679-2eda-49d3-a0a8-0022cf55cb1b",
+            "valueStatus": "CURRENT EXACT LIVE VALUE / QA R3"
+          },
+          "strokeBinding": "Palette/color/neutral/paper",
+          "strokeWidth": 1
+        },
+        "unchangedOpening": {
+          "nodeId": "67:116",
+          "name": "Continuous Lens / Unchanged smooth opening inside external material rim",
+          "primitive": "ELLIPSE",
+          "center": {
+            "x": 1040,
+            "y": 1150
+          },
+          "rx": 218,
+          "ry": 110,
+          "rotationDeg": -14,
+          "fillBinding": "Palette/color/neutral/void",
+          "strokeBinding": "Palette/color/neutral/paper",
+          "strokeWidth": 1
+        },
+        "distinctionText": {
+          "text": "EXTERNAL MATERIAL RESPONSE\n100 DEG / 8 EXACT STOPS\nOUTLINE REMAINS UNCHANGED",
+          "x": 752,
+          "y": 918,
+          "family": "JetBrains Mono",
+          "style": "Bold",
+          "fontSizePx": 12,
+          "letterSpacingEm": 0.04,
+          "fillBinding": "Palette/color/neutral/paper"
+        },
+        "materialRule": {
+          "text": "MATERIAL MAY CHANGE OUTSIDE THE OPENING\nTHE SILHOUETTE NEVER ACQUIRES A SHARP EDGE",
+          "x": 752,
+          "y": 1358,
+          "family": "JetBrains Mono",
+          "style": "Bold",
+          "fontSizePx": 10,
+          "letterSpacingEm": 0.04,
+          "fillBinding": "Brand/brand/accent/signal"
+        }
+      },
+      "anatomy": {
+        "startY": 1640,
+        "panelHeight": 356,
+        "panelFill": "#EBE9E0",
+        "rowY": [
+          1640,
+          2026,
+          2412,
+          2798,
+          3184,
+          3570
+        ],
+        "sections": [
+          {
+            "index": "01",
+            "name": "Definition",
+            "content": "Continuous Lens v2 is the owner-selected aperture direction: a broad asymmetric absence with tangent-continuous curvature and no sharp outline event. The visual direction is approved; the final numerical construction remains governed-provisional until exact geometry and production evidence are promoted."
+          },
+          {
+            "index": "02",
+            "name": "Construction and source",
+            "content": "OUTLINE  four native cubic segments\nCONTINUITY  tangent-continuous at every join\nORIENTATION  -14 degrees / screen coordinates\nFIELD  broad orbital compression\nCORNERS / CHAMFERS / NOTCHES  none\nREFERENCE  owner-selected left ImageGen direction"
+          },
+          {
+            "index": "03",
+            "name": "Exact tokens, assets, styles, or material recipe",
+            "content": "REFERENCE SHA  62511ef6bfa1f028…\nVECTOR  native Affinity cubic curves\nFIELD STOPS  governed 0 / 17 / 34 / 49 / 66 / 82 / 100%\nOUTLINE  smooth closed oval\nSTATUS  OWNER-APPROVED DIRECTION / VECTOR CONSTRUCTION PROVISIONAL"
+          },
+          {
+            "index": "04",
+            "name": "Variants, modes, states, and optical sizes",
+            "content": "FAR  broad unmistakable absence\nNORMAL  registered Continuous Lens and trajectory\nCLOSE  inspectable cubic construction and field spacing\nPHYSICAL  external bevel only; silhouette never changes"
+          },
+          {
+            "index": "05",
+            "name": "Usage",
+            "content": "Use only where absence, reveal, capture, or field compression is structurally meaningful. Preserve the approved smooth silhouette direction, fixed orientation, and registration with the Atlas field."
+          },
+          {
+            "index": "06",
+            "name": "Accessibility, bilingual behavior, and RTL",
+            "content": "Preserve contrast, target size, focus visibility, bilingual ordering, logical RTL flow, and a text-independent state cue."
+          },
+          {
+            "index": "07",
+            "name": "Motion and interaction",
+            "content": "Motion follows Capture logic only when it communicates state. Provide reduced-motion and low-power equivalents; static brand surfaces use N/A."
+          },
+          {
+            "index": "08",
+            "name": "Production and export",
+            "content": "Retain native editable cubic curves. Verify tangent continuity, optical-size survival, cut/reveal tolerance, minimum radius, substrate depth, and any external bevel independently from the outline."
+          },
+          {
+            "index": "09",
+            "name": "Correct examples",
+            "content": "Correct: one physical law, one active Lime signal, exact governed geometry, explicit source and status."
+          },
+          {
+            "index": "10",
+            "name": "Misuse",
+            "content": "Reject every sharp edge, outline chamfer, wedge, notch, key cut, polygonal join, mirrored silhouette, cosmetic badge fill, unregistered reveal, or claim that provisional numerical geometry is canonical."
+          },
+          {
+            "index": "11",
+            "name": "Provenance, hashes, status, and evidence",
+            "content": "OWNER-APPROVED DIRECTION / PROVISIONAL GEOMETRY\nSOURCE  docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md\nHASH  825d7e8456ed0338…"
+          },
+          {
+            "index": "12",
+            "name": "Parent and sibling links plus canonical source paths",
+            "content": "PARENT  06.00 / Geometry and layout\nSIBLINGS  independently addressable by stable subject ID"
+          }
+        ]
+      },
+      "nodeHierarchy": [
+        {
+          "nodeId": "67:2",
+          "name": "40 / Color, Gradient, Pattern, or Material",
+          "children": [
+            "Ground / Approved page mode",
+            "Continuous Lens / Native Figma reconstruction / Field specimen",
+            "Continuous Lens / Native elliptical field wash",
+            "Continuous Lens / Tangent construction ground",
+            "Continuous Lens / Material depth study ground",
+            "Continuous Lens / Optical coating stop 01 through 08",
+            "Continuous Lens / External optical coating rim / Exact governed recipe"
+          ]
+        },
+        {
+          "nodeId": "67:3",
+          "name": "50 / Variants, States, and Optical Sizes",
+          "children": [
+            "Section 04 / Variants, modes, states, and optical sizes"
+          ]
+        },
+        {
+          "nodeId": "67:4",
+          "name": "60 / Usage and Applications",
+          "children": [
+            "Section 05 / Usage"
+          ]
+        },
+        {
+          "nodeId": "67:5",
+          "name": "70 / Accessibility, Bilingual, RTL, and Motion",
+          "children": [
+            "Section 06 / Accessibility, bilingual behavior, and RTL",
+            "Section 07 / Motion and interaction"
+          ]
+        },
+        {
+          "nodeId": "67:6",
+          "name": "80 / Production and Export",
+          "children": [
+            "Section 08 / Production and export"
+          ]
+        },
+        {
+          "nodeId": "67:7",
+          "name": "90 / Correct Use and Misuse",
+          "children": [
+            "Section 09 / Correct examples",
+            "Section 10 / Misuse"
+          ]
+        },
+        {
+          "nodeId": "67:8",
+          "name": "99 / Provenance, Status, Evidence, and Navigation",
+          "children": [
+            "Status / Nonpublishable badge",
+            "Status / Nonpublishable label",
+            "Continuous Lens / Approval boundary",
+            "Continuous Lens / Material rule",
+            "Section 11 / Provenance, hashes, status, and evidence",
+            "Section 12 / Parent and sibling links plus canonical source paths",
+            "Footer / Permanent tagline",
+            "Footer / Manifest version"
+          ]
+        },
+        {
+          "nodeId": "67:9",
+          "name": "10 / Construction",
+          "children": [
+            "Signal rail / Active datum",
+            "Continuous Lens / Horizontal construction axis",
+            "Continuous Lens / Vertical construction axis",
+            "Continuous Lens / Cubic join 1 through 4 / Smooth tangent",
+            "Section 02 / Construction and source",
+            "Footer datum"
+          ]
+        },
+        {
+          "nodeId": "67:10",
+          "name": "20 / Canonical Assets",
+          "children": [
+            "Continuous Lens / Tangent-continuous contour 01 through 53 / Major or Minor",
+            "Continuous Lens / Spectral registration rim",
+            "Continuous Lens / Aperture / Four smooth cubic segments / No corners",
+            "Continuous Lens / Single smooth active trajectory / Flat Signal",
+            "Continuous Lens / Active trajectory datum",
+            "Continuous Lens / Native four-segment cubic silhouette / Tangent continuous",
+            "Continuous Lens / Unchanged smooth opening inside external material rim",
+            "Section 03 / Exact tokens, assets, styles, or material recipe"
+          ]
+        },
+        {
+          "nodeId": "67:11",
+          "name": "30 / Live Type and Metadata",
+          "children": [
+            "Metadata / System rail",
+            "Metadata / Status rail",
+            "Title / Subject",
+            "Metadata / Category and page rule",
+            "Continuous Lens / Construction statement",
+            "Continuous Lens / Material distinction",
+            "Continuous Lens / Functional sequence",
+            "Continuous Lens / Construction caption",
+            "Section 01 / Definition"
+          ]
+        },
+        {
+          "nodeId": "67:12",
+          "name": "00 / Reference",
+          "locked": true,
+          "visible": true,
+          "children": [
+            "CONCEPT REFERENCE — NONPUBLISHABLE / LEFT CONTINUOUS LENS / IMAGE TARGET",
+            "Reference classification / Continuous Lens",
+            "Reference classification label / Continuous Lens",
+            "Reference link / locked source node 60:4 / sha256 a1f5a1e694c2c0c88c3fe1387adf6fd5352a70df6ef10120666c290b64e7e05b",
+            "QA link / locked comparison node 60:6 / sha256 bf888e22fccf58cf8429739401475ef1dff676e7591a38ab7b04d5e814fe9dd0"
+          ]
+        }
+      ]
+    }
+  ],
+  "qaContract": {
+    "sourceAndPrototypeSameInputRequired": true,
+    "viewport": {
+      "width": 1440,
+      "04.01Height": 4300,
+      "06.01Height": 4100
+    },
+    "structuralAssertions": [
+      "target frame ID and page ID are unchanged",
+      "exactly eleven named top-level layer frames exist in the declared order",
+      "every anatomy section exists once and in source order",
+      "04.01 has exactly 67 native contour ellipses",
+      "06.01 native reconstruction has exactly 53 native contour ellipses",
+      "every lens and contour node is an EllipseNode or the declared four-cubic fallback",
+      "no polygon, star, line-segment silhouette, notch boolean, or miter join exists",
+      "the Modes collection is explicitly void on 04.01 and paper on 06.01",
+      "all visible text uses the declared exact family/style pair",
+      "Signal Lime is flat #C6FF24 and absent from every gradient stop",
+      "06.01 and its internal concept reference remain nonpublishable and locked as declared"
+    ],
+    "visualAssertions": [
+      "compare the 04.01 native target beside node 60:2 at 1440 by 4300",
+      "compare the 06.01 native target beside node 60:4 at 1440 by 4100",
+      "retain node 60:6 for the owner-selected Continuous Lens same-input comparison",
+      "inspect full-page and specimen-level screenshots",
+      "fix cropped text, incorrect padding, wrong fonts, wrong gradient direction, contour aliasing, and any sharp lens edge before proceeding",
+      "repeat the same-input comparison after every visible fix"
+    ],
+    "promotionGates": {
+      "04.01": "May be considered publishable only after structural, visual, accessibility, one-color, and export evidence pass and no rejected geometry is present in the export.",
+      "06.01": "Remains governed-provisional and nonpublishable even after exemplar QA; promotion requires explicit owner approval plus numerical geometry and production evidence."
+    }
+  }
+}

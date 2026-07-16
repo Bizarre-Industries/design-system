@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "ledgerVersion": "1.0.0",
+  "ledgerId": "bizarre-v1-portability-normalization-v1-2026-07-17",
+  "recordedAt": "2026-07-17T00:43:46+04:00",
+  "approvalRef": "owner-approved-portability-normalization/2026-07-16",
+  "changeClass": "PORTABILITY_ONLY",
+  "policy": {
+    "historicalExecutionClaimsImmutable": true,
+    "rewriteReceiptHashesForbidden": true,
+    "semanticAuthorityUnchanged": true,
+    "visualGeometryChanged": false,
+    "figmaMutationCount": 0,
+    "affinityMutationCount": 0
+  },
+  "locatorRules": [
+    {
+      "legacyLocatorClass": "personal macOS home path",
+      "portableLocatorClass": "repository-relative path",
+      "useWhen": "the exact source or evidence bytes are committed"
+    },
+    {
+      "legacyLocatorClass": "personal Downloads attachment path",
+      "portableLocatorClass": "owner-attachment URI",
+      "useWhen": "the historical source bytes are not a current repository file"
+    },
+    {
+      "legacyLocatorClass": "personal Affinity document path",
+      "portableLocatorClass": "affinity-artifact URI",
+      "useWhen": "the native document remains outside Git and its governed evidence is retained separately"
+    }
+  ],
+  "artifacts": [
+    {
+      "artifactPath": "production/affinity/bizarre-masterbrand-content-spec-v1.json",
+      "beforeRawSha256": "196deedb902f3e833e2f68827350740e72a3e51c1783af8a73c081a7c1764834",
+      "afterRawSha256": "d7ce1d97cfbcc9110a9bf39ea124ba4e04cdcdf289f933e6e32cb09e9d64cd31",
+      "beforeCanonicalSha256": "953e77c2232b89ef459156da0a9a6b6198994df9097c920f93b9da2282b10e77",
+      "afterCanonicalSha256": "c1083214d54025becd538c7a290c6a100f33cf3445e52d6d96df3ab6d02c94d2",
+      "changedJsonPointers": [
+        "/sourceRegistry/*/path",
+        "/conceptReferenceRegistry/*/path",
+        "/subjects/*/visualRecipe/sourceMappings/*/path",
+        "/subjects/*/sections",
+        "/subjects/*/contentFingerprint",
+        "/canonicalSha256"
+      ],
+      "derivedFieldsRecomputed": true,
+      "receiptSubjectFingerprintTransitions": [
+        {
+          "subjectId": "01.01",
+          "before": "7855a3190737cf7241e0c2c84d8cbc969f98e586208f065b8d89eed7712100bc",
+          "after": "e811ef88caad4518e25da65774ecb4d4864efa5ccc0b5a047327e473b97432c1"
+        },
+        {
+          "subjectId": "01.02",
+          "before": "038ff17ca9daab97cc8b4c038172c9f6b786b01bca072ef142151ba5c275b7e6",
+          "after": "21e3ad7de3e81d8016c396c56cdcbbef149ebd6fd25923d529822e547a1257f7"
+        }
+      ],
+      "historicalReferencesPreserved": [
+        {
+          "artifactPath": "governance/design-ledgers/figma/bizarre-atlas-v1-phase2-01.01-swiss-working-apply.json",
+          "jsonPointer": "/sourceArtifacts/1/sha256",
+          "recordedSha256": "196deedb902f3e833e2f68827350740e72a3e51c1783af8a73c081a7c1764834"
+        },
+        {
+          "artifactPath": "governance/design-ledgers/figma/bizarre-atlas-v1-phase2-01.02-three-distance-apply.json",
+          "jsonPointer": "/sourceArtifacts/1/sha256",
+          "recordedSha256": "196deedb902f3e833e2f68827350740e72a3e51c1783af8a73c081a7c1764834"
+        }
+      ]
+    },
+    {
+      "artifactPath": "governance/design-ledgers/figma/bizarre-page-map-v1.json",
+      "beforeRawSha256": "0d9f62289a9f91f1b21a12817fda748c048faac905782dd601cd4b9d845316a3",
+      "afterRawSha256": "1c362392a9870b71b956b7f5fac613e8ba37600cc236fb2c3fb4415d72fdde43",
+      "change": "Removed one trailing blank line; parsed JSON, page IDs, page names, and semantic mapping are unchanged.",
+      "changedJsonPointers": [],
+      "derivedFieldsRecomputed": false,
+      "historicalReferencesPreserved": [
+        {
+          "artifactPath": "governance/design-ledgers/figma/bizarre-104-page-population-plan-v1.json",
+          "jsonPointer": "/sources/2/fileSha256",
+          "recordedSha256": "0d9f62289a9f91f1b21a12817fda748c048faac905782dd601cd4b9d845316a3"
+        },
+        {
+          "artifactPath": "governance/design-ledgers/figma/bizarre-native-exemplar-build-plan-v1.json",
+          "jsonPointer": "/sources/5/fileSha256",
+          "recordedSha256": "0d9f62289a9f91f1b21a12817fda748c048faac905782dd601cd4b9d845316a3"
+        },
+        {
+          "artifactPath": "governance/design-ledgers/figma/bizarre-page-map-v2.json",
+          "jsonPointer": "/derivesFrom/fileSha256",
+          "recordedSha256": "0d9f62289a9f91f1b21a12817fda748c048faac905782dd601cd4b9d845316a3"
+        }
+      ]
+    },
+    {
+      "artifactPath": "governance/design-ledgers/figma/bizarre-104-page-population-plan-v1.json",
+      "beforeRawSha256": "06ea079fb10d1a41b937e564ee748d0aab14e5b1744a39a8cc05f395d5c9c83f",
+      "afterRawSha256": "de0aeeb578e274b1f37a16f4f2b6c97f3c515245434e294ff0b98680820e0d4c",
+      "beforeCanonicalSha256": "9ae00906537457b6ce768560f8a51f407fddcff787922b663c5d8a01b196916c",
+      "afterCanonicalSha256": "85dfce7a9c43d90de918869030fb98fadee82a6e042a53dba5d7d215c9544509",
+      "changedJsonPointers": [
+        "/subjects/*/affinityDependency/sourceDependencies/*/path",
+        "/subjects/*/nativeSpecimen/contentFingerprint",
+        "/canonicalSha256"
+      ],
+      "derivedFieldsRecomputed": true,
+      "historicalReferencesPreserved": [
+        {
+          "artifactPath": "governance/design-ledgers/figma/bizarre-atlas-v1-phase1-checkpoint.json",
+          "jsonPointer": "/artifacts/*/sha256",
+          "recordedSha256": "06ea079fb10d1a41b937e564ee748d0aab14e5b1744a39a8cc05f395d5c9c83f"
+        }
+      ]
+    },
+    {
+      "artifactPath": "governance/design-ledgers/figma/bizarre-native-exemplar-build-plan-v1.json",
+      "beforeRawSha256": "f842be5f8526502d7e2f34ed2921109a3e9a22bb4675144cc3bc30562559de3c",
+      "afterRawSha256": "990e82f086905efc2ae7cd8150ba49279d0c54124fe27e46606615cb56baa180",
+      "beforeCanonicalSha256": "ef3947a5fe17e88dd57418ad4dcdd04656b1d588ac9c8daf6b2df82972ed8846",
+      "afterCanonicalSha256": "7fbb95d0ad5cd0f93b3cedd8d40f81b07f3562240b5e5d4a60f03e461104bb2f",
+      "changedJsonPointers": [
+        "/lockedReferences/04.01/sourcePath",
+        "/lockedReferences/06.01/sourcePath",
+        "/canonicalSha256"
+      ],
+      "derivedFieldsRecomputed": true,
+      "historicalReferencesPreserved": []
+    },
+    {
+      "artifactPath": "production/figma/phase2/build-01.01-swiss-working-r1.js",
+      "beforeRawSha256": "185bb893ee6c9c993a157ef120e6c0d7827c38dd14a4e8691e47b7f9dc0c38b2",
+      "afterRawSha256": "6eabe30933170a3633e3a55c4558289acab1df13a314156d0cf26701847290c2",
+      "change": "Affinity source metadata now uses a portable artifact URI.",
+      "historicalReferencesPreserved": [
+        {
+          "artifactPath": "governance/design-ledgers/figma/bizarre-atlas-v1-phase2-01.01-swiss-working-apply.json",
+          "jsonPointer": "/sourceArtifacts/0/sha256",
+          "recordedSha256": "185bb893ee6c9c993a157ef120e6c0d7827c38dd14a4e8691e47b7f9dc0c38b2"
+        }
+      ]
+    },
+    {
+      "artifactPath": "production/figma/phase2/build-01.02-three-distance-r1.js",
+      "beforeRawSha256": "b50fa2bc974f5194b9462a34bb6c349c8fceff3c96bfdddfea74137c83afed0b",
+      "afterRawSha256": "ad4fcec23f24323d383fc7ada2d6c3e89f4d30d2fb8f86441b340f424d06d4ad",
+      "change": "Affinity source metadata now uses a portable artifact URI.",
+      "historicalReferencesPreserved": [
+        {
+          "artifactPath": "governance/design-ledgers/figma/bizarre-atlas-v1-phase2-01.02-three-distance-apply.json",
+          "jsonPointer": "/sourceArtifacts/0/sha256",
+          "recordedSha256": "b50fa2bc974f5194b9462a34bb6c349c8fceff3c96bfdddfea74137c83afed0b"
+        }
+      ]
+    },
+    {
+      "artifactPath": "governance/design-ledgers/figma/bizarre-atlas-v1-phase2-01.01-swiss-working-apply.json",
+      "beforeRawSha256": "9dc62732cc852d44abac9c44571d29cb8c1783ab4bf42c80c97725f59d471189",
+      "afterRawSha256": "f01fff884c7d6426e7048a2173cbf83d64ce2702b0c9b402fed6b312548fa930",
+      "change": "External Affinity evidence and artifact locators now resolve portably; recorded execution hashes remain unchanged."
+    },
+    {
+      "artifactPath": "governance/design-ledgers/figma/bizarre-atlas-v1-phase2-01.02-three-distance-apply.json",
+      "beforeRawSha256": "cc891ab8772deb8b0237eb8792cb12798083a798ec58899b8229e8ff2ca57cb2",
+      "afterRawSha256": "fae06a26e63b1819c33defba859373c2950f2e83b8df8044f914c08750254777",
+      "change": "External Affinity evidence locators now resolve portably; recorded execution hashes remain unchanged."
+    },
+    {
+      "artifactPath": "governance/design-ledgers/figma/bizarre-figma-v2-01.03-preserved-root-adoption.json",
+      "beforeRawSha256": "745a5de18bf93158fda96d52ac5662f827cd779d0a29bcffc296db6b1cf41061",
+      "afterRawSha256": "479925c455403215c30bfccf29ff7adabc43cf15c07d94e41c6fc0970a12a02b",
+      "change": "External artifact paths became portable locators and copied QA evidence gained exact byte hashes; the adoption claim remains historical and stale against current sources."
+    },
+    {
+      "artifactPath": "outputs/imagegen/atlas-representation-studies/v1.0.0/jobs.jsonl",
+      "beforeRawSha256": "11b1ea2f2fe501707276dac57e33ab51ba27e3be385ae4d71aa84f45a222ef27",
+      "afterRawSha256": "69ec04632c299532d45bcfc0407b0e344216fde0f08ef0141b8205bc94637850",
+      "change": "Reference image paths became repository-relative; prompts, job IDs, classifications, and outputs are unchanged."
+    }
+  ],
+  "evidenceImports": [
+    {
+      "path": "audit/affinity/references/01.01-swiss-working-r3-editorial-fit.png",
+      "sha256": "f8762baf7d3f824a92485c3a1f6560655d0383fda36120c64aa0cb89d097bf06"
+    },
+    {
+      "path": "audit/affinity/references/01.02-three-distance-r3-governed-sources.png",
+      "sha256": "d64cbd45f04c5cd529f803dd90e25ad713bb4e34bb8c5cda141579f01b283ea6"
+    },
+    {
+      "path": "audit/affinity/references/01.03-single-identity-native-integration-r2.png",
+      "sha256": "6386f97bdcfea1861c96d6827e001c71678e8b94dd6f011157b5630a734d5290"
+    },
+    {
+      "path": "audit/affinity/references/continuous-lens-v2-affinity-r14.png",
+      "sha256": "a1f5a1e694c2c0c88c3fe1387adf6fd5352a70df6ef10120666c290b64e7e05b"
+    },
+    {
+      "path": "audit/affinity/references/field-gradient-continuous-lens-r14.png",
+      "sha256": "a796d0362987e6070584d14ea83a272cb88597c3ea90d70d716e89e40aacef66"
+    },
+    {
+      "path": "audit/figma/phase2/01.03-native-integration-r2-final.png",
+      "sha256": "f371ded1ac84eebd2bbbd2dd0af7a5bbd04e6529e5ba9b4be9b63f910a2ee73f"
+    },
+    {
+      "path": "audit/figma/phase2/01.03-affinity-figma-r2-final-comparison.png",
+      "sha256": "f62b31171d8cfa796396b3f23d39000a4e6e6b27a2decaf8a09c318fd42735f3"
+    },
+    {
+      "path": "outputs/imagegen/atlas-representation-studies/v1.0.0/references/imagegen-cover-direction-v1.png",
+      "sha256": "8a5678276c376644cde0e4a6517faea49f0ac1d9ffc1ada331df43094cd06e7c"
+    }
+  ],
+  "canonicalSha256": "f4faeb7b9b9919a70dbbac80fbdeda38b4c121e7ed1a8c1d1b30527a2835d039"
+}

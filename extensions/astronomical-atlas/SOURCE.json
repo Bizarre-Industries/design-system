@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "extension": "astronomical-atlas",
+  "classification": "approved-extension-with-overrides",
+  "importDate": "2026-07-15",
+  "sources": {
+    "design": {
+      "sourcePath": "owner-attachment://Bizarre_Astronomical_Atlas_DESIGN.md",
+      "importedPath": "extensions/astronomical-atlas/DESIGN.md",
+      "originalSourceSha256": "e6aa6f391d12f568c6845fa8269178acd38bc969650ceed202e894c3de4aee93",
+      "sha256": "4bbe2429bb13f85103d447b8bd589b643f3b8809bd4a83798958e5fe96c53e7f",
+      "overrideBasis": "Direct owner decisions in the active design task supersede imported wording. The imported authority records the owner-selected left Continuous Lens Aperture v2 direction and the 2026-07-16 single-identity, integrate-not-replace product policy."
+    },
+    "visualDirection": {
+      "sourcePath": "owner-attachment://bizarre-signal-infrastructure-preview.png",
+      "importedPath": "extensions/astronomical-atlas/references/signal-infrastructure/v1.0.0/owner/bizarre-signal-infrastructure-preview.png",
+      "manifestPath": "extensions/astronomical-atlas/references/signal-infrastructure/v1.0.0/MANIFEST.json",
+      "sha256": "9f968b4f21eea302cb3bf659489ea5efe836457f92827e5a5ef5083d1e945376",
+      "classification": "approved-visual-direction-reference",
+      "relationship": "approved-visual-direction-update",
+      "authority": "scoped-to-visual-direction",
+      "overrides": ["presentation-language", "asset-production-method", "mockup-production-method"],
+      "publishable": false
+    },
+    "fusionUpdate": {
+      "sourcePath": "owner-attachment://bizarre_swiss_fusion.js",
+      "importedPath": "extensions/astronomical-atlas/evidence/bizarre_swiss_fusion.response.txt",
+      "sha256": "036b98fba1b96a2745ce6aa6f58789c6aa7eae4ccdff793a1fe0d01a05a1fea5",
+      "classification": "noncanonical-evidence",
+      "authority": false,
+      "reason": "The supplied payload is only the literal error response Unsupported Media Type and carries no design or executable authority."
+    },
+    "proposalZip": {
+      "sourcePath": "owner-attachment://bizarre-astronomical-atlas.zip",
+      "sha256": "b070392d798a28e2ae50f276e2014437bde655eebe532e6fae22264c3974db53",
+      "classification": "approved-source-bundle-with-quarantined-derivatives",
+      "authority": "scoped-by-entry",
+      "entries": [
+        {
+          "path": "bizarre-astronomical-atlas/DESIGN.md",
+          "sha256": "e6aa6f391d12f568c6845fa8269178acd38bc969650ceed202e894c3de4aee93",
+          "classification": "approved-extension-authority"
+        },
+        {
+          "path": "bizarre-astronomical-atlas/tokens/astronomical-atlas.tokens.json",
+          "sha256": "0b08296c97a21086cd04c3da654bde1bcc7c0f2900db43ee8e6231d7f711b8a8",
+          "classification": "approved-source-input-requires-canonical-translation"
+        },
+        {
+          "path": "bizarre-astronomical-atlas/tokens/bilingual.tokens.json",
+          "sha256": "4667b4532c8d1bef63d228389af761bce9c67183ab1d653fc8bf439dfb18baad",
+          "classification": "approved-source-input-requires-canonical-translation"
+        },
+        {
+          "path": "bizarre-astronomical-atlas/tokens/capture-motion.tokens.json",
+          "sha256": "c3b0c315cac5cac243268379ba278252658b9e8e926a1164215375fe4abcaa81",
+          "classification": "approved-source-input-requires-canonical-translation"
+        },
+        {
+          "path": "bizarre-astronomical-atlas/tokens/material-production.tokens.json",
+          "sha256": "f3922423ca2e09f115f1e1d26f4b9928dbf41be51d7665fb7829fcaaa3461a56",
+          "classification": "approved-source-input-requires-canonical-translation"
+        },
+        {
+          "path": "bizarre-astronomical-atlas/tools/build_system.py",
+          "sha256": "c4fe1a93cbd1ec8de12651e8e97729a1f02216e9a49bb214275abf04aac4834c",
+          "classification": "approved-decision-evidence-only",
+          "approvedDecision": "workshop-semantic-values",
+          "executableAuthority": false
+        },
+        {
+          "path": "bizarre-astronomical-atlas/tokens.css",
+          "sha256": "f38cab5374623ecf0a4abbee2b53d652f39274ba93ae3e1a466206327f3c25a6",
+          "classification": "derivative-corroboration-only",
+          "approvedDecision": "workshop-semantic-values",
+          "authority": false
+        },
+        {
+          "pathPattern": "bizarre-astronomical-atlas/{assets,components.html,preview,guidelines,validation-report.*,tokens.css}",
+          "classification": "quarantined-derivative-or-concept-evidence",
+          "authority": false,
+          "publishable": false
+        }
+      ],
+      "conflictResolution": [
+        {
+          "id": "capture-duration-naming",
+          "winner": "bizarre-astronomical-atlas/DESIGN.md",
+          "resolution": "UI adaptation 300-600ms, ceremonial 1200ms, installation 2400ms"
+        }
+      ]
+    }
+  }
+}

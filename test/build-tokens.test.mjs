@@ -35,6 +35,19 @@ test('builds exact token package files', async () => {
   assert.match(css, /--bzr-font-size-base: 1rem;/);
   assert.match(css, /--bzr-motion-duration-fast: 150ms;/);
   assert.match(css, /--bzr-motion-easing-out: cubic-bezier\(0\.16, 1, 0\.3, 1\);/);
+  assert.match(css, /--bzr-atlas-compression-exponent: 1\.72;/);
+  assert.match(css, /--bzr-atlas-orientation-a: -38;/);
+  assert.match(css, /--bzr-aperture-tangent-continuity: true;/);
+  assert.doesNotMatch(css, /--bzr-aperture-notch:/);
+  assert.match(css, /--bzr-capture-duration-fast-min: var\(--bzr-motion-duration-mid\);/);
+  assert.match(css, /--bzr-capture-duration-ceremonial: var\(--bzr-motion-duration-epic\);/);
+  assert.match(css, /--bzr-capture-duration-installation: 2400ms;/);
+  assert.match(css, /--bzr-capture-phase-approach-start: 0;/);
+  assert.match(css, /--bzr-capture-phase-release-end: 1;/);
+  assert.match(css, /--bzr-color-spectrum-violet-shadow: #684F83;/);
+  assert.match(css, /--bzr-font-family-arabic-ui: "Noto Sans Arabic UI", "Noto Sans Arabic", "Arial", sans-serif;/);
+  assert.match(css, /--bzr-font-family-arabic-industrial: "Noto Sans Arabic Condensed", "Noto Sans Arabic", "Arial", sans-serif;/);
+  assert.match(css, /--bzr-font-tracking-tight: -0\.04;/);
   assert.match(css, /--bzr-font-family-body: "Hanken Grotesk", "Helvetica Neue", system-ui, sans-serif;/);
   assert.match(css, /--bzr-font-family-stencil: "Big Shoulders Stencil", "Impact", sans-serif;/);
   assert.match(css, /--bzr-shadow-md: 0px 4px 12px 0px #0000001F;/);
@@ -44,6 +57,7 @@ test('builds exact token package files', async () => {
   const selectors = [...css.matchAll(/\[data-bizarre-theme="([^"]+)"\]/g)].map(([, theme]) => theme);
   assert.deepEqual(selectors, ['void', 'paper', 'void-hicontrast', 'workshop', 'bone']);
   assert.match(css, /--bzr-surface-canvas: var\(--bzr-color-neutral-void\);/);
+  assert.match(css, /\[data-bizarre-theme="paper"\][\s\S]*--bzr-focus-ring: var\(--bzr-color-accent-ink\);/);
   assert.doesNotMatch(css, /\{[A-Za-z0-9_-]+(?:\.[A-Za-z0-9_-]+)+\}/);
   assert.doesNotMatch(css, /\[data-theme="light"\]/);
   assert.doesNotMatch(css, /--(?:fs|surface)-/);

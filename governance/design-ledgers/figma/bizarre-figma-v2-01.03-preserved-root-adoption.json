@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 2,
+  "receiptId": "bizarre-figma-v2-01.03-preserved-root-adoption",
+  "receiptVersion": "2.0.0",
+  "status": "ADOPTED_CURRENT_SOURCE_CONTRACT_NOT_PLAN_GENERATED",
+  "figmaFileKey": "hGgrP9G0tEam8mpk5u3rHg",
+  "mutationStatus": "METADATA-ONLY / VISUALS UNCHANGED",
+  "capturedAt": "2026-07-16T16:47:09.608Z",
+  "captureMethod": "official Figma MCP use_figma",
+  "mcpRequestIds": {
+    "metadataReconciliation": "53b8ce21-9818-4216-ae76-9ac2216924ae",
+    "libraryInventory": "3762705b-7239-4e57-b14a-ca70fd84748b"
+  },
+  "subject": {
+    "subjectId": "01.03",
+    "pageId": "47:9",
+    "pageName": "01.03 · Single Identity / Native Integration",
+    "rootId": "184:2",
+    "rootName": "01 / FIGMA NATIVE / EDITABLE MASTER / SINGLE IDENTITY",
+    "rootRect": {
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 3500
+    },
+    "populationRevision": "figma-01.03-single-identity-native-integration-r2",
+    "recipeId": "01.03/visual/v2",
+    "manifestCanonicalSha256": "220dda8ff98f6fc67ef42187013a3274f9c1c3050e7ca0e38e3352d4ca7ef0de",
+    "specCanonicalSha256": "f46312ca7fcc53389462aa169ba8c8d763d656e47320869eb386ed29622bae39",
+    "contentFingerprint": "437c6da240d681988acb19f140b618c1ea64f7a745c2964aa2dea91aff0c0700",
+    "authorityStatus": "canonical",
+    "verificationStatus": "NOT VERIFIED",
+    "publicationStatus": "publishable",
+    "buildStatus": "complete",
+    "planAffiliation": null
+  },
+  "source": {
+    "path": "production/figma/phase2/build-01.03-single-identity-native-integration-r2.js"
+  },
+  "liveRootEvidence": {
+    "directLayerCount": 11,
+    "directLayerNames": [
+      "40 / Color, Gradient, Pattern, or Material",
+      "50 / Variants, States, and Optical Sizes",
+      "60 / Usage and Applications",
+      "70 / Accessibility, Bilingual, RTL, and Motion",
+      "80 / Production and Export",
+      "90 / Correct Use and Misuse",
+      "99 / Provenance, Status, Evidence, and Navigation",
+      "10 / Construction",
+      "20 / Canonical Assets",
+      "30 / Live Type and Metadata",
+      "00 / Reference"
+    ],
+    "descendantCount": 241,
+    "pagePluginData": {
+      "subject_id": "01.03",
+      "current_master_id": "184:2",
+      "population_revision": "figma-01.03-single-identity-native-integration-r2",
+      "build_status": "complete"
+    },
+    "preReconciliationPluginData": {
+      "subject_id": "01.03",
+      "entity": "subject-master",
+      "recipe_id": "01.03/visual/v2",
+      "population_revision": "figma-01.03-single-identity-native-integration-r2",
+      "manifest_sha256": "220dda8ff98f6fc67ef42187013a3274f9c1c3050e7ca0e38e3352d4ca7ef0de",
+      "spec_sha256": "",
+      "content_fingerprint": "437c6da240d681988acb19f140b618c1ea64f7a745c2964aa2dea91aff0c0700",
+      "affinity_artifact_sha256": "2cf9b42e141fbccc95a2a127fa2dd3414c1635f4db2d58d9bcf4c6c5c3ef7e00",
+      "affinity_qa_sha256": "6386f97bdcfea1861c96d6827e001c71678e8b94dd6f011157b5630a734d5290",
+      "authority_status": "canonical",
+      "verification_status": "NOT VERIFIED",
+      "publication_status": "publishable-after-verification",
+      "build_status": "complete",
+      "content_spec_sha256": "f46312ca7fcc53389462aa169ba8c8d763d656e47320869eb386ed29622bae39",
+      "plan_id": "",
+      "plan_version": "",
+      "plan_sha256": ""
+    },
+    "postReconciliationPluginData": {
+      "subject_id": "01.03",
+      "entity": "subject-master",
+      "recipe_id": "01.03/visual/v2",
+      "population_revision": "figma-01.03-single-identity-native-integration-r2",
+      "manifest_sha256": "220dda8ff98f6fc67ef42187013a3274f9c1c3050e7ca0e38e3352d4ca7ef0de",
+      "spec_sha256": "f46312ca7fcc53389462aa169ba8c8d763d656e47320869eb386ed29622bae39",
+      "content_fingerprint": "437c6da240d681988acb19f140b618c1ea64f7a745c2964aa2dea91aff0c0700",
+      "affinity_artifact_sha256": "2cf9b42e141fbccc95a2a127fa2dd3414c1635f4db2d58d9bcf4c6c5c3ef7e00",
+      "affinity_qa_sha256": "6386f97bdcfea1861c96d6827e001c71678e8b94dd6f011157b5630a734d5290",
+      "authority_status": "canonical",
+      "verification_status": "NOT VERIFIED",
+      "publication_status": "publishable",
+      "build_status": "complete",
+      "content_spec_sha256": "f46312ca7fcc53389462aa169ba8c8d763d656e47320869eb386ed29622bae39",
+      "plan_id": "",
+      "plan_version": "",
+      "plan_sha256": ""
+    },
+    "visualMutationCount": 0
+  },
+  "retiredIdentityCleanup": {
+    "removedLegacyRootId": "83:242",
+    "removedLegacyRootLiveMatch": null,
+    "retiredVariableIds": [
+      "VariableID:9:10",
+      "VariableID:9:11",
+      "VariableID:9:12",
+      "VariableID:9:13"
+    ],
+    "retiredVariableNames": [
+      "organization/parent",
+      "organization/commercial-arm",
+      "organization/foundation",
+      "organization/product/helling"
+    ],
+    "liveMatches": []
+  },
+  "qaEvidence": {
+    "affinityArtifact": {
+      "path": "affinity-artifact://Bizarre-Industries-Masterbrand-Library.afdesign"
+    },
+    "affinityRender": {
+      "path": "audit/affinity/references/01.03-single-identity-native-integration-r2.png",
+      "sha256": "6386f97bdcfea1861c96d6827e001c71678e8b94dd6f011157b5630a734d5290"
+    },
+    "figmaRender": {
+      "path": "audit/figma/phase2/01.03-native-integration-r2-final.png",
+      "sha256": "f371ded1ac84eebd2bbbd2dd0af7a5bbd04e6529e5ba9b4be9b63f910a2ee73f"
+    },
+    "combinedComparison": {
+      "path": "audit/figma/phase2/01.03-affinity-figma-r2-final-comparison.png",
+      "sha256": "f62b31171d8cfa796396b3f23d39000a4e6e6b27a2decaf8a09c318fd42735f3"
+    }
+  },
+  "invariants": {
+    "singleIdentityOnly": true,
+    "planIdFabricated": false,
+    "visualMutationCount": 0,
+    "legacyRootAbsent": true,
+    "retiredOrganizationVariableMatchCount": 0
+  }
+}

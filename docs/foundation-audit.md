@@ -43,4 +43,4 @@ The three published variants share 16 path records and the exact path-data SHA-2
 
 ## Deferred work
 
-This milestone does not claim completion of the simplified sub-48 px mark, mono variants, formal lockups, Arabic display pairing or translated brand voice, custom Helling identity, platform components or overlays, downstream `themes` migration, or cross-platform certification.
+This milestone does not claim completion of the simplified sub-48 px mark, mono variants, formal lockups, Arabic display pairing or translated brand voice, platform-native integration, downstream `themes` migration, or cross-platform certification.

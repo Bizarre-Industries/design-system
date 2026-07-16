@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "mappingVersion": "1.0.0",
+  "mappingId": "bizarre-figma-font-family-mapping-v1",
+  "classification": "governed-figma-only-font-family-mapping",
+  "canonicalSha256": "513877390ed03fbe2b3dae5b4234a000b6d9d6ba738c973ed3549299024688d4",
+  "authority": {
+    "scope": "canonical-figma-typography-family-variable-values-only",
+    "sourcePriority": [
+      "live-figma-font-registry",
+      "existing-working-figma-text-styles",
+      "canonical-web-token-source"
+    ],
+    "doesNotAuthorize": [
+      "web-token-mutation",
+      "font-stack-mutation",
+      "figma-mutation",
+      "figma-text-style-mutation",
+      "design-asset-mutation"
+    ]
+  },
+  "figma": {
+    "fileKey": "hGgrP9G0tEam8mpk5u3rHg",
+    "registryEvidenceStatus": "LIVE VERIFIED",
+    "mutationStatus": "NOT_APPLIED",
+    "observedRegisteredFamilies": [
+      "Unbounded",
+      "Hanken Grotesk",
+      "JetBrains Mono",
+      "Noto Sans Arabic",
+      "Big Shoulders Stencil Display",
+      "Big Shoulders Stencil Text"
+    ],
+    "observedUnregisteredExactFamilies": [
+      "Big Shoulders Stencil",
+      "Noto Sans Arabic UI",
+      "Noto Sans Arabic Condensed"
+    ]
+  },
+  "webTokenContract": {
+    "sourceFilePath": "tokens/source/typography.tokens.json",
+    "sourceFileSha256": "128b1ac8e358f278498d93f591530be5052d1a0fb7cbeb60b23a19a904524926",
+    "mutationStatus": "UNCHANGED",
+    "rule": "The canonical web font-family stacks remain byte-for-byte unchanged; this artifact maps only Figma FONT_FAMILY variable values."
+  },
+  "evidence": [
+    {
+      "evidenceId": "live-font-registry",
+      "classification": "official-figma-mcp-live-observation",
+      "locator": "figma://hGgrP9G0tEam8mpk5u3rHg/font-registry",
+      "status": "LIVE VERIFIED",
+      "role": "Confirms the exact registered and unregistered family names used by this mapping."
+    },
+    {
+      "evidenceId": "working-local-text-styles",
+      "classification": "official-figma-mcp-live-observation",
+      "locator": "figma://hGgrP9G0tEam8mpk5u3rHg/local-text-styles",
+      "status": "LIVE VERIFIED",
+      "role": "Confirms working family and style pairs already present in the Bizarre Industries file."
+    },
+    {
+      "evidenceId": "canonical-web-typography-tokens",
+      "classification": "governed-repository-source",
+      "locator": "tokens/source/typography.tokens.json",
+      "status": "HASH VERIFIED",
+      "role": "Supplies the unchanged canonical web family stacks and their primary family names."
+    }
+  ],
+  "workingTextStylePairs": [
+    {
+      "role": "Industrial H3",
+      "family": "Big Shoulders Stencil Display",
+      "style": "ExtraBold",
+      "evidenceRef": "working-local-text-styles"
+    },
+    {
+      "role": "Industrial H4",
+      "family": "Big Shoulders Stencil Display",
+      "style": "Bold",
+      "evidenceRef": "working-local-text-styles"
+    },
+    {
+      "role": "Arabic Industrial",
+      "family": "Noto Sans Arabic",
+      "style": "Condensed ExtraBold",
+      "evidenceRef": "working-local-text-styles"
+    }
+  ],
+  "mappings": [
+    {
+      "tokenPath": "font.family.arabic",
+      "sourceStack": ["Noto Sans Arabic", "Arial", "sans-serif"],
+      "sourcePrimaryFamily": "Noto Sans Arabic",
+      "figmaFamily": "Noto Sans Arabic",
+      "mappingKind": "identity-registered-family",
+      "styleSelection": "Use the appropriate registered Noto Sans Arabic style for the semantic text style; the family variable stores only the family name.",
+      "evidenceRefs": ["live-font-registry", "canonical-web-typography-tokens"]
+    },
+    {
+      "tokenPath": "font.family.arabic-industrial",
+      "sourceStack": ["Noto Sans Arabic Condensed", "Noto Sans Arabic", "Arial", "sans-serif"],
+      "sourcePrimaryFamily": "Noto Sans Arabic Condensed",
+      "figmaFamily": "Noto Sans Arabic",
+      "mappingKind": "registered-family-substitution",
+      "styleSelection": "Select Condensed ExtraBold on Noto Sans Arabic in the Arabic Industrial text style; Condensed is a style, not a separate registered family.",
+      "evidenceRefs": ["live-font-registry", "working-local-text-styles", "canonical-web-typography-tokens"]
+    },
+    {
+      "tokenPath": "font.family.arabic-ui",
+      "sourceStack": ["Noto Sans Arabic UI", "Noto Sans Arabic", "Arial", "sans-serif"],
+      "sourcePrimaryFamily": "Noto Sans Arabic UI",
+      "figmaFamily": "Noto Sans Arabic",
+      "mappingKind": "registered-family-substitution",
+      "styleSelection": "Use the appropriate non-condensed registered Noto Sans Arabic style for compact UI; UI is a web-stack role, not a registered Figma family.",
+      "evidenceRefs": ["live-font-registry", "canonical-web-typography-tokens"]
+    },
+    {
+      "tokenPath": "font.family.body",
+      "sourceStack": ["Hanken Grotesk", "Helvetica Neue", "system-ui", "sans-serif"],
+      "sourcePrimaryFamily": "Hanken Grotesk",
+      "figmaFamily": "Hanken Grotesk",
+      "mappingKind": "identity-registered-family",
+      "styleSelection": "Select weight and style in the consuming Figma text style; the family variable stores only the family name.",
+      "evidenceRefs": ["live-font-registry", "canonical-web-typography-tokens"]
+    },
+    {
+      "tokenPath": "font.family.display",
+      "sourceStack": ["Unbounded", "Arial Black", "system-ui", "sans-serif"],
+      "sourcePrimaryFamily": "Unbounded",
+      "figmaFamily": "Unbounded",
+      "mappingKind": "identity-registered-family",
+      "styleSelection": "Select weight and style in the consuming Figma text style; the family variable stores only the family name.",
+      "evidenceRefs": ["live-font-registry", "canonical-web-typography-tokens"]
+    },
+    {
+      "tokenPath": "font.family.mono",
+      "sourceStack": ["JetBrains Mono", "Menlo", "Courier New", "monospace"],
+      "sourcePrimaryFamily": "JetBrains Mono",
+      "figmaFamily": "JetBrains Mono",
+      "mappingKind": "identity-registered-family",
+      "styleSelection": "Select weight and style in the consuming Figma text style; the family variable stores only the family name.",
+      "evidenceRefs": ["live-font-registry", "canonical-web-typography-tokens"]
+    },
+    {
+      "tokenPath": "font.family.stencil",
+      "sourceStack": ["Big Shoulders Stencil", "Impact", "sans-serif"],
+      "sourcePrimaryFamily": "Big Shoulders Stencil",
+      "figmaFamily": "Big Shoulders Stencil Display",
+      "mappingKind": "registered-family-substitution",
+      "styleSelection": "Use ExtraBold for Industrial H3 and Bold for Industrial H4; the existing working local text styles establish the Display family for this industrial role.",
+      "evidenceRefs": ["live-font-registry", "working-local-text-styles", "canonical-web-typography-tokens"]
+    }
+  ]
+}

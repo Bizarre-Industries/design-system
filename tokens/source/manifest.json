@@ -4,5 +4,8 @@
   "typography.tokens.json",
   "geometry.tokens.json",
   "motion.tokens.json",
+  "atlas.tokens.json",
+  "material.tokens.json",
+  "capture.tokens.json",
   "modes.tokens.json"
 ]

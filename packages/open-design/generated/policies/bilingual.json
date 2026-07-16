@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "provisional",
+  "equalPriority": true,
+  "opticalAreaTolerance": 0.12,
+  "scale": {
+    "arabicBody": 1.06,
+    "arabicDisplay": 1.02
+  },
+  "fonts": {
+    "body": "Noto Sans Arabic",
+    "ui": "Noto Sans Arabic UI",
+    "industrial": {
+      "family": "Noto Sans Arabic Condensed",
+      "weight": 800
+    }
+  },
+  "direction": {
+    "text": "native",
+    "field": "preserve-physics"
+  },
+  "numerals": {
+    "sharedInstruments": "tabular-latin",
+    "arabicNative": "arabic-indic-after-testing"
+  },
+  "release": {
+    "publicReady": false,
+    "requires": ["governed-font-binaries", "native-arabic-review", "optical-parity-evidence"]
+  }
+}

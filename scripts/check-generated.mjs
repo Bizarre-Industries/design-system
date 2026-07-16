@@ -2,6 +2,9 @@ import { lstat, readFile, readdir } from 'node:fs/promises';
 import { pathToFileURL } from 'node:url';
 import { buildExpected } from './build-tokens.mjs';
 import { buildExpectedAssets } from './build-assets.mjs';
+import { buildExpectedAtlas } from './build-atlas.mjs';
+import { buildExpectedOpenDesign } from './build-open-design.mjs';
+import { buildExpectedUi } from './build-ui.mjs';
 
 const comparePaths = (left, right) => left < right ? -1 : left > right ? 1 : 0;
 
@@ -57,7 +60,10 @@ export async function compareGenerated(packageUrl, expected) {
 export async function checkGenerated(rootUrl) {
   return {
     tokens: await compareGenerated(new URL('packages/tokens/', rootUrl), await buildExpected(rootUrl)),
-    assets: await compareGenerated(new URL('packages/assets/', rootUrl), await buildExpectedAssets(rootUrl))
+    atlas: await compareGenerated(new URL('packages/atlas/', rootUrl), await buildExpectedAtlas(rootUrl)),
+    assets: await compareGenerated(new URL('packages/assets/', rootUrl), await buildExpectedAssets(rootUrl)),
+    ui: await compareGenerated(new URL('packages/ui/', rootUrl), await buildExpectedUi(rootUrl)),
+    openDesign: await compareGenerated(new URL('packages/open-design/', rootUrl), await buildExpectedOpenDesign(rootUrl))
   };
 }
 

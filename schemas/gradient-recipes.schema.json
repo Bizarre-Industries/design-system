@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bizarre.industries/schemas/gradient-recipes.schema.json",
+  "title": "Bizarre governed gradient recipe source manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "manifestVersion",
+    "manifestId",
+    "classification",
+    "canonicalSha256",
+    "authority",
+    "globalRules",
+    "sources",
+    "recipes"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "manifestVersion": { "const": "v1" },
+    "manifestId": { "const": "bizarre-gradient-recipes" },
+    "classification": { "const": "governed-source-manifest" },
+    "canonicalSha256": { "$ref": "#/$defs/sha256" },
+    "authority": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scope", "sourcePriority", "doesNotAuthorize"],
+      "properties": {
+        "scope": { "const": "gradient-recipes-only" },
+        "sourcePriority": {
+          "type": "array",
+          "prefixItems": [
+            { "const": "direct-owner-decisions" },
+            { "const": "approved-extension" },
+            { "const": "owner-supplied-archive" },
+            { "const": "repository-reference" }
+          ],
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "doesNotAuthorize": {
+          "type": "array",
+          "prefixItems": [
+            { "const": "figma-publication" },
+            { "const": "affinity-publication" },
+            { "const": "physical-performance-claims" }
+          ],
+          "minItems": 3,
+          "maxItems": 3
+        }
+      }
+    },
+    "globalRules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["permittedSystems", "signalLime", "decorativeBlobs", "sharedDatasetAcrossRepresentations"],
+      "properties": {
+        "permittedSystems": {
+          "type": "array",
+          "prefixItems": [
+            { "const": "field" },
+            { "const": "optical-coating" },
+            { "const": "data-ramp" },
+            { "const": "heat" },
+            { "const": "exposure" },
+            { "const": "reflective-film" },
+            { "const": "material-response" }
+          ],
+          "minItems": 7,
+          "maxItems": 7
+        },
+        "signalLime": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["hex", "interpolation", "rule"],
+          "properties": {
+            "hex": { "const": "#C6FF24" },
+            "interpolation": { "const": "forbidden" },
+            "rule": { "const": "Never grade Signal Lime into another hue." }
+          }
+        },
+        "decorativeBlobs": { "const": "forbidden" },
+        "sharedDatasetAcrossRepresentations": { "const": "required" }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "$ref": "#/$defs/source" }
+    },
+    "recipes": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": { "$ref": "#/$defs/recipe" }
+    }
+  },
+  "$defs": {
+    "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+    "valueStatus": { "enum": ["EXACT SOURCE VALUE", "NOT VERIFIED"] },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sourceId", "locator", "sha256", "classification", "role"],
+      "properties": {
+        "sourceId": { "type": "string", "minLength": 1 },
+        "locator": { "type": "string", "minLength": 1 },
+        "sha256": { "$ref": "#/$defs/sha256" },
+        "containerSha256": { "$ref": "#/$defs/sha256" },
+        "classification": {
+          "enum": [
+            "approved-extension-with-overrides",
+            "owner-supplied-archive-member",
+            "approved-architecture",
+            "repository-reference"
+          ]
+        },
+        "role": { "type": "string", "minLength": 1 }
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "angleDeg", "valueStatus", "interpolationColorSpace", "interpolationColorSpaceStatus"],
+      "properties": {
+        "kind": { "oneOf": [{ "const": "linear" }, { "type": "null" }] },
+        "angleDeg": { "oneOf": [{ "type": "number" }, { "type": "null" }] },
+        "valueStatus": { "$ref": "#/$defs/valueStatus" },
+        "interpolationColorSpace": { "oneOf": [{ "type": "string", "minLength": 1 }, { "type": "null" }] },
+        "interpolationColorSpaceStatus": { "$ref": "#/$defs/valueStatus" }
+      }
+    },
+    "stop": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["positionPercent", "color"],
+      "properties": {
+        "positionPercent": { "type": "number" },
+        "color": { "type": "string", "pattern": "^#[A-F0-9]{6}$" },
+        "tokenRef": { "type": "string", "minLength": 1 }
+      }
+    },
+    "stops": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["valueStatus", "items"],
+      "properties": {
+        "valueStatus": { "$ref": "#/$defs/valueStatus" },
+        "items": { "type": "array", "items": { "$ref": "#/$defs/stop" } }
+      }
+    },
+    "derivation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["input", "mapping", "requiredControls", "fallback"],
+      "properties": {
+        "input": { "type": "string", "minLength": 1 },
+        "mapping": { "type": "string", "minLength": 1 },
+        "requiredControls": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "fallback": { "type": "string", "minLength": 1 }
+      }
+    },
+    "recipe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subjectId",
+        "system",
+        "name",
+        "valueStatus",
+        "physicalEvidenceStatus",
+        "sourceRefs",
+        "derivation",
+        "geometry",
+        "stops"
+      ],
+      "properties": {
+        "subjectId": { "type": "string", "pattern": "^04\\.0[1-7]$" },
+        "system": {
+          "enum": ["field", "optical-coating", "data-ramp", "heat", "exposure", "reflective-film", "material-response"]
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "valueStatus": { "$ref": "#/$defs/valueStatus" },
+        "physicalEvidenceStatus": { "const": "NOT VERIFIED" },
+        "sourceRefs": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "minLength": 1 }
+        },
+        "derivation": { "$ref": "#/$defs/derivation" },
+        "geometry": { "$ref": "#/$defs/geometry" },
+        "stops": { "$ref": "#/$defs/stops" }
+      }
+    }
+  }
+}

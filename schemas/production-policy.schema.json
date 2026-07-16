@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bizarre.industries/schemas/production-policy.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "minimums", "unresolvedProfiles", "oneColor"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "minimums": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["finePrintContour", "vinylContour", "screenContour", "aperturePrint", "apertureScreen"],
+      "properties": {
+        "finePrintContour": { "$ref": "#/$defs/finePrintContour" },
+        "vinylContour": { "$ref": "#/$defs/vinylContour" },
+        "screenContour": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["value", "unit", "highSalience", "evidence"],
+          "properties": {
+            "value": { "const": 1 },
+            "unit": { "const": "px" },
+            "highSalience": { "const": 2 },
+            "evidence": { "const": "NOT VERIFIED" }
+          }
+        },
+        "aperturePrint": { "$ref": "#/$defs/aperturePrint" },
+        "apertureScreen": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["value", "unit", "evidence"],
+          "properties": {
+            "value": { "const": 48 },
+            "unit": { "const": "px" },
+            "evidence": { "const": "NOT VERIFIED" }
+          }
+        }
+      }
+    },
+    "unresolvedProfiles": { "const": ["embroidery", "engraving", "foil", "retroreflective", "illuminated"] },
+    "oneColor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["required", "limeRequired"],
+      "properties": {
+        "required": { "const": true },
+        "limeRequired": { "const": false }
+      }
+    }
+  },
+  "$defs": {
+    "finePrintContour": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "unit", "evidence"],
+      "properties": {
+        "value": { "const": 0.18 },
+        "unit": { "const": "mm" },
+        "evidence": { "const": "NOT VERIFIED" }
+      }
+    },
+    "vinylContour": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "unit", "evidence"],
+      "properties": {
+        "value": { "const": 1.5 },
+        "unit": { "const": "mm" },
+        "evidence": { "const": "NOT VERIFIED" }
+      }
+    },
+    "aperturePrint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["value", "unit", "evidence"],
+      "properties": {
+        "value": { "const": 12 },
+        "unit": { "const": "mm" },
+        "evidence": { "const": "NOT VERIFIED" }
+      }
+    }
+  }
+}

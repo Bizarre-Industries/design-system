@@ -1,0 +1,328 @@
+{
+  "authority": {
+    "path": "generated/authority/DESIGN.md",
+    "sha256": "4bbe2429bb13f85103d447b8bd589b643f3b8809bd4a83798958e5fe96c53e7f"
+  },
+  "exclusions": [
+    "proposal-compiled-css",
+    "proposal-generated-mockups",
+    "proposal-pdf"
+  ],
+  "files": {
+    "generated/assets/README.md": {
+      "mediaType": "text/markdown",
+      "sha256": "65ee3f63e2e1b53b1d9e2ff4b051645ec8019f5726966569644669453e2f9b39"
+    },
+    "generated/assets/fonts/bizarre-fonts.css": {
+      "mediaType": "text/css",
+      "sha256": "353945cd89e75623f363813df46877cf04b39f3bbbc7968e2221780ff2321fbf"
+    },
+    "generated/assets/fonts/licenses/BigShouldersStencil/OFL.txt": {
+      "mediaType": "text/plain",
+      "sha256": "3a914b9c36b191af65068ea1ef9d99c7c6e90c838f53c12508463a4ea9330f19"
+    },
+    "generated/assets/fonts/licenses/BigShouldersStencil/README.txt": {
+      "mediaType": "text/plain",
+      "sha256": "5b508b23093757eb278bb3a69e138e60fa1778969112abe7bee55276e4decb84"
+    },
+    "generated/assets/fonts/licenses/HankenGrotesk/OFL.txt": {
+      "mediaType": "text/plain",
+      "sha256": "56c54eb6be2d6c11ce6d24e53146189c6922bdf02cd80f0e1cc2f5a087ab52be"
+    },
+    "generated/assets/fonts/licenses/HankenGrotesk/README.txt": {
+      "mediaType": "text/plain",
+      "sha256": "32f2493d44406b716e0656990ae824fe4c8942fbe0987d850f9294c5d245397e"
+    },
+    "generated/assets/fonts/licenses/JetBrainsMono/OFL.txt": {
+      "mediaType": "text/plain",
+      "sha256": "c1ab7c666206842a02b35b30770dac0d7a10156ed401c9defc3f02a754d89e90"
+    },
+    "generated/assets/fonts/licenses/JetBrainsMono/README.txt": {
+      "mediaType": "text/plain",
+      "sha256": "3650f233d562cc4837e601ec0ea1253daec5010db99d43dafd8c9dca607316f7"
+    },
+    "generated/assets/fonts/licenses/Unbounded/OFL.txt": {
+      "mediaType": "text/plain",
+      "sha256": "e4adc17fbe0714f78c7614c53138f67ad8a031aca0ffa4698044d87d45d2622e"
+    },
+    "generated/assets/fonts/licenses/Unbounded/README.txt": {
+      "mediaType": "text/plain",
+      "sha256": "a4ba11f9e7bbdf78b2a6203b8c3a46dfd05f8372d77926b976d393f2e8f2ff99"
+    },
+    "generated/assets/fonts/source/BigShouldersStencil-VariableFont_opsz,wght.ttf": {
+      "mediaType": "font/ttf",
+      "sha256": "ba6ca4e4efbdbe06644912126254069f8d01e750e7ea7ed45c02dec7045e3632"
+    },
+    "generated/assets/fonts/source/HankenGrotesk-Italic-VariableFont_wght.ttf": {
+      "mediaType": "font/ttf",
+      "sha256": "49000473ba71b9408c19b6302a3b9707b2f7e235e15c9eb3c9df2a7fcfe98a57"
+    },
+    "generated/assets/fonts/source/HankenGrotesk-VariableFont_wght.ttf": {
+      "mediaType": "font/ttf",
+      "sha256": "c4828929151ec9a455122afa06c31eb65e80ad8622f1d5510ecba8e195c57d38"
+    },
+    "generated/assets/fonts/source/JetBrainsMono-Italic-VariableFont_wght.ttf": {
+      "mediaType": "font/ttf",
+      "sha256": "2d8ac6a590c2df8f63ae44807c40cac63bc481d197c4cb91d48f1a0f587fb32e"
+    },
+    "generated/assets/fonts/source/JetBrainsMono-VariableFont_wght.ttf": {
+      "mediaType": "font/ttf",
+      "sha256": "192a3158a926768d1fa520164f0fb0f40a6ad085435aa854e43eb14cb40d1aab"
+    },
+    "generated/assets/fonts/source/Unbounded-VariableFont_wght.ttf": {
+      "mediaType": "font/ttf",
+      "sha256": "c920c00876215ab1f902482a2fbb1eb307fe2cd5e7380ea307f7e4de1e064f72"
+    },
+    "generated/assets/fonts/web/BigShouldersStencil-VariableFont_opsz,wght.woff2": {
+      "mediaType": "font/woff2",
+      "sha256": "bc91da2852ffb3b7feee5de63943955ceb14aaae56296700ed3631725d952493"
+    },
+    "generated/assets/fonts/web/HankenGrotesk-Italic-VariableFont_wght.woff2": {
+      "mediaType": "font/woff2",
+      "sha256": "ef1f2f93ca1d058fbcd882e60a70115e8b87e9fc71ffa744c6b1bdc8881e547f"
+    },
+    "generated/assets/fonts/web/HankenGrotesk-VariableFont_wght.woff2": {
+      "mediaType": "font/woff2",
+      "sha256": "dd72079854cb0dd6b3fe1de5f89024cd2210fab29f761d80b72d84ed1c6cdde1"
+    },
+    "generated/assets/fonts/web/JetBrainsMono-Italic-VariableFont_wght.woff2": {
+      "mediaType": "font/woff2",
+      "sha256": "4715e503f808a7c9362ddd92956e30d76861929bf47061968ee985f9899a2afd"
+    },
+    "generated/assets/fonts/web/JetBrainsMono-VariableFont_wght.woff2": {
+      "mediaType": "font/woff2",
+      "sha256": "dea05c900f787a8d7866e6f50a3b37523e506724fef41cff0064af80e506568b"
+    },
+    "generated/assets/fonts/web/Unbounded-VariableFont_wght.woff2": {
+      "mediaType": "font/woff2",
+      "sha256": "f8afc8c126d03acb8b789fe8b51c1129236444944a0e34febeae1a4b6dd2f1a4"
+    },
+    "generated/assets/logo/mark-inverse.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "82ca3e568f65204ea70422a04398a4f4d163f2c591361f3b54e075cbca2cbc5e"
+    },
+    "generated/assets/logo/mark-primary.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "c70e9cd2e026695da3c4343d30e8cbfcd4910724bf5203129cee1fbccece0c9b"
+    },
+    "generated/assets/logo/mark-transparent.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "ecc094cb883c40157e37a8fa5dbba77ea51ada75f424fca09de9eaf73583d02b"
+    },
+    "generated/assets/manifest.json": {
+      "mediaType": "application/json",
+      "sha256": "1492d8697230808b22de8a50aab55245494dd9fff8b94d7229c8129362e3c28a"
+    },
+    "generated/authority/BRAND.md": {
+      "mediaType": "text/markdown",
+      "sha256": "12c5846489d177ec4beb3fe3475f14e8068537d8dfa7378ff0332d5cd939bd68"
+    },
+    "generated/authority/DESIGN.md": {
+      "mediaType": "text/markdown",
+      "sha256": "4bbe2429bb13f85103d447b8bd589b643f3b8809bd4a83798958e5fe96c53e7f"
+    },
+    "generated/authority/SOURCE.json": {
+      "mediaType": "application/json",
+      "sha256": "b2981cbea048acce07fc32a41c0e4436c4d50fd828594f492166b792a941d134"
+    },
+    "generated/authority/authority.json": {
+      "mediaType": "application/json",
+      "sha256": "4034e71a20d461f8fdb2deb8e67cbcecfc323ee69f940d949dbc4b0bb0d255f7"
+    },
+    "generated/authority/identity.json": {
+      "mediaType": "application/json",
+      "sha256": "dbe5621b19a97b192a0337ca193cf26dda87ba874097ebd8e474408b70bd3fb9"
+    },
+    "generated/fixture/index.html": {
+      "mediaType": "text/html",
+      "sha256": "345639d53cf068470d5c49f8f4c0b56f5d1cddc3ca85ca8f8250f475e14e2c3f"
+    },
+    "generated/fixture/proof.js": {
+      "mediaType": "text/javascript",
+      "sha256": "6e13c2b557f7955a798be45a72530ed4b4842fe2dbb616be42f4d439de7015ed"
+    },
+    "generated/manual/index.html": {
+      "mediaType": "text/html",
+      "sha256": "04a9df4e032e4c66e7e8fbc69647dd2d0af451ef450b6db8aac35c37baf1bdbb"
+    },
+    "generated/manual/manual.css": {
+      "mediaType": "text/css",
+      "sha256": "255a22899536ddb67464c67be8ded2e7f706d540e0dc7b28e42fb692a6dada86"
+    },
+    "generated/manual/pages/aperture.html": {
+      "mediaType": "text/html",
+      "sha256": "bb47c62d7879f4a65d4816b09f073a68cef813fc2804784d2d9d650a84322539"
+    },
+    "generated/manual/pages/bilingual.html": {
+      "mediaType": "text/html",
+      "sha256": "3244c4851201bc16e59b944907c64223b5cc197e62c14a3071c4b7e4a338741f"
+    },
+    "generated/manual/pages/components.html": {
+      "mediaType": "text/html",
+      "sha256": "2c8cd506825912246264ec8b534a061ad8a615ed43cdb000419fbf2bbca04de7"
+    },
+    "generated/manual/pages/evidence.html": {
+      "mediaType": "text/html",
+      "sha256": "3af5d8f1ed8f379d2dec0ffa0885eb4e1e02f901ee8e9d8e5292da53cc90ef7a"
+    },
+    "generated/manual/pages/governance.html": {
+      "mediaType": "text/html",
+      "sha256": "13f9b85c298dcc54a99e68e28466ccde2dc9b7fad3fea25d67bc861977b95593"
+    },
+    "generated/manual/pages/motion.html": {
+      "mediaType": "text/html",
+      "sha256": "87ff73f7e9c882b900269b0ce4351905414fe38b3e64ff5ab444f2e7208a1fc8"
+    },
+    "generated/manual/pages/poster.html": {
+      "mediaType": "text/html",
+      "sha256": "06e2d0c7e562187dcc61558f9ab8b164f320af86559b0822cea59d916c6eba11"
+    },
+    "generated/manual/pages/precision-panel.html": {
+      "mediaType": "text/html",
+      "sha256": "2531707db556cfc2b57a9415a76c5761555be1005cf7dacd5a32c5042818ba66"
+    },
+    "generated/manual/pages/production.html": {
+      "mediaType": "text/html",
+      "sha256": "eb773b010c7a252e9664d86ba7bf7d2a3a7065054568612b5b5010a886e2210e"
+    },
+    "generated/manual/pages/textures.html": {
+      "mediaType": "text/html",
+      "sha256": "b5199b5dfdc53b7845017823f6714862dbd3f3861ac9c373dfea17d47c8ea46f"
+    },
+    "generated/manual/print.html": {
+      "mediaType": "text/html",
+      "sha256": "0b91fcbf2faa7cfbf13d6d5d422ec8cf9a3140ece35ea5c6e70ad63dbfc7c109"
+    },
+    "generated/manual/token-tree.json": {
+      "mediaType": "application/json",
+      "sha256": "9e52d0d67eb7b00157b07e1d27d95d51619d869591d22c74618ca6a3a31fd30f"
+    },
+    "generated/policies/bilingual.json": {
+      "mediaType": "application/json",
+      "sha256": "51741bd887718e8e5c27f310fe68f49b8df43e78dd83573985e2aedfcf5c0448"
+    },
+    "generated/policies/production.json": {
+      "mediaType": "application/json",
+      "sha256": "3b46d4912cb34cb657832cb53e96f0d61ad34b15c515bfa89e9b37e487442315"
+    },
+    "generated/policies/provenance.json": {
+      "mediaType": "application/json",
+      "sha256": "aba4b407ef8022cd91860c0b2a2599c4998c78b68b5ece86a69564082efe35c9"
+    },
+    "generated/preview/index.html": {
+      "mediaType": "text/html",
+      "sha256": "fcc36f3bd75dca050182f951075ed3d42e5ba0a2c5dcf91c4e92f69fe679cd08"
+    },
+    "generated/provisional/atlas/atlas-bands.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "2269e44629952e807128e10167bb8defffcd5c007c98ef9c851e4a46a37a0303"
+    },
+    "generated/provisional/atlas/atlas-contours-dark.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "b4694f25d640a0c4a0e849898eab392eaa3e2cafcbd4924e6082e184d229307c"
+    },
+    "generated/provisional/atlas/atlas-contours-large.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "a9b98e58ebdbc8afb0c42a1d7946cf681a8a5fa96a29e94dcd13face5f647e97"
+    },
+    "generated/provisional/atlas/atlas-contours-light.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "e91f34eb1101ca7f89c75cc9b5181549022436fb7e06b05f9e1ed63fe009f69a"
+    },
+    "generated/provisional/atlas/atlas-dots-large.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "861f47486671516e8a0ce5f5c5dcebae1308777a1fcd4cffdfe7967053ee500f"
+    },
+    "generated/provisional/atlas/atlas-dots.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "2c9f4c0d2b134cbf25f151e79fc28b68a3f361df96518d59c0c8295e5d61fad0"
+    },
+    "generated/provisional/atlas/atlas-hatch-large.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "03358c5c00f03b76004d782ddbcad688e5a259ae6dff1147138ab4b0fe2a2ec9"
+    },
+    "generated/provisional/atlas/atlas-hatch.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "4d73f082dd5bfefa84e321bad5bfee7a887a06dd09a52ff8c3b5064b2defbbfd"
+    },
+    "generated/provisional/atlas/atlas-micro.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "374d2b9b691567ab9bc26e2b2bf67d8fdb12048826cf77f1444816a24bbe98ab"
+    },
+    "generated/provisional/atlas/atlas-spectral-large.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "a0a32c822abe8b8511d0d66438d9778e7b5dd8c9c7b466d43990af14f1a840cf"
+    },
+    "generated/provisional/atlas/atlas-spectral.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "b1791e6539a8b6a3f3b9b82bae0ad2212f25a48c4f621a1a11d461a22a87f6d7"
+    },
+    "generated/provisional/atlas/calibrated-aperture.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "7d084fb71682e01deee4af72446c63d4f7f53ebe6ba1d9ad40a376b113856e6f"
+    },
+    "generated/provisional/atlas/capture-sequence.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "281c6f14a86098eaa075a6c8f4d1a6a6d1b7de4040d06c58d534bbeefcdd7aa8"
+    },
+    "generated/provisional/atlas/instrument-dial.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "312a9c31b031857123ceff87831c972bd9be9f9d4a7e1cede1547a1b6a08fdf1"
+    },
+    "generated/provisional/atlas/livery-strip.svg": {
+      "mediaType": "image/svg+xml",
+      "sha256": "bae5a768ea83519e2005d99d7adb0a60b831141b4b22477e8d62f9c57cd79110"
+    },
+    "generated/provisional/manifest.json": {
+      "mediaType": "application/json",
+      "sha256": "edfe05408dba1b10c843e173f3db4229a41dcfe1b99be7fd930437e82525e04a"
+    },
+    "generated/release/evidence.json": {
+      "mediaType": "application/json",
+      "sha256": "94b3b155ba85f251e4909b67dbb4a6d7f0f0313bd63a9f417e690595992b21a0"
+    },
+    "generated/tokens/manifest.json": {
+      "mediaType": "application/json",
+      "sha256": "a2491493d15606db2eeefbd6fed9bc9fb4034f14463a3c3d7e10b588abed6b79"
+    },
+    "generated/tokens/tokens.css": {
+      "mediaType": "text/css",
+      "sha256": "af525f187fc56713c038a6a4d55e34779ec5c6182306e01bc82b8f98dc486654"
+    },
+    "generated/tokens/tokens.json": {
+      "mediaType": "application/json",
+      "sha256": "9618485d22cb472a6ee8564f670e8a30a8c701d690f15157139941b8240c52da"
+    },
+    "generated/ui/components.css": {
+      "mediaType": "text/css",
+      "sha256": "f11d327168497694429aa7e506f1cc6fc0554e7f13b9876d6158d9c2a6316a46"
+    },
+    "generated/ui/contract.json": {
+      "mediaType": "application/json",
+      "sha256": "f1f8ab057f112ef7417638d62fa7f46247d9dc9f9bc68ae1eb896f5ee14bd7c6"
+    },
+    "generated/ui/manifest.json": {
+      "mediaType": "application/json",
+      "sha256": "ed651604d0962930aad1e9029a54f6c67f410073d78d6abd5a880593491f1fcb"
+    },
+    "generated/ui/motion.css": {
+      "mediaType": "text/css",
+      "sha256": "ba587e3e1d1e53fc75c10f0648bb7cb5336bdd8356c006253f104ad5ef21e3d2"
+    },
+    "generated/ui/rtl.css": {
+      "mediaType": "text/css",
+      "sha256": "7c27f5fd0f76fb36ec19406536c033474b9e1a95a81874a32dd4b16c03c326b0"
+    }
+  },
+  "package": "@bizarre/open-design",
+  "provisionalAssets": {
+    "path": "generated/provisional/manifest.json",
+    "status": "PROVISIONAL v1"
+  },
+  "publicationStatus": "nonpublishable",
+  "releaseEvidence": {
+    "path": "generated/release/evidence.json",
+    "status": "NOT VERIFIED"
+  },
+  "schemaVersion": 1
+}

@@ -1,0 +1,25 @@
+{
+  "$extensions": {
+    "industries.bizarre": {
+      "phaseOrder": ["approach", "compress", "eclipse", "lock", "release"],
+      "reducedMotionState": "captured"
+    }
+  },
+  "capture": {
+    "duration": {
+      "$type": "duration",
+      "fast-min": { "$value": "{motion.duration.mid}" },
+      "fast-max": { "$value": "{motion.duration.slow}" },
+      "ceremonial": { "$value": "{motion.duration.epic}" },
+      "installation": { "$value": { "value": 2400, "unit": "ms" } }
+    },
+    "phase": {
+      "$type": "number",
+      "approach": { "start": { "$value": 0 }, "end": { "$value": 0.32 } },
+      "compress": { "start": { "$value": 0.32 }, "end": { "$value": 0.55 } },
+      "eclipse": { "start": { "$value": 0.55 }, "end": { "$value": 0.72 } },
+      "lock": { "start": { "$value": 0.72 }, "end": { "$value": 0.88 } },
+      "release": { "start": { "$value": 0.88 }, "end": { "$value": 1 } }
+    }
+  }
+}

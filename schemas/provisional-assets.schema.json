@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bizarre.industries/schemas/provisional-assets.schema.json",
+  "title": "Bizarre governed provisional asset manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "classification",
+    "version",
+    "approvalState",
+    "publicationStatus",
+    "sourceManifest",
+    "reason",
+    "promotionRequires",
+    "assets"
+  ],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "classification": { "const": "governed-provisional" },
+    "version": { "const": "v1" },
+    "approvalState": { "const": "provisional" },
+    "publicationStatus": { "const": "nonpublishable" },
+    "sourceManifest": { "const": "packages/atlas/generated/manifest.json" },
+    "reason": { "type": "string", "minLength": 1 },
+    "promotionRequires": {
+      "type": "array",
+      "prefixItems": [
+        { "const": "explicit-master-approval" },
+        { "const": "geometry-and-provenance-verification" },
+        { "const": "dependent-asset-regeneration" },
+        { "const": "publishable-boundary-review" }
+      ],
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "assets": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/provisionalAsset" }
+    }
+  },
+  "$defs": {
+    "provisionalAsset": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "path",
+        "sha256",
+        "approved",
+        "mediaType",
+        "kind",
+        "approvalState",
+        "viewBox",
+        "sourceProvenance",
+        "relationship",
+        "generator",
+        "provenance",
+        "authorityStatus",
+        "verificationStatus",
+        "publicationStatus",
+        "publishable",
+        "intendedUses"
+      ],
+      "properties": {
+        "path": { "type": "string", "pattern": "^packages/atlas/generated/[^/]+\\.svg$" },
+        "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+        "approved": { "const": false },
+        "mediaType": { "const": "image/svg+xml" },
+        "kind": { "enum": ["atlas", "aperture", "texture"] },
+        "approvalState": { "const": "provisional" },
+        "viewBox": { "type": "string", "pattern": "^-?(?:\\d+\\.?\\d*|\\.\\d+)(?:\\s+-?(?:\\d+\\.?\\d*|\\.\\d+)){3}$" },
+        "sourceProvenance": { "const": "packages/atlas/generated/manifest.json" },
+        "relationship": { "enum": ["master", "derivative"] },
+        "master": { "const": "packages/atlas/generated/calibrated-aperture.svg" },
+        "generator": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["name", "version", "configurationHash"],
+          "properties": {
+            "name": { "type": "string", "minLength": 1 },
+            "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+            "configurationHash": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+          }
+        },
+        "provenance": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["sourceType", "sourceIdentifier", "model", "apertureVersion", "aperturePathSha256"],
+          "properties": {
+            "sourceType": { "const": "synthetic" },
+            "sourceIdentifier": { "type": "string", "minLength": 1 },
+            "model": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["name", "version"],
+              "properties": {
+                "name": { "type": "string", "minLength": 1 },
+                "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" }
+              }
+            },
+            "apertureVersion": { "type": "string", "minLength": 1 },
+            "aperturePathSha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" }
+          }
+        },
+        "authorityStatus": { "const": "governed-provisional" },
+        "verificationStatus": { "const": "NOT VERIFIED" },
+        "publicationStatus": { "const": "nonpublishable" },
+        "publishable": { "const": false },
+        "intendedUses": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "enum": ["data-visualization", "editorial", "interface", "motion"] }
+        }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "relationship": { "const": "derivative" } }, "required": ["relationship"] },
+          "then": { "required": ["master"] }
+        },
+        {
+          "if": { "properties": { "relationship": { "const": "master" } }, "required": ["relationship"] },
+          "then": {
+            "properties": {
+              "kind": { "const": "aperture" },
+              "path": { "const": "packages/atlas/generated/calibrated-aperture.svg" }
+            },
+            "not": { "required": ["master"] }
+          }
+        }
+      ]
+    }
+  }
+}

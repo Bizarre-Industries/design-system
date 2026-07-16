@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "runId": "atlas-representation-studies/v2.0.0",
+  "createdAt": "2026-07-15T19:54:06Z",
+  "generator": {
+    "method": "built-in-imagegen",
+    "modelPath": "default-built-in",
+    "jobsSha256": "bcae7eaf1f882e6f6bb117930fc4e026f2a18fd0bcdfce617208f69d6973e4c1"
+  },
+  "classification": "generated-concept-reference",
+  "authority": false,
+  "publishable": false,
+  "approvalStatus": "OWNER-SELECTED DIRECTION / NONPUBLISHABLE",
+  "supersedesForActiveReconstruction": "atlas-representation-studies/v1.0.0",
+  "preservesHistoricalRun": true,
+  "allowedUses": [
+    "visual-direction-review",
+    "locked-affinity-reference-layer",
+    "high-fidelity-affinity-reconstruction-target",
+    "same-viewport-source-versus-reconstruction-comparison",
+    "noncanonical-figma-reference-page"
+  ],
+  "prohibitedUses": [
+    "canonical-vector-master",
+    "production-proof",
+    "release-evidence",
+    "publishable-package-export",
+    "logo-geometry-authority",
+    "aperture-numerical-geometry-authority"
+  ],
+  "authoritySources": [
+    {
+      "path": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+      "sha256": "825d7e8456ed033865873d96141d8922b8e0ed891dcd60ffb3924b6951d6a25c"
+    },
+    {
+      "path": "production/affinity/bizarre-masterbrand-content-spec-v1.json",
+      "sha256": "17bc96d33875f65fa0c3952f23f398a070c3610c7beff4623e332e8193fd20f6"
+    },
+    {
+      "path": "packages/atlas/src/aperture.mjs",
+      "sha256": "344fe6ce1d289c37596dbdc667edee863fa63efbc92aee2bffa99ec59abfd548"
+    },
+    {
+      "path": "packages/atlas/generated/calibrated-aperture.svg",
+      "sha256": "7d084fb71682e01deee4af72446c63d4f7f53ebe6ba1d9ad40a376b113856e6f",
+      "status": "OWNER-SELECTED DIRECTION / PROVISIONAL GEOMETRY"
+    },
+    {
+      "path": "packages/atlas/generated/atlas-spectral-large.svg",
+      "sha256": "a0a32c822abe8b8511d0d66438d9778e7b5dd8c9c7b466d43990af14f1a840cf",
+      "status": "GOVERNED PROVISIONAL"
+    }
+  ],
+  "references": [
+    {
+      "path": "references/continuous-lens-owner-selected-main-panel-v2.png",
+      "role": "owner-selected left Continuous Lens composition and visual geometry",
+      "sha256": "b5ed51bee2aa791141304bc445612fcd7d90b56863d4f68fed5f11235c83612f"
+    },
+    {
+      "path": "references/owner-signal-infrastructure-preview.png",
+      "role": "owner-supplied Swiss Signal Infrastructure visual quality and system discipline",
+      "sha256": "9f968b4f21eea302cb3bf659489ea5efe836457f92827e5a5ef5083d1e945376"
+    },
+    {
+      "path": "references/atlas-spectral-large-source.png",
+      "role": "raster view of the governed provisional source renderer for difference comparison",
+      "sha256": "cdccb921d9b887322b7211ad369f12a9ec7e416bd17b5494cb7e5731bcd3910c"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "atlas-shaded-contour-continuous-lens-v2",
+      "subjectId": "07.05",
+      "path": "generated/07.05-shaded-contour-continuous-lens-v2.png",
+      "width": 1991,
+      "height": 789,
+      "sha256": "1ab4dd14dc816f1879147f67ab7e26b2ae9dcd1e4877dda8b8ca53d73ccb7bb9"
+    },
+    {
+      "id": "atlas-field-grain-continuous-lens-v2",
+      "subjectId": "07.08",
+      "path": "generated/07.08-field-grain-continuous-lens-v2.png",
+      "width": 1991,
+      "height": 790,
+      "sha256": "164ada597221a9a8f213768a7da3449d059006bfbc9f7b6ac0c4812c4a97d2c7"
+    },
+    {
+      "id": "atlas-material-response-continuous-lens-v2",
+      "subjectId": "07.09",
+      "path": "generated/07.09-material-response-continuous-lens-v2.png",
+      "width": 1991,
+      "height": 790,
+      "sha256": "9b9b7e96fd316273cdac444ef56f81196387f9e1f3b31d098e8c492d85d2bebc"
+    },
+    {
+      "id": "atlas-one-color-continuous-lens-v2",
+      "subjectId": "07.10",
+      "path": "generated/07.10-one-color-continuous-lens-v2.png",
+      "width": 1991,
+      "height": 790,
+      "sha256": "f59da8a68fa6b70c59d9c75318c8a86356cd573e472b4f41f908fdd73515a963"
+    }
+  ],
+  "qualityNotes": [
+    "ImageGen targets are locked nonpublishable references; Affinity must reconstruct them as editable native geometry, gradients, halftone, masks, materials, and live metadata.",
+    "The Continuous Lens outline is smooth and tangent-continuous with no corner, chamfer, wedge, notch, key cut, polygonal join, or straight segment.",
+    "The Gravity Well logo is not present in these studies and no generated pixels may define or alter its geometry.",
+    "The v1.0.0 run remains immutable historical lineage because it encodes the rejected sharp aperture."
+  ]
+}

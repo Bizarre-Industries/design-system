@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "minimums": {
+    "finePrintContour": { "value": 0.18, "unit": "mm", "evidence": "NOT VERIFIED" },
+    "vinylContour": { "value": 1.5, "unit": "mm", "evidence": "NOT VERIFIED" },
+    "screenContour": { "value": 1, "unit": "px", "highSalience": 2, "evidence": "NOT VERIFIED" },
+    "aperturePrint": { "value": 12, "unit": "mm", "evidence": "NOT VERIFIED" },
+    "apertureScreen": { "value": 48, "unit": "px", "evidence": "NOT VERIFIED" }
+  },
+  "unresolvedProfiles": ["embroidery", "engraving", "foil", "retroreflective", "illuminated"],
+  "oneColor": {
+    "required": true,
+    "limeRequired": false
+  }
+}

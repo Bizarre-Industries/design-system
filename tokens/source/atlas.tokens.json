@@ -1,0 +1,42 @@
+{
+  "$extensions": {
+    "industries.bizarre": {
+      "orientationFamily": [-38, -18, 18, 38],
+      "orientationUnit": "deg",
+      "recognitionGrammar": ["bend", "absence", "signal"],
+      "trajectoryCount": 1
+    }
+  },
+  "atlas": {
+    "mass": {
+      "x": { "$type": "number", "$value": 0.69 },
+      "y": { "$type": "number", "$value": 0.53 }
+    },
+    "compression-exponent": { "$type": "number", "$value": 1.72 },
+    "major-interval": { "$type": "number", "$value": 5 },
+    "line": {
+      "$type": "dimension",
+      "minor": { "$value": { "value": 1, "unit": "px" } },
+      "major": { "$value": { "value": 4, "unit": "px" } },
+      "band": { "$value": { "value": 14, "unit": "px" } }
+    },
+    "orientation": {
+      "$type": "number",
+      "$description": "Approved orientation values in degrees; consumers apply the angle unit at use time.",
+      "a": { "$value": -38 },
+      "b": { "$value": -18 },
+      "c": { "$value": 18 },
+      "d": { "$value": 38 }
+    }
+  },
+  "aperture": {
+    "ratio": { "$type": "number", "$value": 1.618, "$description": "Provisional construction ratio, not a canonical silhouette bounding-box aspect ratio." },
+    "tangent-continuity": {
+      "$type": "boolean",
+      "$value": true,
+      "$description": "Owner-approved Continuous Lens constraint: the closed silhouette is tangent-continuous and contains no corners, straight segments, notches, chamfers, wedges, or key cuts. This qualitative invariant is canonical; numerical geometry remains provisional."
+    },
+    "offset": { "$type": "number", "$value": 0.07, "$description": "Provisional construction offset retained for calibration experiments; it is not approved final geometry." },
+    "reveal-depth": { "$type": "dimension", "$value": { "value": 4, "unit": "px" }, "$description": "Provisional screen-space reveal depth; physical production depth requires separate evidence." }
+  }
+}

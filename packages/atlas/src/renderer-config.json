@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "renderer": {
+    "algorithm": {
+      "name": "bizarre-atlas-single-mass",
+      "version": "1.0.0"
+    },
+    "model": {
+      "name": "single-mass-lensing-field",
+      "version": "1.0.0"
+    },
+    "parameters": {
+      "apertureRadius": {
+        "x": 0.103
+      },
+      "asymmetry": 0.22,
+      "extent": 1.1,
+      "fieldStrength": {
+        "near": 0.18,
+        "far": 0.1
+      },
+      "lineCounts": {
+        "field": 27,
+        "large": 53,
+        "medium": 19,
+        "micro": 0,
+        "small": 7
+      },
+      "occlusionExpansion": 1.02,
+      "sampleCount": 140,
+      "spacing": 0.0305,
+      "spacingByOpticalSize": {
+        "large": 0.01525
+      },
+      "tiltScale": 0.003
+    },
+    "supported": {
+      "appearances": [
+        "dark",
+        "light"
+      ],
+      "fieldOpticalSizes": [
+        "field",
+        "large",
+        "medium",
+        "micro",
+        "small"
+      ],
+      "fieldRepresentations": [
+        "bands",
+        "contour",
+        "dots",
+        "hatch",
+        "spectral"
+      ],
+      "fieldTrajectoryStates": [
+        "active",
+        "captured",
+        "ready"
+      ],
+      "opticalSizes": [
+        "construction",
+        "field",
+        "instrument",
+        "large",
+        "medium",
+        "micro",
+        "sequence",
+        "small"
+      ],
+      "productionProfiles": [
+        "screen"
+      ],
+      "representations": [
+        "aperture-construction",
+        "bands",
+        "capture-sequence",
+        "contour",
+        "dots",
+        "hatch",
+        "instrument-dial",
+        "spectral"
+      ],
+      "trajectoryStates": [
+        "active",
+        "capture-sequence",
+        "captured",
+        "not-applicable",
+        "ready"
+      ]
+    }
+  }
+}

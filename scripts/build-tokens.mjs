@@ -53,6 +53,9 @@ function cssValue(row) {
     case 'number':
       if (Number.isFinite(value)) return String(value);
       break;
+    case 'boolean':
+      if (typeof value === 'boolean') return String(value);
+      break;
     default:
       break;
   }

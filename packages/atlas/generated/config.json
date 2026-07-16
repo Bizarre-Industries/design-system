@@ -1,0 +1,295 @@
+{
+  "aperture": {
+    "constructionRatio": 1.618,
+    "offset": 0.07,
+    "revealDepth": 4,
+    "tangentContinuity": true
+  },
+  "capture": {
+    "duration": {
+      "ceremonial": 1200,
+      "fastMax": 600,
+      "fastMin": 300,
+      "installation": 2400,
+      "unit": "ms"
+    },
+    "phases": {
+      "approach": {
+        "end": 0.32,
+        "start": 0
+      },
+      "compress": {
+        "end": 0.55,
+        "start": 0.32
+      },
+      "eclipse": {
+        "end": 0.72,
+        "start": 0.55
+      },
+      "lock": {
+        "end": 0.88,
+        "start": 0.72
+      },
+      "release": {
+        "end": 1,
+        "start": 0.88
+      }
+    },
+    "reducedMotionState": "captured"
+  },
+  "field": {
+    "compressionExponent": 1.72,
+    "lineWidths": {
+      "band": 14,
+      "major": 4,
+      "minor": 1,
+      "unit": "px"
+    },
+    "majorInterval": 5,
+    "mass": {
+      "x": 0.69,
+      "y": 0.53
+    },
+    "parameters": {
+      "apertureRadius": {
+        "x": 0.103
+      },
+      "asymmetry": 0.22,
+      "extent": 1.1,
+      "fieldStrength": {
+        "far": 0.1,
+        "near": 0.18
+      },
+      "lineCounts": {
+        "field": 27,
+        "large": 53,
+        "medium": 19,
+        "micro": 0,
+        "small": 7
+      },
+      "occlusionExpansion": 1.02,
+      "sampleCount": 140,
+      "spacing": 0.0305,
+      "spacingByOpticalSize": {
+        "large": 0.01525
+      },
+      "tiltScale": 0.003
+    }
+  },
+  "orientationFamily": [
+    -38,
+    -18,
+    18,
+    38
+  ],
+  "palette": {
+    "backgrounds": {
+      "dark": "#0E0E0E",
+      "light": "#F9F8F2"
+    },
+    "neutral": {
+      "darkMajor": "#B8B8B8",
+      "darkMinor": "#545454",
+      "lightMajor": "#545454",
+      "lightMinor": "#3D3D3D",
+      "paper": "#F9F8F2",
+      "void": "#0E0E0E"
+    },
+    "signal": "#C6FF24",
+    "spectrum": [
+      "#20274D",
+      "#3156A6",
+      "#4AA5AF",
+      "#5C887C",
+      "#D5A347",
+      "#C96C3E",
+      "#B64C63",
+      "#684F83"
+    ]
+  },
+  "policies": {
+    "production": {
+      "minimums": {
+        "aperturePrint": {
+          "evidence": "NOT VERIFIED",
+          "unit": "mm",
+          "value": 12
+        },
+        "apertureScreen": {
+          "evidence": "NOT VERIFIED",
+          "unit": "px",
+          "value": 48
+        },
+        "finePrintContour": {
+          "evidence": "NOT VERIFIED",
+          "unit": "mm",
+          "value": 0.18
+        },
+        "screenContour": {
+          "evidence": "NOT VERIFIED",
+          "highSalience": 2,
+          "unit": "px",
+          "value": 1
+        },
+        "vinylContour": {
+          "evidence": "NOT VERIFIED",
+          "unit": "mm",
+          "value": 1.5
+        }
+      },
+      "oneColor": {
+        "limeRequired": false,
+        "required": true
+      },
+      "schemaVersion": 1,
+      "unresolvedProfiles": [
+        "embroidery",
+        "engraving",
+        "foil",
+        "retroreflective",
+        "illuminated"
+      ]
+    },
+    "provenance": {
+      "classifications": [
+        "observed",
+        "synthetic",
+        "licensed",
+        "commissioned",
+        "generated",
+        "original"
+      ],
+      "exports": {
+        "requiredMetadata": [
+          "sourceType",
+          "sourceIdentifier",
+          "orientation",
+          "apertureVersion",
+          "trajectoryState",
+          "representation",
+          "productionProfile"
+        ]
+      },
+      "observed": {
+        "requireCatalogueOrDataset": true,
+        "requireCoordinates": true,
+        "requireEpoch": true,
+        "requireUnits": true
+      },
+      "release": {
+        "passRequiresEvidence": true,
+        "statuses": [
+          "PASS",
+          "FAIL",
+          "NOT VERIFIED"
+        ]
+      },
+      "schemaVersion": 1,
+      "synthetic": {
+        "allowSeedOnlyWhenConsumed": true,
+        "requireModel": true,
+        "requireParameterHash": true
+      }
+    }
+  },
+  "renderer": {
+    "algorithm": {
+      "name": "bizarre-atlas-single-mass",
+      "version": "1.0.0"
+    },
+    "model": {
+      "name": "single-mass-lensing-field",
+      "version": "1.0.0"
+    },
+    "supported": {
+      "appearances": [
+        "dark",
+        "light"
+      ],
+      "fieldOpticalSizes": [
+        "field",
+        "large",
+        "medium",
+        "micro",
+        "small"
+      ],
+      "fieldRepresentations": [
+        "bands",
+        "contour",
+        "dots",
+        "hatch",
+        "spectral"
+      ],
+      "fieldTrajectoryStates": [
+        "active",
+        "captured",
+        "ready"
+      ],
+      "opticalSizes": [
+        "construction",
+        "field",
+        "instrument",
+        "large",
+        "medium",
+        "micro",
+        "sequence",
+        "small"
+      ],
+      "productionProfiles": [
+        "screen"
+      ],
+      "representations": [
+        "aperture-construction",
+        "bands",
+        "capture-sequence",
+        "contour",
+        "dots",
+        "hatch",
+        "instrument-dial",
+        "spectral"
+      ],
+      "trajectoryStates": [
+        "active",
+        "capture-sequence",
+        "captured",
+        "not-applicable",
+        "ready"
+      ]
+    }
+  },
+  "sourceDocuments": {
+    "atlas": {
+      "path": "tokens/source/atlas.tokens.json",
+      "sha256": "f9ea6d70b46763a19b18d409b8009fea3b4702ce2e85db4fa7f75a4e424303be"
+    },
+    "capture": {
+      "path": "tokens/source/capture.tokens.json",
+      "sha256": "9aa9800b02cef2a5aece083794bb694a5481c994782735be0c1334c116ae89ff"
+    },
+    "material": {
+      "path": "tokens/source/material.tokens.json",
+      "sha256": "d9187741a039bb86cae5a7f25125cc53d16be113eb123c0e53bd9264265fdb45"
+    },
+    "motion": {
+      "path": "tokens/source/motion.tokens.json",
+      "sha256": "d309baee4fc7f8a6d945814b57547bba6da10258caa48fef4778d736ec4d5e32"
+    },
+    "palette": {
+      "path": "tokens/source/palette.tokens.json",
+      "sha256": "6a19e3a3fb43a93dc01905606c3005848cc77da00ae12c53f7818b226bf56a50"
+    },
+    "productionPolicy": {
+      "path": "policies/production.json",
+      "sha256": "3b46d4912cb34cb657832cb53e96f0d61ad34b15c515bfa89e9b37e487442315"
+    },
+    "provenancePolicy": {
+      "path": "policies/provenance.json",
+      "sha256": "aba4b407ef8022cd91860c0b2a2599c4998c78b68b5ece86a69564082efe35c9"
+    },
+    "rendererConfig": {
+      "path": "packages/atlas/src/renderer-config.json",
+      "sha256": "01410a36941de6e7e5db88d414dd8a5e30e39c7c57a010b56c9761acafe79951"
+    }
+  },
+  "trajectoryCount": 1
+}

@@ -1,5 +1,11 @@
 # Bizarre Industries Identity Refinement Design
 
+> **Historical record.** This specification documents the 2026-07-12 identity
+> refinement milestone. Current single-identity and Astronomical Atlas work is
+> governed by
+> [`2026-07-15-bizarre-masterbrand-library-architecture.md`](2026-07-15-bizarre-masterbrand-library-architecture.md),
+> the active plan, and [`docs/agent-handoff.md`](../../agent-handoff.md).
+
 **Date:** 2026-07-12
 **Status:** Approved for planning
 **Scope:** Normalize the supplied identity, logo, fonts, token draft, and proof sheet into the canonical design-system repository.
@@ -50,14 +56,11 @@ Every governed logo entry records:
 
 The contract rejects missing files, path traversal, symlinks, hash drift, unexpected media types, unapproved publishable variants, and derivatives that do not name a master.
 
-## 3. Brand identity and architecture
+## 3. Brand identity and integration
 
-The machine-readable identity contract will represent the supplied brand structure:
+The machine-readable identity contract represents one public identity: Bizarre Industries. Subbrands, child brands, endorsed brands, derivative Bizarre identities, and product-specific Bizarre identities are excluded.
 
-- Bizarre Industries: top-level movement/foundation identity;
-- Bizarre Labs: commercial arm;
-- Bizarre Foundation: governing nonprofit entity;
-- Helling: first-class product under Labs.
+Products preserve their existing component systems and platform conventions. Bizarre contributes a restrained recognition layer without replacing host behavior, accessibility, navigation, controls, typography defaults, density, or interaction grammar.
 
 The contract also records the official mark name, permanent slogan, sole accent, typography roles, and layout modes. Values already described in the supplied files are adopted unless they conflict with an explicit owner decision or an accessibility requirement.
 
@@ -197,7 +200,7 @@ The following require separate creative approval and are not silently invented h
 
 - simplified sub-48 px mark;
 - mono mark variants and formal lockups;
-- custom Helling mark;
+- product-specific Bizarre identities;
 - Arabic display pairing and translated brand voice;
 - poster, merchandise, livery, packaging, and hardware production templates;
-- platform component libraries layered over SwiftUI, Material, web, desktop, and embedded frameworks.
+- platform integration layers that preserve SwiftUI, web, desktop, embedded, and other host-framework conventions.

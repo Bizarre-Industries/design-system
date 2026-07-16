@@ -1,0 +1,12 @@
+Use case: productivity-visual
+Asset type: Bizarre Industries master visual-direction board for later vector reconstruction in Affinity
+Input images: Image 1 is a style, hierarchy, palette, and systems-thinking reference only; do not edit or copy its individual slides.
+Primary request: create one exceptional 16:9 landscape brand-system concept board for Bizarre Industries “Signal Infrastructure,” expressing Swiss-working public infrastructure rather than superficial Swiss minimalism. The concept must feel immediately recognizable, infrastructural, industrial, scientific, Emirati, motorsport-capable, and beautiful.
+Subject: a coherent system built from a gravitational contour field, one asymmetric void/aperture, one Signal Lime active trajectory, a precision instrument dial, a calibration plate, a high-speed livery fragment, bilingual directional structure, and material swatches.
+Style/medium: extremely polished editorial identity study, vector-friendly geometric forms, technical product-design presentation, high-end industrial graphics; crisp alignment and functional hierarchy; no soft SaaS cards.
+Composition/framing: one dominant gravitational field composition plus a disciplined modular rail of 4–6 smaller applications; strong far/normal/close reading; generous but purposeful negative space; 16:9.
+Color palette: deep near-black, warm ivory, one fluorescent Signal Lime operational channel, graphite and aluminum neutrals, restrained spectral-film accents only where they describe field/data/material.
+Materials/textures: anodized aluminum, matte polymer, reflective safety film, screen print, enamel, fine microprint, sparse film grain.
+Text (verbatim): “BIZARRE INDUSTRIES”, “SIGNAL INFRASTRUCTURE”, “CATCH THE STARS”. Render each phrase at most once, exactly; no other prose.
+Constraints: do not invent or redesign a logo or mark; reserve the logo area for later placement of the exact governed Gravity Well geometry. Lime appears only as active signal/state. Show one underlying physical logic across every application. Make it clearly more distinctive and emotionally compelling than a generic brand-guideline slide.
+Avoid: generic Swiss-poster cosplay, red Swiss crosses, Bauhaus pastiche, generic sci-fi HUDs, neon cyberpunk, rainbow gradients, arbitrary blobs, decorative orbiting, luxury minimalism, rounded SaaS UI, random symbols, extra logos, watermarks.

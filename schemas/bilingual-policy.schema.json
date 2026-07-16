@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bizarre.industries/schemas/bilingual-policy.schema.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "status", "equalPriority", "opticalAreaTolerance", "scale", "fonts", "direction", "numerals", "release"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "status": { "const": "provisional" },
+    "equalPriority": { "const": true },
+    "opticalAreaTolerance": { "const": 0.12 },
+    "scale": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["arabicBody", "arabicDisplay"],
+      "properties": {
+        "arabicBody": { "const": 1.06 },
+        "arabicDisplay": { "const": 1.02 }
+      }
+    },
+    "fonts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["body", "ui", "industrial"],
+      "properties": {
+        "body": { "const": "Noto Sans Arabic" },
+        "ui": { "const": "Noto Sans Arabic UI" },
+        "industrial": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["family", "weight"],
+          "properties": {
+            "family": { "const": "Noto Sans Arabic Condensed" },
+            "weight": { "const": 800 }
+          }
+        }
+      }
+    },
+    "direction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text", "field"],
+      "properties": {
+        "text": { "const": "native" },
+        "field": { "const": "preserve-physics" }
+      }
+    },
+    "numerals": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sharedInstruments", "arabicNative"],
+      "properties": {
+        "sharedInstruments": { "const": "tabular-latin" },
+        "arabicNative": { "const": "arabic-indic-after-testing" }
+      }
+    },
+    "release": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["publicReady", "requires"],
+      "properties": {
+        "publicReady": { "const": false },
+        "requires": { "const": ["governed-font-binaries", "native-arabic-review", "optical-parity-evidence"] }
+      }
+    }
+  }
+}

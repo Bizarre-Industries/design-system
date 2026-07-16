@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "classifications": ["observed", "synthetic", "licensed", "commissioned", "generated", "original"],
+  "synthetic": {
+    "requireModel": true,
+    "requireParameterHash": true,
+    "allowSeedOnlyWhenConsumed": true
+  },
+  "observed": {
+    "requireCatalogueOrDataset": true,
+    "requireCoordinates": true,
+    "requireEpoch": true,
+    "requireUnits": true
+  },
+  "exports": {
+    "requiredMetadata": [
+      "sourceType",
+      "sourceIdentifier",
+      "orientation",
+      "apertureVersion",
+      "trajectoryState",
+      "representation",
+      "productionProfile"
+    ]
+  },
+  "release": {
+    "statuses": ["PASS", "FAIL", "NOT VERIFIED"],
+    "passRequiresEvidence": true
+  }
+}

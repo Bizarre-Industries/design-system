@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "observationId": "bizarre-v1-source-drift-observation-v2-2026-07-16",
+  "observedAt": "2026-07-16T23:27:04+04:00",
+  "policy": {
+    "historicalArtifactsImmutable": true,
+    "recordedHashesAreExecutionSnapshotClaims": true,
+    "rewriteRecordedHashesForbidden": true,
+    "currentSourceDriftBlocksPromotion": true
+  },
+  "currentSource": {
+    "path": "production/affinity/build-bizarre-masterbrand-library-v1-staged.js",
+    "sha256": "08f30161dee68d301fd645879c0adab3f5cbc118c4c17f5c4f9f7d0c2bc2db15",
+    "buildRevision": "affinity-masterbrand-v1.0.0-r16-continuous-lens-v2-targets",
+    "contentSpecVersion": "2.0.0"
+  },
+  "historicalArtifacts": [
+    {
+      "artifactPath": "governance/design-ledgers/figma/bizarre-native-exemplar-build-plan-v1.json",
+      "artifactType": "build-plan",
+      "sourcePath": "production/affinity/build-bizarre-masterbrand-library-v1-staged.js",
+      "recordedSha256": "d1d21956b35151d9012d3731721ebe477c4dd7a0a4ea9063e57aaba50f7521d9",
+      "disposition": "HISTORICAL_SOURCE_DRIFT_CONFIRMED_DO_NOT_PROMOTE"
+    },
+    {
+      "artifactPath": "governance/design-ledgers/figma/bizarre-atlas-v1-phase2-01.01-swiss-working-apply.json",
+      "artifactType": "application-receipt",
+      "sourcePath": "production/affinity/build-bizarre-masterbrand-library-v1-staged.js",
+      "recordedSha256": "43b1fe872cac570832e2d0ea941cee710c3a3c2ab416bcc59cd2acdb1593f651",
+      "disposition": "HISTORICAL_SOURCE_DRIFT_CONFIRMED_DO_NOT_PROMOTE"
+    },
+    {
+      "artifactPath": "governance/design-ledgers/figma/bizarre-atlas-v1-phase2-01.02-three-distance-apply.json",
+      "artifactType": "application-receipt",
+      "sourcePath": "production/affinity/build-bizarre-masterbrand-library-v1-staged.js",
+      "recordedSha256": "43b1fe872cac570832e2d0ea941cee710c3a3c2ab416bcc59cd2acdb1593f651",
+      "disposition": "HISTORICAL_SOURCE_DRIFT_CONFIRMED_DO_NOT_PROMOTE"
+    }
+  ],
+  "resolution": "Preserve every recorded v1 execution hash. Current v2 work must use the current source, a current v2 plan, and fresh application receipts; no v1 artifact may be promoted from this observation.",
+  "canonicalSha256": "14239d300cc8e2d11f67eea6e1ead491317ad4dfd56e610f6892746ae6560e43"
+}

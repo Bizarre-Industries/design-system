@@ -3,55 +3,161 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bizarre Industries — Identity Proof 001</title>
+  <title>Bizarre Industries — Identity Proof 002</title>
   <link rel="stylesheet" href="../../packages/tokens/generated/tokens.css">
   <link rel="stylesheet" href="../../packages/assets/generated/fonts/bizarre-fonts.css">
+  <link rel="stylesheet" href="../../packages/ui/generated/components.css">
+  <link rel="stylesheet" href="../../packages/ui/generated/motion.css">
+  <link rel="stylesheet" href="../../packages/ui/generated/rtl.css">
   <style>
-    * { box-sizing: border-box; }
-    body { margin: 0; background: var(--bzr-color-neutral-workshop); color: var(--bzr-color-neutral-paper); font-family: var(--bzr-font-family-body); }
-    main { width: min(92rem, 100%); margin: auto; padding: var(--bzr-space-12); }
-    .meta, .label { font-family: var(--bzr-font-family-mono); font-size: var(--bzr-font-size-xs); letter-spacing: var(--bzr-font-tracking-xwide); text-transform: uppercase; }
-    header { display: flex; justify-content: space-between; gap: var(--bzr-space-6); padding-bottom: var(--bzr-space-5); border-bottom: var(--bzr-border-1) solid var(--bzr-border-default); }
-    h1 { margin: var(--bzr-space-12) 0 var(--bzr-space-3); font-family: var(--bzr-font-family-stencil); font-size: var(--bzr-font-size-5xl); text-transform: uppercase; }
-    .intro { width: 100%; max-width: 45rem; overflow-wrap: anywhere; color: var(--bzr-content-muted); }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--bzr-space-10); margin-top: var(--bzr-space-12); }
-    figure { min-width: 0; margin: 0; }
-    figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--bzr-space-3); margin-bottom: var(--bzr-space-3); color: var(--bzr-content-muted); }
-    .poster { min-width: 0; min-height: 44rem; padding: var(--bzr-space-10); display: flex; flex-direction: column; border: var(--bzr-border-1) solid var(--bzr-border-default); box-shadow: var(--bzr-shadow-md); }
-    .field { justify-content: space-between; background: var(--bzr-color-accent-signal); color: var(--bzr-color-neutral-void); }
-    .panel { background: var(--bzr-color-neutral-void); }
-    .mark { width: 8rem; height: 8rem; display: block; }
-    .slogan { min-width: 0; margin: auto 0 0; padding-top: var(--bzr-space-20); font-family: var(--bzr-font-family-display); font-size: clamp(3rem, 7vw, 6.5rem); font-weight: var(--bzr-font-weight-black); line-height: .9; letter-spacing: var(--bzr-font-tracking-tight); }
-    .panel h2 { min-width: 0; margin: var(--bzr-space-12) 0 var(--bzr-space-6); overflow-wrap: break-word; font-family: var(--bzr-font-family-stencil); font-size: var(--bzr-font-size-5xl); text-transform: uppercase; }
-    .spec { display: grid; grid-template-columns: 1fr 1fr; gap: var(--bzr-space-1); border-top: var(--bzr-border-3) solid var(--bzr-color-accent-signal); }
-    .spec div { padding: var(--bzr-space-4); background: var(--bzr-surface-card); }
-    footer { margin-top: var(--bzr-space-12); padding-top: var(--bzr-space-5); border-top: var(--bzr-border-1) solid var(--bzr-border-default); color: var(--bzr-content-muted); }
-    @media (max-width: 48rem) { main { padding: var(--bzr-space-5); } header { flex-direction: column; } h1 { font-size: var(--bzr-font-size-2xl); } .intro { max-width: 100%; font-size: var(--bzr-font-size-sm); } .grid { grid-template-columns: minmax(0, 1fr); } figcaption { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: end; font-size: .5rem; } figcaption span { min-width: 0; } figcaption span:last-child { text-align: right; } .poster { min-height: 36rem; padding: var(--bzr-space-6); } .slogan { font-size: clamp(2.5rem, 15vw, 3.6rem); } .panel h2 { max-width: 100%; font-size: var(--bzr-font-size-xl); } .spec { grid-template-columns: minmax(0, 1fr); } }
+    body { margin: 0; background: var(--bzr-surface-canvas); color: var(--bzr-content-primary); }
+    figcaption { display: flex; flex-wrap: wrap; }
+    .panel h2 { overflow-wrap: break-word; }
   </style>
 </head>
-<body>
-  <main>
-    <header class="meta"><span>Identity / Proof / 001</span><span>Offline / Governed</span></header>
-    <h1>Bizarre Industries</h1>
-    <p class="intro">Two layout vocabularies, one governed identity. Values and type are loaded from the generated packages; marks are approved package assets.</p>
-    <section class="grid" aria-label="Identity proof posters">
-      <figure>
-        <figcaption class="label"><span>Display Field</span><span>MARK · PRIMARY</span></figcaption>
-        <article class="poster field">
-          <img class="mark" src="../../packages/assets/generated/logo/mark-primary.svg" alt="Bizarre Industries gravity-well mark, primary">
-          <div class="slogan">CATCH<br>THE STARS</div>
+<body data-bzr-ui>
+  <main class="bzr-proof-shell">
+    <header class="bzr-proof-masthead">
+      <div data-bzr-component="calibration-label" data-state="ready">
+        <span>Identity / Proof / 002</span>
+        <span>Offline / Governed</span>
+      </div>
+      <h1 class="bzr-proof-title">Bizarre Industries</h1>
+      <p class="bzr-proof-intro"><strong>CATCH THE STARS.</strong> Make the distant tangible through precise infrastructure, a fixed absence, and one unmistakable signal.</p>
+      <div class="bzr-control-row">
+        <div class="bzr-control">
+          <label for="theme-control">Theme</label>
+          <select id="theme-control" data-bzr-component="theme-control">
+            <option value="void">Void</option>
+            <option value="paper">Paper</option>
+            <option value="void-hicontrast">Void high contrast</option>
+            <option value="workshop">Workshop</option>
+            <option value="bone">Bone</option>
+          </select>
+        </div>
+        <div class="bzr-control">
+          <label for="direction-control">Bilingual reading order</label>
+          <select id="direction-control" data-bzr-component="direction-control">
+            <option value="native">Native samples</option>
+            <option value="ltr">Left to right</option>
+            <option value="rtl">Right to left</option>
+          </select>
+        </div>
+      </div>
+    </header>
+
+    <section class="bzr-proof-section" aria-labelledby="precision-heading">
+      <h2 id="precision-heading">Precision Panel</h2>
+      <div class="bzr-proof-grid">
+        <article class="bzr-panel panel" data-bzr-layout="precision-panel">
+          <header data-bzr-component="calibration-label" data-state="aligned">
+            <span>Atlas / Contours / MARK · INVERSE</span>
+            <span>PROVISIONAL v1 / NONPUBLISHABLE</span>
+          </header>
+          <img class="bzr-mark" src="../../packages/assets/generated/logo/mark-inverse.svg" alt="Bizarre Industries Gravity Well mark, inverse">
+          <figure data-bzr-component="atlas-panel">
+            <img id="atlas-field" src="../../packages/atlas/generated/atlas-contours-dark.svg" alt="Synthetic single-mass Astronomical Atlas contour field with one Signal trajectory">
+            <figcaption><span>Bend → Absence → Signal</span><span>Field / Normalized coordinates</span></figcaption>
+          </figure>
+          <dl class="bzr-meta-grid">
+            <div><dt>Authority</dt><dd>Governed provisional / NOT VERIFIED</dd></div>
+            <div><dt>Atlas ID</dt><dd data-bzr-provenance-field="configurationHash">Reading governed asset</dd></div>
+            <div><dt>Source</dt><dd data-bzr-provenance-field="source">Reading governed asset</dd></div>
+            <div><dt>Model</dt><dd data-bzr-provenance-field="model">Reading governed asset</dd></div>
+            <div><dt>Renderer version</dt><dd data-bzr-provenance-field="algorithm">Reading governed asset</dd></div>
+            <div><dt>State</dt><dd data-bzr-provenance-field="trajectoryState">Reading governed asset</dd></div>
+            <div><dt>Production</dt><dd data-bzr-provenance-field="productionProfile">Reading governed asset</dd></div>
+          </dl>
+          <output id="metadata-status" data-bzr-component="status-indicator" data-state="idle" role="status" aria-live="polite">Governed provisional Atlas metadata is loading.</output>
         </article>
-      </figure>
-      <figure>
-        <figcaption class="label"><span>Precision Panel</span><span>MARK · INVERSE</span></figcaption>
-        <article class="poster panel">
-          <img class="mark" src="../../packages/assets/generated/logo/mark-inverse.svg" alt="Bizarre Industries gravity-well mark, inverse">
-          <h2>Built for the already-wired</h2>
-          <div class="spec meta"><div>Package<br>@bizarre/tokens</div><div>Package<br>@bizarre/assets</div><div>Token manifest<br>schema v1</div><div>Asset manifest<br>schema v1</div></div>
+
+        <article id="capture-module" class="bzr-panel" data-bzr-capture data-state="idle" aria-labelledby="capture-heading">
+          <header data-bzr-component="calibration-label" data-state="ready">
+            <span>Capture / Ceremony</span>
+            <span>System / Ready</span>
+          </header>
+          <h2 id="capture-heading">Catch the stars</h2>
+          <p>Run the governed five-phase sequence. Native button behavior owns keyboard activation; Bizarre styling only expresses state.</p>
+          <figure data-bzr-component="atlas-panel">
+            <object id="capture-visual" type="image/svg+xml" data="../../packages/atlas/generated/capture-sequence.svg" aria-labelledby="capture-visual-caption">
+              <img src="../../packages/atlas/generated/capture-sequence.svg" alt="Governed five-phase Capture sequence">
+            </object>
+            <figcaption id="capture-visual-caption"><span>Approach → Compress → Eclipse → Lock → Release</span><span>Motion / Governed phases</span></figcaption>
+          </figure>
+          <ol class="bzr-phase-list">
+            <li data-bzr-capture-phase="approach">Approach</li>
+            <li data-bzr-capture-phase="compress">Compress</li>
+            <li data-bzr-capture-phase="eclipse">Eclipse</li>
+            <li data-bzr-capture-phase="lock">Lock</li>
+            <li data-bzr-capture-phase="release">Release</li>
+          </ol>
+          <div class="bzr-action-row">
+            <button id="capture-action" type="button" data-bzr-component="signal-action" data-variant="primary" aria-pressed="false">Capture</button>
+            <output id="capture-status" data-bzr-component="status-indicator" data-state="ready" role="status" aria-live="polite">System ready.</output>
+          </div>
         </article>
-      </figure>
+      </div>
     </section>
-    <footer class="meta">Canonical resources / package-relative / no network required</footer>
+
+    <section class="bzr-proof-section" aria-labelledby="controls-heading">
+      <h2 id="controls-heading">Native control infrastructure</h2>
+      <div class="bzr-proof-grid">
+        <fieldset data-bzr-component="instrument-dial">
+          <legend>Field compression</legend>
+          <label for="compression-dial">Compression exponent</label>
+          <input id="compression-dial" type="range" min="100" max="220" value="172" step="1">
+          <output id="compression-value" for="compression-dial">1.72</output>
+        </fieldset>
+        <article class="bzr-panel" aria-labelledby="states-heading">
+          <h2 id="states-heading">Action states</h2>
+          <div class="bzr-action-row">
+            <button type="button" data-bzr-component="signal-action" data-variant="primary">Ready</button>
+            <button type="button" data-bzr-component="signal-action" data-variant="quiet" aria-pressed="true">Selected</button>
+            <button type="button" data-bzr-component="signal-action" data-variant="primary" aria-busy="true" disabled>Synchronizing</button>
+            <button type="button" data-bzr-component="signal-action" data-variant="quiet" disabled>Disabled</button>
+            <button type="button" data-bzr-component="signal-action" data-state="success">Captured</button>
+            <button type="button" data-bzr-component="signal-action" data-state="error">Fault</button>
+          </div>
+          <div class="bzr-action-row">
+            <output data-bzr-component="status-indicator" data-state="active" role="status" aria-live="polite">Field active</output>
+            <output data-bzr-component="status-indicator" data-state="captured" role="status" aria-live="polite">Capture held</output>
+            <output data-bzr-component="status-indicator" data-state="fault" role="status" aria-live="polite">Calibration fault</output>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="bzr-proof-section" aria-labelledby="bilingual-heading">
+      <h2 id="bilingual-heading">Equal-priority bilingual data</h2>
+      <div id="bilingual-panel" data-bzr-component="bilingual-data-panel">
+        <section lang="en" dir="ltr" aria-labelledby="english-data-heading">
+          <h3 id="english-data-heading">Field calibration</h3>
+          <p>Single-mass synthetic field. Orientation 18°. One active Signal trajectory.</p>
+          <p><bdi data-bzr-coordinate-space="physical" dir="ltr">MASS X 0.69 · MASS Y 0.53</bdi></p>
+        </section>
+        <section lang="ar" dir="rtl" aria-labelledby="arabic-data-heading">
+          <h3 id="arabic-data-heading">معايرة المجال</h3>
+          <p>مجال اصطناعي بكتلة واحدة. الاتجاه 18°. مسار إشارة نشط واحد.</p>
+          <p><bdi data-bzr-coordinate-space="physical" dir="ltr">MASS X 0.69 · MASS Y 0.53</bdi></p>
+        </section>
+      </div>
+      <article data-bzr-component="physical-label" aria-labelledby="physical-label-heading">
+        <h3 id="physical-label-heading">Physical label / Workshop state</h3>
+        <p>Do not mirror the calibrated coordinate field: <bdi data-bzr-coordinate-space="physical" dir="ltr">X 0.69 / Y 0.53 / ORIENTATION 18°</bdi></p>
+      </article>
+    </section>
+
+    <section class="bzr-proof-section" aria-labelledby="display-heading">
+      <h2 id="display-heading">Display Field</h2>
+      <article class="bzr-panel bzr-display-field" data-bzr-layout="display-field" data-state="active">
+        <img class="bzr-mark" src="../../packages/assets/generated/logo/mark-primary.svg" alt="Bizarre Industries Gravity Well mark">
+        <p class="bzr-catchline">Catch the stars</p>
+        <p>MARK · PRIMARY</p>
+      </article>
+    </section>
+
+    <footer class="bzr-proof-footer">Canonical resources / @bizarre/tokens / @bizarre/assets / package-relative / five themes / native controls / reduced motion completes captured</footer>
   </main>
+  <script src="./proof.js" defer></script>
 </body>
 </html>

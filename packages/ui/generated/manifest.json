@@ -1,0 +1,18 @@
+{
+  "files": {
+    "generated/components.css": {
+      "sha256": "f11d327168497694429aa7e506f1cc6fc0554e7f13b9876d6158d9c2a6316a46"
+    },
+    "generated/contract.json": {
+      "sha256": "f1f8ab057f112ef7417638d62fa7f46247d9dc9f9bc68ae1eb896f5ee14bd7c6"
+    },
+    "generated/motion.css": {
+      "sha256": "ba587e3e1d1e53fc75c10f0648bb7cb5336bdd8356c006253f104ad5ef21e3d2"
+    },
+    "generated/rtl.css": {
+      "sha256": "7c27f5fd0f76fb36ec19406536c033474b9e1a95a81874a32dd4b16c03c326b0"
+    }
+  },
+  "package": "@bizarre/ui",
+  "schemaVersion": 2
+}

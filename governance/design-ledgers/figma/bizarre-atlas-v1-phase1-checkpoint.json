@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "checkpointVersion": "1.0.0-phase1-pre-foundations",
+  "title": "Bizarre Industries Figma Phase 1 Reversible Checkpoint",
+  "capturedAt": "2026-07-16T13:13:56.900Z",
+  "figmaFileKey": "hGgrP9G0tEam8mpk5u3rHg",
+  "approvalRef": "owner-approve-and-proceed/2026-07-16",
+  "sourceCommit": "005d324b470128c54f540a92fd2cd17a71a959b6",
+  "capture": {
+    "tool": "official Figma MCP / use_figma",
+    "mode": "read-only-live-snapshot",
+    "canonicalFNV1a32": "c3510ed8",
+    "canonicalSerializedLength": 50935,
+    "pageMapFNV1a32": "dd546783",
+    "pageMapSerializedLength": 9751
+  },
+  "liveTotals": {
+    "topLevelPages": 117,
+    "permanentPages": 104,
+    "populatedPermanentPages": 66,
+    "emptyPermanentPages": 38,
+    "variableCollections": 16,
+    "variables": 392,
+    "textStyles": 18,
+    "effectStyles": 4,
+    "paintStyles": 0,
+    "gridStyles": 0
+  },
+  "canonicalFoundations": {
+    "collections": 9,
+    "variables": 173,
+    "modeNames": [
+      "void",
+      "paper",
+      "void-hicontrast",
+      "workshop",
+      "bone"
+    ],
+    "status": "APPLIED_AND_VERIFIED",
+    "booleanScopeException": "Atlas/aperture/tangent-continuity remains ALL_SCOPES because Figma rejects scopes on BOOLEAN variables."
+  },
+  "legacyFoundations": {
+    "collections": 7,
+    "variables": 219,
+    "retained": true,
+    "reason": "Legacy bindings remain in use and destructive cleanup is not authorized before migration and QA."
+  },
+  "localComponentSets": [
+    {
+      "name": "Signal Action",
+      "nodeId": "30:281",
+      "variantCount": 16
+    },
+    {
+      "name": "Status Indicator",
+      "nodeId": "34:185",
+      "variantCount": 7
+    },
+    {
+      "name": "11.05 / Hardware calibration label",
+      "nodeId": "132:3",
+      "variantCount": 10
+    }
+  ],
+  "emptyPermanentPages": [
+    { "subjectId": "09.00", "pageId": "47:67", "name": "09.00 · Components Overview" },
+    { "subjectId": "09.01", "pageId": "47:68", "name": "09.01 · SDS / Host-Infrastructure Boundary" },
+    { "subjectId": "09.02", "pageId": "47:69", "name": "09.02 · Shared State, Target, Focus & RTL Contract" },
+    { "subjectId": "09.03", "pageId": "47:70", "name": "09.03 · Signal Action" },
+    { "subjectId": "09.04", "pageId": "47:71", "name": "09.04 · Status Indicator" },
+    { "subjectId": "09.05", "pageId": "47:72", "name": "09.05 · Atlas Panel" },
+    { "subjectId": "09.06", "pageId": "47:73", "name": "09.06 · Calibration Label" },
+    { "subjectId": "09.07", "pageId": "47:74", "name": "09.07 · Instrument Dial" },
+    { "subjectId": "09.08", "pageId": "47:75", "name": "09.08 · Bilingual Data Panel" },
+    { "subjectId": "09.09", "pageId": "47:76", "name": "09.09 · Physical Label" },
+    { "subjectId": "10.00", "pageId": "47:77", "name": "10.00 · Materials & Finishes Overview" },
+    { "subjectId": "10.01", "pageId": "47:78", "name": "10.01 · Matte and Gloss Void" },
+    { "subjectId": "10.02", "pageId": "47:79", "name": "10.02 · Aluminum and Brushed Aluminum" },
+    { "subjectId": "10.03", "pageId": "47:80", "name": "10.03 · Carbon, Bakelite and Composite" },
+    { "subjectId": "10.04", "pageId": "47:81", "name": "10.04 · Signal Spot Media" },
+    { "subjectId": "10.05", "pageId": "47:82", "name": "10.05 · Translucent, Ceramic and Optical Materials" },
+    { "subjectId": "10.06", "pageId": "47:83", "name": "10.06 · Foil, Emboss, Deboss, Screen and UV" },
+    { "subjectId": "10.07", "pageId": "47:84", "name": "10.07 · Assembly, Seams, Fasteners & Wear" },
+    { "subjectId": "11.00", "pageId": "47:85", "name": "11.00 · Applications & Mockups Overview" },
+    { "subjectId": "11.01", "pageId": "47:86", "name": "11.01 · Image Direction" },
+    { "subjectId": "11.02", "pageId": "47:87", "name": "11.02 · ImageGen → Affinity Reconstruction & Mockup Honesty" },
+    { "subjectId": "11.03", "pageId": "47:88", "name": "11.03 · Poster / Campaign" },
+    { "subjectId": "11.04", "pageId": "47:89", "name": "11.04 · Calibration Label / Sticker" },
+    { "subjectId": "11.06", "pageId": "47:91", "name": "11.06 · Pit Instrument / Dial" },
+    { "subjectId": "11.07", "pageId": "47:92", "name": "11.07 · Film / Physical Media" },
+    { "subjectId": "11.08", "pageId": "47:93", "name": "11.08 · Packaging / Technical Manual" },
+    { "subjectId": "11.09", "pageId": "47:94", "name": "11.09 · Vehicle Livery / Day" },
+    { "subjectId": "11.10", "pageId": "47:95", "name": "11.10 · Vehicle Livery / Night" },
+    { "subjectId": "11.11", "pageId": "47:96", "name": "11.11 · Product-Family Mockup" },
+    { "subjectId": "12.00", "pageId": "47:98", "name": "12.00 · Production & Release Overview" },
+    { "subjectId": "12.01", "pageId": "47:99", "name": "12.01 · Print, One-Color & Production Profiles" },
+    { "subjectId": "12.02", "pageId": "47:100", "name": "12.02 · Vinyl, Reflective & UV Registration" },
+    { "subjectId": "12.03", "pageId": "47:101", "name": "12.03 · Fabrication & Physical-Sample Requirements" },
+    { "subjectId": "12.04", "pageId": "47:102", "name": "12.04 · Digital, Vector & Raster Export Matrix" },
+    { "subjectId": "12.05", "pageId": "47:103", "name": "12.05 · Accessibility, RTL, Motion & Visual-QA Evidence" },
+    { "subjectId": "12.06", "pageId": "47:104", "name": "12.06 · Provenance, Approval & Change Control" },
+    { "subjectId": "12.07", "pageId": "47:105", "name": "12.07 · Full Brand Guide Assembly / Release / Handoff" },
+    { "subjectId": "99.00", "pageId": "47:106", "name": "99.00 · Noncanonical References & Legacy Index" }
+  ],
+  "legacyPages": [
+    { "pageId": "0:1", "name": "00 · Cover" },
+    { "pageId": "12:2", "name": "01 · Getting Started" },
+    { "pageId": "12:3", "name": "02 · Foundations" },
+    { "pageId": "12:4", "name": "02.1 · Color" },
+    { "pageId": "12:5", "name": "02.2 · Typography" },
+    { "pageId": "12:6", "name": "02.3 · Geometry" },
+    { "pageId": "12:7", "name": "02.4 · Motion + Atlas" },
+    { "pageId": "12:8", "name": "──────── COMPONENTS" },
+    { "pageId": "12:9", "name": "03 · Components" },
+    { "pageId": "30:2", "name": "03.1 · Signal Action" },
+    { "pageId": "34:2", "name": "03.2 · Status Indicator" },
+    { "pageId": "12:10", "name": "──────── UTILITIES" },
+    { "pageId": "12:11", "name": "04 · Utilities" }
+  ],
+  "versionHistoryCheckpoint": {
+    "requestedTitle": "Bizarre Industries / Before Phase 1 Foundations",
+    "connectorAttempted": true,
+    "connectorResult": "UNSUPPORTED_API",
+    "connectorDebugUuid": "26d44e80-c433-4269-bdec-aad22a40714b",
+    "connectorMutationOccurred": false,
+    "desktopAttempted": false,
+    "desktopReason": "Figma was focused on Make kit spYYwil8WifO5JfKgJoxTQ, not the canonical Design file. User focus was preserved and the desktop lease was then returned to the system-permissions task.",
+    "fallback": "This governed repository checkpoint plus retained legacy pages and collections is the tested reversible restore boundary."
+  },
+  "sourceArtifacts": [
+    {
+      "path": "governance/design-ledgers/figma/bizarre-atlas-v1.json",
+      "sha256": "0c4d0242506f6350ed8aad1b393bccda7ab25c57e88430184290bed659a5f6c4"
+    },
+    {
+      "path": "governance/design-ledgers/figma/bizarre-atlas-v1-canonical-variable-import.json",
+      "sha256": "3b19a6b2b33d55bedb65929083ecd1f4aa1bd4ef7f18992b581598b0494c2d93"
+    },
+    {
+      "path": "governance/design-ledgers/figma/bizarre-atlas-v1-canonical-variable-apply.json",
+      "sha256": "9880e9af8b96ecd3af21852cd9ae38c733af75de8a90da72d2002b29fdfc55e1"
+    },
+    {
+      "path": "governance/design-ledgers/figma/bizarre-104-page-population-plan-v1.json",
+      "sha256": "06ea079fb10d1a41b937e564ee748d0aab14e5b1744a39a8cc05f395d5c9c83f"
+    }
+  ],
+  "restoreBoundary": {
+    "destructiveCleanupAuthorized": false,
+    "legacyPagesRetained": true,
+    "legacyCollectionsRetained": true,
+    "originalComponentIdsRetained": true,
+    "checkpointStatus": "PASS_FOR_ADDITIVE_PHASE1_WORK"
+  }
+}

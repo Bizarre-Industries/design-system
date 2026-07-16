@@ -3,11 +3,12 @@
   "$id": "https://bizarre.industries/schemas/identity.schema.json",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schemaVersion", "companyName", "tagline", "accent", "mark", "typography", "layoutModes", "organization", "themeOrder"],
+  "required": ["schemaVersion", "companyName", "tagline", "taglineMeaning", "accent", "mark", "typography", "layoutModes", "identityModel", "productIntegration", "themeOrder"],
   "properties": {
-    "schemaVersion": { "const": 2 },
+    "schemaVersion": { "const": 4 },
     "companyName": { "const": "Bizarre Industries" },
     "tagline": { "const": "CATCH THE STARS" },
+    "taglineMeaning": { "const": "Make the distant tangible" },
     "accent": {
       "type": "object",
       "additionalProperties": false,
@@ -20,9 +21,12 @@
     "mark": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["name"],
+      "required": ["name", "geometry", "approvedFigureColors", "mixedFigureColorAllowed"],
       "properties": {
-        "name": { "const": "Gravity Well" }
+        "name": { "const": "Gravity Well" },
+        "geometry": { "const": "invariant" },
+        "approvedFigureColors": { "const": ["Signal Lime", "Black"] },
+        "mixedFigureColorAllowed": { "const": false }
       }
     },
     "typography": {
@@ -39,15 +43,72 @@
     "layoutModes": {
       "const": ["Precision Panel", "Display Field"]
     },
-    "organization": {
+    "identityModel": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["parent", "commercialArm", "foundation", "products"],
+      "required": ["model", "publicIdentity", "subbrandsAllowed", "childBrandsAllowed"],
       "properties": {
-        "parent": { "const": "Bizarre Industries" },
-        "commercialArm": { "const": "Bizarre Labs" },
-        "foundation": { "const": "Bizarre Foundation" },
-        "products": { "const": ["Helling"] }
+        "model": { "const": "single-identity" },
+        "publicIdentity": { "const": "Bizarre Industries" },
+        "subbrandsAllowed": { "const": false },
+        "childBrandsAllowed": { "const": false }
+      }
+    },
+    "productIntegration": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["principle", "auditBeforeStyling", "hostSystemFirst", "conflictResolution", "hostBehavior", "hostVisualLanguage", "bizarreExpression", "platformProfiles"],
+      "properties": {
+        "principle": { "const": "integrate-not-replace" },
+        "auditBeforeStyling": { "const": true },
+        "hostSystemFirst": { "const": true },
+        "conflictResolution": { "const": "host-convention-wins" },
+        "hostBehavior": { "const": "preserve" },
+        "hostVisualLanguage": { "const": "preserve" },
+        "bizarreExpression": { "const": "restrained-recognition-layer" },
+        "platformProfiles": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["web", "ios", "macos", "other"],
+          "properties": {
+            "web": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["implementationLayer", "implementationIsVisualLanguage", "preserve"],
+              "properties": {
+                "implementationLayer": { "const": "host-framework" },
+                "implementationIsVisualLanguage": { "const": false },
+                "preserve": { "const": ["existing-component-system", "semantic-html", "browser-conventions"] }
+              }
+            },
+            "ios": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["framework", "preserve"],
+              "properties": {
+                "framework": { "const": "SwiftUI" },
+                "preserve": { "const": ["system-controls", "navigation", "typography", "accessibility", "touch-input", "motion"] }
+              }
+            },
+            "macos": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["framework", "preserve"],
+              "properties": {
+                "framework": { "const": "SwiftUI" },
+                "preserve": { "const": ["system-controls", "windows", "menus", "typography", "accessibility", "keyboard-and-precision-input", "motion"] }
+              }
+            },
+            "other": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["entryCondition"],
+              "properties": {
+                "entryCondition": { "const": "audit-existing-infrastructure" }
+              }
+            }
+          }
+        }
       }
     },
     "themeOrder": {

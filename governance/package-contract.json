@@ -1,7 +1,12 @@
 {
   "schemaVersion": 1,
   "canonicalRepository": "Bizarre-Industries/design-system",
-  "packages": ["@bizarre/assets", "@bizarre/tokens"],
+  "packages": ["@bizarre/assets", "@bizarre/atlas", "@bizarre/open-design", "@bizarre/tokens", "@bizarre/ui"],
+  "publication": {
+    "publishable": ["@bizarre/assets", "@bizarre/tokens", "@bizarre/ui"],
+    "privateWorking": ["@bizarre/atlas", "@bizarre/open-design"],
+    "provisionalAssetManifest": "brand/provisional-assets.json"
+  },
   "requiredModes": ["void", "paper", "void-hicontrast"],
   "optionalModes": ["workshop", "bone"],
   "downstream": {

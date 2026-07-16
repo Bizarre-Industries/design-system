@@ -1,5 +1,12 @@
 # Bizarre Industries Identity Refinement Implementation Plan
 
+> **Historical record.** This dated plan is superseded as the active execution
+> source by
+> [`2026-07-15-astronomical-atlas-system.md`](2026-07-15-astronomical-atlas-system.md).
+> Current repository state is recorded in
+> [`docs/agent-handoff.md`](../../agent-handoff.md). Retain the task history below
+> as evidence; unchecked boxes are not current status.
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Normalize the supplied Bizarre Industries identity into governed, accessible, deterministic token and asset packages without changing the official gravity-well geometry.
@@ -64,9 +71,14 @@ assert.deepEqual(identity.typography, {
   display: 'Unbounded', stencil: 'Big Shoulders Stencil',
   body: 'Hanken Grotesk', mono: 'JetBrains Mono'
 });
-assert.deepEqual(identity.organization, {
-  parent: 'Bizarre Industries', commercialArm: 'Bizarre Labs',
-  foundation: 'Bizarre Foundation', products: ['Helling']
+assert.deepEqual(identity.identityModel, {
+  model: 'single-identity', publicIdentity: 'Bizarre Industries',
+  subbrandsAllowed: false, childBrandsAllowed: false
+});
+assert.deepEqual(identity.productIntegration, {
+  principle: 'integrate-not-replace', hostSystemFirst: true,
+  hostBehavior: 'preserve', hostVisualLanguage: 'preserve',
+  bizarreExpression: 'restrained-recognition-layer'
 });
 ```
 
@@ -495,7 +507,7 @@ git commit -s -m "docs: normalize brand guidance and proof"
 
 - [ ] **Step 1: Update completion documentation**
 
-Record exact canonical/derived boundaries, package names, verification commands, remaining deferred creative work, and the asset/token manifest hashes. Do not claim simplified, mono, Arabic, Helling, or platform component work is complete.
+Record exact canonical/derived boundaries, package names, verification commands, remaining deferred creative work, and the asset/token manifest hashes. Do not claim simplified, mono, Arabic, or platform-integration work is complete.
 
 - [ ] **Step 2: Run the complete verification matrix**
 

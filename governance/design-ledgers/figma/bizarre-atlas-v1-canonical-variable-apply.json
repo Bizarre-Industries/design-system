@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "receiptVersion": "1.0.0",
+  "title": "Bizarre Industries canonical Figma variable application receipt",
+  "capturedAt": "2026-07-15T18:35:31.646Z",
+  "figmaFileKey": "hGgrP9G0tEam8mpk5u3rHg",
+  "applicationMethod": "Official Figma MCP use_figma",
+  "status": "APPLIED_AND_VERIFIED",
+  "sourcePlan": {
+    "path": "governance/design-ledgers/figma/bizarre-atlas-v1-canonical-variable-import.json",
+    "planVersion": "1.2.0",
+    "fileSha256": "3b19a6b2b33d55bedb65929083ecd1f4aa1bd4ef7f18992b581598b0494c2d93",
+    "canonicalSha256": "388fb68ff9a60ef5d73721589f3dad068ec244376b461b3cf4039c59d4437799"
+  },
+  "mutationPolicy": {
+    "additive": true,
+    "legacyCollectionsPreserved": true,
+    "legacyVariablesPreserved": true,
+    "legacyPagesPreserved": true,
+    "deletionsPerformed": false
+  },
+  "totals": {
+    "localCollections": 16,
+    "localVariables": 392,
+    "canonicalCollections": 9,
+    "canonicalVariables": 173,
+    "legacyCollections": 7,
+    "legacyVariables": 219
+  },
+  "canonicalCollections": [
+    {
+      "name": "Palette",
+      "id": "VariableCollectionId:52:2",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "52:0"
+        }
+      ],
+      "variableCount": 34
+    },
+    {
+      "name": "Brand",
+      "id": "VariableCollectionId:52:3",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "52:1"
+        }
+      ],
+      "variableCount": 1
+    },
+    {
+      "name": "Typography",
+      "id": "VariableCollectionId:52:4",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "52:2"
+        }
+      ],
+      "variableCount": 37
+    },
+    {
+      "name": "Geometry",
+      "id": "VariableCollectionId:52:5",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "52:3"
+        }
+      ],
+      "variableCount": 29
+    },
+    {
+      "name": "Motion",
+      "id": "VariableCollectionId:52:6",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "52:4"
+        }
+      ],
+      "variableCount": 9
+    },
+    {
+      "name": "Atlas",
+      "id": "VariableCollectionId:52:7",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "52:5"
+        }
+      ],
+      "variableCount": 15
+    },
+    {
+      "name": "Material",
+      "id": "VariableCollectionId:52:8",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "52:6"
+        }
+      ],
+      "variableCount": 7
+    },
+    {
+      "name": "Capture",
+      "id": "VariableCollectionId:52:9",
+      "modes": [
+        {
+          "name": "Value",
+          "modeId": "52:7"
+        }
+      ],
+      "variableCount": 14
+    },
+    {
+      "name": "Modes",
+      "id": "VariableCollectionId:52:10",
+      "modes": [
+        {
+          "name": "void",
+          "modeId": "52:8"
+        },
+        {
+          "name": "paper",
+          "modeId": "52:9"
+        },
+        {
+          "name": "void-hicontrast",
+          "modeId": "52:10"
+        },
+        {
+          "name": "workshop",
+          "modeId": "52:11"
+        },
+        {
+          "name": "bone",
+          "modeId": "52:12"
+        }
+      ],
+      "variableCount": 27
+    }
+  ],
+  "legacyCollections": [
+    {
+      "name": "Bizarre / Color Primitives",
+      "id": "VariableCollectionId:1:2",
+      "modes": [
+        "Value"
+      ],
+      "variableCount": 41
+    },
+    {
+      "name": "Bizarre / Color Semantics",
+      "id": "VariableCollectionId:1:3",
+      "modes": [
+        "void",
+        "paper",
+        "void-hicontrast",
+        "workshop",
+        "bone"
+      ],
+      "variableCount": 27
+    },
+    {
+      "name": "Bizarre / Geometry",
+      "id": "VariableCollectionId:1:4",
+      "modes": [
+        "Value"
+      ],
+      "variableCount": 33
+    },
+    {
+      "name": "Bizarre / Typography",
+      "id": "VariableCollectionId:1:5",
+      "modes": [
+        "Value"
+      ],
+      "variableCount": 37
+    },
+    {
+      "name": "Bizarre / Motion",
+      "id": "VariableCollectionId:1:6",
+      "modes": [
+        "Value"
+      ],
+      "variableCount": 23
+    },
+    {
+      "name": "Bizarre / Atlas",
+      "id": "VariableCollectionId:1:7",
+      "modes": [
+        "Value"
+      ],
+      "variableCount": 11
+    },
+    {
+      "name": "Bizarre / Content",
+      "id": "VariableCollectionId:1:8",
+      "modes": [
+        "Value"
+      ],
+      "variableCount": 47
+    }
+  ],
+  "validation": {
+    "collectionOrder": [
+      "Palette",
+      "Brand",
+      "Typography",
+      "Geometry",
+      "Motion",
+      "Atlas",
+      "Material",
+      "Capture",
+      "Modes"
+    ],
+    "expectedVariableCounts": {
+      "Palette": 34,
+      "Brand": 1,
+      "Typography": 37,
+      "Geometry": 29,
+      "Motion": 9,
+      "Atlas": 15,
+      "Material": 7,
+      "Capture": 14,
+      "Modes": 27
+    },
+    "modesVariableCount": 27,
+    "modesPerVariable": 5,
+    "verifiedFields": [
+      "collection-name",
+      "mode-order",
+      "variable-name",
+      "resolved-type",
+      "description",
+      "hidden-from-publishing",
+      "scopes",
+      "WEB-code-syntax",
+      "literal-value",
+      "alias-target"
+    ],
+    "errors": [],
+    "requests": {
+      "Palette": "eec1ab38-0506-44f5-9032-05b6fb1eaea3",
+      "Brand": "31e77005-34df-44ea-81c5-ae240c951d5c",
+      "Typography": "4b97d7bf-5eaa-4352-bf09-c0a9c54f88f9",
+      "Geometry": "ccfd80f6-061e-49bf-b088-651231ac624f",
+      "Motion": "a20607b7-01e3-4602-bb00-671e9263c7f4",
+      "Atlas": "18f813b1-fe74-4701-a5de-9a4232576a4d",
+      "Material": "fbb7819b-1731-4fc9-9e43-5fea7b0f0cc9",
+      "Capture": "c9855ac9-45f5-4f51-9826-6b2065d21b3a",
+      "Modes": "455e49bb-4cb2-48ce-a40e-68fd0d216be0"
+    }
+  },
+  "platformExceptions": [
+    {
+      "variable": "Atlas::aperture/tangent-continuity",
+      "variableId": "VariableID:52:176",
+      "resolvedType": "BOOLEAN",
+      "value": true,
+      "conceptualScopes": [],
+      "liveApiReportedScopes": [
+        "ALL_SCOPES"
+      ],
+      "operation": "OMIT_SCOPE_ASSIGNMENT",
+      "reason": "Figma BOOLEAN variables reject scope assignment with: Invalid scope for this variable type."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+Use case: product-mockup
+Asset type: physical Bizarre Industries Signal Infrastructure application concept for later Affinity reconstruction
+Input images: Image 1 is the approved visual-direction reference; use its black/ivory/Signal Lime hierarchy, gravitational field language, instrument logic, and motorsport/industrial character without copying its slide layout.
+Primary request: create a photorealistic studio product-family mockup showing one compact pit-clock instrument, one machined calibration plate, one hard equipment case, and one aerodynamic black vehicle body panel or scale model carrying a coherent Bizarre Industries signal-livery system.
+Scene/backdrop: controlled industrial studio, warm neutral floor and near-black backdrop, products arranged with believable scale and assembly logic.
+Subject: functional objects with visible seams, fasteners, bezels, labels, powder-coated metal, anodized aluminum, matte polymer, and reflective film. The same gravitational bend, asymmetric absence, and one fluorescent Lime active trajectory must connect every object.
+Style/medium: premium but garage-accessible product photography; precision engineering, Swiss infrastructure discipline, Emirati confidence, motorsport utility; real manufacturing detail, not concept-art fantasy.
+Composition/framing: wide 16:9 three-quarter studio view with clear silhouettes; pit clock and calibration plate readable in foreground, equipment case and vehicle panel behind; leave some clean negative space.
+Lighting/mood: directional softbox with crisp edge highlights, deep controlled shadows, realistic reflections, slight film grain.
+Color palette: near-black, warm ivory, graphite, brushed aluminum, one fluorescent Signal Lime channel, restrained spectral-film reflection as a secondary material response.
+Text (verbatim): “BIZARRE INDUSTRIES”, “CATCH THE STARS”, “BZR / CAPTURE”, “07”. Render only where physically plausible and at most once each; no other prose.
+Constraints: no invented logo or mark; leave one clean reserved position on each primary object for later placement of the exact governed Gravity Well geometry in Affinity. Lime must indicate current/active/captured state, never ambient decoration. Objects must look manufacturable and mockup-ready.
+Avoid: supercar advertising cliché, luxury watch styling, generic sci-fi props, excessive neon, glowing screens everywhere, random decals, fake sponsor logos, soft rounded consumer electronics, floating products, impossible materials, watermarks.

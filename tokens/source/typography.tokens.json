@@ -12,15 +12,19 @@
       "display": { "$value": ["Unbounded", "Arial Black", "system-ui", "sans-serif"] },
       "stencil": { "$value": ["Big Shoulders Stencil", "Impact", "sans-serif"] },
       "body": { "$value": ["Hanken Grotesk", "Helvetica Neue", "system-ui", "sans-serif"] },
-      "mono": { "$value": ["JetBrains Mono", "Menlo", "Courier New", "monospace"] }
+      "mono": { "$value": ["JetBrains Mono", "Menlo", "Courier New", "monospace"] },
+      "arabic": { "$value": ["Noto Sans Arabic", "Arial", "sans-serif"], "$description": "Interim Arabic stack; public use remains gated by the bilingual policy." },
+      "arabic-ui": { "$value": ["Noto Sans Arabic UI", "Noto Sans Arabic", "Arial", "sans-serif"], "$description": "Interim Arabic UI stack; public use remains gated by the bilingual policy." },
+      "arabic-industrial": { "$value": ["Noto Sans Arabic Condensed", "Noto Sans Arabic", "Arial", "sans-serif"], "$description": "Interim Arabic industrial-heading stack at weight 800; public use remains gated by the bilingual policy." }
     },
     "weight": {
       "$type": "fontWeight",
       "light": { "$value": 300 }, "regular": { "$value": 400 }, "medium": { "$value": 500 },
-      "semibold": { "$value": 600 }, "bold": { "$value": 700 }, "black": { "$value": 900 }
+      "semibold": { "$value": 600 }, "bold": { "$value": 700 }, "extra-bold": { "$value": 800 }, "black": { "$value": 900 }
     },
     "size": {
       "$type": "dimension",
+      "micro": { "$value": { "value": 0.6875, "unit": "rem" } },
       "xs": { "$value": { "value": 0.75, "unit": "rem" } },
       "sm": { "$value": { "value": 0.875, "unit": "rem" } },
       "base": { "$value": { "value": 1, "unit": "rem" } },
@@ -35,15 +39,21 @@
     },
     "lineHeight": {
       "$type": "number",
-      "tight": { "$value": 0.92 }, "snug": { "$value": 1.15 }, "body": { "$value": 1.55 }, "loose": { "$value": 1.75 }
+      "tight": { "$value": 0.92 },
+      "flat": { "$value": 1 },
+      "snug": { "$value": 1.15 },
+      "code": { "$value": 1.5 },
+      "body": { "$value": 1.55 },
+      "loose": { "$value": 1.75 }
     },
     "tracking": {
-      "$type": "dimension",
-      "tight": { "$value": { "value": -0.04, "unit": "em" } },
-      "snug": { "$value": { "value": -0.02, "unit": "em" } },
-      "body": { "$value": { "value": 0, "unit": "em" } },
-      "wide": { "$value": { "value": 0.05, "unit": "em" } },
-      "xwide": { "$value": { "value": 0.16, "unit": "em" } }
+      "$type": "number",
+      "$description": "Unitless em ratios; CSS consumers multiply by 1em at use time.",
+      "tight": { "$value": -0.04 },
+      "snug": { "$value": -0.02 },
+      "body": { "$value": 0 },
+      "wide": { "$value": 0.05 },
+      "xwide": { "$value": 0.16 }
     }
   }
 }

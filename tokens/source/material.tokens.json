@@ -1,0 +1,12 @@
+{
+  "material": {
+    "$type": "color",
+    "matte-void": { "$value": "{color.neutral.void}" },
+    "gloss-void": { "$value": "{color.neutral.black}" },
+    "aluminum": { "$value": { "colorSpace": "srgb", "components": [0.7843137255, 0.8039215686, 0.8196078431], "alpha": 1, "hex": "#C8CDD1" } },
+    "brushed-aluminum": { "$value": { "colorSpace": "srgb", "components": [0.662745098, 0.6862745098, 0.7058823529], "alpha": 1, "hex": "#A9AFB4" } },
+    "carbon": { "$value": { "colorSpace": "srgb", "components": [0.0941176471, 0.1019607843, 0.1058823529], "alpha": 1, "hex": "#181A1B" } },
+    "bakelite": { "$value": { "colorSpace": "srgb", "components": [0.1647058824, 0.1294117647, 0.1019607843], "alpha": 1, "hex": "#2A211A" } },
+    "signal-spot": { "$value": "{color.accent.signal}" }
+  }
+}

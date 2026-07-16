@@ -1,0 +1,255 @@
+{
+  "authorityChecklistRef": "authority/DESIGN.md#release-checklist",
+  "checks": [
+    {
+      "evidence": {
+        "method": "sha256-match",
+        "ref": "authority/SOURCE.json#/sources/design/sha256",
+        "sha256": "4bbe2429bb13f85103d447b8bd589b643f3b8809bd4a83798958e5fe96c53e7f",
+        "type": "machine"
+      },
+      "id": "authority-integrity",
+      "label": "Imported Astronomical Atlas authority matches its approved source hash",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "method": "manifest-hash-verification",
+        "ref": "tokens/manifest.json#/files",
+        "sha256": "a2491493d15606db2eeefbd6fed9bc9fb4034f14463a3c3d7e10b588abed6b79",
+        "type": "machine"
+      },
+      "id": "token-package-integrity",
+      "label": "Bundled token outputs match the canonical token package manifest",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "method": "manifest-hash-verification",
+        "ref": "ui/manifest.json#/files",
+        "sha256": "ed651604d0962930aad1e9029a54f6c67f410073d78d6abd5a880593491f1fcb",
+        "type": "machine"
+      },
+      "id": "ui-package-integrity",
+      "label": "Bundled UI outputs match the canonical UI package manifest",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "method": "manifest-hash-verification",
+        "ref": "assets/manifest.json#/files",
+        "sha256": "1492d8697230808b22de8a50aab55245494dd9fff8b94d7229c8129362e3c28a",
+        "type": "machine"
+      },
+      "id": "approved-asset-integrity",
+      "label": "Every bundled asset is approved and matches its governed asset record",
+      "status": "PASS"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "gravity-well-integrity",
+      "label": "Gravity Well asset is approved and unmodified",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "signal-salience",
+      "label": "Signal Lime remains the highest-salience operational cue",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "spectrum-mapping",
+      "label": "Spectrum colors map from data or a documented synthetic field",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "aperture-geometry",
+      "label": "Continuous Lens Aperture matches the governed geometry",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "far-monochrome-recognition",
+      "label": "Recognition works in monochrome at far distance",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "singular-lime-trajectory",
+      "label": "Lime trajectory is singular",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "metadata-provenance",
+      "label": "Metadata is real or explicitly labeled synthetic",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "bilingual-optical-parity",
+      "label": "Arabic and English are optically equal",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "interaction-accessibility",
+      "label": "Focus, contrast, and reduced-motion states are verified",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "production-fine-lines",
+      "label": "Fine lines meet the production profile minimum",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "material-function",
+      "label": "Material effects reveal function or representation rather than decoration",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority-requirement"
+      },
+      "id": "credible-mockups",
+      "label": "Mockups use credible physical objects and production logic",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "policies/bilingual.json#/release",
+        "type": "policy"
+      },
+      "id": "public-bilingual-readiness",
+      "label": "Public English and Arabic optical parity and specialist review",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "release-gate"
+      },
+      "id": "manual-visual-review",
+      "label": "Rendered manual page-by-page visual comparison",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "authority/DESIGN.md#release-checklist",
+        "type": "authority"
+      },
+      "id": "pdf-print-certification",
+      "label": "PDF font embedding and page raster comparison",
+      "output": null,
+      "requires": [
+        "selected-fonts-embedded",
+        "page-raster-comparison-pass"
+      ],
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "policies/production.json#/minimums/finePrintContour",
+        "type": "policy"
+      },
+      "id": "fine-print-sample",
+      "label": "finePrintContour physical or calibrated display sample",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "policies/production.json#/minimums/vinylContour",
+        "type": "policy"
+      },
+      "id": "vinyl-sample",
+      "label": "vinylContour physical or calibrated display sample",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "policies/production.json#/minimums/screenContour",
+        "type": "policy"
+      },
+      "id": "screen-sample",
+      "label": "screenContour physical or calibrated display sample",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "policies/production.json#/minimums/aperturePrint",
+        "type": "policy"
+      },
+      "id": "aperture-print-sample",
+      "label": "aperturePrint physical or calibrated display sample",
+      "status": "NOT VERIFIED"
+    },
+    {
+      "evidence": {
+        "ref": "policies/production.json#/minimums/apertureScreen",
+        "type": "policy"
+      },
+      "id": "aperture-screen-sample",
+      "label": "apertureScreen physical or calibrated display sample",
+      "status": "NOT VERIFIED"
+    }
+  ],
+  "releaseStatus": "NOT VERIFIED",
+  "requiredGateIds": [
+    "gravity-well-integrity",
+    "signal-salience",
+    "spectrum-mapping",
+    "aperture-geometry",
+    "far-monochrome-recognition",
+    "singular-lime-trajectory",
+    "metadata-provenance",
+    "bilingual-optical-parity",
+    "interaction-accessibility",
+    "production-fine-lines",
+    "material-function",
+    "credible-mockups"
+  ],
+  "schemaVersion": 1,
+  "statuses": [
+    "PASS",
+    "FAIL",
+    "NOT VERIFIED"
+  ]
+}

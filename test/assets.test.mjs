@@ -23,15 +23,19 @@ async function fixture() {
     sha256: hash(await readFile(join(directory, path))),
     mediaType,
     approved: true,
+    approvalState: 'approved',
+    relationship: 'master',
+    sourceProvenance: path,
+    allowedUses: ['documentation'],
     ...extra,
   });
   const manifest = {
-    schemaVersion: 1,
+    schemaVersion: 2,
     assets: [
-      await entry('assets/mark.svg', 'image/svg+xml', { kind: 'logo', variant: 'primary', approvalState: 'approved', viewBox: '0 0 24 24', sourceProvenance: 'assets/source.svg', relationship: 'master', allowedColorRoles: ['signal', 'ash700'] }),
+      await entry('assets/mark.svg', 'image/svg+xml', { kind: 'logo', variant: 'primary', viewBox: '0 0 24 24', sourceProvenance: 'assets/source.svg', allowedColorRoles: ['signal', 'ash700'], allowedUses: ['identity-mark'] }),
       await entry('assets/OFL.txt', 'text/plain', { kind: 'license', family: 'Example' }),
-      await entry('assets/font.ttf', 'font/ttf', { kind: 'font', family: 'Example', style: 'normal', weightRange: [100, 900], license: 'assets/OFL.txt' }),
-      await entry('assets/font.woff2', 'font/woff2', { kind: 'font', family: 'Example', style: 'normal', weightRange: [100, 900], master: 'assets/font.ttf', license: 'assets/OFL.txt' }),
+      await entry('assets/font.ttf', 'font/ttf', { kind: 'font', family: 'Example', style: 'normal', weightRange: [100, 900], license: 'assets/OFL.txt', allowedUses: ['font-source-distribution'] }),
+      await entry('assets/font.woff2', 'font/woff2', { kind: 'font', family: 'Example', style: 'normal', weightRange: [100, 900], relationship: 'derivative', sourceProvenance: 'assets/font.ttf', allowedUses: ['font-embedding'], master: 'assets/font.ttf', license: 'assets/OFL.txt' }),
     ],
   };
   return { root: pathToFileURL(`${directory}/`), directory, manifest };
@@ -104,18 +108,18 @@ test('rejects derivatives without masters and unapproved publishable entries', a
   await assert.rejects(validateAssets(root, { ...manifest, assets: [{ ...manifest.assets[0], approved: false }] }), /unapproved/);
 });
 
-test('rejects master on a non-WOFF2 entry', async () => {
+test('rejects a master link on an entry classified as a master', async () => {
   const { root, manifest } = await fixture();
   const malformed = structuredClone(manifest);
   malformed.assets[0].master = 'assets/font.ttf';
-  await assert.rejects(validateAssets(root, malformed), /master is only allowed on font\/woff2 entries/);
+  await assert.rejects(validateAssets(root, malformed), /master relationship may not reference another master/);
 });
 
 test('rejects a WOFF2 entry without a master', async () => {
   const { root, manifest } = await fixture();
   const malformed = structuredClone(manifest);
   delete malformed.assets.find(({ mediaType }) => mediaType === 'font/woff2').master;
-  await assert.rejects(validateAssets(root, malformed), /font\/woff2 entry must reference a governed font\/ttf source/);
+  await assert.rejects(validateAssets(root, malformed), /derivative entry requires master/);
 });
 
 test('rejects a self-referencing WOFF2 master', async () => {
@@ -131,8 +135,9 @@ test('rejects cyclic font master references', async () => {
   const malformed = structuredClone(manifest);
   const source = malformed.assets.find(({ mediaType }) => mediaType === 'font/ttf');
   const derivative = malformed.assets.find(({ mediaType }) => mediaType === 'font/woff2');
+  source.relationship = 'derivative';
   source.master = derivative.path;
-  await assert.rejects(validateAssets(root, malformed), /master is only allowed on font\/woff2 entries|cyclic master/);
+  await assert.rejects(validateAssets(root, malformed), /cyclic master|font\/ttf entry must be a governed master|master relationship/);
 });
 
 test('rejects a WOFF2-to-WOFF2 master link', async () => {
@@ -188,5 +193,5 @@ test('repository asset manifest validates and matches its schema', async () => {
   const schema = JSON.parse(await readFile(new URL('../schemas/assets.schema.json', import.meta.url)));
   assert.equal(manifest.schemaVersion, schema.properties.schemaVersion.const);
   assert.equal(schema.additionalProperties, false);
-  assert.ok((await validateAssets(root, manifest)).length >= 20);
+  assert.ok((await validateAssets(root, manifest)).length >= 25);
 });

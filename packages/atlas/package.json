@@ -1,0 +1,19 @@
+{
+  "name": "@bizarre/atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "prepublishOnly": "node ../../scripts/reject-private-publish.mjs"
+  },
+  "files": ["src", "generated", "README.md"],
+  "exports": {
+    ".": "./src/render.mjs",
+    "./aperture": "./src/aperture.mjs",
+    "./config.json": "./generated/config.json",
+    "./provenance": "./src/provenance.mjs",
+    "./manifest.json": "./generated/manifest.json",
+    "./*.svg": "./generated/*.svg"
+  }
+}

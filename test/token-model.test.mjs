@@ -45,6 +45,79 @@ test('governs surface and content roles for every action state in every mode', a
       && background === `action.${state}.surface`
       && threshold === 4.5), `missing action.${state} contrast pair`);
   }
+  assert.ok(pairs.some(({ foreground, background, threshold }) =>
+    foreground === 'focus.ring' && background === 'surface.canvas' && threshold === 3), 'missing adaptive focus contrast pair');
+  assert.equal(model.modes.modes.paper.focus.ring.$value, '{color.accent.ink}');
+  assert.equal(model.modes.modes.bone.focus.ring.$value, '{color.accent.ink}');
+  assert.equal(model.modes.modes.void.focus.ring.$value, '{color.accent.signal}');
+});
+
+test('loads the canonical Astronomical Atlas extension values', async () => {
+  const model = await loadTokenModel(root);
+  assert.equal(model.atlas.$schema, undefined, 'token sources must not claim an HTML document as a JSON Schema');
+  assert.deepEqual(model.atlas.$extensions['industries.bizarre'].orientationFamily, [-38, -18, 18, 38]);
+  assert.equal(model.atlas.$extensions['industries.bizarre'].trajectoryCount, 1);
+  assert.deepEqual(model.atlas.$extensions['industries.bizarre'].recognitionGrammar, ['bend', 'absence', 'signal']);
+  assert.equal(model.atlas.atlas.mass.x.$value, 0.69);
+  assert.equal(model.atlas.atlas.mass.y.$value, 0.53);
+  assert.equal(model.atlas.atlas['compression-exponent'].$value, 1.72);
+  assert.equal(model.atlas.atlas['major-interval'].$value, 5);
+  assert.deepEqual(model.atlas.atlas.line.minor.$value, { value: 1, unit: 'px' });
+  assert.deepEqual(model.atlas.atlas.line.major.$value, { value: 4, unit: 'px' });
+  assert.deepEqual(model.atlas.atlas.line.band.$value, { value: 14, unit: 'px' });
+  assert.equal(model.atlas.atlas.orientation.a.$value, -38);
+  assert.equal(model.atlas.atlas.orientation.b.$value, -18);
+  assert.equal(model.atlas.atlas.orientation.c.$value, 18);
+  assert.equal(model.atlas.atlas.orientation.d.$value, 38);
+  assert.equal(model.atlas.aperture.ratio.$value, 1.618);
+  assert.equal(model.atlas.aperture['tangent-continuity'].$type, 'boolean');
+  assert.equal(model.atlas.aperture['tangent-continuity'].$value, true);
+  assert.match(model.atlas.aperture['tangent-continuity'].$description, /tangent-continuous/i);
+  assert.doesNotMatch(JSON.stringify(model.atlas.aperture), /(?:^|[.\s"-])notch(?:[.\s"-]|$)/iu);
+  assert.equal(model.atlas.aperture.offset.$value, 0.07);
+  assert.deepEqual(model.atlas.aperture['reveal-depth'].$value, { value: 4, unit: 'px' });
+});
+
+test('keeps Atlas spectrum and materials outside the brand accent namespace', async () => {
+  const model = await loadTokenModel(root);
+  assert.equal(model.material.$schema, undefined, 'token sources must not claim an HTML document as a JSON Schema');
+  assert.deepEqual(Object.keys(model.brand.brand.accent), ['signal']);
+  assert.deepEqual(Object.keys(model.palette.color.spectrum), [
+    'deep-indigo', 'electric-blue', 'ion-cyan', 'oxidized-teal',
+    'solar-gold', 'amber', 'crimson', 'violet-shadow'
+  ]);
+  assert.equal(model.material.material['signal-spot'].$value, '{color.accent.signal}');
+});
+
+test('defines continuous capture phases and real reduced-motion duration targets', async () => {
+  const model = await loadTokenModel(root);
+  assert.equal(model.capture.$schema, undefined, 'token sources must not claim an HTML document as a JSON Schema');
+  assert.equal(model.capture.$extensions['industries.bizarre'].reducedMotionState, 'captured');
+  assert.equal(model.capture.capture.duration['fast-min'].$value, '{motion.duration.mid}');
+  assert.equal(model.capture.capture.duration['fast-max'].$value, '{motion.duration.slow}');
+  assert.equal(model.capture.capture.duration.ceremonial.$value, '{motion.duration.epic}');
+  assert.deepEqual(model.capture.capture.duration.installation.$value, { value: 2400, unit: 'ms' });
+  const phases = ['approach', 'compress', 'eclipse', 'lock', 'release'];
+  let previousEnd = 0;
+  for (const phase of phases) {
+    const { start, end } = model.capture.capture.phase[phase];
+    assert.equal(start.$value, previousEnd, `${phase} must start at the previous phase end`);
+    assert.ok(end.$value > start.$value, `${phase} must have positive duration`);
+    previousEnd = end.$value;
+  }
+  assert.equal(previousEnd, 1);
+});
+
+test('rejects non-standard DTCG dimensions and durations', () => {
+  assert.throws(() => flattenTokens({ invalid: {
+    angle: { $type: 'dimension', $value: { value: 38, unit: 'deg' } }
+  } }), /finite px or rem/);
+  assert.throws(() => flattenTokens({ invalid: {
+    print: { $type: 'dimension', $value: { value: 0.18, unit: 'mm' } }
+  } }), /finite px or rem/);
+  assert.throws(() => flattenTokens({ invalid: {
+    time: { $type: 'duration', $value: { value: 1, unit: 'minute' } }
+  } }), /finite ms or s/);
 });
 
 test('rejects a mode missing a semantic role', async (t) => {

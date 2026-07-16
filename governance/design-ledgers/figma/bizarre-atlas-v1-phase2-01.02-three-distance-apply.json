@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "receiptVersion": "1.0.0-phase2-01.02",
+  "title": "Bizarre Industries Figma Phase 2 01.02 Three-Distance Apply Receipt",
+  "capturedAt": "2026-07-16T15:11:39Z",
+  "figmaFileKey": "hGgrP9G0tEam8mpk5u3rHg",
+  "applicationMethod": "Official Figma MCP use_figma and get_screenshot",
+  "approvalRef": "owner-approve-and-proceed/2026-07-16",
+  "promotionApprovalRef": null,
+  "status": "APPLIED_QA_CAPTURED_NOT_VERIFIED",
+  "subject": {
+    "subjectId": "01.02",
+    "subjectName": "Recognition Grammar / Three-Distance Test",
+    "pageId": "47:8",
+    "pageName": "01.02 · Recognition Grammar / Three-Distance Test",
+    "sourceRecipeId": "01.02/visual/v1",
+    "appliedRecipeId": "01.02/visual/r1",
+    "contentFingerprint": "038ff17ca9daab97cc8b4c038172c9f6b786b01bca072ef142151ba5c275b7e6",
+    "authorityStatus": "canonical",
+    "verificationStatus": "NOT VERIFIED",
+    "documentationPublicationStatus": "publishable under governance",
+    "embeddedExportStatus": "nonpublishable while governed-provisional sources are embedded",
+    "promotionStatus": "BLOCKED",
+    "usesProvisionalInputs": true,
+    "usesRejectedInputs": false
+  },
+  "sourceArtifacts": [
+    {
+      "path": "production/figma/phase2/build-01.02-three-distance-r1.js",
+      "sha256": "b50fa2bc974f5194b9462a34bb6c349c8fceff3c96bfdddfea74137c83afed0b"
+    },
+    {
+      "path": "production/affinity/bizarre-masterbrand-content-spec-v1.json",
+      "sha256": "196deedb902f3e833e2f68827350740e72a3e51c1783af8a73c081a7c1764834",
+      "canonicalSha256": "953e77c2232b89ef459156da0a9a6b6198994df9097c920f93b9da2282b10e77"
+    },
+    {
+      "path": "production/affinity/bizarre-masterbrand-subjects-v1.json",
+      "sha256": "c01485191832c624c02a25984b79ae796d676b4f9d3e8bbf4358fd524e73509b",
+      "canonicalSha256": "4c4500ea3c2f12cbfb100f129bd39e711ba1c6f5915242280808af42010448b1"
+    },
+    {
+      "path": "production/affinity/build-bizarre-masterbrand-library-v1-staged.js",
+      "sha256": "43b1fe872cac570832e2d0ea941cee710c3a3c2ab416bcc59cd2acdb1593f651"
+    },
+    {
+      "path": "packages/atlas/generated/config.json",
+      "sha256": "ad667c8a7fa4078b5b0f4341c5265128a9509306cf5927078b5d856fbd603292"
+    },
+    {
+      "path": "packages/atlas/generated/manifest.json",
+      "sha256": "ccd6f1d56c81a181b3b34ac177a15964826fad05057a51008c8a6759d73a0ddc"
+    },
+    {
+      "path": "packages/atlas/generated/calibrated-aperture.svg",
+      "sha256": "7d084fb71682e01deee4af72446c63d4f7f53ebe6ba1d9ad40a376b113856e6f",
+      "sourceId": "aperture"
+    },
+    {
+      "path": "packages/atlas/generated/atlas-contours-dark.svg",
+      "sha256": "b4694f25d640a0c4a0e849898eab392eaa3e2cafcbd4924e6082e184d229307c",
+      "sourceId": "atlasContoursDark"
+    },
+    {
+      "path": "packages/atlas/generated/atlas-contours-large.svg",
+      "sha256": "a9b98e58ebdbc8afb0c42a1d7946cf681a8a5fa96a29e94dcd13face5f647e97",
+      "sourceId": "atlasContoursLarge"
+    },
+    {
+      "path": "packages/atlas/generated/atlas-spectral-large.svg",
+      "sha256": "a0a32c822abe8b8511d0d66438d9778e7b5dd8c9c7b466d43990af14f1a840cf",
+      "sourceId": "atlasSpectralLarge"
+    },
+    {
+      "path": "packages/atlas/generated/atlas-dots-large.svg",
+      "sha256": "861f47486671516e8a0ce5f5c5dcebae1308777a1fcd4cffdfe7967053ee500f",
+      "sourceId": "atlasDotsLarge"
+    },
+    {
+      "path": "packages/atlas/generated/atlas-hatch-large.svg",
+      "sha256": "03358c5c00f03b76004d782ddbcad688e5a259ae6dff1147138ab4b0fe2a2ec9",
+      "sourceId": "atlasHatchLarge"
+    },
+    {
+      "path": "packages/atlas/generated/atlas-micro.svg",
+      "sha256": "374d2b9b691567ab9bc26e2b2bf67d8fdb12048826cf77f1444816a24bbe98ab",
+      "sourceId": "atlasMicro"
+    },
+    {
+      "path": "audit/affinity/references/01.02-three-distance-r3-governed-sources.png",
+      "sha256": "d64cbd45f04c5cd529f803dd90e25ad713bb4e34bb8c5cda141579f01b283ea6",
+      "classification": "QA_CAPTURE_ONLY_NOT_VERIFICATION_PASS",
+      "dimensions": { "width": 1440, "height": 3500 }
+    }
+  ],
+  "mutationPolicy": {
+    "previousRootPreserved": true,
+    "previousRootRenamedHiddenLocked": true,
+    "canonicalVariablesStylesAndPagesPreserved": true,
+    "draftRootStayedHiddenUntilAuditPass": true,
+    "cleanupPolicy": "remove only the exact shared-data-owned 01.02 draft root on an intentional rerun",
+    "destructiveReplacement": false
+  },
+  "execution": {
+    "visualRevision": "figma-01.02-three-distance-r1-affinity-r3",
+    "affinityRevision": "brand-core-three-distance-progressive-field-r3-governed-sources",
+    "preflightMcpRequestId": "e75a9ba1-2506-43d9-912e-48f042aced02",
+    "heroMcpRequestId": "89501a81-3fb7-4dc8-acb0-4cc1e6773a28",
+    "resolutionGrammarOpticalMcpRequestId": "25809220-1dee-4663-9e68-7df0c5139d3e",
+    "rulesGovernanceFooterMcpRequestId": "a081c9f9-2d11-45b8-a655-e475edf91c1b",
+    "auditAndPromoteMcpRequestId": "0a45a56f-cce9-4073-8d6a-782c46cc375c",
+    "screenshotMcpRequestId": "cdc33ab6-0f30-4492-9eff-3a524b6c951c",
+    "finalReadbackMcpRequestId": "b3f8d047-65db-4ce0-a679-c78f054acf7f",
+    "uploadedImageCount": 0,
+    "uploadedImageHashes": [],
+    "errors": []
+  },
+  "liveImplementation": {
+    "activeRoot": {
+      "nodeId": "181:2",
+      "name": "01 / FIGMA NATIVE - EDITABLE MASTER / 01.02 THREE-DISTANCE / r1",
+      "x": 0,
+      "y": 0,
+      "width": 1440,
+      "height": 3500,
+      "visible": true,
+      "locked": false,
+      "clipsContent": true,
+      "descendantCount": 1659,
+      "nodeTypeCounts": {
+        "FRAME": 64,
+        "RECTANGLE": 99,
+        "TEXT": 93,
+        "VECTOR": 1362,
+        "GROUP": 38,
+        "ELLIPSE": 3
+      }
+    },
+    "archive": {
+      "nodeId": "83:159",
+      "name": "99 / ARCHIVE / PRE-PHASE2 / 01.02",
+      "width": 1440,
+      "height": 4120,
+      "visible": false,
+      "locked": true
+    },
+    "hiddenReferenceFrame": {
+      "nodeId": "181:3",
+      "name": "00 / Reference / METADATA ONLY / NO RASTER / 01.02",
+      "visible": false,
+      "locked": true,
+      "rasterNodeIds": []
+    },
+    "stageFrames": [
+      { "nodeId": "181:4", "stageKey": "hero-and-evidence", "x": 0, "y": 0, "width": 1440, "height": 1200 },
+      { "nodeId": "181:542", "stageKey": "resolution-grammar-optical", "x": 0, "y": 1200, "width": 1440, "height": 1350 },
+      { "nodeId": "181:1122", "stageKey": "rules-governance-footer", "x": 0, "y": 2550, "width": 1440, "height": 950 }
+    ],
+    "pageTopLevelFrameCount": 2,
+    "pagePluginData": {
+      "phase2.01.02.activeRoot": "181:2",
+      "phase2.01.02.revision": "figma-01.02-three-distance-r1-affinity-r3"
+    },
+    "rootPluginData": {
+      "subjectId": "01.02",
+      "recipeId": "01.02/visual/r1",
+      "visualRevision": "figma-01.02-three-distance-r1-affinity-r3",
+      "contentFingerprint": "038ff17ca9daab97cc8b4c038172c9f6b786b01bca072ef142151ba5c275b7e6",
+      "authority": "canonical",
+      "verification": "NOT VERIFIED",
+      "publication": "documentation publishable under governance; embedded provisional export nonpublishable",
+      "usesProvisionalInputs": true,
+      "usesRejectedInputs": false,
+      "fieldConfigurationHash": "7e35c8cc2641acbb4bbf2afcb7b215af94544d8d6bdae3d55180cfd289838338",
+      "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+      "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+      "logoPolicy": "No Gravity Well instance on this page. Any future mark remains exact and entirely Signal Lime or entirely black.",
+      "imagegenPolicy": "No ImageGen concept reference allowed. No raster reference may be embedded.",
+      "signalPolicy": "Signal Lime is a flat operational channel and never interpolates into another hue.",
+      "bilingualReadiness": "NOT VERIFIED / no public Arabic copy on this page"
+    }
+  },
+  "nativeReuse": {
+    "sourceNodeMap": {
+      "atlasSpectralLarge": "101:114",
+      "atlasContoursDark": "101:466",
+      "atlasContoursLarge": "101:540",
+      "atlasDotsLarge": "101:697",
+      "atlasHatchLarge": "101:974",
+      "atlasMicro": "101:1168"
+    },
+    "sourceCloneCount": 19,
+    "sourceClones": [
+      { "nodeId": "181:14", "sourceId": "atlasContoursLarge", "role": "hero/far/silhouette", "fitMode": "contain" },
+      { "nodeId": "181:101", "sourceId": "atlasSpectralLarge", "role": "hero/normal/function", "fitMode": "contain" },
+      { "nodeId": "181:188", "sourceId": "atlasContoursLarge", "role": "hero/close/evidence", "fitMode": "contain" },
+      { "nodeId": "181:274", "sourceId": "atlasDotsLarge", "role": "hero/close/inspection/dots", "fitMode": "cover" },
+      { "nodeId": "181:356", "sourceId": "atlasHatchLarge", "role": "hero/close/inspection/hatch", "fitMode": "cover" },
+      { "nodeId": "181:438", "sourceId": "atlasSpectralLarge", "role": "hero/close/inspection/spectral", "fitMode": "cover" },
+      { "nodeId": "181:549", "sourceId": "atlasContoursLarge", "role": "matrix/far/silhouette", "fitMode": "cover" },
+      { "nodeId": "181:634", "sourceId": "atlasSpectralLarge", "role": "matrix/normal/function", "fitMode": "cover" },
+      { "nodeId": "181:719", "sourceId": "atlasHatchLarge", "role": "matrix/close/evidence", "fitMode": "cover" },
+      { "nodeId": "181:805", "sourceId": "atlasContoursLarge", "role": "grammar/full-field", "fitMode": "cover" },
+      { "nodeId": "181:979", "sourceId": "atlasMicro", "role": "optical/micro", "fitMode": "contain" },
+      { "nodeId": "181:994", "sourceId": "atlasContoursDark", "role": "optical/medium", "fitMode": "contain" },
+      { "nodeId": "181:1032", "sourceId": "atlasContoursLarge", "role": "optical/large", "fitMode": "contain" },
+      { "nodeId": "181:1127", "sourceId": "atlasContoursLarge", "role": "correct/same-source/1", "fitMode": "contain" },
+      { "nodeId": "181:1209", "sourceId": "atlasContoursLarge", "role": "correct/same-source/2", "fitMode": "contain" },
+      { "nodeId": "181:1291", "sourceId": "atlasContoursLarge", "role": "correct/same-source/3", "fitMode": "contain" },
+      { "nodeId": "181:1377", "sourceId": "atlasContoursLarge", "role": "misuse/full-source-below-minimum/1", "fitMode": "contain" },
+      { "nodeId": "181:1460", "sourceId": "atlasContoursLarge", "role": "misuse/full-source-below-minimum/2", "fitMode": "contain" },
+      { "nodeId": "181:1543", "sourceId": "atlasContoursLarge", "role": "misuse/full-source-below-minimum/3", "fitMode": "contain" }
+    ],
+    "farVisibilityFilters": [
+      {
+        "nodeId": "181:14",
+        "sourceNodeId": "101:540",
+        "minorWeight": 0.6131805181503296,
+        "majorWeight": 2.4527220726013184,
+        "hiddenMinorCount": 59,
+        "retainedMajorCount": 15,
+        "retainedGroupCount": 2,
+        "geometryPathMutationCount": 0
+      },
+      {
+        "nodeId": "181:549",
+        "sourceNodeId": "101:540",
+        "minorWeight": 0.6131805181503296,
+        "majorWeight": 2.4527220726013184,
+        "hiddenMinorCount": 59,
+        "retainedMajorCount": 15,
+        "retainedGroupCount": 2,
+        "geometryPathMutationCount": 0
+      }
+    ],
+    "uniformScalingAndClippingOnly": true,
+    "logoInstanceCount": 0,
+    "mixedLogoColorRisk": false
+  },
+  "governedSourceAudit": {
+    "sourceType": "synthetic",
+    "model": "single-mass-lensing-field/1.0.0",
+    "algorithm": "bizarre-atlas-single-mass/1.0.0",
+    "orientationDegrees": 18,
+    "trajectoryState": "ACTIVE",
+    "seed": null,
+    "seedConsumed": false,
+    "largeFieldConfigurationHash": "7e35c8cc2641acbb4bbf2afcb7b215af94544d8d6bdae3d55180cfd289838338",
+    "aperture": {
+      "version": "continuous-lens-aperture/owner-selected-left-v2",
+      "pathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd"
+    },
+    "assets": {
+      "atlasContoursDark": {
+        "sha256": "b4694f25d640a0c4a0e849898eab392eaa3e2cafcbd4924e6082e184d229307c",
+        "fieldConfigurationHash": "18d2969f11e6232802a6ee6d4a16b4576f781d4bed10973ec385c735e4aac676",
+        "configurationHash": "2c50ea20e1161abc9b830754cca3e4c0af70fdd87f80a2414264df2b744723f1"
+      },
+      "atlasContoursLarge": {
+        "sha256": "a9b98e58ebdbc8afb0c42a1d7946cf681a8a5fa96a29e94dcd13face5f647e97",
+        "fieldConfigurationHash": "7e35c8cc2641acbb4bbf2afcb7b215af94544d8d6bdae3d55180cfd289838338",
+        "configurationHash": "2ba547b43dc2976a7ff4c3a1be98e1270f4cbe7a6ff21c1d2c7dbc95167aa09f"
+      },
+      "atlasSpectralLarge": {
+        "sha256": "a0a32c822abe8b8511d0d66438d9778e7b5dd8c9c7b466d43990af14f1a840cf",
+        "fieldConfigurationHash": "7e35c8cc2641acbb4bbf2afcb7b215af94544d8d6bdae3d55180cfd289838338",
+        "configurationHash": "ba6984d23dad2716537421d57f339eb5f9fe9ec8d1a6a2620fab26dd0e71a732"
+      },
+      "atlasDotsLarge": {
+        "sha256": "861f47486671516e8a0ce5f5c5dcebae1308777a1fcd4cffdfe7967053ee500f",
+        "fieldConfigurationHash": "7e35c8cc2641acbb4bbf2afcb7b215af94544d8d6bdae3d55180cfd289838338",
+        "configurationHash": "ef232ddb9884aa5ee2ecd8f691328a5c966f69f777f8882a64c9472ff66201b5"
+      },
+      "atlasHatchLarge": {
+        "sha256": "03358c5c00f03b76004d782ddbcad688e5a259ae6dff1147138ab4b0fe2a2ec9",
+        "fieldConfigurationHash": "7e35c8cc2641acbb4bbf2afcb7b215af94544d8d6bdae3d55180cfd289838338",
+        "configurationHash": "24ed1f9f4c6557dd8a2020f9a83c62cfd65858dc2fc6405f4bd492d8d5456a54"
+      },
+      "atlasMicro": {
+        "sha256": "374d2b9b691567ab9bc26e2b2bf67d8fdb12048826cf77f1444816a24bbe98ab",
+        "fieldConfigurationHash": "931285616d15632dd9b36d7a9da42a26c92f75c7e9cccf3dd40698d1f7b4154d",
+        "configurationHash": "5c31f06dc60902297a67130433af87a0242a8c56fd34e4498400a284148d21fd"
+      }
+    }
+  },
+  "opticalSizeAvailability": {
+    "Micro": { "status": "EXACT GOVERNED-PROVISIONAL", "sourceId": "atlasMicro", "sourceNodeId": "101:1168" },
+    "Small": { "status": "ASSET REQUIRED / NOT VERIFIED", "sourceId": null, "sourceNodeId": null },
+    "Medium": { "status": "EXACT GOVERNED-PROVISIONAL", "sourceId": "atlasContoursDark", "sourceNodeId": "101:466" },
+    "Large": { "status": "EXACT GOVERNED-PROVISIONAL", "sourceId": "atlasContoursLarge", "sourceNodeId": "101:540" },
+    "Field": { "status": "ASSET REQUIRED / NOT VERIFIED", "sourceId": null, "sourceNodeId": null },
+    "blocked": ["Small", "Field"]
+  },
+  "imagegenAudit": {
+    "allowedConceptReferenceIds": [],
+    "used": false,
+    "imageFillNodeCount": 0,
+    "hiddenReferenceRasterCount": 0
+  },
+  "bilingualAudit": {
+    "arabicReviewStatus": "NOT VERIFIED",
+    "publicArabicCopyNodeCount": 0,
+    "publicReadinessClaimed": false
+  },
+  "tokenStyleAndLayoutAudit": {
+    "explicitModeCollectionId": "VariableCollectionId:52:10",
+    "explicitModeId": "52:9",
+    "explicitModeName": "paper",
+    "textNodeCount": 93,
+    "textNodesWithStyleId": 93,
+    "textNodesWithoutStyleId": 0,
+    "textOverflowCount": 0,
+    "frameCountIncludingRoot": 65,
+    "autoLayoutFrameCount": 12,
+    "componentLikeNodeCount": 0,
+    "solidPaintCount": 1392,
+    "variableBoundSolidPaintCount": 233,
+    "unboundDocumentationSolidPaintCount": 0,
+    "exactSourceSolidPaintExceptionCount": 1159,
+    "gradientPaintCount": 222,
+    "gradientSignalInterpolationRiskCount": 0,
+    "sourceViewportCount": 19,
+    "sourceViewportFailureCount": 0,
+    "classification": "native editable documentation artboard with canonical styles and governed source clones; component-library implementation remains Phase 3"
+  },
+  "qaEvidence": {
+    "before": {
+      "path": "audit/figma/phase2/01.02-before.png",
+      "sha256": "31e249d6f4829ca3c03228ec9f9a7edb0702a3f52bbcfd59e63690387959be82",
+      "dimensions": { "width": 1280, "height": 760 }
+    },
+    "currentFigmaCapture": {
+      "path": "audit/figma/phase2/01.02-three-distance-r1-full.png",
+      "sha256": "cdc753a299c30e84ec323f53e7dcd9d359ae29412f10c65141b5b94c2f9070b1",
+      "dimensions": { "width": 1440, "height": 3500 },
+      "naturalRootDimensions": { "width": 1440, "height": 3500 },
+      "classification": "QA_CAPTURE_ONLY_NOT_VERIFICATION_PASS"
+    },
+    "affinityCapture": {
+      "path": "audit/affinity/references/01.02-three-distance-r3-governed-sources.png",
+      "sha256": "d64cbd45f04c5cd529f803dd90e25ad713bb4e34bb8c5cda141579f01b283ea6",
+      "dimensions": { "width": 1440, "height": 3500 },
+      "classification": "QA_CAPTURE_ONLY_NOT_VERIFICATION_PASS"
+    },
+    "sameInputComparisonStatus": "VIEWED_IN_COMBINED_COMPARISON_INPUT_NOT_PERSISTED",
+    "comparisonObservations": [
+      "Both captures use the same progressive far, normal, and close hierarchy and the same governed field family.",
+      "The Figma page preserves canonical text-style sizes, improving long-form readability over the Affinity QA capture.",
+      "Exact Figma source clones retain their dark asset backgrounds; the Affinity QA importer exposes registered enclosure grounds in several specimens. This cross-tool representation difference remains an open comparison finding.",
+      "No visible sharp aperture edge, mixed-color logo, raster reference, or invented Small or Field derivative appears in the Figma capture."
+    ],
+    "visualVerificationStatus": "NOT VERIFIED"
+  },
+  "validation": {
+    "applyErrors": [],
+    "promotionGate": "BLOCKED",
+    "receiptTestCommand": "node --test test/figma-phase2-01-02-three-distance-apply.test.mjs",
+    "repositoryVerificationCommand": "npm run verify"
+  },
+  "openFindings": [
+    "Visual QA captures do not constitute promotion evidence; verification remains NOT VERIFIED.",
+    "Small and Field optical derivatives do not exist and remain explicitly blocked.",
+    "Arabic public copy and bilingual production readiness remain NOT VERIFIED.",
+    "The Affinity and Figma captures differ in exact-source background treatment on several specimens; resolve the importer or document the intended cross-tool translation before promotion.",
+    "The page is native and editable but intentionally contains no reusable component definitions; component coverage belongs to Phase 3.",
+    "A persistent side-by-side comparison artifact has not yet been saved."
+  ],
+  "recoveryEvidence": [
+    {
+      "debugUuid": "8104fb7e-16b3-4da9-a6e6-fa236548fba6",
+      "issue": "The first read-only preflight attempted to access visibility on a Page node.",
+      "fix": "Guard scene-only properties before reading them; no mutation occurred."
+    },
+    {
+      "debugUuid": "dae3a1c5-1022-40f0-a63e-100eeb1ace1c",
+      "issue": "A read-only postflight attempted an unsupported explicit-mode getter.",
+      "fix": "Read the supported explicitVariableModes map instead; no mutation occurred."
+    }
+  ]
+}

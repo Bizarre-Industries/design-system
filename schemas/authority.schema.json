@@ -1,0 +1,169 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://bizarre.industries/schemas/authority.schema.json",
+  "title": "Bizarre authority precedence contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "precedence", "invariants", "extensions", "fallbacks", "derivedOutputs"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "precedence": { "const": ["invariants", "extensions", "fallbacks", "derivedOutputs"] },
+    "invariants": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/invariant" },
+      "minItems": 2,
+      "maxItems": 2
+    },
+    "extensions": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/extension" },
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "fallbacks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/fallback" },
+      "minItems": 1,
+      "maxItems": 1
+    },
+    "derivedOutputs": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/derivedOutput" },
+      "minItems": 1,
+      "maxItems": 1
+    }
+  },
+  "$defs": {
+    "invariant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "source", "rule", "overrideable"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*$" },
+        "source": { "type": "string", "minLength": 1 },
+        "pointer": { "type": "string", "pattern": "^/" },
+        "rule": { "enum": ["exact-value", "exact-geometry"] },
+        "value": {},
+        "overrideable": { "const": false }
+      }
+    },
+    "extension": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "source", "classification", "scope", "overridesFallbacks", "overrides"],
+      "properties": {
+        "id": { "const": "astronomical-atlas" },
+        "source": { "const": "extensions/astronomical-atlas/DESIGN.md" },
+        "classification": { "const": "approved-extension-with-overrides" },
+        "scope": { "const": "explicit-rules-only" },
+        "overridesFallbacks": { "const": true },
+        "overrides": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/extensionOverride" },
+          "minItems": 3,
+          "maxItems": 3,
+          "uniqueItems": true
+        }
+      }
+    },
+    "extensionOverride": {
+      "oneOf": [
+        { "$ref": "#/$defs/gradientOverride" },
+        { "$ref": "#/$defs/arabicOverride" },
+        { "$ref": "#/$defs/workshopOverride" }
+      ]
+    },
+    "gradientOverride": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "evidence", "permits", "forbids"],
+      "properties": {
+        "id": { "const": "gradient-policy" },
+        "type": { "const": "policy" },
+        "evidence": { "const": "extensions/astronomical-atlas/DESIGN.md#gradient-rules" },
+        "permits": { "const": ["atlas", "data", "material"] },
+        "forbids": { "const": ["logo", "signal-lime"] }
+      }
+    },
+    "arabicOverride": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "evidence", "status", "fontStack", "publicShipping"],
+      "properties": {
+        "id": { "const": "interim-arabic-stack" },
+        "type": { "const": "typography" },
+        "evidence": { "const": "extensions/astronomical-atlas/DESIGN.md#arabic-implementation-stack" },
+        "status": { "const": "interim" },
+        "fontStack": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["displayAndBody", "compactUi"],
+          "properties": {
+            "displayAndBody": { "const": "Noto Sans Arabic" },
+            "compactUi": { "const": "Noto Sans Arabic UI" }
+          }
+        },
+        "publicShipping": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["status", "requiredGates"],
+          "properties": {
+            "status": { "const": "NOT VERIFIED" },
+            "requiredGates": { "const": ["governed-font-assets", "specialist-optical-parity-review"] }
+          }
+        }
+      }
+    },
+    "workshopOverride": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "evidence", "theme", "breakingChange", "replacements"],
+      "properties": {
+        "id": { "const": "workshop-semantic-values" },
+        "type": { "const": "tokens" },
+        "evidence": { "const": "archive:tools/build_system.py:520-524; archive:tokens.css:157-161; owner-approved-architecture:2026-07-15" },
+        "theme": { "const": "workshop" },
+        "breakingChange": { "const": true },
+        "replacements": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/tokenReplacement" },
+          "minItems": 4,
+          "maxItems": 4,
+          "uniqueItems": true
+        }
+      }
+    },
+    "tokenReplacement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["token", "from", "to"],
+      "properties": {
+        "token": { "type": "string", "pattern": "^[a-z]+(?:\\.[a-z]+)+$" },
+        "from": { "type": "string", "pattern": "^\\{[A-Za-z0-9.]+\\}$" },
+        "to": { "type": "string", "pattern": "^#[0-9A-F]{6}$" }
+      }
+    },
+    "fallback": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "repository", "source", "appliesWhen"],
+      "properties": {
+        "id": { "const": "canonical-repository" },
+        "repository": { "const": "Bizarre-Industries/design-system" },
+        "source": { "const": "." },
+        "appliesWhen": { "const": "atlas-extension-silent" }
+      }
+    },
+    "derivedOutput": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "formats", "classification", "authority"],
+      "properties": {
+        "id": { "const": "generated-artifacts" },
+        "formats": { "const": ["html", "css", "pdf", "mockup", "figma", "affinity", "open-design"] },
+        "classification": { "const": "derivative-only" },
+        "authority": { "const": false }
+      }
+    }
+  }
+}

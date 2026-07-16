@@ -1,0 +1,540 @@
+{
+  "canonicalSha256": "12796ed5a404c06e406bd8bd86024383e434fa7b262090b996cffaf758e7146a",
+  "captureMethod": "offline migration map derived from immutable v1 page IDs and governed v2 subject labels",
+  "derivesFrom": {
+    "fileSha256": "0d9f62289a9f91f1b21a12817fda748c048faac905782dd601cd4b9d845316a3",
+    "path": "governance/design-ledgers/figma/bizarre-page-map-v1.json",
+    "policy": "Preserve all 104 stable page IDs. Rename only governed labels changed by the v2 manifest."
+  },
+  "figmaFileKey": "hGgrP9G0tEam8mpk5u3rHg",
+  "legacyPagesPreserved": 13,
+  "manifestHash": "220dda8ff98f6fc67ef42187013a3274f9c1c3050e7ca0e38e3352d4ca7ef0de",
+  "mapId": "bizarre-page-map-v2",
+  "mapVersion": "2.0.0",
+  "mappingStatus": "OFFLINE TARGET / LIVE FIGMA NOT OBSERVED",
+  "pages": [
+    {
+      "name": "00.00 · Cover",
+      "pageId": "47:3",
+      "subjectId": "00.00"
+    },
+    {
+      "name": "00.01 · System Map & Navigation",
+      "pageId": "47:4",
+      "subjectId": "00.01"
+    },
+    {
+      "name": "00.02 · Getting Started / Authority / Source of Truth",
+      "pageId": "47:5",
+      "subjectId": "00.02"
+    },
+    {
+      "name": "01.00 · Brand Core Overview",
+      "pageId": "47:6",
+      "subjectId": "01.00"
+    },
+    {
+      "name": "01.01 · Design Philosophy / Swiss-Working",
+      "pageId": "47:7",
+      "subjectId": "01.01"
+    },
+    {
+      "name": "01.02 · Recognition Grammar / Three-Distance Test",
+      "pageId": "47:8",
+      "subjectId": "01.02"
+    },
+    {
+      "name": "01.03 · Single Identity / Native Integration",
+      "pageId": "47:9",
+      "subjectId": "01.03"
+    },
+    {
+      "name": "01.04 · Voice / CATCH THE STARS / Metadata Copy",
+      "pageId": "47:10",
+      "subjectId": "01.04"
+    },
+    {
+      "name": "02.00 · Identity Overview",
+      "pageId": "47:11",
+      "subjectId": "02.00"
+    },
+    {
+      "name": "02.01 · Gravity Well Master & Approved Variants",
+      "pageId": "47:12",
+      "subjectId": "02.01"
+    },
+    {
+      "name": "02.02 · Name, Lockups & Coexistence",
+      "pageId": "47:13",
+      "subjectId": "02.02"
+    },
+    {
+      "name": "02.03 · Clear Space, Minimum Size & Background Use",
+      "pageId": "47:14",
+      "subjectId": "02.03"
+    },
+    {
+      "name": "02.04 · Invariance, Misuse & Verification",
+      "pageId": "47:15",
+      "subjectId": "02.04"
+    },
+    {
+      "name": "03.00 · Color Overview",
+      "pageId": "47:16",
+      "subjectId": "03.00"
+    },
+    {
+      "name": "03.01 · Primitives & Neutral Chassis",
+      "pageId": "47:17",
+      "subjectId": "03.01"
+    },
+    {
+      "name": "03.02 · Signal Lime Operational Channel",
+      "pageId": "47:18",
+      "subjectId": "03.02"
+    },
+    {
+      "name": "03.03 · Data-Shaped Spectrum",
+      "pageId": "47:19",
+      "subjectId": "03.03"
+    },
+    {
+      "name": "03.04 · Semantic Modes & Status Colors",
+      "pageId": "47:20",
+      "subjectId": "03.04"
+    },
+    {
+      "name": "03.05 · Contrast & Physical/Accessible Translations",
+      "pageId": "47:21",
+      "subjectId": "03.05"
+    },
+    {
+      "name": "04.00 · Gradient Overview & Decision Matrix",
+      "pageId": "47:22",
+      "subjectId": "04.00"
+    },
+    {
+      "name": "04.01 · Field Gradient",
+      "pageId": "47:23",
+      "subjectId": "04.01"
+    },
+    {
+      "name": "04.02 · Optical-Coating Gradient",
+      "pageId": "47:24",
+      "subjectId": "04.02"
+    },
+    {
+      "name": "04.03 · Data-Ramp Gradient",
+      "pageId": "47:25",
+      "subjectId": "04.03"
+    },
+    {
+      "name": "04.04 · Heat Gradient",
+      "pageId": "47:26",
+      "subjectId": "04.04"
+    },
+    {
+      "name": "04.05 · Exposure Gradient",
+      "pageId": "47:27",
+      "subjectId": "04.05"
+    },
+    {
+      "name": "04.06 · Reflective-Film Gradient",
+      "pageId": "47:28",
+      "subjectId": "04.06"
+    },
+    {
+      "name": "04.07 · Material-Response Gradient",
+      "pageId": "47:29",
+      "subjectId": "04.07"
+    },
+    {
+      "name": "05.00 · Typography Overview",
+      "pageId": "47:30",
+      "subjectId": "05.00"
+    },
+    {
+      "name": "05.01 · Unbounded / Display",
+      "pageId": "47:31",
+      "subjectId": "05.01"
+    },
+    {
+      "name": "05.02 · Big Shoulders Stencil / Industrial",
+      "pageId": "47:32",
+      "subjectId": "05.02"
+    },
+    {
+      "name": "05.03 · Hanken Grotesk / Body and UI",
+      "pageId": "47:33",
+      "subjectId": "05.03"
+    },
+    {
+      "name": "05.04 · JetBrains Mono / Technical",
+      "pageId": "47:34",
+      "subjectId": "05.04"
+    },
+    {
+      "name": "05.05 · Arabic Type System",
+      "pageId": "47:35",
+      "subjectId": "05.05"
+    },
+    {
+      "name": "05.06 · Hierarchy, Numerals, Bilingual Composition & RTL",
+      "pageId": "47:36",
+      "subjectId": "05.06"
+    },
+    {
+      "name": "06.00 · Geometry & Layout Overview",
+      "pageId": "47:37",
+      "subjectId": "06.00"
+    },
+    {
+      "name": "06.01 · Continuous Lens Aperture v2",
+      "pageId": "47:38",
+      "subjectId": "06.01"
+    },
+    {
+      "name": "06.02 · Precision Panel",
+      "pageId": "47:39",
+      "subjectId": "06.02"
+    },
+    {
+      "name": "06.03 · Display Field",
+      "pageId": "47:40",
+      "subjectId": "06.03"
+    },
+    {
+      "name": "06.04 · Grid & Spacing",
+      "pageId": "47:41",
+      "subjectId": "06.04"
+    },
+    {
+      "name": "06.05 · Optical Sizes, Minimums & Responsive Scaling",
+      "pageId": "47:42",
+      "subjectId": "06.05"
+    },
+    {
+      "name": "06.06 · Lines, Corners, Depth & Composition",
+      "pageId": "47:43",
+      "subjectId": "06.06"
+    },
+    {
+      "name": "06.07 · Iconography, Instrument Indices & Directional Symbols",
+      "pageId": "47:44",
+      "subjectId": "06.07"
+    },
+    {
+      "name": "07.00 · Atlas Patterns Overview / One Field, Many Representations",
+      "pageId": "47:45",
+      "subjectId": "07.00"
+    },
+    {
+      "name": "07.01 · Field Source & Provenance",
+      "pageId": "47:46",
+      "subjectId": "07.01"
+    },
+    {
+      "name": "07.02 · Continuous Spectral Field",
+      "pageId": "47:47",
+      "subjectId": "07.02"
+    },
+    {
+      "name": "07.03 · Stepped Bands",
+      "pageId": "47:48",
+      "subjectId": "07.03"
+    },
+    {
+      "name": "07.04 · Contour Lines",
+      "pageId": "47:49",
+      "subjectId": "07.04"
+    },
+    {
+      "name": "07.05 · Shaded Contour / Provisional",
+      "pageId": "47:50",
+      "subjectId": "07.05"
+    },
+    {
+      "name": "07.06 · Dot Density",
+      "pageId": "47:51",
+      "subjectId": "07.06"
+    },
+    {
+      "name": "07.07 · Hatching",
+      "pageId": "47:52",
+      "subjectId": "07.07"
+    },
+    {
+      "name": "07.08 · Grain and Halftone / Provisional",
+      "pageId": "47:53",
+      "subjectId": "07.08"
+    },
+    {
+      "name": "07.09 · Material, Reflective and UV / Provisional",
+      "pageId": "47:54",
+      "subjectId": "07.09"
+    },
+    {
+      "name": "07.10 · One-Color Translation / Provisional",
+      "pageId": "47:55",
+      "subjectId": "07.10"
+    },
+    {
+      "name": "07.11 · Micro Derivative",
+      "pageId": "47:56",
+      "subjectId": "07.11"
+    },
+    {
+      "name": "08.00 · Motion & Interaction Overview",
+      "pageId": "47:57",
+      "subjectId": "08.00"
+    },
+    {
+      "name": "08.01 · Capture Sequence",
+      "pageId": "47:58",
+      "subjectId": "08.01"
+    },
+    {
+      "name": "08.02 · Approach",
+      "pageId": "47:59",
+      "subjectId": "08.02"
+    },
+    {
+      "name": "08.03 · Compress",
+      "pageId": "47:60",
+      "subjectId": "08.03"
+    },
+    {
+      "name": "08.04 · Eclipse",
+      "pageId": "47:61",
+      "subjectId": "08.04"
+    },
+    {
+      "name": "08.05 · Lock",
+      "pageId": "47:62",
+      "subjectId": "08.05"
+    },
+    {
+      "name": "08.06 · Release",
+      "pageId": "47:63",
+      "subjectId": "08.06"
+    },
+    {
+      "name": "08.07 · Timing & Easing",
+      "pageId": "47:64",
+      "subjectId": "08.07"
+    },
+    {
+      "name": "08.08 · Reduced Motion & Low Power",
+      "pageId": "47:65",
+      "subjectId": "08.08"
+    },
+    {
+      "name": "08.09 · Micro-interactions & State Feedback",
+      "pageId": "47:66",
+      "subjectId": "08.09"
+    },
+    {
+      "name": "09.00 · Components Overview",
+      "pageId": "47:67",
+      "subjectId": "09.00"
+    },
+    {
+      "name": "09.01 · SDS / Host-Infrastructure Boundary",
+      "pageId": "47:68",
+      "subjectId": "09.01"
+    },
+    {
+      "name": "09.02 · Shared State, Target, Focus & RTL Contract",
+      "pageId": "47:69",
+      "subjectId": "09.02"
+    },
+    {
+      "name": "09.03 · Signal Action",
+      "pageId": "47:70",
+      "subjectId": "09.03"
+    },
+    {
+      "name": "09.04 · Status Indicator",
+      "pageId": "47:71",
+      "subjectId": "09.04"
+    },
+    {
+      "name": "09.05 · Atlas Panel",
+      "pageId": "47:72",
+      "subjectId": "09.05"
+    },
+    {
+      "name": "09.06 · Calibration Label",
+      "pageId": "47:73",
+      "subjectId": "09.06"
+    },
+    {
+      "name": "09.07 · Instrument Dial",
+      "pageId": "47:74",
+      "subjectId": "09.07"
+    },
+    {
+      "name": "09.08 · Bilingual Data Panel",
+      "pageId": "47:75",
+      "subjectId": "09.08"
+    },
+    {
+      "name": "09.09 · Physical Label",
+      "pageId": "47:76",
+      "subjectId": "09.09"
+    },
+    {
+      "name": "10.00 · Materials & Finishes Overview",
+      "pageId": "47:77",
+      "subjectId": "10.00"
+    },
+    {
+      "name": "10.01 · Matte and Gloss Void",
+      "pageId": "47:78",
+      "subjectId": "10.01"
+    },
+    {
+      "name": "10.02 · Aluminum and Brushed Aluminum",
+      "pageId": "47:79",
+      "subjectId": "10.02"
+    },
+    {
+      "name": "10.03 · Carbon, Bakelite and Composite",
+      "pageId": "47:80",
+      "subjectId": "10.03"
+    },
+    {
+      "name": "10.04 · Signal Spot Media",
+      "pageId": "47:81",
+      "subjectId": "10.04"
+    },
+    {
+      "name": "10.05 · Translucent, Ceramic and Optical Materials",
+      "pageId": "47:82",
+      "subjectId": "10.05"
+    },
+    {
+      "name": "10.06 · Foil, Emboss, Deboss, Screen and UV",
+      "pageId": "47:83",
+      "subjectId": "10.06"
+    },
+    {
+      "name": "10.07 · Assembly, Seams, Fasteners & Wear",
+      "pageId": "47:84",
+      "subjectId": "10.07"
+    },
+    {
+      "name": "11.00 · Applications & Mockups Overview",
+      "pageId": "47:85",
+      "subjectId": "11.00"
+    },
+    {
+      "name": "11.01 · Image Direction",
+      "pageId": "47:86",
+      "subjectId": "11.01"
+    },
+    {
+      "name": "11.02 · ImageGen → Affinity Reconstruction & Mockup Honesty",
+      "pageId": "47:87",
+      "subjectId": "11.02"
+    },
+    {
+      "name": "11.03 · Poster / Campaign",
+      "pageId": "47:88",
+      "subjectId": "11.03"
+    },
+    {
+      "name": "11.04 · Calibration Label / Sticker",
+      "pageId": "47:89",
+      "subjectId": "11.04"
+    },
+    {
+      "name": "11.05 · Hardware Panel / Camera Body",
+      "pageId": "47:90",
+      "subjectId": "11.05"
+    },
+    {
+      "name": "11.06 · Pit Instrument / Dial",
+      "pageId": "47:91",
+      "subjectId": "11.06"
+    },
+    {
+      "name": "11.07 · Film / Physical Media",
+      "pageId": "47:92",
+      "subjectId": "11.07"
+    },
+    {
+      "name": "11.08 · Packaging / Technical Manual",
+      "pageId": "47:93",
+      "subjectId": "11.08"
+    },
+    {
+      "name": "11.09 · Vehicle Livery / Day",
+      "pageId": "47:94",
+      "subjectId": "11.09"
+    },
+    {
+      "name": "11.10 · Vehicle Livery / Night",
+      "pageId": "47:95",
+      "subjectId": "11.10"
+    },
+    {
+      "name": "11.11 · Product-Family Mockup",
+      "pageId": "47:96",
+      "subjectId": "11.11"
+    },
+    {
+      "name": "11.12 · Digital Product / Figma Make Handoff",
+      "pageId": "47:97",
+      "subjectId": "11.12"
+    },
+    {
+      "name": "12.00 · Production & Release Overview",
+      "pageId": "47:98",
+      "subjectId": "12.00"
+    },
+    {
+      "name": "12.01 · Print, One-Color & Production Profiles",
+      "pageId": "47:99",
+      "subjectId": "12.01"
+    },
+    {
+      "name": "12.02 · Vinyl, Reflective & UV Registration",
+      "pageId": "47:100",
+      "subjectId": "12.02"
+    },
+    {
+      "name": "12.03 · Fabrication & Physical-Sample Requirements",
+      "pageId": "47:101",
+      "subjectId": "12.03"
+    },
+    {
+      "name": "12.04 · Digital, Vector & Raster Export Matrix",
+      "pageId": "47:102",
+      "subjectId": "12.04"
+    },
+    {
+      "name": "12.05 · Accessibility, RTL, Motion & Visual-QA Evidence",
+      "pageId": "47:103",
+      "subjectId": "12.05"
+    },
+    {
+      "name": "12.06 · Provenance, Approval & Change Control",
+      "pageId": "47:104",
+      "subjectId": "12.06"
+    },
+    {
+      "name": "12.07 · Full Brand Guide Assembly / Release / Handoff",
+      "pageId": "47:105",
+      "subjectId": "12.07"
+    },
+    {
+      "name": "99.00 · Noncanonical References & Legacy Index",
+      "pageId": "47:106",
+      "subjectId": "99.00"
+    }
+  ],
+  "permanentPageCount": 104,
+  "schemaVersion": 2,
+  "title": "Bizarre Industries Figma Permanent Page Map / v2 Migration Target"
+}

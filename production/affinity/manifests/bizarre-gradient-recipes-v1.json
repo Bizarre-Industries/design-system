@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "manifestVersion": "v1",
+  "manifestId": "bizarre-gradient-recipes",
+  "classification": "governed-source-manifest",
+  "canonicalSha256": "a40390cc04a20c8c99a8b19671993103fcf612d075810594f0f6391238bd1d72",
+  "authority": {
+    "scope": "gradient-recipes-only",
+    "sourcePriority": [
+      "direct-owner-decisions",
+      "approved-extension",
+      "owner-supplied-archive",
+      "repository-reference"
+    ],
+    "doesNotAuthorize": [
+      "figma-publication",
+      "affinity-publication",
+      "physical-performance-claims"
+    ]
+  },
+  "globalRules": {
+    "permittedSystems": [
+      "field",
+      "optical-coating",
+      "data-ramp",
+      "heat",
+      "exposure",
+      "reflective-film",
+      "material-response"
+    ],
+    "signalLime": {
+      "hex": "#C6FF24",
+      "interpolation": "forbidden",
+      "rule": "Never grade Signal Lime into another hue."
+    },
+    "decorativeBlobs": "forbidden",
+    "sharedDatasetAcrossRepresentations": "required"
+  },
+  "sources": [
+    {
+      "sourceId": "design-doc",
+      "locator": "extensions/astronomical-atlas/DESIGN.md",
+      "sha256": "e6aa6f391d12f568c6845fa8269178acd38bc969650ceed202e894c3de4aee93",
+      "classification": "approved-extension-with-overrides",
+      "role": "Approved gradient causes, Signal Lime constraints, representation rules, source-field rules, and photographic response."
+    },
+    {
+      "sourceId": "archive-tokens-css",
+      "locator": "owner-supplied:bizarre-astronomical-atlas.zip!/bizarre-astronomical-atlas/tokens.css",
+      "sha256": "f38cab5374623ecf0a4abbee2b53d652f39274ba93ae3e1a466206327f3c25a6",
+      "containerSha256": "b070392d798a28e2ae50f276e2014437bde655eebe532e6fae22264c3974db53",
+      "classification": "owner-supplied-archive-member",
+      "role": "Exact source for the 90 degree field spectrum and 100 degree foil optical-coating CSS recipes."
+    },
+    {
+      "sourceId": "architecture",
+      "locator": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+      "sha256": "120815cee29f0a706592ff85fd1f136084cfba518cfdca4d74c2c14f30b0ccaf",
+      "classification": "approved-architecture",
+      "role": "Approved seven-system subject IDs and names."
+    },
+    {
+      "sourceId": "gradient-content-reference",
+      "locator": "production/affinity/build-bizarre-masterbrand-content-spec-v1.mjs",
+      "sha256": "7205da434d91dcaba09ab3fe42cd0ed01971b399e72fd9cb812390ad432959ad",
+      "classification": "repository-reference",
+      "role": "Existing repository wording for system-specific derivation controls; this manifest governs the recipe values."
+    }
+  ],
+  "recipes": [
+    {
+      "subjectId": "04.01",
+      "system": "field",
+      "name": "Field Gradient",
+      "valueStatus": "EXACT SOURCE VALUE",
+      "physicalEvidenceStatus": "NOT VERIFIED",
+      "sourceRefs": ["design-doc", "archive-tokens-css", "architecture"],
+      "derivation": {
+        "input": "A source field may be real astronomical data or a physically plausible synthetic model.",
+        "mapping": "Preserve the same source dataset across all representations.",
+        "requiredControls": [
+          "source type",
+          "seed or catalogue identifier",
+          "approved orientation",
+          "aperture geometry version",
+          "active trajectory state",
+          "representation mode",
+          "production profile"
+        ],
+        "fallback": "Use stepped bands for diagrams and liveries, continuous fields for screens and optical materials, and dots/hatching for simple production."
+      },
+      "geometry": {
+        "kind": "linear",
+        "angleDeg": 90,
+        "valueStatus": "EXACT SOURCE VALUE",
+        "interpolationColorSpace": null,
+        "interpolationColorSpaceStatus": "NOT VERIFIED"
+      },
+      "stops": {
+        "valueStatus": "EXACT SOURCE VALUE",
+        "items": [
+          { "positionPercent": 0, "color": "#20274D", "tokenRef": "color.spectrum.deep-indigo" },
+          { "positionPercent": 17, "color": "#3156A6", "tokenRef": "color.spectrum.electric-blue" },
+          { "positionPercent": 34, "color": "#4AA5AF", "tokenRef": "color.spectrum.ion-cyan" },
+          { "positionPercent": 49, "color": "#5C887C", "tokenRef": "color.spectrum.oxidized-teal" },
+          { "positionPercent": 66, "color": "#D5A347", "tokenRef": "color.spectrum.solar-gold" },
+          { "positionPercent": 82, "color": "#C96C3E", "tokenRef": "color.spectrum.amber" },
+          { "positionPercent": 100, "color": "#B64C63", "tokenRef": "color.spectrum.crimson" }
+        ]
+      }
+    },
+    {
+      "subjectId": "04.02",
+      "system": "optical-coating",
+      "name": "Optical-Coating Gradient",
+      "valueStatus": "EXACT SOURCE VALUE",
+      "physicalEvidenceStatus": "NOT VERIFIED",
+      "sourceRefs": ["design-doc", "archive-tokens-css", "architecture", "gradient-content-reference"],
+      "derivation": {
+        "input": "Define substrate and coating.",
+        "mapping": "Set angle-specific color response.",
+        "requiredControls": [
+          "Build with native multi-stop gradients, masked highlight bands, restrained blend modes, and a labeled angle axis.",
+          "Keep information readable when the coating disappears."
+        ],
+        "fallback": "Front, oblique, and grazing-angle states plus a flat-color fallback are required."
+      },
+      "geometry": {
+        "kind": "linear",
+        "angleDeg": 100,
+        "valueStatus": "EXACT SOURCE VALUE",
+        "interpolationColorSpace": null,
+        "interpolationColorSpaceStatus": "NOT VERIFIED"
+      },
+      "stops": {
+        "valueStatus": "EXACT SOURCE VALUE",
+        "items": [
+          { "positionPercent": 0, "color": "#34383B" },
+          { "positionPercent": 14, "color": "#F5F7F4" },
+          { "positionPercent": 29, "color": "#67B7C2" },
+          { "positionPercent": 46, "color": "#765A9B" },
+          { "positionPercent": 62, "color": "#D7AE59" },
+          { "positionPercent": 79, "color": "#B85769" },
+          { "positionPercent": 90, "color": "#F6F2E8" },
+          { "positionPercent": 100, "color": "#4B4E50" }
+        ]
+      }
+    },
+    {
+      "subjectId": "04.03",
+      "system": "data-ramp",
+      "name": "Data-Ramp Gradient",
+      "valueStatus": "NOT VERIFIED",
+      "physicalEvidenceStatus": "NOT VERIFIED",
+      "sourceRefs": ["design-doc", "architecture", "gradient-content-reference"],
+      "derivation": {
+        "input": "The underlying quantity can be energy, curvature, density, temperature, velocity, redshift, probability, or another mapped field.",
+        "mapping": "Bind each stop to a numeric breakpoint.",
+        "requiredControls": [
+          "Declare the quantity and unit.",
+          "Provide underflow, overflow, missing-data, and one-color behavior."
+        ],
+        "fallback": "A labeled scalar bar and a one-color pattern fallback use the identical thresholds."
+      },
+      "geometry": {
+        "kind": null,
+        "angleDeg": null,
+        "valueStatus": "NOT VERIFIED",
+        "interpolationColorSpace": null,
+        "interpolationColorSpaceStatus": "NOT VERIFIED"
+      },
+      "stops": { "valueStatus": "NOT VERIFIED", "items": [] }
+    },
+    {
+      "subjectId": "04.04",
+      "system": "heat",
+      "name": "Heat Gradient",
+      "valueStatus": "NOT VERIFIED",
+      "physicalEvidenceStatus": "NOT VERIFIED",
+      "sourceRefs": ["design-doc", "architecture", "gradient-content-reference"],
+      "derivation": {
+        "input": "Represent temperature or thermal load with a physically ordered gradient and explicit safe, active, and fault thresholds.",
+        "mapping": "Declare Celsius or Kelvin range.",
+        "requiredControls": [
+          "Place threshold indices and state labels.",
+          "Keep Signal Lime reserved for active/current rather than heat magnitude."
+        ],
+        "fallback": "Cold-to-hot, thresholded, print-safe, and one-color hatch variants are required."
+      },
+      "geometry": {
+        "kind": null,
+        "angleDeg": null,
+        "valueStatus": "NOT VERIFIED",
+        "interpolationColorSpace": null,
+        "interpolationColorSpaceStatus": "NOT VERIFIED"
+      },
+      "stops": { "valueStatus": "NOT VERIFIED", "items": [] }
+    },
+    {
+      "subjectId": "04.05",
+      "system": "exposure",
+      "name": "Exposure Gradient",
+      "valueStatus": "NOT VERIFIED",
+      "physicalEvidenceStatus": "NOT VERIFIED",
+      "sourceRefs": ["design-doc", "architecture", "gradient-content-reference"],
+      "derivation": {
+        "input": "The photographic response adds warm highlights, colored shadows, restrained saturation, exposure rolloff, subtle grain, and limited halation.",
+        "mapping": "Map shadows, midtones, highlights, and halation.",
+        "requiredControls": [
+          "Start from an observed or approved source image.",
+          "Exclude Signal Lime and the Gravity Well from grading."
+        ],
+        "fallback": "Day, night, high-contrast, and print approximations maintain the same photographic response intent."
+      },
+      "geometry": {
+        "kind": null,
+        "angleDeg": null,
+        "valueStatus": "NOT VERIFIED",
+        "interpolationColorSpace": null,
+        "interpolationColorSpaceStatus": "NOT VERIFIED"
+      },
+      "stops": { "valueStatus": "NOT VERIFIED", "items": [] }
+    },
+    {
+      "subjectId": "04.06",
+      "system": "reflective-film",
+      "name": "Reflective-Film Gradient",
+      "valueStatus": "NOT VERIFIED",
+      "physicalEvidenceStatus": "NOT VERIFIED",
+      "sourceRefs": ["design-doc", "architecture", "gradient-content-reference"],
+      "derivation": {
+        "input": "Specify retroreflective-film response as a viewing and illumination condition with a stable daytime base and a controlled night reveal.",
+        "mapping": "Show a night response without altering the underlying field geometry.",
+        "requiredControls": [
+          "Define daytime substrate color.",
+          "Place the reflective layer as a separate registered plate."
+        ],
+        "fallback": "Ambient day, oblique light, head-on night, one-color cut vinyl, and unlit fallback states are documented."
+      },
+      "geometry": {
+        "kind": null,
+        "angleDeg": null,
+        "valueStatus": "NOT VERIFIED",
+        "interpolationColorSpace": null,
+        "interpolationColorSpaceStatus": "NOT VERIFIED"
+      },
+      "stops": { "valueStatus": "NOT VERIFIED", "items": [] }
+    },
+    {
+      "subjectId": "04.07",
+      "system": "material-response",
+      "name": "Material-Response Gradient",
+      "valueStatus": "NOT VERIFIED",
+      "physicalEvidenceStatus": "NOT VERIFIED",
+      "sourceRefs": ["design-doc", "architecture", "gradient-content-reference"],
+      "derivation": {
+        "input": "Model how substrate, finish, curvature, light, and wear alter a governed color field without changing its source data.",
+        "mapping": "Keep artwork separations constant.",
+        "requiredControls": [
+          "Apply one material response at a time.",
+          "Record substrate, finish, light direction, and unverified claims."
+        ],
+        "fallback": "Flat proof, simulated material, physical-sample target, and one-color manufacturing views remain linked."
+      },
+      "geometry": {
+        "kind": null,
+        "angleDeg": null,
+        "valueStatus": "NOT VERIFIED",
+        "interpolationColorSpace": null,
+        "interpolationColorSpaceStatus": "NOT VERIFIED"
+      },
+      "stops": { "valueStatus": "NOT VERIFIED", "items": [] }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "collection": "bizarre-signal-infrastructure",
+  "version": "1.0.0",
+  "status": "working-reference-set",
+  "authority": false,
+  "canonicalGeometry": {
+    "invariantSource": "logo/source/original-lockup.svg",
+    "invariantSourceSha256": "34b3cfbcb8cfc6fa8c62493b19ac87502efb447fdd33928857bda0488597e09a",
+    "geometryRule": "exact-geometry",
+    "pathArraySha256": "057452b9472b69f028ffcf925c8135ffbbb7bd6c3b24aa3814453e32ad3721f8",
+    "viewBox": "261.29998779296875 253.89999389648438 506.89996337890625 506.8000183105469",
+    "placementAssets": [
+      {
+        "variant": "primary",
+        "path": "packages/assets/logo/mark-primary.svg",
+        "sha256": "c70e9cd2e026695da3c4343d30e8cbfcd4910724bf5203129cee1fbccece0c9b"
+      },
+      {
+        "variant": "inverse",
+        "path": "packages/assets/logo/mark-inverse.svg",
+        "sha256": "82ca3e568f65204ea70422a04398a4f4d163f2c591361f3b54e075cbca2cbc5e"
+      },
+      {
+        "variant": "transparent",
+        "path": "packages/assets/logo/mark-transparent.svg",
+        "sha256": "ecc094cb883c40157e37a8fa5dbba77ea51ada75f424fca09de9eaf73583d02b"
+      }
+    ]
+  },
+  "ownerReference": {
+    "path": "extensions/astronomical-atlas/references/signal-infrastructure/v1.0.0/owner/bizarre-signal-infrastructure-preview.png",
+    "sourcePath": "owner-attachment://bizarre-signal-infrastructure-preview.png",
+    "sha256": "9f968b4f21eea302cb3bf659489ea5efe836457f92827e5a5ef5083d1e945376",
+    "mediaType": "image/png",
+    "dimensions": { "width": 2096, "height": 1044 },
+    "classification": "approved-visual-direction-reference",
+    "scope": ["visual-direction", "system-behavior", "application-language", "production-method"],
+    "authority": "scoped",
+    "publishable": false,
+    "approvedBy": "owner",
+    "approvedAt": "2026-07-15"
+  },
+  "generatedConcepts": [
+    {
+      "path": "extensions/astronomical-atlas/references/signal-infrastructure/v1.0.0/imagegen/signal-infrastructure-masterboard-v1.png",
+      "sha256": "5ea6483e32e83b92b9ab1c8fc6cef5aa979fab99487001d52d782af0c9765f51",
+      "mediaType": "image/png",
+      "dimensions": { "width": 1672, "height": 941 },
+      "classification": "generated-concept-reference",
+      "tool": "openai-imagegen",
+      "model": "unspecified-by-tool",
+      "generationId": "exec-49720c1d-7b64-4495-a8aa-3f3786b51d5f",
+      "generatedAt": "2026-07-15",
+      "promptPath": "extensions/astronomical-atlas/references/signal-infrastructure/v1.0.0/imagegen/signal-infrastructure-masterboard-v1.prompt.txt",
+      "promptSha256": "29ef55946c92ba8d03c5ddc817c23c04829b15fd92685394d885819b2b5b1113",
+      "sourceReference": "extensions/astronomical-atlas/references/signal-infrastructure/v1.0.0/owner/bizarre-signal-infrastructure-preview.png",
+      "authority": false,
+      "publishable": false,
+      "allowedUses": ["affinity-vector-reconstruction", "internal-design-review"],
+      "warnings": [
+        "Generated text and logo geometry are non-canonical.",
+        "Place the exact governed Gravity Well asset; never trace or redraw it."
+      ]
+    },
+    {
+      "path": "extensions/astronomical-atlas/references/signal-infrastructure/v1.0.0/imagegen/signal-infrastructure-product-family-v1.png",
+      "sha256": "54f161836643f260c770f34d2a213a01e8de62e83daabc680c6026aa5a15aa10",
+      "mediaType": "image/png",
+      "dimensions": { "width": 1672, "height": 941 },
+      "classification": "generated-concept-reference",
+      "tool": "openai-imagegen",
+      "model": "unspecified-by-tool",
+      "generationId": "exec-6c0fb53f-5319-4269-92bd-bdd54f161dff",
+      "generatedAt": "2026-07-15",
+      "promptPath": "extensions/astronomical-atlas/references/signal-infrastructure/v1.0.0/imagegen/signal-infrastructure-product-family-v1.prompt.txt",
+      "promptSha256": "4e2cea5eca31e5d4313ff26fef01d947e8680424133395536ef46102967ed50d",
+      "sourceReference": "extensions/astronomical-atlas/references/signal-infrastructure/v1.0.0/owner/bizarre-signal-infrastructure-preview.png",
+      "authority": false,
+      "publishable": false,
+      "allowedUses": ["affinity-vector-reconstruction", "internal-design-review"],
+      "warnings": [
+        "Generated text and logo geometry are non-canonical.",
+        "Rebuild all physical graphics as editable Affinity vectors before publication."
+      ]
+    }
+  ]
+}

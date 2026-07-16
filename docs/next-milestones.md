@@ -1,6 +1,25 @@
 # Next Milestones
 
-The governed token and production-asset portion of identity refinement is recorded in `milestones/2026-07-12-identity-refinement.md`. The milestone sequence remains:
+## Active milestone
+
+The active milestone is the Astronomical Atlas masterbrand system. Its live
+state is recorded in `agent-handoff.md`; execution is governed by
+`superpowers/plans/2026-07-15-astronomical-atlas-system.md`. This work includes
+the canonical repository packages, the 104-page Figma library, the mirrored
+104-artboard Affinity master, and the separate Figma Make prototype.
+
+Repository source/package contracts are substantially implemented, but the
+milestone is not complete. The current blockers are the asymmetric Continuous
+Lens source contradiction, generated token/asset manifest drift, incomplete
+Figma and Affinity population/verification, unverified Figma Make
+synchronization, and evidence-gated Arabic, mockup, and physical-production
+checks.
+
+## Long-term sequence
+
+The governed token and production-asset portion of identity refinement is
+recorded in `milestones/2026-07-12-identity-refinement.md`. The longer milestone
+sequence remains:
 
 1. Identity refinement and production asset system.
 2. Semantic token architecture and proportional typography selection.
@@ -12,4 +31,7 @@ The governed token and production-asset portion of identity refinement is record
 8. Downstream `themes` migration and compatibility release.
 9. Cross-platform certification and public v1 release.
 
-Milestone 1 remains open only for the simplified sub-48 px mark, mono variants, wordmarks and formal lockups, Arabic display pairing and translated brand voice, and a custom Helling identity. No platform milestone is complete.
+The identity-refinement record is historical and does not represent the current
+implementation queue. Simplified sub-48 px artwork, formal wordmarks and
+lockups, specialist Arabic approval, and platform-native evidence remain
+unavailable or unverified. No platform milestone is complete.

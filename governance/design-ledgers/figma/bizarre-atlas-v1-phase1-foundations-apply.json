@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "receiptVersion": "1.0.0-phase1-foundations",
+  "title": "Bizarre Industries Figma Phase 1 Foundations Apply Receipt",
+  "appliedAt": "2026-07-16T13:25:40Z",
+  "figmaFileKey": "hGgrP9G0tEam8mpk5u3rHg",
+  "approvalRef": "owner-approve-and-proceed/2026-07-16",
+  "status": "APPLIED_AND_VERIFIED",
+  "checkpoint": {
+    "path": "governance/design-ledgers/figma/bizarre-atlas-v1-phase1-checkpoint.json",
+    "sha256": "6308b64e362e1b62ee73a13b5f95efe79c29b13c87bf84b15a971654aaa334e2"
+  },
+  "canonicalVariables": {
+    "collectionCount": 9,
+    "variableCount": 173,
+    "modesCollectionId": "VariableCollectionId:52:10",
+    "modeNames": [
+      "void",
+      "paper",
+      "void-hicontrast",
+      "workshop",
+      "bone"
+    ],
+    "brokenAliasCount": 0,
+    "missingWebSyntaxCount": 0,
+    "allScopes": [
+      {
+        "variableId": "VariableID:52:176",
+        "name": "aperture/tangent-continuity",
+        "resolvedType": "BOOLEAN",
+        "reason": "Figma rejects scope assignment for BOOLEAN variables."
+      }
+    ]
+  },
+  "textStyles": {
+    "count": 18,
+    "canonicalTypographyCollectionId": "VariableCollectionId:52:4",
+    "legacyBindingCountBefore": 48,
+    "legacyBindingCountAfter": 0,
+    "canonicalBindingIssueCount": 0,
+    "arabicDerivedSizeBindingIssueCount": 0,
+    "eyebrowRepair": {
+      "styleId": "S:44fed1ad11403170ba6c792e5361984a360b862a,",
+      "property": "textCase",
+      "before": "ORIGINAL",
+      "after": "UPPER",
+      "authority": "BRAND.md eyebrow hierarchy and uppercase usage rule"
+    },
+    "styleIds": [
+      "S:1b2a60c248d2692229332aa8c8bedf41da3a5e06,",
+      "S:c3ad57da91ae2b6b209613d37822ef25b367ed3a,",
+      "S:a2fa8458ac5fc7418df1c68319d723c5f973f9b9,",
+      "S:c4501f1a6ce83af773baa412a3e82b70ab91cc5c,",
+      "S:16b5f2b9cb3f9d945e90d3b8691e97d54b03bd3b,",
+      "S:44fed1ad11403170ba6c792e5361984a360b862a,",
+      "S:dcefa6f61c8d0c03ca2baa37afd9bec433c3ffc7,",
+      "S:f3c2d267f5f744d66d68a33fb32aebb370d391a8,",
+      "S:d7103e79546fc6558ee3217439b5b7da91b64525,",
+      "S:e9f046c5eb21ccd9becc6bcd555b236bf5fbef1c,",
+      "S:ce951f7d7e79b5564eee96b479e7eb3d80917bb9,",
+      "S:619f8cebe655f06eb6b3a4a57bcc4b31395cf641,",
+      "S:2cc85b15d57453a13767b7dfe7ff5004726c4daa,",
+      "S:a3c11257eb2390b0abd3500d2be3ff53d8ae0755,",
+      "S:abb356063c5453a59c9b9569914b62546c6a8b68,",
+      "S:cf7beee3a6a74b98da1c2564c7c406ed0d130a89,",
+      "S:d74ad37342f90e6e335143b5f4ae4fe393585683,",
+      "S:f0c608d9e856db3aa5deba3a2f17b4718d663211,"
+    ],
+    "provisionalArabicRule": "Family and weight are bound to canonical Typography variables. Derived 1.02 and 1.06 optical sizes remain intentionally unbound and NOT VERIFIED."
+  },
+  "effectStyles": {
+    "count": 4,
+    "valueIssueCount": 0,
+    "styles": [
+      { "id": "S:d1deeb44a3aefd09091226c9b53edcab6fa05ad8,", "name": "Shadow/SM" },
+      { "id": "S:302c79c07b493ecbc8a013f157925ac8c797319a,", "name": "Shadow/MD" },
+      { "id": "S:7d6a14f8fe65ab77705f06f59ebf6f7a03fea96d,", "name": "Shadow/LG" },
+      { "id": "S:6fcd3629548d862f8b1c0ce8215ea7531071770b,", "name": "Shadow/Signal" }
+    ]
+  },
+  "paintStyles": {
+    "count": 2,
+    "duplicateNameCount": 0,
+    "provisionalGradientStyleCount": 0,
+    "styles": [
+      {
+        "id": "S:d9bcedbb5915e3836d457d5185d2ba728a436b66,",
+        "key": "d9bcedbb5915e3836d457d5185d2ba728a436b66",
+        "name": "Gradient/04.01 Field",
+        "subjectId": "04.01",
+        "sourceNodeId": "65:105",
+        "sourcePaintJsonMatch": true,
+        "stopCount": 7,
+        "valueStatus": "EXACT SOURCE VALUE",
+        "physicalEvidenceStatus": "NOT VERIFIED"
+      },
+      {
+        "id": "S:96d41d591cae3b852ed77f6e8e824aa1f566e0cc,",
+        "key": "96d41d591cae3b852ed77f6e8e824aa1f566e0cc",
+        "name": "Gradient/04.02 Optical-Coating",
+        "subjectId": "04.02",
+        "sourceNodeId": "87:118",
+        "sourcePaintJsonMatch": true,
+        "stopCount": 8,
+        "valueStatus": "EXACT SOURCE VALUE",
+        "physicalEvidenceStatus": "NOT VERIFIED"
+      }
+    ],
+    "unverifiedSystems": [
+      "04.03 Data-Ramp Gradient",
+      "04.04 Heat Gradient",
+      "04.05 Exposure Gradient",
+      "04.06 Reflective-Film Gradient",
+      "04.07 Material-Response Gradient"
+    ],
+    "unverifiedPolicy": "No local paint styles were created for unverified systems. No stop, angle, interpolation, or physical-performance value was fabricated."
+  },
+  "sources": [
+    {
+      "path": "tokens/source/typography.tokens.json",
+      "sha256": "128b1ac8e358f278498d93f591530be5052d1a0fb7cbeb60b23a19a904524926"
+    },
+    {
+      "path": "tokens/source/motion.tokens.json",
+      "sha256": "d309baee4fc7f8a6d945814b57547bba6da10258caa48fef4778d736ec4d5e32"
+    },
+    {
+      "path": "governance/gradient-recipes.json",
+      "sha256": "4495b5eb09e88f9bbd15ac0ca0a55445ea54ca67523c1e971790b0eb5e01a58d",
+      "canonicalSha256": "a40390cc04a20c8c99a8b19671993103fcf612d075810594f0f6391238bd1d72"
+    }
+  ],
+  "validation": {
+    "duplicateTextStyleNameCount": 0,
+    "duplicateEffectStyleNameCount": 0,
+    "duplicatePaintStyleNameCount": 0,
+    "targetedTests": {
+      "passed": 29,
+      "failed": 0,
+      "command": "node --test test/build-tokens.test.mjs test/figma-variable-import-plan.test.mjs test/figma-variable-apply-receipt.test.mjs test/ui-contract.test.mjs test/ui-proof.test.mjs"
+    }
+  },
+  "recoveryEvidence": [
+    {
+      "debugUuid": "ddb7b692-c1c4-4c4d-8f39-6f2908e19c6f",
+      "issue": "Shared plugin-data namespace contained hyphens.",
+      "readback": "Local paint style count remained zero.",
+      "fix": "Use the valid namespace bizarre_design_system."
+    },
+    {
+      "debugUuid": "043e1823-2e68-4c19-bbde-a782423396fd",
+      "issue": "Eyebrow text-case repair required JetBrains Mono Medium to be loaded.",
+      "readback": "All 48 bindings remained legacy and eyebrow textCase remained ORIGINAL.",
+      "fix": "Load the exact style font before mutation."
+    },
+    {
+      "debugUuid": "23e4c145-be1f-458a-8e44-8f5ac032fe00",
+      "issue": "Figma required Noto Sans Symbols2 Regular while changing text-style variable bindings.",
+      "readback": "All 48 bindings remained legacy and no partial mutation committed.",
+      "fix": "Discover available fonts, then load every current style font plus the exact fallback before rebinding."
+    }
+  ]
+}

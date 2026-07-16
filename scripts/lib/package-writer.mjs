@@ -4,6 +4,7 @@ import { dirname, join, posix, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const MANIFEST = 'generated/manifest.json';
+const SUPPORTED_MANIFEST_SCHEMA_VERSIONS = new Set([1, 2]);
 const sha256 = (bytes) => createHash('sha256').update(bytes).digest('hex');
 
 function validatePath(path) {
@@ -32,7 +33,7 @@ function validateExpected(expectedFiles) {
   if (!expectedFiles.has(MANIFEST)) throw new Error(`Expected files must contain ${MANIFEST}`);
   let manifest;
   try { manifest = JSON.parse(expectedFiles.get(MANIFEST)); } catch { throw new Error('Expected manifest contains invalid ownership data'); }
-  if (manifest?.schemaVersion !== 1 || !manifest.files || typeof manifest.files !== 'object' || Array.isArray(manifest.files)) {
+  if (!SUPPORTED_MANIFEST_SCHEMA_VERSIONS.has(manifest?.schemaVersion) || !manifest.files || typeof manifest.files !== 'object' || Array.isArray(manifest.files)) {
     throw new Error('Expected manifest contains invalid ownership data');
   }
   const payloadPaths = [...expectedFiles.keys()].filter((path) => path !== MANIFEST).sort();
@@ -100,7 +101,7 @@ function ownershipFromManifest(files) {
   if (!bytes) throw new Error('Current generated tree contains unowned files (manifest is missing)');
   let manifest;
   try { manifest = JSON.parse(bytes); } catch { throw new Error('Current manifest contains invalid ownership data'); }
-  if (manifest?.schemaVersion !== 1 || !manifest.files || typeof manifest.files !== 'object' || Array.isArray(manifest.files)) {
+  if (!SUPPORTED_MANIFEST_SCHEMA_VERSIONS.has(manifest?.schemaVersion) || !manifest.files || typeof manifest.files !== 'object' || Array.isArray(manifest.files)) {
     throw new Error('Current manifest contains invalid ownership data');
   }
   const owned = new Map([[MANIFEST, sha256(bytes)]]);

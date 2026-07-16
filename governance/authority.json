@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "precedence": ["invariants", "extensions", "fallbacks", "derivedOutputs"],
+  "invariants": [
+    {
+      "id": "company-name",
+      "source": "brand/identity.json",
+      "pointer": "/companyName",
+      "rule": "exact-value",
+      "value": "Bizarre Industries",
+      "overrideable": false
+    },
+    {
+      "id": "gravity-well-geometry",
+      "source": "logo/source/original-lockup.svg",
+      "rule": "exact-geometry",
+      "overrideable": false
+    }
+  ],
+  "extensions": [
+    {
+      "id": "astronomical-atlas",
+      "source": "extensions/astronomical-atlas/DESIGN.md",
+      "classification": "approved-extension-with-overrides",
+      "scope": "explicit-rules-only",
+      "overridesFallbacks": true,
+      "overrides": [
+        {
+          "id": "gradient-policy",
+          "type": "policy",
+          "evidence": "extensions/astronomical-atlas/DESIGN.md#gradient-rules",
+          "permits": ["atlas", "data", "material"],
+          "forbids": ["logo", "signal-lime"]
+        },
+        {
+          "id": "interim-arabic-stack",
+          "type": "typography",
+          "evidence": "extensions/astronomical-atlas/DESIGN.md#arabic-implementation-stack",
+          "status": "interim",
+          "fontStack": {
+            "displayAndBody": "Noto Sans Arabic",
+            "compactUi": "Noto Sans Arabic UI"
+          },
+          "publicShipping": {
+            "status": "NOT VERIFIED",
+            "requiredGates": ["governed-font-assets", "specialist-optical-parity-review"]
+          }
+        },
+        {
+          "id": "workshop-semantic-values",
+          "type": "tokens",
+          "evidence": "archive:tools/build_system.py:520-524; archive:tokens.css:157-161; owner-approved-architecture:2026-07-15",
+          "theme": "workshop",
+          "breakingChange": true,
+          "replacements": [
+            {
+              "token": "surface.elevated",
+              "from": "{color.neutral.midnight}",
+              "to": "#23211C"
+            },
+            {
+              "token": "surface.card",
+              "from": "{color.neutral.smoke}",
+              "to": "#2D2A23"
+            },
+            {
+              "token": "content.secondary",
+              "from": "{color.neutral.ash300}",
+              "to": "#B5B0A4"
+            },
+            {
+              "token": "content.muted",
+              "from": "{color.neutral.ash300}",
+              "to": "#A49E90"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fallbacks": [
+    {
+      "id": "canonical-repository",
+      "repository": "Bizarre-Industries/design-system",
+      "source": ".",
+      "appliesWhen": "atlas-extension-silent"
+    }
+  ],
+  "derivedOutputs": [
+    {
+      "id": "generated-artifacts",
+      "formats": ["html", "css", "pdf", "mockup", "figma", "affinity", "open-design"],
+      "classification": "derivative-only",
+      "authority": false
+    }
+  ]
+}

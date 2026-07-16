@@ -34,10 +34,12 @@ test('brand book follows the governed identity and package contracts', async () 
     sloganOccurrences.map(() => identity.tagline),
     'every slogan occurrence must use exact casing and no trailing punctuation'
   );
-  assert.match(brand, /Bizarre Industries.*?top-level movement\/foundation identity/is);
-  assert.match(brand, /Bizarre Labs.*?commercial arm/is);
-  assert.match(brand, /Bizarre Foundation.*?governing nonprofit/is);
-  assert.match(brand, /Helling.*?product under Labs/is);
+  assert.match(brand, /Bizarre Industries is the only identity/i);
+  assert.match(brand, /does not create subbrands or child brands/i);
+  assert.match(brand, /Integrate\. Do not replace\./i);
+  assert.match(brand, /React is an implementation library, not a visual language/i);
+  assert.match(brand, /preserve SwiftUI and Apple platform conventions/i);
+  assert.doesNotMatch(brand, /Bizarre Labs|Bizarre Foundation|product under Labs/i);
   assert.match(brand, /Precision Panel/);
   assert.match(brand, /Display Field/);
   assert.match(brand, /never a formal logo\/wordmark lockup/i);
@@ -54,23 +56,11 @@ test('brand book follows the governed identity and package contracts', async () 
   assert.match(foundationalRules, /approved primary, inverse, and transparent treatments/i);
   assert.match(foundationalRules, /Signal Lime, Void, and Void Gray/);
 
-  if (!approvedLogoVariants.some((variant) => /mono/i.test(variant))) {
-    assert.doesNotMatch(
-      foundationalRules,
-      /(?:mark|variant|treatment)[^.\n]*(?:appears?|uses?|approved|available)[^.\n]*monochrome/i,
-      'foundational rules must not authorize monochrome without an approved monochrome asset'
-    );
-    const variantGuidance = brand.match(/### Variants[\s\S]+?(?=\n### )/)?.[0] ?? '';
-    const currentVariantProse = variantGuidance
-      .split('\n')
-      .filter((line) => !/(?:deferred|unavailable|do not)/i.test(line))
-      .join('\n');
-    assert.doesNotMatch(
-      currentVariantProse,
-      /monochrome/i,
-      'current variant guidance must not authorize monochrome without an approved monochrome asset'
-    );
-  }
+  assert.match(foundationalRules, /Gravity Well figure is always monochrome/i);
+  assert.match(foundationalRules, /fully Signal Lime or fully black/i);
+  const variantGuidance = brand.match(/### Variants[\s\S]+?(?=\n### )/)?.[0] ?? '';
+  assert.match(variantGuidance, /always monochrome/i);
+  assert.match(variantGuidance, /Never mix the two colors inside the figure/i);
   assert.doesNotMatch(brand, /(?:single|two) sources? of truth/i);
   assert.doesNotMatch(brand, /tokens\/tokens\.css|See `tokens\.css`/);
   assert.doesNotMatch(brand, /ten rings|10 rings/i);

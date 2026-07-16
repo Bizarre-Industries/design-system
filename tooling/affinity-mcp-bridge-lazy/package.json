@@ -1,0 +1,18 @@
+{
+  "name": "@bizarre-industries/affinity-mcp-bridge-lazy",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A lazy, idle-closing stdio bridge for Affinity's local MCP SSE server.",
+  "scripts": {
+    "check": "node --check index.mjs && node --check scripts/smoke.mjs",
+    "smoke": "node scripts/smoke.mjs",
+    "test": "npm run check && npm run smoke"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.29.0"
+  }
+}

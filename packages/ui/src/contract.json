@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "package": "@bizarre/ui",
+  "integration": {
+    "principle": "integrate-not-replace",
+    "auditBeforeStyling": true,
+    "conflictResolution": "host-convention-wins",
+    "identityModel": "single-identity",
+    "identityOwner": "Bizarre Industries",
+    "hostVisualLanguageOwner": "host-product-and-platform",
+    "bizarreExpression": "restrained-recognition-layer",
+    "adapterSurface": "opt-in-html-css"
+  },
+  "infrastructure": {
+    "behaviorOwner": "host-application",
+    "browserBehaviorOwner": "browser-and-host-application",
+    "hostComponentSystemRequired": true,
+    "semanticHtmlRequired": true,
+    "globalResetAllowed": false,
+    "hostRootStyleOverrideAllowed": false,
+    "nativePrimitives": ["a", "button", "input", "output", "select"],
+    "prohibitedRuntime": ["component-runtime", "dialog-system", "focus-manager", "form-engine", "router"]
+  },
+  "themes": ["void", "paper", "void-hicontrast", "workshop", "bone"],
+  "attributes": {
+    "component": "data-bzr-component",
+    "layout": "data-bzr-layout",
+    "state": "data-state",
+    "theme": "data-bizarre-theme",
+    "variant": "data-variant"
+  },
+  "accessibility": {
+    "minimumTargetPx": 44,
+    "targetToken": "space.12",
+    "focusToken": "focus.ring",
+    "nativeKeyboardBehavior": true,
+    "nestedInteractiveElements": false
+  },
+  "components": {
+    "signal-action": {
+      "nativeElements": ["a", "button"],
+      "variants": ["primary", "quiet"],
+      "states": ["default", "hover", "focus", "pressed", "disabled", "loading", "success", "error"],
+      "disabled": { "nativeAttribute": "disabled" },
+      "pressed": { "ariaAttribute": "aria-pressed", "value": "true" },
+      "loading": { "ariaAttribute": "aria-busy", "value": "true" }
+    },
+    "status-indicator": {
+      "nativeElement": "output",
+      "role": "status",
+      "live": "polite",
+      "states": ["idle", "ready", "aligned", "active", "captured", "released", "fault"]
+    },
+    "calibration-label": {
+      "nativeElement": "header",
+      "states": ["idle", "ready", "aligned", "active", "captured", "released", "fault"],
+      "requiredFields": ["atlas-id", "source", "state", "version-date"],
+      "syntheticIdentifier": "configuration-hash"
+    },
+    "atlas-panel": {
+      "nativeElement": "figure",
+      "assetFit": "contain",
+      "provenanceRequired": true,
+      "representations": ["spectral", "bands", "contour", "shaded-contour", "dots", "hatching", "grain", "material", "one-color"]
+    },
+    "instrument-dial": {
+      "nativeElement": "input",
+      "nativeType": "range",
+      "outputRequired": true
+    },
+    "bilingual-data-panel": {
+      "nativeElement": "section",
+      "directionSource": "nearest-dir-attribute",
+      "semanticPriority": "equal",
+      "leadVariants": ["english", "arabic"]
+    },
+    "physical-label": {
+      "nativeElement": "article",
+      "coordinateSpace": "physical",
+      "interactive": false
+    }
+  },
+  "motion": {
+    "durationToken": "capture.duration.ceremonial",
+    "phaseOrder": ["approach", "compress", "eclipse", "lock", "release"],
+    "phases": {
+      "approach": { "startToken": "capture.phase.approach.start", "endToken": "capture.phase.approach.end" },
+      "compress": { "startToken": "capture.phase.compress.start", "endToken": "capture.phase.compress.end" },
+      "eclipse": { "startToken": "capture.phase.eclipse.start", "endToken": "capture.phase.eclipse.end" },
+      "lock": { "startToken": "capture.phase.lock.start", "endToken": "capture.phase.lock.end" },
+      "release": { "startToken": "capture.phase.release.start", "endToken": "capture.phase.release.end" }
+    },
+    "reducedMotionState": "captured"
+  },
+  "rtl": {
+    "layoutSelector": ":dir(rtl)",
+    "logicalPropertiesOnly": true,
+    "physicalCoordinateDirection": "ltr",
+    "physicalFieldSelector": "[data-bzr-coordinate-space=physical]"
+  }
+}

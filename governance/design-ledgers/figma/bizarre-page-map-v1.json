@@ -1,0 +1,531 @@
+{
+  "schemaVersion": 1,
+  "title": "Bizarre Industries Figma Permanent Page Map",
+  "figmaFileKey": "hGgrP9G0tEam8mpk5u3rHg",
+  "manifestHash": "4c4500ea3c2f12cbfb100f129bd39e711ba1c6f5915242280808af42010448b1",
+  "captureMethod": "official Figma MCP / shared plugin metadata",
+  "permanentPageCount": 104,
+  "legacyPagesPreserved": 13,
+  "pages": [
+    {
+      "subjectId": "00.00",
+      "pageId": "47:3",
+      "name": "00.00 · Cover"
+    },
+    {
+      "subjectId": "00.01",
+      "pageId": "47:4",
+      "name": "00.01 · System Map & Navigation"
+    },
+    {
+      "subjectId": "00.02",
+      "pageId": "47:5",
+      "name": "00.02 · Getting Started / Authority / Source of Truth"
+    },
+    {
+      "subjectId": "01.00",
+      "pageId": "47:6",
+      "name": "01.00 · Brand Core Overview"
+    },
+    {
+      "subjectId": "01.01",
+      "pageId": "47:7",
+      "name": "01.01 · Design Philosophy / Swiss-Working"
+    },
+    {
+      "subjectId": "01.02",
+      "pageId": "47:8",
+      "name": "01.02 · Recognition Grammar / Three-Distance Test"
+    },
+    {
+      "subjectId": "01.03",
+      "pageId": "47:9",
+      "name": "01.03 · Masterbrand & Subbrand Architecture"
+    },
+    {
+      "subjectId": "01.04",
+      "pageId": "47:10",
+      "name": "01.04 · Voice / CATCH THE STARS / Metadata Copy"
+    },
+    {
+      "subjectId": "02.00",
+      "pageId": "47:11",
+      "name": "02.00 · Identity Overview"
+    },
+    {
+      "subjectId": "02.01",
+      "pageId": "47:12",
+      "name": "02.01 · Gravity Well Master & Approved Variants"
+    },
+    {
+      "subjectId": "02.02",
+      "pageId": "47:13",
+      "name": "02.02 · Name, Lockups & Coexistence"
+    },
+    {
+      "subjectId": "02.03",
+      "pageId": "47:14",
+      "name": "02.03 · Clear Space, Minimum Size & Background Use"
+    },
+    {
+      "subjectId": "02.04",
+      "pageId": "47:15",
+      "name": "02.04 · Invariance, Misuse & Verification"
+    },
+    {
+      "subjectId": "03.00",
+      "pageId": "47:16",
+      "name": "03.00 · Color Overview"
+    },
+    {
+      "subjectId": "03.01",
+      "pageId": "47:17",
+      "name": "03.01 · Primitives & Neutral Chassis"
+    },
+    {
+      "subjectId": "03.02",
+      "pageId": "47:18",
+      "name": "03.02 · Signal Lime Operational Channel"
+    },
+    {
+      "subjectId": "03.03",
+      "pageId": "47:19",
+      "name": "03.03 · Data-Shaped Spectrum"
+    },
+    {
+      "subjectId": "03.04",
+      "pageId": "47:20",
+      "name": "03.04 · Semantic Modes & Status Colors"
+    },
+    {
+      "subjectId": "03.05",
+      "pageId": "47:21",
+      "name": "03.05 · Contrast & Physical/Accessible Translations"
+    },
+    {
+      "subjectId": "04.00",
+      "pageId": "47:22",
+      "name": "04.00 · Gradient Overview & Decision Matrix"
+    },
+    {
+      "subjectId": "04.01",
+      "pageId": "47:23",
+      "name": "04.01 · Field Gradient"
+    },
+    {
+      "subjectId": "04.02",
+      "pageId": "47:24",
+      "name": "04.02 · Optical-Coating Gradient"
+    },
+    {
+      "subjectId": "04.03",
+      "pageId": "47:25",
+      "name": "04.03 · Data-Ramp Gradient"
+    },
+    {
+      "subjectId": "04.04",
+      "pageId": "47:26",
+      "name": "04.04 · Heat Gradient"
+    },
+    {
+      "subjectId": "04.05",
+      "pageId": "47:27",
+      "name": "04.05 · Exposure Gradient"
+    },
+    {
+      "subjectId": "04.06",
+      "pageId": "47:28",
+      "name": "04.06 · Reflective-Film Gradient"
+    },
+    {
+      "subjectId": "04.07",
+      "pageId": "47:29",
+      "name": "04.07 · Material-Response Gradient"
+    },
+    {
+      "subjectId": "05.00",
+      "pageId": "47:30",
+      "name": "05.00 · Typography Overview"
+    },
+    {
+      "subjectId": "05.01",
+      "pageId": "47:31",
+      "name": "05.01 · Unbounded / Display"
+    },
+    {
+      "subjectId": "05.02",
+      "pageId": "47:32",
+      "name": "05.02 · Big Shoulders Stencil / Industrial"
+    },
+    {
+      "subjectId": "05.03",
+      "pageId": "47:33",
+      "name": "05.03 · Hanken Grotesk / Body and UI"
+    },
+    {
+      "subjectId": "05.04",
+      "pageId": "47:34",
+      "name": "05.04 · JetBrains Mono / Technical"
+    },
+    {
+      "subjectId": "05.05",
+      "pageId": "47:35",
+      "name": "05.05 · Arabic Type System"
+    },
+    {
+      "subjectId": "05.06",
+      "pageId": "47:36",
+      "name": "05.06 · Hierarchy, Numerals, Bilingual Composition & RTL"
+    },
+    {
+      "subjectId": "06.00",
+      "pageId": "47:37",
+      "name": "06.00 · Geometry & Layout Overview"
+    },
+    {
+      "subjectId": "06.01",
+      "pageId": "47:38",
+      "name": "06.01 · Continuous Lens Aperture v2"
+    },
+    {
+      "subjectId": "06.02",
+      "pageId": "47:39",
+      "name": "06.02 · Precision Panel"
+    },
+    {
+      "subjectId": "06.03",
+      "pageId": "47:40",
+      "name": "06.03 · Display Field"
+    },
+    {
+      "subjectId": "06.04",
+      "pageId": "47:41",
+      "name": "06.04 · Grid & Spacing"
+    },
+    {
+      "subjectId": "06.05",
+      "pageId": "47:42",
+      "name": "06.05 · Optical Sizes, Minimums & Responsive Scaling"
+    },
+    {
+      "subjectId": "06.06",
+      "pageId": "47:43",
+      "name": "06.06 · Lines, Corners, Depth & Composition"
+    },
+    {
+      "subjectId": "06.07",
+      "pageId": "47:44",
+      "name": "06.07 · Iconography, Instrument Indices & Directional Symbols"
+    },
+    {
+      "subjectId": "07.00",
+      "pageId": "47:45",
+      "name": "07.00 · Atlas Patterns Overview / One Field, Many Representations"
+    },
+    {
+      "subjectId": "07.01",
+      "pageId": "47:46",
+      "name": "07.01 · Field Source & Provenance"
+    },
+    {
+      "subjectId": "07.02",
+      "pageId": "47:47",
+      "name": "07.02 · Continuous Spectral Field"
+    },
+    {
+      "subjectId": "07.03",
+      "pageId": "47:48",
+      "name": "07.03 · Stepped Bands"
+    },
+    {
+      "subjectId": "07.04",
+      "pageId": "47:49",
+      "name": "07.04 · Contour Lines"
+    },
+    {
+      "subjectId": "07.05",
+      "pageId": "47:50",
+      "name": "07.05 · Shaded Contour / Provisional"
+    },
+    {
+      "subjectId": "07.06",
+      "pageId": "47:51",
+      "name": "07.06 · Dot Density"
+    },
+    {
+      "subjectId": "07.07",
+      "pageId": "47:52",
+      "name": "07.07 · Hatching"
+    },
+    {
+      "subjectId": "07.08",
+      "pageId": "47:53",
+      "name": "07.08 · Grain and Halftone / Provisional"
+    },
+    {
+      "subjectId": "07.09",
+      "pageId": "47:54",
+      "name": "07.09 · Material, Reflective and UV / Provisional"
+    },
+    {
+      "subjectId": "07.10",
+      "pageId": "47:55",
+      "name": "07.10 · One-Color Translation / Provisional"
+    },
+    {
+      "subjectId": "07.11",
+      "pageId": "47:56",
+      "name": "07.11 · Micro Derivative"
+    },
+    {
+      "subjectId": "08.00",
+      "pageId": "47:57",
+      "name": "08.00 · Motion & Interaction Overview"
+    },
+    {
+      "subjectId": "08.01",
+      "pageId": "47:58",
+      "name": "08.01 · Capture Sequence"
+    },
+    {
+      "subjectId": "08.02",
+      "pageId": "47:59",
+      "name": "08.02 · Approach"
+    },
+    {
+      "subjectId": "08.03",
+      "pageId": "47:60",
+      "name": "08.03 · Compress"
+    },
+    {
+      "subjectId": "08.04",
+      "pageId": "47:61",
+      "name": "08.04 · Eclipse"
+    },
+    {
+      "subjectId": "08.05",
+      "pageId": "47:62",
+      "name": "08.05 · Lock"
+    },
+    {
+      "subjectId": "08.06",
+      "pageId": "47:63",
+      "name": "08.06 · Release"
+    },
+    {
+      "subjectId": "08.07",
+      "pageId": "47:64",
+      "name": "08.07 · Timing & Easing"
+    },
+    {
+      "subjectId": "08.08",
+      "pageId": "47:65",
+      "name": "08.08 · Reduced Motion & Low Power"
+    },
+    {
+      "subjectId": "08.09",
+      "pageId": "47:66",
+      "name": "08.09 · Micro-interactions & State Feedback"
+    },
+    {
+      "subjectId": "09.00",
+      "pageId": "47:67",
+      "name": "09.00 · Components Overview"
+    },
+    {
+      "subjectId": "09.01",
+      "pageId": "47:68",
+      "name": "09.01 · SDS / Host-Infrastructure Boundary"
+    },
+    {
+      "subjectId": "09.02",
+      "pageId": "47:69",
+      "name": "09.02 · Shared State, Target, Focus & RTL Contract"
+    },
+    {
+      "subjectId": "09.03",
+      "pageId": "47:70",
+      "name": "09.03 · Signal Action"
+    },
+    {
+      "subjectId": "09.04",
+      "pageId": "47:71",
+      "name": "09.04 · Status Indicator"
+    },
+    {
+      "subjectId": "09.05",
+      "pageId": "47:72",
+      "name": "09.05 · Atlas Panel"
+    },
+    {
+      "subjectId": "09.06",
+      "pageId": "47:73",
+      "name": "09.06 · Calibration Label"
+    },
+    {
+      "subjectId": "09.07",
+      "pageId": "47:74",
+      "name": "09.07 · Instrument Dial"
+    },
+    {
+      "subjectId": "09.08",
+      "pageId": "47:75",
+      "name": "09.08 · Bilingual Data Panel"
+    },
+    {
+      "subjectId": "09.09",
+      "pageId": "47:76",
+      "name": "09.09 · Physical Label"
+    },
+    {
+      "subjectId": "10.00",
+      "pageId": "47:77",
+      "name": "10.00 · Materials & Finishes Overview"
+    },
+    {
+      "subjectId": "10.01",
+      "pageId": "47:78",
+      "name": "10.01 · Matte and Gloss Void"
+    },
+    {
+      "subjectId": "10.02",
+      "pageId": "47:79",
+      "name": "10.02 · Aluminum and Brushed Aluminum"
+    },
+    {
+      "subjectId": "10.03",
+      "pageId": "47:80",
+      "name": "10.03 · Carbon, Bakelite and Composite"
+    },
+    {
+      "subjectId": "10.04",
+      "pageId": "47:81",
+      "name": "10.04 · Signal Spot Media"
+    },
+    {
+      "subjectId": "10.05",
+      "pageId": "47:82",
+      "name": "10.05 · Translucent, Ceramic and Optical Materials"
+    },
+    {
+      "subjectId": "10.06",
+      "pageId": "47:83",
+      "name": "10.06 · Foil, Emboss, Deboss, Screen and UV"
+    },
+    {
+      "subjectId": "10.07",
+      "pageId": "47:84",
+      "name": "10.07 · Assembly, Seams, Fasteners & Wear"
+    },
+    {
+      "subjectId": "11.00",
+      "pageId": "47:85",
+      "name": "11.00 · Applications & Mockups Overview"
+    },
+    {
+      "subjectId": "11.01",
+      "pageId": "47:86",
+      "name": "11.01 · Image Direction"
+    },
+    {
+      "subjectId": "11.02",
+      "pageId": "47:87",
+      "name": "11.02 · ImageGen → Affinity Reconstruction & Mockup Honesty"
+    },
+    {
+      "subjectId": "11.03",
+      "pageId": "47:88",
+      "name": "11.03 · Poster / Campaign"
+    },
+    {
+      "subjectId": "11.04",
+      "pageId": "47:89",
+      "name": "11.04 · Calibration Label / Sticker"
+    },
+    {
+      "subjectId": "11.05",
+      "pageId": "47:90",
+      "name": "11.05 · Hardware Panel / Camera Body"
+    },
+    {
+      "subjectId": "11.06",
+      "pageId": "47:91",
+      "name": "11.06 · Pit Instrument / Dial"
+    },
+    {
+      "subjectId": "11.07",
+      "pageId": "47:92",
+      "name": "11.07 · Film / Physical Media"
+    },
+    {
+      "subjectId": "11.08",
+      "pageId": "47:93",
+      "name": "11.08 · Packaging / Technical Manual"
+    },
+    {
+      "subjectId": "11.09",
+      "pageId": "47:94",
+      "name": "11.09 · Vehicle Livery / Day"
+    },
+    {
+      "subjectId": "11.10",
+      "pageId": "47:95",
+      "name": "11.10 · Vehicle Livery / Night"
+    },
+    {
+      "subjectId": "11.11",
+      "pageId": "47:96",
+      "name": "11.11 · Product-Family Mockup"
+    },
+    {
+      "subjectId": "11.12",
+      "pageId": "47:97",
+      "name": "11.12 · Digital Product / Figma Make Handoff"
+    },
+    {
+      "subjectId": "12.00",
+      "pageId": "47:98",
+      "name": "12.00 · Production & Release Overview"
+    },
+    {
+      "subjectId": "12.01",
+      "pageId": "47:99",
+      "name": "12.01 · Print, One-Color & Production Profiles"
+    },
+    {
+      "subjectId": "12.02",
+      "pageId": "47:100",
+      "name": "12.02 · Vinyl, Reflective & UV Registration"
+    },
+    {
+      "subjectId": "12.03",
+      "pageId": "47:101",
+      "name": "12.03 · Fabrication & Physical-Sample Requirements"
+    },
+    {
+      "subjectId": "12.04",
+      "pageId": "47:102",
+      "name": "12.04 · Digital, Vector & Raster Export Matrix"
+    },
+    {
+      "subjectId": "12.05",
+      "pageId": "47:103",
+      "name": "12.05 · Accessibility, RTL, Motion & Visual-QA Evidence"
+    },
+    {
+      "subjectId": "12.06",
+      "pageId": "47:104",
+      "name": "12.06 · Provenance, Approval & Change Control"
+    },
+    {
+      "subjectId": "12.07",
+      "pageId": "47:105",
+      "name": "12.07 · Full Brand Guide Assembly / Release / Handoff"
+    },
+    {
+      "subjectId": "99.00",
+      "pageId": "47:106",
+      "name": "99.00 · Noncanonical References & Legacy Index"
+    }
+  ]
+}

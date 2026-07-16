@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-bizarre-theme="void">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Components — Bizarre Industries</title>
+  <link rel="stylesheet" href="../../tokens/tokens.css">
+  <link rel="stylesheet" href="../../assets/fonts/bizarre-fonts.css">
+  <link rel="stylesheet" href="../../ui/components.css">
+  <link rel="stylesheet" href="../../ui/motion.css">
+  <link rel="stylesheet" href="../../ui/rtl.css">
+  <link rel="stylesheet" href="../manual.css">
+</head>
+<body data-bzr-ui>
+  <main class="manual-shell">
+    <nav class="manual-nav" aria-label="Manual pages">
+    <a href="../index.html">Overview</a>
+    <a href="./precision-panel.html">Precision Panel</a>
+    <a href="./textures.html">Textures</a>
+    <a href="./aperture.html">Aperture</a>
+    <a href="./motion.html">Motion</a>
+    <a href="./poster.html">Poster</a>
+    <a href="./components.html">Components</a>
+    <a href="./bilingual.html">Bilingual</a>
+    <a href="./production.html">Production</a>
+    <a href="./governance.html">Governance</a>
+    <a href="./evidence.html">Evidence</a>
+  </nav>
+    <article class="manual-page" data-manual-page="components">
+      <header class="manual-page-header">
+        <p class="manual-eyebrow">Bizarre Industries / Astronomical Atlas / PROVISIONAL v1 / NONPUBLISHABLE</p>
+        <h1>Components</h1>
+        <p class="manual-lede">Existing accessible primitives wrapped in Bizarre states and composition.</p>
+      </header>
+      <section>
+      <p>This layer wraps existing native interaction infrastructure. The host application owns behavior; Bizarre supplies governed tokens, states, motion, and composition.</p>
+      <div class="manual-grid">
+        <article class="manual-component-sample">
+          <h2>Action and status</h2>
+          <div class="manual-action-row">
+            <button type="button" data-bzr-component="signal-action" data-variant="primary">Capture</button>
+            <button type="button" data-bzr-component="signal-action" data-variant="quiet" aria-pressed="true">Aligned</button>
+            <button type="button" data-bzr-component="signal-action" disabled>Disabled</button>
+          </div>
+          <output data-bzr-component="status-indicator" data-state="ready" role="status" aria-live="polite">System ready</output>
+        </article>
+        <fieldset data-bzr-component="instrument-dial">
+          <legend>Instrument dial</legend>
+          <label for="manual-compression">Compression exponent</label>
+          <input id="manual-compression" type="range" min="100" max="220" value="172" step="1">
+          <output for="manual-compression">1.72</output>
+        </fieldset>
+        <article data-bzr-component="physical-label"><h2>Physical label</h2><p><bdi data-bzr-coordinate-space="physical" dir="ltr">MASS X 0.69 / MASS Y 0.53</bdi></p></article>
+        <figure data-bzr-component="atlas-panel"><img src="../../provisional/atlas/instrument-dial.svg" alt="Governed Astronomical Atlas instrument dial"><figcaption><span>Atlas panel</span><span>Contain / provenance required</span></figcaption></figure>
+      </div>
+      <p class="manual-note">Contract families: <code>atlas-panel</code>, <code>bilingual-data-panel</code>, <code>calibration-label</code>, <code>instrument-dial</code>, <code>physical-label</code>, <code>signal-action</code>, <code>status-indicator</code>.</p>
+    </section>
+    </article>
+  </main>
+</body>
+</html>

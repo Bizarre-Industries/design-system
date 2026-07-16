@@ -9,8 +9,16 @@
   "scripts": {
     "test": "node --test test/*.test.mjs",
     "build:tokens": "node scripts/build-tokens.mjs",
+    "build:logos": "node scripts/build-logo-variants.mjs",
+    "build:atlas": "node scripts/build-atlas.mjs",
+    "sync:provisional-atlas": "node scripts/sync-provisional-atlas-assets.mjs",
     "build:assets": "node scripts/build-assets.mjs",
-    "build": "npm run build:tokens && npm run build:assets",
+    "build:ui": "node scripts/build-ui.mjs",
+    "build:open-design": "node scripts/build-open-design.mjs",
+    "build:affinity-manifest": "node scripts/build-affinity-subject-manifest.mjs",
+    "check:affinity-manifest": "node scripts/validate-affinity-subject-manifest.mjs",
+    "check:gradient-recipes": "node scripts/validate-gradient-recipes.mjs",
+    "build": "npm run build:tokens && npm run build:logos && npm run build:atlas && npm run build:assets && npm run build:ui && npm run build:open-design",
     "check:generated": "node scripts/check-generated.mjs",
     "verify": "npm test && npm run check:generated"
   }

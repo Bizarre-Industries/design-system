@@ -1,0 +1,5399 @@
+{
+  "schemaVersion": 1,
+  "manifestVersion": "2.0.0",
+  "title": "Bizarre Industries Identity System Mirrored Subject Manifest",
+  "approvedPageRule": {
+    "widthPx": 1440,
+    "heightStrategy": "content-driven",
+    "coverAndDividerSizePx": [
+      1440,
+      900
+    ],
+    "affinityDpi": 144,
+    "approvedByOwner": true
+  },
+  "figma": {
+    "fileKey": "hGgrP9G0tEam8mpk5u3rHg",
+    "permanentPageCount": 104
+  },
+  "affinity": {
+    "filename": "Bizarre-Industries-Masterbrand-Library.afdesign",
+    "permanentArtboardCount": 104,
+    "exactLayerStack": [
+      "00 / Reference",
+      "10 / Construction",
+      "20 / Canonical Assets",
+      "30 / Live Type and Metadata",
+      "40 / Color, Gradient, Pattern, or Material",
+      "50 / Variants, States, and Optical Sizes",
+      "60 / Usage and Applications",
+      "70 / Accessibility, Bilingual, RTL, and Motion",
+      "80 / Production and Export",
+      "90 / Correct Use and Misuse",
+      "99 / Provenance, Status, Evidence, and Navigation"
+    ]
+  },
+  "prototype": {
+    "figmaMakeFileKey": "s9stWDZe0kwBisJjfFMOqT",
+    "mirroredSubject": false
+  },
+  "subjects": [
+    {
+      "id": "00.00",
+      "name": "Cover",
+      "kind": "Front matter",
+      "categoryId": "00",
+      "categoryName": "Entry and navigation",
+      "exactLabel": "00.00 · Cover",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 900,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "00.01",
+      "name": "System Map & Navigation",
+      "kind": "Navigation",
+      "categoryId": "00",
+      "categoryName": "Entry and navigation",
+      "exactLabel": "00.01 · System Map & Navigation",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 2400,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "00.02",
+      "name": "Getting Started / Authority / Source of Truth",
+      "kind": "Entry guide",
+      "categoryId": "00",
+      "categoryName": "Entry and navigation",
+      "exactLabel": "00.02 · Getting Started / Authority / Source of Truth",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 2800,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "01.00",
+      "name": "Brand Core Overview",
+      "kind": "Category overview",
+      "categoryId": "01",
+      "categoryName": "Brand core",
+      "exactLabel": "01.00 · Brand Core Overview",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 2840,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "01.01",
+      "name": "Design Philosophy / Swiss-Working",
+      "kind": "Detail",
+      "categoryId": "01",
+      "categoryName": "Brand core",
+      "exactLabel": "01.01 · Design Philosophy / Swiss-Working",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "01.02",
+      "name": "Recognition Grammar / Three-Distance Test",
+      "kind": "Detail",
+      "categoryId": "01",
+      "categoryName": "Brand core",
+      "exactLabel": "01.02 · Recognition Grammar / Three-Distance Test",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "01.03",
+      "name": "Single Identity / Native Integration",
+      "kind": "Detail",
+      "categoryId": "01",
+      "categoryName": "Brand core",
+      "exactLabel": "01.03 · Single Identity / Native Integration",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "01.04",
+      "name": "Voice / CATCH THE STARS / Metadata Copy",
+      "kind": "Detail",
+      "categoryId": "01",
+      "categoryName": "Brand core",
+      "exactLabel": "01.04 · Voice / CATCH THE STARS / Metadata Copy",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "02.00",
+      "name": "Identity Overview",
+      "kind": "Category overview",
+      "categoryId": "02",
+      "categoryName": "Identity",
+      "exactLabel": "02.00 · Identity Overview",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 2840,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "02.01",
+      "name": "Gravity Well Master & Approved Variants",
+      "kind": "Detail",
+      "categoryId": "02",
+      "categoryName": "Identity",
+      "exactLabel": "02.01 · Gravity Well Master & Approved Variants",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "02.02",
+      "name": "Name, Lockups & Coexistence",
+      "kind": "Detail",
+      "categoryId": "02",
+      "categoryName": "Identity",
+      "exactLabel": "02.02 · Name, Lockups & Coexistence",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "02.03",
+      "name": "Clear Space, Minimum Size & Background Use",
+      "kind": "Detail",
+      "categoryId": "02",
+      "categoryName": "Identity",
+      "exactLabel": "02.03 · Clear Space, Minimum Size & Background Use",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "02.04",
+      "name": "Invariance, Misuse & Verification",
+      "kind": "Detail",
+      "categoryId": "02",
+      "categoryName": "Identity",
+      "exactLabel": "02.04 · Invariance, Misuse & Verification",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "03.00",
+      "name": "Color Overview",
+      "kind": "Category overview",
+      "categoryId": "03",
+      "categoryName": "Color",
+      "exactLabel": "03.00 · Color Overview",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "03.01",
+      "name": "Primitives & Neutral Chassis",
+      "kind": "Detail",
+      "categoryId": "03",
+      "categoryName": "Color",
+      "exactLabel": "03.01 · Primitives & Neutral Chassis",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "03.02",
+      "name": "Signal Lime Operational Channel",
+      "kind": "Detail",
+      "categoryId": "03",
+      "categoryName": "Color",
+      "exactLabel": "03.02 · Signal Lime Operational Channel",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "03.03",
+      "name": "Data-Shaped Spectrum",
+      "kind": "Detail",
+      "categoryId": "03",
+      "categoryName": "Color",
+      "exactLabel": "03.03 · Data-Shaped Spectrum",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "03.04",
+      "name": "Semantic Modes & Status Colors",
+      "kind": "Detail",
+      "categoryId": "03",
+      "categoryName": "Color",
+      "exactLabel": "03.04 · Semantic Modes & Status Colors",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "03.05",
+      "name": "Contrast & Physical/Accessible Translations",
+      "kind": "Detail",
+      "categoryId": "03",
+      "categoryName": "Color",
+      "exactLabel": "03.05 · Contrast & Physical/Accessible Translations",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "04.00",
+      "name": "Gradient Overview & Decision Matrix",
+      "kind": "Category overview",
+      "categoryId": "04",
+      "categoryName": "Gradients",
+      "exactLabel": "04.00 · Gradient Overview & Decision Matrix",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "04.01",
+      "name": "Field Gradient",
+      "kind": "Detail",
+      "categoryId": "04",
+      "categoryName": "Gradients",
+      "exactLabel": "04.01 · Field Gradient",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "04.02",
+      "name": "Optical-Coating Gradient",
+      "kind": "Detail",
+      "categoryId": "04",
+      "categoryName": "Gradients",
+      "exactLabel": "04.02 · Optical-Coating Gradient",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "04.03",
+      "name": "Data-Ramp Gradient",
+      "kind": "Detail",
+      "categoryId": "04",
+      "categoryName": "Gradients",
+      "exactLabel": "04.03 · Data-Ramp Gradient",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "04.04",
+      "name": "Heat Gradient",
+      "kind": "Detail",
+      "categoryId": "04",
+      "categoryName": "Gradients",
+      "exactLabel": "04.04 · Heat Gradient",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "04.05",
+      "name": "Exposure Gradient",
+      "kind": "Detail",
+      "categoryId": "04",
+      "categoryName": "Gradients",
+      "exactLabel": "04.05 · Exposure Gradient",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "04.06",
+      "name": "Reflective-Film Gradient",
+      "kind": "Detail",
+      "categoryId": "04",
+      "categoryName": "Gradients",
+      "exactLabel": "04.06 · Reflective-Film Gradient",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "04.07",
+      "name": "Material-Response Gradient",
+      "kind": "Detail",
+      "categoryId": "04",
+      "categoryName": "Gradients",
+      "exactLabel": "04.07 · Material-Response Gradient",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "05.00",
+      "name": "Typography Overview",
+      "kind": "Category overview",
+      "categoryId": "05",
+      "categoryName": "Typography",
+      "exactLabel": "05.00 · Typography Overview",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "05.01",
+      "name": "Unbounded / Display",
+      "kind": "Detail",
+      "categoryId": "05",
+      "categoryName": "Typography",
+      "exactLabel": "05.01 · Unbounded / Display",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "05.02",
+      "name": "Big Shoulders Stencil / Industrial",
+      "kind": "Detail",
+      "categoryId": "05",
+      "categoryName": "Typography",
+      "exactLabel": "05.02 · Big Shoulders Stencil / Industrial",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "05.03",
+      "name": "Hanken Grotesk / Body and UI",
+      "kind": "Detail",
+      "categoryId": "05",
+      "categoryName": "Typography",
+      "exactLabel": "05.03 · Hanken Grotesk / Body and UI",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "05.04",
+      "name": "JetBrains Mono / Technical",
+      "kind": "Detail",
+      "categoryId": "05",
+      "categoryName": "Typography",
+      "exactLabel": "05.04 · JetBrains Mono / Technical",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "05.05",
+      "name": "Arabic Type System",
+      "kind": "Detail",
+      "categoryId": "05",
+      "categoryName": "Typography",
+      "exactLabel": "05.05 · Arabic Type System",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "05.06",
+      "name": "Hierarchy, Numerals, Bilingual Composition & RTL",
+      "kind": "Detail",
+      "categoryId": "05",
+      "categoryName": "Typography",
+      "exactLabel": "05.06 · Hierarchy, Numerals, Bilingual Composition & RTL",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4000,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "06.00",
+      "name": "Geometry & Layout Overview",
+      "kind": "Category overview",
+      "categoryId": "06",
+      "categoryName": "Geometry and layout",
+      "exactLabel": "06.00 · Geometry & Layout Overview",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 2840,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "06.01",
+      "name": "Continuous Lens Aperture v2",
+      "kind": "Provisional detail",
+      "categoryId": "06",
+      "categoryName": "Geometry and layout",
+      "exactLabel": "06.01 · Continuous Lens Aperture v2",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4100,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "OWNER-APPROVED DIRECTION / PROVISIONAL GEOMETRY",
+        "publishable": false,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "06.02",
+      "name": "Precision Panel",
+      "kind": "Detail",
+      "categoryId": "06",
+      "categoryName": "Geometry and layout",
+      "exactLabel": "06.02 · Precision Panel",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "06.03",
+      "name": "Display Field",
+      "kind": "Detail",
+      "categoryId": "06",
+      "categoryName": "Geometry and layout",
+      "exactLabel": "06.03 · Display Field",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "06.04",
+      "name": "Grid & Spacing",
+      "kind": "Detail",
+      "categoryId": "06",
+      "categoryName": "Geometry and layout",
+      "exactLabel": "06.04 · Grid & Spacing",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "06.05",
+      "name": "Optical Sizes, Minimums & Responsive Scaling",
+      "kind": "Detail",
+      "categoryId": "06",
+      "categoryName": "Geometry and layout",
+      "exactLabel": "06.05 · Optical Sizes, Minimums & Responsive Scaling",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "06.06",
+      "name": "Lines, Corners, Depth & Composition",
+      "kind": "Detail",
+      "categoryId": "06",
+      "categoryName": "Geometry and layout",
+      "exactLabel": "06.06 · Lines, Corners, Depth & Composition",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "06.07",
+      "name": "Iconography, Instrument Indices & Directional Symbols",
+      "kind": "Detail",
+      "categoryId": "06",
+      "categoryName": "Geometry and layout",
+      "exactLabel": "06.07 · Iconography, Instrument Indices & Directional Symbols",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.00",
+      "name": "Atlas Patterns Overview / One Field, Many Representations",
+      "kind": "Category overview",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.00 · Atlas Patterns Overview / One Field, Many Representations",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.01",
+      "name": "Field Source & Provenance",
+      "kind": "Detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.01 · Field Source & Provenance",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.02",
+      "name": "Continuous Spectral Field",
+      "kind": "Detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.02 · Continuous Spectral Field",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.03",
+      "name": "Stepped Bands",
+      "kind": "Detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.03 · Stepped Bands",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.04",
+      "name": "Contour Lines",
+      "kind": "Detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.04 · Contour Lines",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.05",
+      "name": "Shaded Contour / Provisional",
+      "kind": "Provisional detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.05 · Shaded Contour / Provisional",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "PROVISIONAL v1",
+        "publishable": false,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.06",
+      "name": "Dot Density",
+      "kind": "Detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.06 · Dot Density",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.07",
+      "name": "Hatching",
+      "kind": "Detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.07 · Hatching",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.08",
+      "name": "Grain and Halftone / Provisional",
+      "kind": "Provisional detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.08 · Grain and Halftone / Provisional",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "PROVISIONAL v1",
+        "publishable": false,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.09",
+      "name": "Material, Reflective and UV / Provisional",
+      "kind": "Provisional detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.09 · Material, Reflective and UV / Provisional",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "PROVISIONAL v1",
+        "publishable": false,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.10",
+      "name": "One-Color Translation / Provisional",
+      "kind": "Provisional detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.10 · One-Color Translation / Provisional",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "PROVISIONAL v1",
+        "publishable": false,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "07.11",
+      "name": "Micro Derivative",
+      "kind": "Detail",
+      "categoryId": "07",
+      "categoryName": "Astronomical Atlas patterns",
+      "exactLabel": "07.11 · Micro Derivative",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "08.00",
+      "name": "Motion & Interaction Overview",
+      "kind": "Category overview",
+      "categoryId": "08",
+      "categoryName": "Motion and interaction",
+      "exactLabel": "08.00 · Motion & Interaction Overview",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 2840,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "08.01",
+      "name": "Capture Sequence",
+      "kind": "Detail",
+      "categoryId": "08",
+      "categoryName": "Motion and interaction",
+      "exactLabel": "08.01 · Capture Sequence",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "08.02",
+      "name": "Approach",
+      "kind": "Detail",
+      "categoryId": "08",
+      "categoryName": "Motion and interaction",
+      "exactLabel": "08.02 · Approach",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "08.03",
+      "name": "Compress",
+      "kind": "Detail",
+      "categoryId": "08",
+      "categoryName": "Motion and interaction",
+      "exactLabel": "08.03 · Compress",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "08.04",
+      "name": "Eclipse",
+      "kind": "Detail",
+      "categoryId": "08",
+      "categoryName": "Motion and interaction",
+      "exactLabel": "08.04 · Eclipse",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "08.05",
+      "name": "Lock",
+      "kind": "Detail",
+      "categoryId": "08",
+      "categoryName": "Motion and interaction",
+      "exactLabel": "08.05 · Lock",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "08.06",
+      "name": "Release",
+      "kind": "Detail",
+      "categoryId": "08",
+      "categoryName": "Motion and interaction",
+      "exactLabel": "08.06 · Release",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "08.07",
+      "name": "Timing & Easing",
+      "kind": "Detail",
+      "categoryId": "08",
+      "categoryName": "Motion and interaction",
+      "exactLabel": "08.07 · Timing & Easing",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "08.08",
+      "name": "Reduced Motion & Low Power",
+      "kind": "Detail",
+      "categoryId": "08",
+      "categoryName": "Motion and interaction",
+      "exactLabel": "08.08 · Reduced Motion & Low Power",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "08.09",
+      "name": "Micro-interactions & State Feedback",
+      "kind": "Detail",
+      "categoryId": "08",
+      "categoryName": "Motion and interaction",
+      "exactLabel": "08.09 · Micro-interactions & State Feedback",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "09.00",
+      "name": "Components Overview",
+      "kind": "Category overview",
+      "categoryId": "09",
+      "categoryName": "Components",
+      "exactLabel": "09.00 · Components Overview",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 2840,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "09.01",
+      "name": "SDS / Host-Infrastructure Boundary",
+      "kind": "Detail",
+      "categoryId": "09",
+      "categoryName": "Components",
+      "exactLabel": "09.01 · SDS / Host-Infrastructure Boundary",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "09.02",
+      "name": "Shared State, Target, Focus & RTL Contract",
+      "kind": "Detail",
+      "categoryId": "09",
+      "categoryName": "Components",
+      "exactLabel": "09.02 · Shared State, Target, Focus & RTL Contract",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "09.03",
+      "name": "Signal Action",
+      "kind": "Component detail",
+      "categoryId": "09",
+      "categoryName": "Components",
+      "exactLabel": "09.03 · Signal Action",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3800,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "09.04",
+      "name": "Status Indicator",
+      "kind": "Component detail",
+      "categoryId": "09",
+      "categoryName": "Components",
+      "exactLabel": "09.04 · Status Indicator",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3800,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "09.05",
+      "name": "Atlas Panel",
+      "kind": "Component detail",
+      "categoryId": "09",
+      "categoryName": "Components",
+      "exactLabel": "09.05 · Atlas Panel",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3800,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "09.06",
+      "name": "Calibration Label",
+      "kind": "Component detail",
+      "categoryId": "09",
+      "categoryName": "Components",
+      "exactLabel": "09.06 · Calibration Label",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3800,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "09.07",
+      "name": "Instrument Dial",
+      "kind": "Component detail",
+      "categoryId": "09",
+      "categoryName": "Components",
+      "exactLabel": "09.07 · Instrument Dial",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3800,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "09.08",
+      "name": "Bilingual Data Panel",
+      "kind": "Component detail",
+      "categoryId": "09",
+      "categoryName": "Components",
+      "exactLabel": "09.08 · Bilingual Data Panel",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3800,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "09.09",
+      "name": "Physical Label",
+      "kind": "Component detail",
+      "categoryId": "09",
+      "categoryName": "Components",
+      "exactLabel": "09.09 · Physical Label",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3800,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "10.00",
+      "name": "Materials & Finishes Overview",
+      "kind": "Category overview",
+      "categoryId": "10",
+      "categoryName": "Materials and finishes",
+      "exactLabel": "10.00 · Materials & Finishes Overview",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "10.01",
+      "name": "Matte and Gloss Void",
+      "kind": "Detail",
+      "categoryId": "10",
+      "categoryName": "Materials and finishes",
+      "exactLabel": "10.01 · Matte and Gloss Void",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "10.02",
+      "name": "Aluminum and Brushed Aluminum",
+      "kind": "Detail",
+      "categoryId": "10",
+      "categoryName": "Materials and finishes",
+      "exactLabel": "10.02 · Aluminum and Brushed Aluminum",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "10.03",
+      "name": "Carbon, Bakelite and Composite",
+      "kind": "Detail",
+      "categoryId": "10",
+      "categoryName": "Materials and finishes",
+      "exactLabel": "10.03 · Carbon, Bakelite and Composite",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "10.04",
+      "name": "Signal Spot Media",
+      "kind": "Detail",
+      "categoryId": "10",
+      "categoryName": "Materials and finishes",
+      "exactLabel": "10.04 · Signal Spot Media",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "10.05",
+      "name": "Translucent, Ceramic and Optical Materials",
+      "kind": "Detail",
+      "categoryId": "10",
+      "categoryName": "Materials and finishes",
+      "exactLabel": "10.05 · Translucent, Ceramic and Optical Materials",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "10.06",
+      "name": "Foil, Emboss, Deboss, Screen and UV",
+      "kind": "Detail",
+      "categoryId": "10",
+      "categoryName": "Materials and finishes",
+      "exactLabel": "10.06 · Foil, Emboss, Deboss, Screen and UV",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "10.07",
+      "name": "Assembly, Seams, Fasteners & Wear",
+      "kind": "Detail",
+      "categoryId": "10",
+      "categoryName": "Materials and finishes",
+      "exactLabel": "10.07 · Assembly, Seams, Fasteners & Wear",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.00",
+      "name": "Applications & Mockups Overview",
+      "kind": "Category overview",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.00 · Applications & Mockups Overview",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.01",
+      "name": "Image Direction",
+      "kind": "Detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.01 · Image Direction",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.02",
+      "name": "ImageGen → Affinity Reconstruction & Mockup Honesty",
+      "kind": "Detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.02 · ImageGen → Affinity Reconstruction & Mockup Honesty",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.03",
+      "name": "Poster / Campaign",
+      "kind": "Application detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.03 · Poster / Campaign",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.04",
+      "name": "Calibration Label / Sticker",
+      "kind": "Application detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.04 · Calibration Label / Sticker",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.05",
+      "name": "Hardware Panel / Camera Body",
+      "kind": "Application detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.05 · Hardware Panel / Camera Body",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.06",
+      "name": "Pit Instrument / Dial",
+      "kind": "Application detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.06 · Pit Instrument / Dial",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.07",
+      "name": "Film / Physical Media",
+      "kind": "Application detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.07 · Film / Physical Media",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.08",
+      "name": "Packaging / Technical Manual",
+      "kind": "Application detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.08 · Packaging / Technical Manual",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.09",
+      "name": "Vehicle Livery / Day",
+      "kind": "Application detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.09 · Vehicle Livery / Day",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.10",
+      "name": "Vehicle Livery / Night",
+      "kind": "Application detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.10 · Vehicle Livery / Night",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.11",
+      "name": "Product-Family Mockup",
+      "kind": "Application detail",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.11 · Product-Family Mockup",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "11.12",
+      "name": "Digital Product / Figma Make Handoff",
+      "kind": "Prototype handoff",
+      "categoryId": "11",
+      "categoryName": "Applications and mockups",
+      "exactLabel": "11.12 · Digital Product / Figma Make Handoff",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 4300,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "12.00",
+      "name": "Production & Release Overview",
+      "kind": "Category overview",
+      "categoryId": "12",
+      "categoryName": "Production and release",
+      "exactLabel": "12.00 · Production & Release Overview",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 2840,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "12.01",
+      "name": "Print, One-Color & Production Profiles",
+      "kind": "Detail",
+      "categoryId": "12",
+      "categoryName": "Production and release",
+      "exactLabel": "12.01 · Print, One-Color & Production Profiles",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "12.02",
+      "name": "Vinyl, Reflective & UV Registration",
+      "kind": "Detail",
+      "categoryId": "12",
+      "categoryName": "Production and release",
+      "exactLabel": "12.02 · Vinyl, Reflective & UV Registration",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "12.03",
+      "name": "Fabrication & Physical-Sample Requirements",
+      "kind": "Detail",
+      "categoryId": "12",
+      "categoryName": "Production and release",
+      "exactLabel": "12.03 · Fabrication & Physical-Sample Requirements",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "12.04",
+      "name": "Digital, Vector & Raster Export Matrix",
+      "kind": "Detail",
+      "categoryId": "12",
+      "categoryName": "Production and release",
+      "exactLabel": "12.04 · Digital, Vector & Raster Export Matrix",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "12.05",
+      "name": "Accessibility, RTL, Motion & Visual-QA Evidence",
+      "kind": "Detail",
+      "categoryId": "12",
+      "categoryName": "Production and release",
+      "exactLabel": "12.05 · Accessibility, RTL, Motion & Visual-QA Evidence",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "12.06",
+      "name": "Provenance, Approval & Change Control",
+      "kind": "Detail",
+      "categoryId": "12",
+      "categoryName": "Production and release",
+      "exactLabel": "12.06 · Provenance, Approval & Change Control",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3500,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "12.07",
+      "name": "Full Brand Guide Assembly / Release / Handoff",
+      "kind": "Assembly and handoff",
+      "categoryId": "12",
+      "categoryName": "Production and release",
+      "exactLabel": "12.07 · Full Brand Guide Assembly / Release / Handoff",
+      "anatomyType": "detail",
+      "anatomy": [
+        "Definition",
+        "Construction and source",
+        "Exact tokens, assets, styles, or material recipe",
+        "Variants, modes, states, and optical sizes",
+        "Usage",
+        "Accessibility, bilingual behavior, and RTL",
+        "Motion and interaction",
+        "Production and export",
+        "Correct examples",
+        "Misuse",
+        "Provenance, hashes, status, and evidence",
+        "Category and related-page links plus canonical source paths"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3800,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "GOVERNED",
+        "publishable": true,
+        "authority": false,
+        "referenceOnly": false
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    },
+    {
+      "id": "99.00",
+      "name": "Noncanonical References & Legacy Index",
+      "kind": "Permanent noncanonical index",
+      "categoryId": "99",
+      "categoryName": "Noncanonical reference",
+      "exactLabel": "99.00 · Noncanonical References & Legacy Index",
+      "anatomyType": "overview",
+      "anatomy": [
+        "Purpose and recognition role",
+        "Subject navigation with every page ID and exact name",
+        "When-to-use matrix",
+        "Status matrix",
+        "Dependencies",
+        "Rules and anti-patterns",
+        "Far, normal, and close examples",
+        "Change log and source references"
+      ],
+      "layerStack": [
+        "00 / Reference",
+        "10 / Construction",
+        "20 / Canonical Assets",
+        "30 / Live Type and Metadata",
+        "40 / Color, Gradient, Pattern, or Material",
+        "50 / Variants, States, and Optical Sizes",
+        "60 / Usage and Applications",
+        "70 / Accessibility, Bilingual, RTL, and Motion",
+        "80 / Production and Export",
+        "90 / Correct Use and Misuse",
+        "99 / Provenance, Status, Evidence, and Navigation"
+      ],
+      "artboard": {
+        "widthPx": 1440,
+        "minimumHeightPx": 3400,
+        "heightStrategy": "content-driven",
+        "dpi": 144
+      },
+      "governance": {
+        "status": "NONCANONICAL INDEX",
+        "publishable": false,
+        "authority": false,
+        "referenceOnly": true
+      },
+      "source": {
+        "architecturePath": "docs/superpowers/specs/2026-07-15-bizarre-masterbrand-library-architecture.md",
+        "architectureSha256": "cdb72cb9540cb1e64b32ce2634f4734cb0617bed7db12b4ef03defab5612d2c7"
+      }
+    }
+  ],
+  "canonicalSha256": "220dda8ff98f6fc67ef42187013a3274f9c1c3050e7ca0e38e3352d4ca7ef0de"
+}

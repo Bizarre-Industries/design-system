@@ -1,0 +1,9 @@
+{
+  "title": "Bizarre Industries — Atlas Representation Studies",
+  "summary": "Four provisional, nonpublishable visual targets for exact Affinity reconstruction from governed field and aperture sources.",
+  "preset": "image-wall",
+  "showCaptions": true,
+  "contactSheetOutput": "atlas-representation-contact-sheet.png",
+  "contactSheetColumns": 2,
+  "contactSheetThumb": 760
+}

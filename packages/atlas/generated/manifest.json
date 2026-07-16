@@ -1,0 +1,296 @@
+{
+  "apertureMaster": "generated/calibrated-aperture.svg",
+  "files": {
+    "generated/atlas-bands.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "8105397925fa8ceaaeb8c3f5a7d54a5aa986add138bb8887e1a179d924b99670",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:18d2969f11e6232802a6ee6d4a16b4576f781d4bed10973ec385c735e4aac676",
+        "sourceType": "synthetic"
+      },
+      "sha256": "2269e44629952e807128e10167bb8defffcd5c007c98ef9c851e4a46a37a0303"
+    },
+    "generated/atlas-contours-dark.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "2c50ea20e1161abc9b830754cca3e4c0af70fdd87f80a2414264df2b744723f1",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:18d2969f11e6232802a6ee6d4a16b4576f781d4bed10973ec385c735e4aac676",
+        "sourceType": "synthetic"
+      },
+      "sha256": "b4694f25d640a0c4a0e849898eab392eaa3e2cafcbd4924e6082e184d229307c"
+    },
+    "generated/atlas-contours-large.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "2ba547b43dc2976a7ff4c3a1be98e1270f4cbe7a6ff21c1d2c7dbc95167aa09f",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:7e35c8cc2641acbb4bbf2afcb7b215af94544d8d6bdae3d55180cfd289838338",
+        "sourceType": "synthetic"
+      },
+      "sha256": "a9b98e58ebdbc8afb0c42a1d7946cf681a8a5fa96a29e94dcd13face5f647e97"
+    },
+    "generated/atlas-contours-light.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "fd866f82dd84b52f986d48c48bea27bea84fdaacd5793f120eac4e42257fb86f",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:18d2969f11e6232802a6ee6d4a16b4576f781d4bed10973ec385c735e4aac676",
+        "sourceType": "synthetic"
+      },
+      "sha256": "e91f34eb1101ca7f89c75cc9b5181549022436fb7e06b05f9e1ed63fe009f69a"
+    },
+    "generated/atlas-dots-large.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "ef232ddb9884aa5ee2ecd8f691328a5c966f69f777f8882a64c9472ff66201b5",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:7e35c8cc2641acbb4bbf2afcb7b215af94544d8d6bdae3d55180cfd289838338",
+        "sourceType": "synthetic"
+      },
+      "sha256": "861f47486671516e8a0ce5f5c5dcebae1308777a1fcd4cffdfe7967053ee500f"
+    },
+    "generated/atlas-dots.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "2e5bfb31678771673a9ede8791f605ab21fba833de406e48d0db69f64dfbd79d",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:18d2969f11e6232802a6ee6d4a16b4576f781d4bed10973ec385c735e4aac676",
+        "sourceType": "synthetic"
+      },
+      "sha256": "2c9f4c0d2b134cbf25f151e79fc28b68a3f361df96518d59c0c8295e5d61fad0"
+    },
+    "generated/atlas-hatch-large.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "24ed1f9f4c6557dd8a2020f9a83c62cfd65858dc2fc6405f4bd492d8d5456a54",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:7e35c8cc2641acbb4bbf2afcb7b215af94544d8d6bdae3d55180cfd289838338",
+        "sourceType": "synthetic"
+      },
+      "sha256": "03358c5c00f03b76004d782ddbcad688e5a259ae6dff1147138ab4b0fe2a2ec9"
+    },
+    "generated/atlas-hatch.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "139317530e061764c9c8b3339f395f5785478c577f740e12e24771a7bd491a85",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:18d2969f11e6232802a6ee6d4a16b4576f781d4bed10973ec385c735e4aac676",
+        "sourceType": "synthetic"
+      },
+      "sha256": "4d73f082dd5bfefa84e321bad5bfee7a887a06dd09a52ff8c3b5064b2defbbfd"
+    },
+    "generated/atlas-micro.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "5c31f06dc60902297a67130433af87a0242a8c56fd34e4498400a284148d21fd",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:931285616d15632dd9b36d7a9da42a26c92f75c7e9cccf3dd40698d1f7b4154d",
+        "sourceType": "synthetic"
+      },
+      "sha256": "374d2b9b691567ab9bc26e2b2bf67d8fdb12048826cf77f1444816a24bbe98ab"
+    },
+    "generated/atlas-spectral-large.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "ba6984d23dad2716537421d57f339eb5f9fe9ec8d1a6a2620fab26dd0e71a732",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:7e35c8cc2641acbb4bbf2afcb7b215af94544d8d6bdae3d55180cfd289838338",
+        "sourceType": "synthetic"
+      },
+      "sha256": "a0a32c822abe8b8511d0d66438d9778e7b5dd8c9c7b466d43990af14f1a840cf"
+    },
+    "generated/atlas-spectral.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "1d70012a2200103e0c09961c1cdb3fbf4fd0901991daf5e9887d825f345e07f9",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:18d2969f11e6232802a6ee6d4a16b4576f781d4bed10973ec385c735e4aac676",
+        "sourceType": "synthetic"
+      },
+      "sha256": "b1791e6539a8b6a3f3b9b82bae0ad2212f25a48c4f621a1a11d461a22a87f6d7"
+    },
+    "generated/calibrated-aperture.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "fe6687fdfc61ca811fcac4900393967c5e9598516f149c53d03af33f6952bb19",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:cb836cd879f15f6e1a637ed48d2b8744d0e6428498e6efff1a1a2082c91458c6",
+        "sourceType": "synthetic"
+      },
+      "sha256": "7d084fb71682e01deee4af72446c63d4f7f53ebe6ba1d9ad40a376b113856e6f"
+    },
+    "generated/capture-sequence.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "3f2cf390fb2de1e6869f3215e7c5f9966ba3b5277df4fa248c0fb6b3958fd518",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:0294208fa2ea14b7407237649cdc6e0f46adf20bb72242a45811f2a4059eb617",
+        "sourceType": "synthetic"
+      },
+      "sha256": "281c6f14a86098eaa075a6c8f4d1a6a6d1b7de4040d06c58d534bbeefcdd7aa8"
+    },
+    "generated/config.json": {
+      "mediaType": "application/json",
+      "sha256": "ad667c8a7fa4078b5b0f4341c5265128a9509306cf5927078b5d856fbd603292"
+    },
+    "generated/instrument-dial.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "a51af55c7e16895fefdfcf6ecc8ed15e26643e2321e6bac411a8f079f243df81",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:1f8df90d0bf5eeff7e5493bf3c70ea56ecd28dbbcd43465e64d699a5f9180994",
+        "sourceType": "synthetic"
+      },
+      "sha256": "312a9c31b031857123ceff87831c972bd9be9f9d4a7e1cede1547a1b6a08fdf1"
+    },
+    "generated/livery-strip.svg": {
+      "mediaType": "image/svg+xml",
+      "provenance": {
+        "algorithm": {
+          "name": "bizarre-atlas-single-mass",
+          "version": "1.0.0"
+        },
+        "aperturePathSha256": "bb4079e12e6db7bb2387dc7fbe174b3283b57d5af4d4e942e4053bd96158c9dd",
+        "apertureVersion": "continuous-lens-aperture/owner-selected-left-v2",
+        "configurationHash": "85d3a4933e0683fb0aaa729ed9ba9e1f9310fc358ab45fcc97257b6439424028",
+        "model": {
+          "name": "single-mass-lensing-field",
+          "version": "1.0.0"
+        },
+        "sourceIdentifier": "synthetic:bizarre-atlas-single-mass@1.0.0:1e8a78736c709876e8bbebaa19b0cb65b338a1cc108b6f2f90c549c97c4f3a6a",
+        "sourceType": "synthetic"
+      },
+      "sha256": "bae5a768ea83519e2005d99d7adb0a60b831141b4b22477e8d62f9c57cd79110"
+    }
+  },
+  "package": "@bizarre/atlas",
+  "schemaVersion": 1
+}
